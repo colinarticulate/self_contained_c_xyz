@@ -1,0 +1,51 @@
+
+
+input:
+           "args":[
+                "-audio", "/home/dbarbera/Data/audio_clips/allowed1_philip.wav",   
+                "-featparams", "/usr/local/share/xyzpocketsphinx/model/art-en-us/en-us/feat.params",
+                "-hmm", "/usr/local/share/xyzpocketsphinx/model/art-en-us/en-us",
+                "-word", "allowed",                                 
+                "-dict", "/home/dbarbera/Data/art_db_oldest.dic",
+                "-phdict", "/home/dbarbera/Data/art_db_v2.phone"
+               ],
+
+
+
+output:
+
+batch: 7.180627ms
+batch: 7.136212ms
+batch: 7.047826ms
+batch: 7.13313ms
+batch: 7.107653ms
+continuous: 78.02311ms
+continuous: 80.680517ms
+continuous: 89.141231ms
+continuous: 100.08365ms
+continuous: 102.326322ms
+Total: 180.189969ms
+{
+  "results": [
+    {
+      "letters": "a",
+      "phonemes": "ə",
+      "verdict": "good"
+    },
+    {
+      "letters": "ll",
+      "phonemes": "l",
+      "verdict": "missing"
+    },
+    {
+      "letters": "owe",
+      "phonemes": "ɑʊ",
+      "verdict": "good"
+    },
+    {
+      "letters": "d",
+      "phonemes": "d",
+      "verdict": "missing"
+    }
+  ],
+  "err": null

@@ -1,0 +1,130 @@
+ 
+input: (launch.json in cli_pron)
+
+ "args":["-audio","/home/dbarbera/Data/audio_clips/abandoned1_paul.wav","-featparams","/home/dbarbera/Repositories/pronounce-experimental/Models/Bare/2022-03-30T10:55:59-093_Bare.ci_cont/feat.params","-word","abandoned","-dict","/home/dbarbera/Repositories/pronounce-experimental/Dictionaries/art_db_v3.dic","-phdict","/home/dbarbera/Repositories/pronounce-experimental/Dictionaries/art_db_v3_inference.phone","-hmm","/home/dbarbera/Repositories/pronounce-experimental/Models/Bare/2022-03-30T10:55:59-093_Bare.ci_cont"],
+"env":{"GODEBUG":"cgocheck=0"},
+
+
+output:
+
+batch: 7.629981ms
+batch: 7.556558ms
+batch: 7.933182ms
+batch: 7.673466ms
+batch: 7.635633ms
+continuous: 82.19438ms
+continuous: 108.479339ms
+continuous: 108.815681ms
+continuous: 112.415972ms
+continuous: 113.551385ms
+continuous: 125.619546ms
+continuous: 183.954777ms
+continuous: 186.513541ms
+continuous: 189.850539ms
+continuous: 205.530549ms
+Total: 614.809499ms
+{
+  "results": [
+    {
+      "letters": "a",
+      "phonemes": "ə",
+      "verdict": "good"
+    },
+    {
+      "letters": "b",
+      "phonemes": "b",
+      "verdict": "good"
+    },
+    {
+      "letters": "a",
+      "phonemes": "æ",
+      "verdict": "good"
+    },
+    {
+      "letters": "n",
+      "phonemes": "n",
+      "verdict": "good"
+    },
+    {
+      "letters": "d",
+      "phonemes": "d",
+      "verdict": "good"
+    },
+    {
+      "letters": "one",
+      "phonemes": "axn",
+      "verdict": "good"
+    },
+    {
+      "letters": "d",
+      "phonemes": "d",
+      "verdict": "good"
+    }
+  ],
+  "err": null
+}
+
+
+change: processing audio in one go
+
+batch: 7.723178ms
+batch: 7.582727ms
+batch: 7.630338ms
+batch: 10.448617ms
+batch: 11.085535ms
+continuous: 110.432027ms
+continuous: 112.190711ms
+continuous: 116.882893ms
+continuous: 121.021738ms
+continuous: 123.227201ms
+continuous: 130.390955ms
+continuous: 182.959469ms
+continuous: 189.373422ms
+continuous: 200.764644ms
+continuous: 201.591911ms
+Total: 304.448345ms
+{
+  "results": [
+    {
+      "letters": "a",
+      "phonemes": "ə",
+      "verdict": "good"
+    },
+    {
+      "letters": "b",
+      "phonemes": "b",
+      "verdict": "good"
+    },
+    {
+      "letters": "a",
+      "phonemes": "æ",
+      "verdict": "good"
+    },
+    {
+      "letters": "n",
+      "phonemes": "n",
+      "verdict": "good"
+    },
+    {
+      "letters": "d",
+      "phonemes": "d",
+      "verdict": "possible"
+    },
+    {
+      "letters": "o",
+      "phonemes": "ə",
+      "verdict": "good"
+    },
+    {
+      "letters": "ne",
+      "phonemes": "n",
+      "verdict": "good"
+    },
+    {
+      "letters": "d",
+      "phonemes": "d",
+      "verdict": "good"
+    }
+  ],
+  "err": null
+}

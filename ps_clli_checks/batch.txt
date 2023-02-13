@@ -1,0 +1,100 @@
+pocketsphinx_batch \
+-adcin yes \
+-alpha 0.97 \
+-beam 1e-10000 \
+-bestpath no \
+-cepdir /home/dbarbera/Repositories/c_xyx/test_data/allowed1_philip_allowed/audio \
+-cepext .wav \
+-ctl /home/dbarbera/Repositories/c_xyx/test_data/allowed1_philip_allowed/ctl/ctl_allowed1_philip_fixed_trimmed.txt \
+-dict /home/dbarbera/Repositories/c_xyx/test_data/dictionaries/art_db.phone \
+-dither yes \
+-doublebw yes \
+-frate 72 \
+-fwdflat no \
+-hmm /usr/local/share/xyzpocketsphinx/model/art-en-us/en-us \
+-logfn ./logs/frate-72-batch-cli.log \
+-lpbeam 1e-10000 \
+-lponlybeam 1e-10000 \
+-lw 6 \
+-maxhmmpf -1 \
+-maxwpf -1 \
+-pbeam 1e-10000 \
+-pip 1.15 \
+-pl_window 0 \
+-remove_noise yes \
+-remove_silence yes \
+-topn 6 \
+-vad_postspeech 20 \
+-vad_prespeech 5 \
+-vad_startspeech 5 \
+-vad_threshold 1.5 \
+-wbeam 1e-10000 \
+-wip 0.25
+
+
+pocketsphinx_batch \
+-adcin yes \
+-alpha 0.97 \
+-beam 1e-10000 \
+-bestpath no \
+-cepdir /home/dbarbera/Repositories/c_xyx/test_data/allowed1_philip_allowed/audio \
+-cepext .wav \
+-ctl /home/dbarbera/Repositories/c_xyx/test_data/allowed1_philip_allowed/ctl/ctl_allowed1_philip_fixed_trimmed.txt \
+-dither yes \
+-doublebw yes \
+-frate 72 \
+-fwdflat no \
+-logfn ./logs/frate-72-batch-cli-defaults.log \
+-lpbeam 1e-10000 \
+-lponlybeam 1e-10000 \
+-lw 6 \
+-maxhmmpf -1 \
+-maxwpf -1 \
+-pbeam 1e-10000 \
+-pip 1.15 \
+-pl_window 0 \
+-remove_noise yes \
+-remove_silence yes \
+-topn 6 \
+-vad_postspeech 20 \
+-vad_prespeech 5 \
+-vad_startspeech 5 \
+-vad_threshold 1.5 \
+-wbeam 1e-10000 \
+-wip 0.25
+
+
+
+pocketsphinx_batch \
+-adcin yes \
+-alpha 0.97 \
+-beam 1e-10000 \
+-bestpath no \
+-cepdir /home/dbarbera/Repositories/c_xyx/test_data/allowed1_philip_allowed/audio \
+-cepext .wav \
+-ctl /home/dbarbera/Repositories/c_xyx/test_data/allowed1_philip_allowed/ctl/ctl_allowed1_philip_fixed_trimmed.txt \
+-dict /home/dbarbera/Repositories/c_xyx/test_data/dictionaries/art_db.phone \
+-dither yes \
+-doublebw yes \
+-frate 72 \
+-fwdflat no \
+-hmm /usr/local/share/xyzpocketsphinx/model/art-en-us/en-us \
+-jsgf /home/dbarbera/Data/test_cases/allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_2668db47-d3ce-4760-ab4b-60b9b8a6c46e_allowed1_philip_fixed_trimmed.wav.jsgf \
+-logfn ./logs/frate-72-batch-cli-jsgf.log \
+-lpbeam 1e-10000 \
+-lponlybeam 1e-10000 \
+-lw 6 \
+-maxhmmpf -1 \
+-maxwpf -1 \
+-pbeam 1e-10000 \
+-pip 1.15 \
+-pl_window 0 \
+-remove_noise yes \
+-remove_silence yes \
+-topn 6 \
+-vad_postspeech 20 \
+-vad_prespeech 5 \
+-vad_startspeech 5 \
+-vad_threshold 1.5 \
+-wbeam 1e-10000 \
+-wip 0.25

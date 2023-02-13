@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/dbarbera/Repositories/selfcontained_c_xyz/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/ps_plus.dir/ps_plus.cpp.o -c /home/dbarbera/Repositories/selfcontained_c_xyz/ps_plus.cpp",
+  "file": "/home/dbarbera/Repositories/selfcontained_c_xyz/ps_plus.cpp"
+}
+]
