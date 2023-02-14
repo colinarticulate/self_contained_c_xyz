@@ -1,0 +1,19 @@
+New version has the following changes:
+
+1. parsing binary streams containing jsgf-compliant grammar files.:
+
+in sphinxbase/src/libsphinxbase/lm/
+jsgf.c
+jsgf_parser.c
+jsgf_parser.h
+
+in sphinxbase/src/include/
+jsgf.h
+
+
+2. Key changes in the API to allow using binary streams of information, rather than just path to files (audios and jsgf grammar files)
+in pocketsphinx/src/libpocketsphinx/
+pocketsphinx.c
+
+in pocketsphinx/include/
+pocketsphinx.h

@@ -1,0 +1,133 @@
+{
+    "tasks":[
+        // {
+        //     "type": "cppbuild",
+        //     "label": "GCC Build Debug",
+        //     "command": "/usr/bin/gcc",
+        //     "args": [
+        //         "-g",
+        //         "-Wall",
+        //         "-Og",
+        //         "-ggdb",
+        //         "-Wno-unused-result",
+        //         "-Wno-unused-function",
+        //         "-Wno-unused-variable",
+        //         "-Wno-unused-but-set-variable",
+        //         "-I/usr/local/include",
+        //         "-I/usr/include",
+        //         "-I/usr/local/include/xyzsphinxbase",
+        //         "-I/usr/local/include/xyzpocketsphinx",
+        //         "${file}",
+        //         "-lpthread",
+        //         "-lm",
+        //         "-L/usr/local/lib",
+        //         "-lxyzpocketsphinx",
+        //         "-lxyzsphinxbase",
+        //         "-lxyzsphinxad",
+        //         "-o",
+        //         "${fileDirname}/${fileBasenameNoExtension}-debug"
+        //     ],
+        //     "options": {
+        //         "cwd": "${workspaceFolder}"
+        //     },
+        //     "problemMatcher": {
+        //         "base": "$gcc",
+        //         "fileLocation": [
+        //             "absolute"
+        //         ]
+        //     },
+        //     "group": {
+        //         "kind": "build",
+        //         "isDefault": true
+        //     },
+        //     "detail": "compiler: /usr/bin/gcc"
+        // },
+        {
+            "type": "cppbuild",
+            "label": "G++ Build Debug",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Og",
+                "-ggdb",
+                "-Wno-unused-result",
+                "-Wno-unused-function",
+                "-Wno-unused-variable",
+                "-Wno-unused-but-set-variable",
+                "-I/usr/local/include",
+                "-I/usr/include",
+                "-I/usr/local/include/xyzsphinxbase",
+                "-I/usr/local/include/xyzpocketsphinx",
+                "${file}",
+                "-lpthread",
+                "-lm",
+                "-L/usr/local/lib",
+                // "-lxyzpocketsphinx",
+                "-lxyzsphinxbase",
+                "-lxyzsphinxad",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}-debug"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": [
+                    "absolute"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: /usr/bin/g++"
+        },
+
+        // {
+        //     "type": "cppbuild",
+        //     "label": "C/C++: clang build active file",
+        //     "command": "/usr/bin/clang",
+        //     "args": [
+        //         "-g",
+        //         "-Wall",
+        //         "-Og",
+        //         "-ggdb",
+        //         "-Wno-unused-result",
+        //         "-Wno-unused-function",
+        //         "-Wno-unused-variable",
+        //         //"-Wno-unused-but-set-variable",
+        //         "-Wno-unused-const-variable",
+        //         "-I/usr/local/include",
+        //         "-I/usr/include",
+        //         "-I/usr/local/include/xyzsphinxbase",
+        //         "-I/usr/local/include/xyzpocketsphinx",
+        //         "${file}",
+        //         "-lpthread",
+        //         "-lm",
+        //         "-L/usr/local/lib",
+        //         "-lxyzpocketsphinx",
+        //         "-lxyzsphinxbase",
+        //         "-lxyzsphinxad",
+        //         "-o",
+        //         "${fileDirname}/${fileBasenameNoExtension}-debug"
+        //     ],
+        //     "options": {
+        //         "cwd": "${fileDirname}"
+        //     },
+        //     "problemMatcher": {
+        //         "base": "$gcc",
+        //         "fileLocation": [
+        //             "absolute"
+        //         ]
+        //     },
+        //     "group": {
+        //         "kind": "build",
+        //         "isDefault": true
+        //     },
+        //     "detail": "compiler: /usr/bin/clang"
+        // },
+    ],
+    "version": "2.0.0",
+  } 

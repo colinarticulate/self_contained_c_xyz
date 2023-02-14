@@ -1,3 +1,0 @@
-/home/dbarbera/Repositories/selfcontained_c_xyz/build/CMakeFiles/ps_plus.dir
-/home/dbarbera/Repositories/selfcontained_c_xyz/build/CMakeFiles/edit_cache.dir
-/home/dbarbera/Repositories/selfcontained_c_xyz/build/CMakeFiles/rebuild_cache.dir

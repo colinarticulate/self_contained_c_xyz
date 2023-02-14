@@ -1,0 +1,22 @@
+Example of a local installation:
+
+Order matter!!! First install sphinxbase, then pocketsphinx.
+
+Make sure your local folder is already in place, otherwise you won't have anything installed.
+
+1)
+sphinxbase:
+
+./autogen.sh --prefix=$(pwd)/../.debug/usr/local/
+./configure --prefix=$(pwd)/../.debug/usr/local/
+make
+make install
+
+
+2)
+pocketsphinx:
+
+./autogen.sh --prefix=$(pwd)/../.debug/usr/local/
+(dont need this one -> //./configure --prefix=$(pwd)/../.debug/usr/local/)
+make
+make install
