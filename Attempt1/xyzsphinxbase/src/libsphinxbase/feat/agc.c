@@ -94,7 +94,7 @@ agc_type_from_str(const char *str)
 agc_t *agc_init(void)
 {
     agc_t *agc;
-    agc = ckd_calloc(1, sizeof(*agc));
+    agc = (agc_t *)ckd_calloc(1, sizeof(*agc));
     agc->noise_thresh = FLOAT2MFCC(2.0);
     
     return agc;

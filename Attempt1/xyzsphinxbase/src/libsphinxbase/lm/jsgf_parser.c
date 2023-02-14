@@ -73,9 +73,12 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <xyzsphinxbase/hash_table.h>
-#include <xyzsphinxbase/ckd_alloc.h>
-#include <xyzsphinxbase/err.h>
+// #include <xyzsphinxbase/hash_table.h>
+// #include <xyzsphinxbase/ckd_alloc.h>
+// #include <xyzsphinxbase/err.h>
+#include "../../../include/xyzsphinxbase/hash_table.h"
+#include "../../../include/xyzsphinxbase/ckd_alloc.h"
+#include "../../../include/xyzsphinxbase/err.h"
 
 #include "jsgf_internal.h"
 #include "jsgf_parser.h"

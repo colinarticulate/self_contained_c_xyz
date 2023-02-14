@@ -66,7 +66,7 @@ jsgf_atom_new(char *name, float weight)
 {
     jsgf_atom_t *atom;
 
-    atom = ckd_calloc(1, sizeof(*atom));
+    atom = (jsgf_atom_t *)ckd_calloc(1, sizeof(*atom));
     atom->name = ckd_salloc(name);
     atom->weight = weight;
     return atom;
@@ -87,7 +87,7 @@ jsgf_grammar_new(jsgf_t * parent)
 {
     jsgf_t *grammar;
 
-    grammar = ckd_calloc(1, sizeof(*grammar));
+    grammar = (jsgf_t *)ckd_calloc(1, sizeof(*grammar));
     /* If this is an imported/subgrammar, then we will share a global
      * namespace with the parent grammar. */
     if (parent) {
@@ -148,7 +148,7 @@ jsgf_rhs_free(jsgf_rhs_t * rhs)
 
     jsgf_rhs_free(rhs->alt);
     for (gn = rhs->atoms; gn; gn = gnode_next(gn))
-        jsgf_atom_free(gnode_ptr(gn));
+        jsgf_atom_free((jsgf_atom_t *)gnode_ptr(gn));
     glist_free(rhs->atoms);
     ckd_free(rhs);
 }
@@ -162,14 +162,14 @@ jsgf_kleene_new(jsgf_t * jsgf, jsgf_atom_t * atom, int plus)
 
     /* Generate an "internal" rule of the form (<NULL> | <name> <g0006>) */
     /* Or if plus is true, (<name> | <name> <g0006>) */
-    rhs = ckd_calloc(1, sizeof(*rhs));
+    rhs = (jsgf_rhs_t *)ckd_calloc(1, sizeof(*rhs));
     if (plus)
         rhs->atoms = glist_add_ptr(NULL, jsgf_atom_new(atom->name, 1.0));
     else
         rhs->atoms = glist_add_ptr(NULL, jsgf_atom_new("<NULL>", 1.0));
     rule = jsgf_define_rule(jsgf, NULL, rhs, 0);
     rule_atom = jsgf_atom_new(rule->name, 1.0);
-    rhs = ckd_calloc(1, sizeof(*rhs));
+    rhs = (jsgf_rhs_t *)ckd_calloc(1, sizeof(*rhs));
     rhs->atoms = glist_add_ptr(NULL, rule_atom);
     rhs->atoms = glist_add_ptr(rhs->atoms, atom);
     rule->rhs->alt = rhs;
@@ -180,7 +180,7 @@ jsgf_kleene_new(jsgf_t * jsgf, jsgf_atom_t * atom, int plus)
 jsgf_rule_t *
 jsgf_optional_new(jsgf_t * jsgf, jsgf_rhs_t * exp)
 {
-    jsgf_rhs_t *rhs = ckd_calloc(1, sizeof(*rhs));
+    jsgf_rhs_t *rhs = (jsgf_rhs_t *)ckd_calloc(1, sizeof(*rhs));
     jsgf_atom_t *atom = jsgf_atom_new("<NULL>", 1.0);
     rhs->alt = exp;
     rhs->atoms = glist_add_ptr(NULL, atom);
@@ -192,7 +192,7 @@ jsgf_add_link(jsgf_t * grammar, jsgf_atom_t * atom, int from, int to)
 {
     jsgf_link_t *link;
 
-    link = ckd_calloc(1, sizeof(*link));
+    link = (jsgf_link_t *)ckd_calloc(1, sizeof(*link));
     link->from = from;
     link->to = to;
     link->atom = atom;
@@ -228,7 +228,7 @@ jsgf_fullname(jsgf_t * jsgf, const char *name)
         return ckd_salloc(name);
 
     /* Skip leading < in name */
-    fullname = ckd_malloc(strlen(jsgf->name) + strlen(name) + 4);
+    fullname = (char *)ckd_malloc(strlen(jsgf->name) + strlen(name) + 4);
     sprintf(fullname, "<%s.%s", jsgf->name, name + 1);
     return fullname;
 }
@@ -245,7 +245,7 @@ jsgf_fullname_from_rule(jsgf_rule_t * rule, const char *name)
     /* Skip leading < in name */
     if ((grammar_name = extract_grammar_name(rule->name)) == NULL)
         return ckd_salloc(name);
-    fullname = ckd_malloc(strlen(grammar_name) + strlen(name) + 4);
+    fullname = (char *)ckd_malloc(strlen(grammar_name) + strlen(name) + 4);
     sprintf(fullname, "<%s.%s", grammar_name, name + 1);
     ckd_free(grammar_name);
 
@@ -303,7 +303,7 @@ expand_rhs(jsgf_t * grammar, jsgf_rule_t * rule, jsgf_rhs_t * rhs,
 
     /* Iterate over atoms in rhs and generate links/nodes */
     for (gn = rhs->atoms; gn; gn = gnode_next(gn)) {
-        jsgf_atom_t *atom = gnode_ptr(gn);
+        jsgf_atom_t *atom = (jsgf_atom_t *)gnode_ptr(gn);
 
         if (jsgf_atom_is_rule(atom)) {
             jsgf_rule_t *subrule;
@@ -492,7 +492,7 @@ jsgf_get_public_rule(jsgf_t * grammar)
         if (jsgf_rule_public(rule)) {
             const char *rule_name = jsgf_rule_name(rule);
             char *dot_pos;
-            if ((dot_pos = strrchr(rule_name + 1, '.')) == NULL) {
+            if ((dot_pos = (char *)strrchr(rule_name + 1, '.')) == NULL) {
                 public_rule = rule;
                 jsgf_rule_iter_free(itor);
                 break;
@@ -557,7 +557,7 @@ jsgf_build_fsg_internal(jsgf_t * grammar, jsgf_rule_t * rule,
     fsg->final_state = rule_exit;
     grammar->links = glist_reverse(grammar->links);
     for (gn = grammar->links; gn; gn = gnode_next(gn)) {
-        jsgf_link_t *link = gnode_ptr(gn);
+        jsgf_link_t *link = (jsgf_link_t *)gnode_ptr(gn);
 
         if (link->atom) {
             if (jsgf_atom_is_rule(link->atom)) {
@@ -688,7 +688,7 @@ jsgf_define_rule(jsgf_t * jsgf, char *name, jsgf_rhs_t * rhs,
     void *val;
 
     if (name == NULL) {
-        name = ckd_malloc(strlen(jsgf->name) + 16);
+        name = (char *)ckd_malloc(strlen(jsgf->name) + 16);
         sprintf(name, "<%s.g%05d>", jsgf->name,
                 hash_table_inuse(jsgf->rules));
     }
@@ -699,7 +699,7 @@ jsgf_define_rule(jsgf_t * jsgf, char *name, jsgf_rhs_t * rhs,
         name = newname;
     }
 
-    rule = ckd_calloc(1, sizeof(*rule));
+    rule = (jsgf_rule_t *)ckd_calloc(1, sizeof(*rule));
     rule->refcnt = 1;
     rule->name = ckd_salloc(name);
     rule->rhs = rhs;
@@ -745,7 +745,7 @@ path_list_search(glist_t paths, char *path)
         char *fullpath;
         FILE *tmp;
 
-        fullpath = string_join(gnode_ptr(gn), "/", path, NULL);
+        fullpath = string_join((const char *)gnode_ptr(gn), "/", path, NULL);
         tmp = fopen(fullpath, "r");
         if (tmp != NULL) {
             fclose(tmp);
@@ -769,7 +769,7 @@ jsgf_import_rule(jsgf_t * jsgf, char *name)
 
     /* Trim the leading and trailing <> */
     namelen = strlen(name);
-    path = ckd_malloc(namelen - 2 + 6); /* room for a trailing .gram */
+    path = (char *)ckd_malloc(namelen - 2 + 6); /* room for a trailing .gram */
     strcpy(path, name + 1);
     /* Split off the first part of the name */
     c = strrchr(path, '.');
@@ -806,7 +806,7 @@ jsgf_import_rule(jsgf_t * jsgf, char *name)
     /* See if we have parsed it already */
     if (hash_table_lookup(jsgf->imports, path, &val) == 0) {
         E_INFO("Already imported %s\n", path);
-        imp = val;
+        imp = (jsgf_t *)val;
         ckd_free(path);
     }
     else {
@@ -823,7 +823,7 @@ jsgf_import_rule(jsgf_t * jsgf, char *name)
         for (itor = hash_table_iter(imp->rules); itor;
              itor = hash_table_iter_next(itor)) {
             hash_entry_t *he = itor->ent;
-            jsgf_rule_t *rule = hash_entry_val(he);
+            jsgf_rule_t *rule = (jsgf_rule_t *)hash_entry_val(he);
             int rule_matches;
             char *rule_name = importname2rulename(name);
 

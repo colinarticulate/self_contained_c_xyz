@@ -133,15 +133,15 @@ yin_init(int frame_size, float search_threshold,
 {
     yin_t *pe;
 
-    pe = ckd_calloc(1, sizeof(*pe));
+    pe = (yin_t *)ckd_calloc(1, sizeof(*pe));
     pe->frame_size = frame_size;
     pe->search_threshold = (uint16)(search_threshold * 32768);
     pe->search_range = (uint16)(search_range * 32768);
     pe->wsize = smooth_window * 2 + 1;
-    pe->diff_window = ckd_calloc_2d(pe->wsize,
+    pe->diff_window = (fixed32 **)ckd_calloc_2d(pe->wsize,
                                     pe->frame_size / 2,
                                     sizeof(**pe->diff_window));
-    pe->period_window = ckd_calloc(pe->wsize,
+    pe->period_window = (uint16 *)ckd_calloc(pe->wsize,
                                    sizeof(*pe->period_window));
     return pe;
 }

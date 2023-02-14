@@ -558,11 +558,11 @@ fe_build_melfilters(melfb_t * mel_fb)
 
     /* Filter coefficient matrix, in flattened form. */
     mel_fb->spec_start =
-        ckd_calloc(mel_fb->num_filters, sizeof(*mel_fb->spec_start));
+        (int16 *)ckd_calloc(mel_fb->num_filters, sizeof(*mel_fb->spec_start));
     mel_fb->filt_start =
-        ckd_calloc(mel_fb->num_filters, sizeof(*mel_fb->filt_start));
+        (int16 *)ckd_calloc(mel_fb->num_filters, sizeof(*mel_fb->filt_start));
     mel_fb->filt_width =
-        ckd_calloc(mel_fb->num_filters, sizeof(*mel_fb->filt_width));
+        (int16 *)ckd_calloc(mel_fb->num_filters, sizeof(*mel_fb->filt_width));
 
     /* First calculate the widths of each filter. */
     /* Minimum and maximum frequencies in mel scale. */
@@ -627,7 +627,7 @@ fe_build_melfilters(melfb_t * mel_fb)
 
     /* Now go back and allocate the coefficient array. */
     mel_fb->filt_coeffs =
-        ckd_malloc(n_coeffs * sizeof(*mel_fb->filt_coeffs));
+        (mfcc_t *)ckd_malloc(n_coeffs * sizeof(*mel_fb->filt_coeffs));
 
     /* And now generate the coefficients. */
     n_coeffs = 0;
@@ -713,7 +713,7 @@ fe_compute_melcosine(melfb_t * mel_fb)
     /* And liftering weights */
     if (mel_fb->lifter_val) {
         mel_fb->lifter =
-            calloc(mel_fb->num_cepstra, sizeof(*mel_fb->lifter));
+            (mfcc_t *)calloc(mel_fb->num_cepstra, sizeof(*mel_fb->lifter));
         for (i = 0; i < mel_fb->num_cepstra; ++i) {
             mel_fb->lifter[i] = FLOAT2MFCC(1 + mel_fb->lifter_val / 2
                                            * sin(i * M_PI /

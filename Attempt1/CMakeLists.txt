@@ -103,10 +103,11 @@ add_compile_options(
 "-Wno-unused-function"
 "-Wno-unused-variable"
 "-Wno-unused-const-variable"
-"-Wdeprecated"
-# "-lpthread"
-# "-pthread"
-# "-lm"
+"-Wimplicit-function-declaration"
+"-Wwritable-strings"
+"-lpthread"
+"-pthread"
+"-lm"
 )
 
 

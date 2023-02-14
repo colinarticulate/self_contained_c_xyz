@@ -98,7 +98,7 @@ build_widmap(ngram_model_t * base, logmath_t * lmath, int32 n)
     i = 0;
     hlist = hash_table_tolist(vocab, NULL);
     for (gn = hlist; gn; gn = gnode_next(gn)) {
-        hash_entry_t *ent = gnode_ptr(gn);
+        hash_entry_t *ent = (hash_entry_t *)gnode_ptr(gn);
         base->word_str[i++] = (char *) ent->key;
     }
     glist_free(hlist);
@@ -151,13 +151,13 @@ ngram_model_set_init(cmd_ln_t * config,
     }
 
     /* Allocate the combined model, initialize it. */
-    model = ckd_calloc(1, sizeof(*model));
+    model = (ngram_model_set_t *)ckd_calloc(1, sizeof(*model));
     base = &model->base;
     model->n_models = n_models;
-    model->lms = ckd_calloc(n_models, sizeof(*model->lms));
-    model->names = ckd_calloc(n_models, sizeof(*model->names));
+    model->lms = (ngram_model_t **)ckd_calloc(n_models, sizeof(*model->lms));
+    model->names = (char **)ckd_calloc(n_models, sizeof(*model->names));
     /* Initialize weights to a uniform distribution */
-    model->lweights = ckd_calloc(n_models, sizeof(*model->lweights));
+    model->lweights = (int32 *)ckd_calloc(n_models, sizeof(*model->lweights));
     {
         int32 uniform = logmath_log(lmath, 1.0 / n_models);
         for (i = 0; i < n_models; ++i)
@@ -178,7 +178,7 @@ ngram_model_set_init(cmd_ln_t * config,
             n = models[i]->n;
     }
     /* Allocate the history mapping table. */
-    model->maphist = ckd_calloc(n - 1, sizeof(*model->maphist));
+    model->maphist = (int32 *)ckd_calloc(n - 1, sizeof(*model->maphist));
 
     /* Now build the word-ID mapping and merged vocabulary. */
     build_widmap(base, lmath, n);
@@ -207,9 +207,9 @@ ngram_model_set_read(cmd_ln_t * config,
 
     /* Try to find the base directory to append to relative paths in
      * the lmctl file. */
-    if ((c = strrchr(lmctlfile, '/')) || (c = strrchr(lmctlfile, '\\'))) {
+    if ((c = strrchr((char *)lmctlfile, '/')) || (c = strrchr((char *)lmctlfile, '\\'))) {
         /* Include the trailing slash. */
-        basedir = ckd_calloc(c - lmctlfile + 2, 1);
+        basedir = (char *)ckd_calloc(c - lmctlfile + 2, 1);
         memcpy(basedir, lmctlfile, c - lmctlfile + 1);
     }
     else {
@@ -286,7 +286,7 @@ ngram_model_set_read(cmd_ln_t * config,
                         E_ERROR("Unknown class %s in control file\n", str);
                         goto error_out;
                     }
-                    classdef = val;
+                    classdef = (classdef_t *)val;
                     if (ngram_model_add_class(lm, str, 1.0,
                                               classdef->words,
                                               classdef->weights,
@@ -321,13 +321,13 @@ ngram_model_set_read(cmd_ln_t * config,
         int32 i;
 
         n_models = glist_count(lms);
-        lm_array = ckd_calloc(n_models, sizeof(*lm_array));
-        name_array = ckd_calloc(n_models, sizeof(*name_array));
+        lm_array = (ngram_model_t **)ckd_calloc(n_models, sizeof(*lm_array));
+        name_array = (char **)ckd_calloc(n_models, sizeof(*name_array));
         lm_node = lms;
         name_node = lmnames;
         for (i = 0; i < n_models; ++i) {
-            lm_array[i] = gnode_ptr(lm_node);
-            name_array[i] = gnode_ptr(name_node);
+            lm_array[i] = (ngram_model_t *)gnode_ptr(lm_node);
+            name_array[i] = (char *)gnode_ptr(name_node);
             lm_node = gnode_next(lm_node);
             name_node = gnode_next(name_node);
         }
@@ -347,7 +347,7 @@ ngram_model_set_read(cmd_ln_t * config,
 
         if (set == NULL) {
             for (gn = lms; gn; gn = gnode_next(gn)) {
-                ngram_model_free(gnode_ptr(gn));
+                ngram_model_free((ngram_model_t *)gnode_ptr(gn));
             }
         }
         glist_free(lms);
@@ -357,9 +357,9 @@ ngram_model_set_read(cmd_ln_t * config,
         glist_free(lmnames);
         hlist = hash_table_tolist(classes, NULL);
         for (gn = hlist; gn; gn = gnode_next(gn)) {
-            hash_entry_t *he = gnode_ptr(gn);
+            hash_entry_t *he = (hash_entry_t *)gnode_ptr(gn);
             ckd_free((char *) he->key);
-            classdef_free(he->val);
+            classdef_free((classdef_t *)he->val);
         }
         glist_free(hlist);
         hash_table_free(classes);
@@ -383,7 +383,7 @@ ngram_model_set_iter(ngram_model_t * base)
 
     if (set == NULL || set->n_models == 0)
         return NULL;
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (ngram_model_set_iter_t *)ckd_calloc(1, sizeof(*itor));
     itor->set = set;
     return itor;
 }
@@ -535,21 +535,21 @@ ngram_model_set_add(ngram_model_t * base,
 
     /* Add it to the array of lms. */
     ++set->n_models;
-    set->lms = ckd_realloc(set->lms, set->n_models * sizeof(*set->lms));
+    set->lms = (ngram_model_t **)ckd_realloc(set->lms, set->n_models * sizeof(*set->lms));
     set->lms[set->n_models - 1] = model;
     set->names =
-        ckd_realloc(set->names, set->n_models * sizeof(*set->names));
+        (char **)ckd_realloc(set->names, set->n_models * sizeof(*set->names));
     set->names[set->n_models - 1] = ckd_salloc(name);
     /* Expand the history mapping table if necessary. */
     if (model->n > base->n) {
         base->n = model->n;
-        set->maphist = ckd_realloc(set->maphist,
+        set->maphist = (int32 *)ckd_realloc(set->maphist,
                                    (model->n - 1) * sizeof(*set->maphist));
     }
 
     /* Renormalize the interpolation weights. */
     fprob = weight * 1.0f / set->n_models;
-    set->lweights = ckd_realloc(set->lweights,
+    set->lweights = (int32 *)ckd_realloc(set->lweights,
                                 set->n_models * sizeof(*set->lweights));
     set->lweights[set->n_models - 1] = logmath_log(base->lmath, fprob);
     /* Now normalize everything else to fit it in.  This is
@@ -656,7 +656,7 @@ ngram_model_set_map_words(ngram_model_t * base,
     ckd_free_2d((void **) set->widmap);
     base->writable = TRUE;
     base->n_words = base->n_1g_alloc = n_words;
-    base->word_str = ckd_calloc(n_words, sizeof(*base->word_str));
+    base->word_str = (char **)ckd_calloc(n_words, sizeof(*base->word_str));
     set->widmap =
         (int32 **) ckd_calloc_2d(n_words, set->n_models,
                                  sizeof(**set->widmap));
@@ -794,7 +794,7 @@ ngram_model_set_add_ug(ngram_model_t * base, int32 wid, int32 lweight)
     /* At this point the word has already been added to the master
        model and we have a new word ID for it.  Add it to active
        submodels and track the word IDs. */
-    newwid = ckd_calloc(set->n_models, sizeof(*newwid));
+    newwid = (int32 *)ckd_calloc(set->n_models, sizeof(*newwid));
     prob = base->log_zero;
     for (i = 0; i < set->n_models; ++i) {
         int32 wprob, n_hist;
@@ -833,9 +833,9 @@ ngram_model_set_add_ug(ngram_model_t * base, int32 wid, int32 lweight)
        do some complicated memory mangling to add this to the
        widmap. */
     set->widmap =
-        ckd_realloc(set->widmap, base->n_words * sizeof(*set->widmap));
+        (int32 **)ckd_realloc(set->widmap, base->n_words * sizeof(*set->widmap));
     set->widmap[0] =
-        ckd_realloc(set->widmap[0],
+        (int32 *)ckd_realloc(set->widmap[0],
                     base->n_words * set->n_models * sizeof(**set->widmap));
     for (i = 0; i < base->n_words; ++i)
         set->widmap[i] = set->widmap[0] + i * set->n_models;

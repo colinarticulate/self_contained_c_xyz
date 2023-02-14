@@ -98,7 +98,7 @@ allphone_search_seg_next(ps_seg_t * seg)
 	allphone_search_seg_free(seg);
         return NULL;
     }
-    phseg = gnode_ptr(itor->seg);
+    phseg = (phseg_t *)gnode_ptr(itor->seg);
     allphone_search_fill_iter(seg, phseg);
 
     return seg;
@@ -120,12 +120,12 @@ allphone_search_seg_iter(ps_search_t * search)
     if (allphs->segments == NULL)
         return NULL;
     
-    iter = ckd_calloc(1, sizeof(phseg_iter_t));
+    iter = (phseg_iter_t *)ckd_calloc(1, sizeof(phseg_iter_t));
 
     iter->base.vt = &fsg_segfuncs;
     iter->base.search = search;
     iter->seg = allphs->segments;
-    allphone_search_fill_iter((ps_seg_t *)iter, gnode_ptr(iter->seg));
+    allphone_search_fill_iter((ps_seg_t *)iter, (phseg_t *)gnode_ptr(iter->seg));
 
     return (ps_seg_t *) iter;
 }
@@ -259,7 +259,7 @@ phmm_build(allphone_search_t * allphs)
 
     /* Fill out bitvecs of each PHMM node, alloc continuous memory chunk for context bitvectors */
     lrc_size = bitvec_size(bin_mdef_n_ciphone(mdef));
-    lc = ckd_calloc(n_phmm * 2 * lrc_size, sizeof(bitvec_t));
+    lc = (uint32 *)ckd_calloc(n_phmm * 2 * lrc_size, sizeof(bitvec_t));
     rc = lc + (n_phmm * lrc_size);
     for (ci = 0; ci < mdef->n_ciphone; ci++) {
         for (p = allphs->ci_phmm[ci]; p; p = p->next) {
@@ -418,11 +418,11 @@ phmm_exit(allphone_search_t * allphs, int32 best)
                         if (h->hist > 0) {
                             int32 n_used;
                             history_t *pred =
-                                blkarray_list_get(history, h->hist);
+                                (history_t *)blkarray_list_get(history, h->hist);
 
                             if (pred->hist > 0) {
                                 history_t *pred_pred =
-                                    blkarray_list_get(history,
+                                    (history_t *)blkarray_list_get(history,
                                                       h->hist);
                                 h->tscore =
                                     ngram_tg_score(allphs->lm,
@@ -485,7 +485,7 @@ phmm_trans(allphone_search_t * allphs, int32 best,
     /* Transition from exited nodes to initial states of HMMs */
     for (hist_idx = frame_history_start;
          hist_idx < blkarray_list_n_valid(allphs->history); hist_idx++) {
-        h = blkarray_list_get(allphs->history, hist_idx);
+        h = (history_t *)blkarray_list_get(allphs->history, hist_idx);
         from = h->phmm;
         for (l = from->succlist; l; l = l->next) {
             int32 tscore;
@@ -498,7 +498,7 @@ phmm_trans(allphone_search_t * allphs, int32 best,
                 int32 n_used;
                 if (h->hist > 0) {
                     history_t *pred =
-                        blkarray_list_get(allphs->history, h->hist);
+                        (history_t *)blkarray_list_get(allphs->history, h->hist);
                     tscore =
                         ngram_tg_score(allphs->lm,
                                        ci2lmwid[pred->phmm->ci],
@@ -755,7 +755,7 @@ ascore(allphone_search_t * allphs, history_t * h)
     int32 score = h->score;
 
     if (h->hist > 0) {
-        history_t *pred = blkarray_list_get(allphs->history, h->hist);
+        history_t *pred = (history_t *)blkarray_list_get(allphs->history, h->hist);
         score -= pred->score;
     }
 
@@ -788,7 +788,7 @@ allphone_backtrace(allphone_search_t * allphs, int32 f, int32 *out_score)
     /* Find the first history entry for the requested frame */
     hist_idx = blkarray_list_n_valid(allphs->history) - 1;
     while (hist_idx > 0) {
-        h = blkarray_list_get(allphs->history, hist_idx);
+        h = (history_t *)blkarray_list_get(allphs->history, hist_idx);
         if (h->ef <= f) {
             frm = last_frm = h->ef;
             break;
@@ -803,7 +803,7 @@ allphone_backtrace(allphone_search_t * allphs, int32 f, int32 *out_score)
     best = (int32) 0x80000000;
     best_idx = -1;
     while (frm == last_frm && hist_idx > 0) {
-        h = blkarray_list_get(allphs->history, hist_idx);
+        h = (history_t *)blkarray_list_get(allphs->history, hist_idx);
         frm = h->ef;
         if (h->score > best && frm == last_frm) {
             best = h->score;
@@ -820,7 +820,7 @@ allphone_backtrace(allphone_search_t * allphs, int32 f, int32 *out_score)
 
     /* Backtrace */
     while (best_idx > 0) {
-        h = blkarray_list_get(allphs->history, best_idx);
+        h = (history_t *)blkarray_list_get(allphs->history, best_idx);
         s = (phseg_t *) ckd_calloc(1, sizeof(phseg_t));
         s->ci = h->phmm->ci;
         s->sf =
@@ -904,7 +904,7 @@ allphone_search_hyp(ps_search_t * search, int32 * out_score)
     search->hyp_str = (char *) ckd_calloc(len, sizeof(*search->hyp_str));
     hyp_idx = 0;
     for (gn = allphs->segments; gn; gn = gn->next) {
-	p = gnode_ptr(gn);
+	p = (phseg_t *)gnode_ptr(gn);
         phone_str = bin_mdef_ciphone_str(mdef, p->ci);
         phone_idx = 0;
         while (phone_str[phone_idx] != '\0')

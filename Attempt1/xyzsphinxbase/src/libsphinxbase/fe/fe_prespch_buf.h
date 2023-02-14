@@ -40,6 +40,8 @@
 #ifndef FE_INTERNAL_H
 #define FE_INTERNAL_H
 
+#include <string.h>
+
 #include "../../../include/xyzsphinxbase/ckd_alloc.h"
 #include "../../../include/xyzsphinxbase/err.h"
 #include "../../../include/xyzsphinxbase/fe.h"

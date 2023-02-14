@@ -236,7 +236,7 @@ dict_write(dict_t *dict, char const *filename, char const *format)
             continue;
         for (phlen = j = 0; j < dict_pronlen(dict, i); ++j)
             phlen += strlen(dict_ciphone_str(dict, i, j)) + 1;
-        phones = ckd_calloc(1, phlen);
+        phones = (char *)ckd_calloc(1, phlen);
         for (j = 0; j < dict_pronlen(dict, i); ++j) {
             strcat(phones, dict_ciphone_str(dict, i, j));
             if (j != dict_pronlen(dict, i) - 1)

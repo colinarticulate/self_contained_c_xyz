@@ -74,6 +74,8 @@ static int64 low_snr = 0;
 static int64 low_volume = 0;
 #endif
 
+
+
 struct noise_stats_s {
     /* Smoothed power */
     powspec_t *power;
@@ -108,8 +110,8 @@ struct noise_stats_s {
 };
 
 
-
 typedef struct noise_stats_s noise_stats_t;
+
 
 // /* Creates noisestats object */
 // noise_stats_t *fe_init_noisestats(int num_filters);

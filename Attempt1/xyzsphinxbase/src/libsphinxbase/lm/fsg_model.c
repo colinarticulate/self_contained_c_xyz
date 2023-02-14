@@ -110,9 +110,9 @@ nextline_str2words(FILE * fp, int32 * lineno,
 
         /* Abuse of realloc(), but this doesn't have to be fast. */
         if (*wordptr == NULL)
-            *wordptr = ckd_calloc(n, sizeof(**wordptr));
+            *wordptr = (char **)ckd_calloc(n, sizeof(**wordptr));
         else
-            *wordptr = ckd_realloc(*wordptr, n * sizeof(**wordptr));
+            *wordptr = (char **)ckd_realloc(*wordptr, n * sizeof(**wordptr));
         return str2words(*lineptr, *wordptr, n);
     }
 }
@@ -139,7 +139,7 @@ fsg_model_trans_add(fsg_model_t * fsg,
     }
 
     /* Create transition object */
-    link = listelem_malloc(fsg->link_alloc);
+    link = (fsg_link_t *)listelem_malloc(fsg->link_alloc);
     link->from_state = from;
     link->to_state = to;
     link->logs2prob = logp;
@@ -183,7 +183,7 @@ fsg_model_tag_trans_add(fsg_model_t * fsg, int32 from, int32 to,
     }
 
     /* Create null transition object */
-    link = listelem_malloc(fsg->link_alloc);
+    link = (fsg_link_t *)listelem_malloc(fsg->link_alloc);
     link->from_state = from;
     link->to_state = to;
     link->logs2prob = logp;
@@ -313,13 +313,13 @@ fsg_model_arcs(fsg_model_t * fsg, int32 i)
 
     if (fsg->trans[i].trans == NULL && fsg->trans[i].null_trans == NULL)
         return NULL;
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (fsg_arciter_t *)ckd_calloc(1, sizeof(*itor));
     if (fsg->trans[i].null_trans)
         itor->null_itor = hash_table_iter(fsg->trans[i].null_trans);
     if (fsg->trans[i].trans)
         itor->itor = hash_table_iter(fsg->trans[i].trans);
     if (itor->itor != NULL)
-        itor->gn = hash_entry_val(itor->itor->ent);
+        itor->gn = (gnode_t *)hash_entry_val(itor->itor->ent);
     return itor;
 }
 
@@ -345,7 +345,7 @@ fsg_arciter_next(fsg_arciter_t * itor)
         if (itor->gn == NULL) {
             itor->itor = hash_table_iter_next(itor->itor);
             if (itor->itor != NULL)
-                itor->gn = hash_entry_val(itor->itor->ent);
+                itor->gn = (gnode_t *)hash_entry_val(itor->itor->ent);
             else if (itor->null_itor == NULL)
                 goto stop_iteration;
         }
@@ -403,7 +403,7 @@ fsg_model_word_add(fsg_model_t * fsg, char const *word)
         if (fsg->n_word == fsg->n_word_alloc) {
             old_size = fsg->n_word_alloc;
             fsg->n_word_alloc += 10;
-            fsg->vocab = ckd_realloc(fsg->vocab,
+            fsg->vocab = (char **)ckd_realloc(fsg->vocab,
                                      fsg->n_word_alloc *
                                      sizeof(*fsg->vocab));
             if (fsg->silwords)
@@ -433,7 +433,7 @@ fsg_model_add_silence(fsg_model_t * fsg, char const *silword,
     silwid = fsg_model_word_add(fsg, silword);
     logsilp = (int32) (logmath_log(fsg->lmath, silprob) * fsg->lw);
     if (fsg->silwords == NULL)
-        fsg->silwords = bitvec_alloc(fsg->n_word_alloc);
+        fsg->silwords = (bitvec_t *)bitvec_alloc(fsg->n_word_alloc);
     bitvec_set(fsg->silwords, silwid);
 
     n_trans = 0;
@@ -469,11 +469,11 @@ fsg_model_add_alt(fsg_model_t * fsg, char const *baseword,
     }
     altwid = fsg_model_word_add(fsg, altword);
     if (fsg->altwords == NULL)
-        fsg->altwords = bitvec_alloc(fsg->n_word_alloc);
+        fsg->altwords = (bitvec_t *)bitvec_alloc(fsg->n_word_alloc);
     bitvec_set(fsg->altwords, altwid);
     if (fsg_model_is_filler(fsg, basewid)) {
         if (fsg->silwords == NULL)
-            fsg->silwords = bitvec_alloc(fsg->n_word_alloc);
+            fsg->silwords = (bitvec_t *)bitvec_alloc(fsg->n_word_alloc);
         bitvec_set(fsg->silwords, altwid);
     }
 
@@ -492,14 +492,14 @@ fsg_model_add_alt(fsg_model_t * fsg, char const *baseword,
             glist_t trans;
             gnode_t *gn;
 
-            trans = hash_entry_val(itor->ent);
+            trans = (glist_t)hash_entry_val(itor->ent);
             for (gn = trans; gn; gn = gnode_next(gn)) {
-                fsg_link_t *fl = gnode_ptr(gn);
+                fsg_link_t *fl = (fsg_link_t *)gnode_ptr(gn);
                 if (fl->wid == basewid) {
                     fsg_link_t *link;
 
                     /* Create transition object */
-                    link = listelem_malloc(fsg->link_alloc);
+                    link = (fsg_link_t *)listelem_malloc(fsg->link_alloc);
                     link->from_state = fl->from_state;
                     link->to_state = fl->to_state;
                     link->logs2prob = fl->logs2prob;    /* FIXME!!!??? */
@@ -525,7 +525,7 @@ fsg_model_init(char const *name, logmath_t * lmath, float32 lw,
     fsg_model_t *fsg;
 
     /* Allocate basic stuff. */
-    fsg = ckd_calloc(1, sizeof(*fsg));
+    fsg = (fsg_model_t *)ckd_calloc(1, sizeof(*fsg));
     fsg->refcount = 1;
     fsg->link_alloc = listelem_alloc_init(sizeof(fsg_link_t));
     fsg->lmath = lmath;
@@ -533,7 +533,7 @@ fsg_model_init(char const *name, logmath_t * lmath, float32 lw,
     fsg->n_state = n_state;
     fsg->lw = lw;
 
-    fsg->trans = ckd_calloc(fsg->n_state, sizeof(*fsg->trans));
+    fsg->trans = (trans_list_t *)ckd_calloc(fsg->n_state, sizeof(*fsg->trans));
 
     return fsg;
 }
@@ -711,7 +711,7 @@ fsg_model_read(FILE * fp, logmath_t * lmath, float32 lw)
     /* Now create a string table from the "dictionary" */
     fsg->n_word = hash_table_inuse(vocab);
     fsg->n_word_alloc = fsg->n_word + 10;       /* Pad it a bit. */
-    fsg->vocab = ckd_calloc(fsg->n_word_alloc, sizeof(*fsg->vocab));
+    fsg->vocab = (char **)ckd_calloc(fsg->n_word_alloc, sizeof(*fsg->vocab));
     for (itor = hash_table_iter(vocab); itor;
          itor = hash_table_iter_next(itor)) {
         char const *word = hash_entry_key(itor->ent);

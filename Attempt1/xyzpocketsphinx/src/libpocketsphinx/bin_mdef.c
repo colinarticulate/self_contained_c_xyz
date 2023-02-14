@@ -99,7 +99,7 @@ bin_mdef_read_text(cmd_ln_t *config, const char *filename)
         return NULL;
     }
 
-    bmdef = ckd_calloc(1, sizeof(*bmdef));
+    bmdef = (bin_mdef_t *)ckd_calloc(1, sizeof(*bmdef));
     bmdef->refcnt = 1;
 
     /* Easy stuff.  The mdef.c code has done the heavy lifting for us. */
@@ -122,11 +122,11 @@ bin_mdef_read_text(cmd_ln_t *config, const char *filename)
     /* Get the phone names.  If they are not sorted
      * ASCII-betically then we are in a world of hurt and
      * therefore will simply refuse to continue. */
-    bmdef->ciname = ckd_calloc(bmdef->n_ciphone, sizeof(*bmdef->ciname));
+    bmdef->ciname = (char **)ckd_calloc(bmdef->n_ciphone, sizeof(*bmdef->ciname));
     nchars = 0;
     for (i = 0; i < bmdef->n_ciphone; ++i)
         nchars += strlen(mdef->ciphone[i].name) + 1;
-    bmdef->ciname[0] = ckd_calloc(nchars, 1);
+    bmdef->ciname[0] = (char *)ckd_calloc(nchars, 1);
     strcpy(bmdef->ciname[0], mdef->ciphone[0].name);
     for (i = 1; i < bmdef->n_ciphone; ++i) {
         bmdef->ciname[i] =
@@ -142,7 +142,7 @@ bin_mdef_read_text(cmd_ln_t *config, const char *filename)
     }
 
     /* Copy over phone information. */
-    bmdef->phone = ckd_calloc(bmdef->n_phone, sizeof(*bmdef->phone));
+    bmdef->phone = (mdef_entry_t *)ckd_calloc(bmdef->n_phone, sizeof(*bmdef->phone));
     for (i = 0; i < mdef->n_phone; ++i) {
         bmdef->phone[i].ssid = mdef->phone[i].ssid;
         bmdef->phone[i].tmat = mdef->phone[i].tmat;
@@ -186,7 +186,7 @@ bin_mdef_read_text(cmd_ln_t *config, const char *filename)
            nodes, sizeof(*bmdef->cd_tree), 
            nodes * sizeof(*bmdef->cd_tree) / 1024);
     bmdef->n_cd_tree = nodes;
-    bmdef->cd_tree = ckd_calloc(nodes, sizeof(*bmdef->cd_tree));
+    bmdef->cd_tree = (cd_tree_t *)ckd_calloc(nodes, sizeof(*bmdef->cd_tree));
     for (i = 0; i < N_WORD_POSN; ++i) {
         int j;
 
@@ -378,7 +378,7 @@ bin_mdef_read(cmd_ln_t *config, const char *filename)
     fseek(fh, val, SEEK_CUR);
 
     /* Finally allocate it. */
-    m = ckd_calloc(1, sizeof(*m));
+    m = (bin_mdef_t *)ckd_calloc(1, sizeof(*m));
     m->refcnt = 1;
 
     /* Check these, to make gcc/glibc shut up. */
@@ -403,7 +403,7 @@ bin_mdef_read(cmd_ln_t *config, const char *filename)
     FREAD_SWAP32_CHK(&m->sil);
 
     /* CI names are first in the file. */
-    m->ciname = ckd_calloc(m->n_ciphone, sizeof(*m->ciname));
+    m->ciname = (char **)ckd_calloc(m->n_ciphone, sizeof(*m->ciname));
 
     /* Decide whether to read in the whole file or mmap it. */
     do_mmap = config ? cmd_ln_boolean_r(config, "-mmap") : TRUE;
@@ -430,7 +430,7 @@ bin_mdef_read(cmd_ln_t *config, const char *filename)
         fseek(fh, 0, SEEK_END);
         end = ftell(fh);
         fseek(fh, pos, SEEK_SET);
-        m->ciname[0] = ckd_malloc(end - pos);
+        m->ciname[0] = (char *)ckd_malloc(end - pos);
         if (fread(m->ciname[0], 1, end - pos, fh) != end - pos)
             E_FATAL("Failed to read %d bytes of data from %s\n", end - pos, filename);
     }
@@ -460,7 +460,7 @@ bin_mdef_read(cmd_ln_t *config, const char *filename)
     sseq_size = (int32 *) (m->phone + m->n_phone);
     if (swap)
         SWAP_INT32(sseq_size);
-    m->sseq = ckd_calloc(m->n_sseq, sizeof(*m->sseq));
+    m->sseq = (uint16 **)ckd_calloc(m->n_sseq, sizeof(*m->sseq));
     m->sseq[0] = (uint16 *) (sseq_size + 1);
     if (swap) {
         for (i = 0; i < *sseq_size; ++i)

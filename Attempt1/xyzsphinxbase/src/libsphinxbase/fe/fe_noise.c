@@ -80,241 +80,241 @@ static int64 low_snr = 0;
 static int64 low_volume = 0;
 #endif
 
-struct noise_stats_s {
-    /* Smoothed power */
-    powspec_t *power;
-    /* Noise estimate */
-    powspec_t *noise;
-    /* Signal floor estimate */
-    powspec_t *floor;
-    /* Peak for temporal masking */
-    powspec_t *peak;
+// struct noise_stats_s {
+//     /* Smoothed power */
+//     powspec_t *power;
+//     /* Noise estimate */
+//     powspec_t *noise;
+//     /* Signal floor estimate */
+//     powspec_t *floor;
+//     /* Peak for temporal masking */
+//     powspec_t *peak;
 
-    /* Initialize it next time */
-    uint8 undefined;
-    /* Number of items to process */
-    uint32 num_filters;
+//     /* Initialize it next time */
+//     uint8 undefined;
+//     /* Number of items to process */
+//     uint32 num_filters;
 
-    /* Sum of slow peaks for VAD */
-    powspec_t slow_peak_sum;
+//     /* Sum of slow peaks for VAD */
+//     powspec_t slow_peak_sum;
 
-    /* Precomputed constants */
-    powspec_t lambda_power;
-    powspec_t comp_lambda_power;
-    powspec_t lambda_a;
-    powspec_t comp_lambda_a;
-    powspec_t lambda_b;
-    powspec_t comp_lambda_b;
-    powspec_t lambda_t;
-    powspec_t mu_t;
-    powspec_t max_gain;
-    powspec_t inv_max_gain;
+//     /* Precomputed constants */
+//     powspec_t lambda_power;
+//     powspec_t comp_lambda_power;
+//     powspec_t lambda_a;
+//     powspec_t comp_lambda_a;
+//     powspec_t lambda_b;
+//     powspec_t comp_lambda_b;
+//     powspec_t lambda_t;
+//     powspec_t mu_t;
+//     powspec_t max_gain;
+//     powspec_t inv_max_gain;
 
-    powspec_t smooth_scaling[2 * SMOOTH_WINDOW + 3];
-};
+//     powspec_t smooth_scaling[2 * SMOOTH_WINDOW + 3];
+// };
 
-static void
-fe_lower_envelope(noise_stats_t *noise_stats, powspec_t * buf, powspec_t * floor_buf, int32 num_filt)
-{
-    int i;
+// static void
+// fe_lower_envelope(noise_stats_t *noise_stats, powspec_t * buf, powspec_t * floor_buf, int32 num_filt)
+// {
+//     int i;
 
-    for (i = 0; i < num_filt; i++) {
-#ifndef FIXED_POINT
-        if (buf[i] >= floor_buf[i]) {
-            floor_buf[i] =
-                noise_stats->lambda_a * floor_buf[i] + noise_stats->comp_lambda_a * buf[i];
-        }
-        else {
-            floor_buf[i] =
-                noise_stats->lambda_b * floor_buf[i] + noise_stats->comp_lambda_b * buf[i];
-        }
-#else
-        if (buf[i] >= floor_buf[i]) {
-            floor_buf[i] = fe_log_add(noise_stats->lambda_a + floor_buf[i],
-                                  noise_stats->comp_lambda_a + buf[i]);
-        }
-        else {
-            floor_buf[i] = fe_log_add(noise_stats->lambda_b + floor_buf[i],
-                                  noise_stats->comp_lambda_b + buf[i]);
-        }
-#endif
-    }
-}
+//     for (i = 0; i < num_filt; i++) {
+// #ifndef FIXED_POINT
+//         if (buf[i] >= floor_buf[i]) {
+//             floor_buf[i] =
+//                 noise_stats->lambda_a * floor_buf[i] + noise_stats->comp_lambda_a * buf[i];
+//         }
+//         else {
+//             floor_buf[i] =
+//                 noise_stats->lambda_b * floor_buf[i] + noise_stats->comp_lambda_b * buf[i];
+//         }
+// #else
+//         if (buf[i] >= floor_buf[i]) {
+//             floor_buf[i] = fe_log_add(noise_stats->lambda_a + floor_buf[i],
+//                                   noise_stats->comp_lambda_a + buf[i]);
+//         }
+//         else {
+//             floor_buf[i] = fe_log_add(noise_stats->lambda_b + floor_buf[i],
+//                                   noise_stats->comp_lambda_b + buf[i]);
+//         }
+// #endif
+//     }
+// }
 
-/* update slow peaks, check if max signal level big enough compared to peak */
-static int16
-fe_is_frame_quiet(noise_stats_t *noise_stats, powspec_t *buf, int32 num_filt)
-{
-    int i;
-    int16 is_quiet;
-    powspec_t sum;
-    double smooth_factor;
+// /* update slow peaks, check if max signal level big enough compared to peak */
+// static int16
+// fe_is_frame_quiet(noise_stats_t *noise_stats, powspec_t *buf, int32 num_filt)
+// {
+//     int i;
+//     int16 is_quiet;
+//     powspec_t sum;
+//     double smooth_factor;
 
-    sum = 0.0;
-    for (i = 0; i < num_filt; i++) {
-#ifndef FIXED_POINT
-        sum += buf[i];
-#else 
-        sum = fe_log_add(sum, buf[i]);
-#endif
-    }
-#ifndef FIXED_POINT
-    sum = log(sum);
-#endif
-    smooth_factor = (sum > noise_stats->slow_peak_sum) ? SLOW_PEAK_LEARN_FACTOR : SLOW_PEAK_FORGET_FACTOR;
-    noise_stats->slow_peak_sum = noise_stats->slow_peak_sum * smooth_factor +
-                                 sum * (1 - smooth_factor);
+//     sum = 0.0;
+//     for (i = 0; i < num_filt; i++) {
+// #ifndef FIXED_POINT
+//         sum += buf[i];
+// #else 
+//         sum = fe_log_add(sum, buf[i]);
+// #endif
+//     }
+// #ifndef FIXED_POINT
+//     sum = log(sum);
+// #endif
+//     smooth_factor = (sum > noise_stats->slow_peak_sum) ? SLOW_PEAK_LEARN_FACTOR : SLOW_PEAK_FORGET_FACTOR;
+//     noise_stats->slow_peak_sum = noise_stats->slow_peak_sum * smooth_factor +
+//                                  sum * (1 - smooth_factor);
 
-#ifdef VAD_DEBUG
-#ifndef FIXED_POINT
-    fprintf(vad_stats, "%.3f %.3f ", noise_stats->slow_peak_sum, sum);
-#else
-    fprintf(vad_stats, "%d %d ", noise_stats->slow_peak_sum, sum);
-#endif
-#endif
-#ifndef FIXED_POINT
-    is_quiet = noise_stats->slow_peak_sum - SPEECH_VOLUME_RANGE > sum;
-#else
-    is_quiet = noise_stats->slow_peak_sum - FLOAT2FIX(SPEECH_VOLUME_RANGE) > sum;
-#endif
-    return is_quiet;
-}
+// #ifdef VAD_DEBUG
+// #ifndef FIXED_POINT
+//     fprintf(vad_stats, "%.3f %.3f ", noise_stats->slow_peak_sum, sum);
+// #else
+//     fprintf(vad_stats, "%d %d ", noise_stats->slow_peak_sum, sum);
+// #endif
+// #endif
+// #ifndef FIXED_POINT
+//     is_quiet = noise_stats->slow_peak_sum - SPEECH_VOLUME_RANGE > sum;
+// #else
+//     is_quiet = noise_stats->slow_peak_sum - FLOAT2FIX(SPEECH_VOLUME_RANGE) > sum;
+// #endif
+//     return is_quiet;
+// }
 
-/* temporal masking */
-static void
-fe_temp_masking(noise_stats_t *noise_stats, powspec_t * buf, powspec_t * peak, int32 num_filt)
-{
-    powspec_t cur_in;
-    int i;
+// /* temporal masking */
+// static void
+// fe_temp_masking(noise_stats_t *noise_stats, powspec_t * buf, powspec_t * peak, int32 num_filt)
+// {
+//     powspec_t cur_in;
+//     int i;
 
-    for (i = 0; i < num_filt; i++) {
-        cur_in = buf[i];
+//     for (i = 0; i < num_filt; i++) {
+//         cur_in = buf[i];
 
-#ifndef FIXED_POINT
-        peak[i] *= noise_stats->lambda_t;
-        if (buf[i] < noise_stats->lambda_t * peak[i])
-            buf[i] = peak[i] * noise_stats->mu_t;
-#else
-        peak[i] += noise_stats->lambda_t;
-        if (buf[i] < noise_stats->lambda_t + peak[i])
-            buf[i] = peak[i] + noise_stats->mu_t;
-#endif
+// #ifndef FIXED_POINT
+//         peak[i] *= noise_stats->lambda_t;
+//         if (buf[i] < noise_stats->lambda_t * peak[i])
+//             buf[i] = peak[i] * noise_stats->mu_t;
+// #else
+//         peak[i] += noise_stats->lambda_t;
+//         if (buf[i] < noise_stats->lambda_t + peak[i])
+//             buf[i] = peak[i] + noise_stats->mu_t;
+// #endif
 
-        if (cur_in > peak[i])
-            peak[i] = cur_in;
-    }
-}
+//         if (cur_in > peak[i])
+//             peak[i] = cur_in;
+//     }
+// }
 
-/* spectral weight smoothing */
-static void
-fe_weight_smooth(noise_stats_t *noise_stats, powspec_t * buf, powspec_t * coefs, int32 num_filt)
-{
-    int i, j;
-    int l1, l2;
-    powspec_t coef;
+// /* spectral weight smoothing */
+// static void
+// fe_weight_smooth(noise_stats_t *noise_stats, powspec_t * buf, powspec_t * coefs, int32 num_filt)
+// {
+//     int i, j;
+//     int l1, l2;
+//     powspec_t coef;
 
-    for (i = 0; i < num_filt; i++) {
-        l1 = ((i - SMOOTH_WINDOW) > 0) ? (i - SMOOTH_WINDOW) : 0;
-        l2 = ((i + SMOOTH_WINDOW) <
-              (num_filt - 1)) ? (i + SMOOTH_WINDOW) : (num_filt - 1);
+//     for (i = 0; i < num_filt; i++) {
+//         l1 = ((i - SMOOTH_WINDOW) > 0) ? (i - SMOOTH_WINDOW) : 0;
+//         l2 = ((i + SMOOTH_WINDOW) <
+//               (num_filt - 1)) ? (i + SMOOTH_WINDOW) : (num_filt - 1);
 
-#ifndef FIXED_POINT
-        coef = 0;
-        for (j = l1; j <= l2; j++) {
-            coef += coefs[j];
-        }
-        buf[i] = buf[i] * (coef / (l2 - l1 + 1));
-#else
-        coef = MIN_FIXLOG;
-        for (j = l1; j <= l2; j++) {
-            coef = fe_log_add(coef, coefs[j]);
-        }        
-        buf[i] = buf[i] + coef - noise_stats->smooth_scaling[l2 - l1 + 1];
-#endif
+// #ifndef FIXED_POINT
+//         coef = 0;
+//         for (j = l1; j <= l2; j++) {
+//             coef += coefs[j];
+//         }
+//         buf[i] = buf[i] * (coef / (l2 - l1 + 1));
+// #else
+//         coef = MIN_FIXLOG;
+//         for (j = l1; j <= l2; j++) {
+//             coef = fe_log_add(coef, coefs[j]);
+//         }        
+//         buf[i] = buf[i] + coef - noise_stats->smooth_scaling[l2 - l1 + 1];
+// #endif
 
-    }
-}
+//     }
+// }
 
-noise_stats_t *
-fe_init_noisestats(int num_filters)
-{
-    int i;
-    noise_stats_t *noise_stats;
+// noise_stats_t *
+// fe_init_noisestats(int num_filters)
+// {
+//     int i;
+//     noise_stats_t *noise_stats;
 
-    noise_stats = (noise_stats_t *) ckd_calloc(1, sizeof(noise_stats_t));
+//     noise_stats = (noise_stats_t *) ckd_calloc(1, sizeof(noise_stats_t));
 
-    noise_stats->power =
-        (powspec_t *) ckd_calloc(num_filters, sizeof(powspec_t));
-    noise_stats->noise =
-        (powspec_t *) ckd_calloc(num_filters, sizeof(powspec_t));
-    noise_stats->floor =
-        (powspec_t *) ckd_calloc(num_filters, sizeof(powspec_t));
-    noise_stats->peak =
-        (powspec_t *) ckd_calloc(num_filters, sizeof(powspec_t));
+//     noise_stats->power =
+//         (powspec_t *) ckd_calloc(num_filters, sizeof(powspec_t));
+//     noise_stats->noise =
+//         (powspec_t *) ckd_calloc(num_filters, sizeof(powspec_t));
+//     noise_stats->floor =
+//         (powspec_t *) ckd_calloc(num_filters, sizeof(powspec_t));
+//     noise_stats->peak =
+//         (powspec_t *) ckd_calloc(num_filters, sizeof(powspec_t));
 
-    noise_stats->undefined = TRUE;
-    noise_stats->num_filters = num_filters;
+//     noise_stats->undefined = TRUE;
+//     noise_stats->num_filters = num_filters;
 
-#ifndef FIXED_POINT
-    noise_stats->lambda_power = LAMBDA_POWER;
-    noise_stats->comp_lambda_power = 1 - LAMBDA_POWER;
-    noise_stats->lambda_a = LAMBDA_A;
-    noise_stats->comp_lambda_a = 1 - LAMBDA_A;
-    noise_stats->lambda_b = LAMBDA_B;
-    noise_stats->comp_lambda_b = 1 - LAMBDA_B;
-    noise_stats->lambda_t = LAMBDA_T;
-    noise_stats->mu_t = MU_T;
-    noise_stats->max_gain = MAX_GAIN;
-    noise_stats->inv_max_gain = 1.0 / MAX_GAIN;
+// #ifndef FIXED_POINT
+//     noise_stats->lambda_power = LAMBDA_POWER;
+//     noise_stats->comp_lambda_power = 1 - LAMBDA_POWER;
+//     noise_stats->lambda_a = LAMBDA_A;
+//     noise_stats->comp_lambda_a = 1 - LAMBDA_A;
+//     noise_stats->lambda_b = LAMBDA_B;
+//     noise_stats->comp_lambda_b = 1 - LAMBDA_B;
+//     noise_stats->lambda_t = LAMBDA_T;
+//     noise_stats->mu_t = MU_T;
+//     noise_stats->max_gain = MAX_GAIN;
+//     noise_stats->inv_max_gain = 1.0 / MAX_GAIN;
     
-    for (i = 1; i < 2 * SMOOTH_WINDOW + 1; i++) {
-        noise_stats->smooth_scaling[i] = 1.0 / i;
-    }
-#else
-    noise_stats->lambda_power = FLOAT2FIX(log(LAMBDA_POWER));
-    noise_stats->comp_lambda_power = FLOAT2FIX(log(1 - LAMBDA_POWER));
-    noise_stats->lambda_a = FLOAT2FIX(log(LAMBDA_A));
-    noise_stats->comp_lambda_a = FLOAT2FIX(log(1 - LAMBDA_A));
-    noise_stats->lambda_b = FLOAT2FIX(log(LAMBDA_B));
-    noise_stats->comp_lambda_b = FLOAT2FIX(log(1 - LAMBDA_B));
-    noise_stats->lambda_t = FLOAT2FIX(log(LAMBDA_T));
-    noise_stats->mu_t = FLOAT2FIX(log(MU_T));
-    noise_stats->max_gain = FLOAT2FIX(log(MAX_GAIN));
-    noise_stats->inv_max_gain = FLOAT2FIX(log(1.0 / MAX_GAIN));
+//     for (i = 1; i < 2 * SMOOTH_WINDOW + 1; i++) {
+//         noise_stats->smooth_scaling[i] = 1.0 / i;
+//     }
+// #else
+//     noise_stats->lambda_power = FLOAT2FIX(log(LAMBDA_POWER));
+//     noise_stats->comp_lambda_power = FLOAT2FIX(log(1 - LAMBDA_POWER));
+//     noise_stats->lambda_a = FLOAT2FIX(log(LAMBDA_A));
+//     noise_stats->comp_lambda_a = FLOAT2FIX(log(1 - LAMBDA_A));
+//     noise_stats->lambda_b = FLOAT2FIX(log(LAMBDA_B));
+//     noise_stats->comp_lambda_b = FLOAT2FIX(log(1 - LAMBDA_B));
+//     noise_stats->lambda_t = FLOAT2FIX(log(LAMBDA_T));
+//     noise_stats->mu_t = FLOAT2FIX(log(MU_T));
+//     noise_stats->max_gain = FLOAT2FIX(log(MAX_GAIN));
+//     noise_stats->inv_max_gain = FLOAT2FIX(log(1.0 / MAX_GAIN));
 
-    for (i = 1; i < 2 * SMOOTH_WINDOW + 3; i++) {
-        noise_stats->smooth_scaling[i] = FLOAT2FIX(log(i));
-    }
-#endif
+//     for (i = 1; i < 2 * SMOOTH_WINDOW + 3; i++) {
+//         noise_stats->smooth_scaling[i] = FLOAT2FIX(log(i));
+//     }
+// #endif
 
-#ifdef VAD_DEBUG
-    vad_stats = fopen("vad_debug", "w");
-#endif
+// #ifdef VAD_DEBUG
+//     vad_stats = fopen("vad_debug", "w");
+// #endif
 
-    return noise_stats;
-}
+//     return noise_stats;
+// }
 
-void
-fe_reset_noisestats(noise_stats_t * noise_stats)
-{
-    if (noise_stats)
-        noise_stats->undefined = TRUE;
-}
+// void
+// fe_reset_noisestats(noise_stats_t * noise_stats)
+// {
+//     if (noise_stats)
+//         noise_stats->undefined = TRUE;
+// }
 
-void
-fe_free_noisestats(noise_stats_t * noise_stats)
-{
-    ckd_free(noise_stats->power);
-    ckd_free(noise_stats->noise);
-    ckd_free(noise_stats->floor);
-    ckd_free(noise_stats->peak);
-    ckd_free(noise_stats);
-#ifdef VAD_DEBUG
-    fclose(vad_stats);
-    E_INFO("Low SNR [%ld] frames; Low volume [%ld] frames\n", (long)low_snr, (long)low_volume);
-#endif
+// void
+// fe_free_noisestats(noise_stats_t * noise_stats)
+// {
+//     ckd_free(noise_stats->power);
+//     ckd_free(noise_stats->noise);
+//     ckd_free(noise_stats->floor);
+//     ckd_free(noise_stats->peak);
+//     ckd_free(noise_stats);
+// #ifdef VAD_DEBUG
+//     fclose(vad_stats);
+//     E_INFO("Low SNR [%ld] frames; Low volume [%ld] frames\n", (long)low_snr, (long)low_volume);
+// #endif
 
-}
+// }
 
 /**
  * For fixed point we are doing the computation in a fixlog domain,

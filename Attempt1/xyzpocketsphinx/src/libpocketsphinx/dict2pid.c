@@ -91,8 +91,8 @@ compress_right_context_tree(dict2pid_t * d2p,
 
     n_ci = mdef->n_ciphone;
 
-    tmpssid = ckd_calloc(n_ci, sizeof(s3ssid_t));
-    tmpcimap = ckd_calloc(n_ci, sizeof(s3cipid_t));
+    tmpssid = (s3ssid_t *)ckd_calloc(n_ci, sizeof(s3ssid_t));
+    tmpcimap = (s3cipid_t *)ckd_calloc(n_ci, sizeof(s3cipid_t));
 
     d2p->rssid =
         (xwdssid_t **) ckd_calloc(mdef->n_ciphone, sizeof(xwdssid_t *));
@@ -111,11 +111,11 @@ compress_right_context_tree(dict2pid_t * d2p,
                  r++);
 
             if (tmpssid[0] != BAD_S3SSID) {
-                d2p->rssid[b][l].ssid = ckd_calloc(r, sizeof(s3ssid_t));
+                d2p->rssid[b][l].ssid = (s3ssid_t *)ckd_calloc(r, sizeof(s3ssid_t));
                 memcpy(d2p->rssid[b][l].ssid, tmpssid,
                        r * sizeof(s3ssid_t));
                 d2p->rssid[b][l].cimap =
-                    ckd_calloc(mdef->n_ciphone, sizeof(s3cipid_t));
+                    (s3cipid_t *)ckd_calloc(mdef->n_ciphone, sizeof(s3cipid_t));
                 memcpy(d2p->rssid[b][l].cimap, tmpcimap,
                        (mdef->n_ciphone) * sizeof(s3cipid_t));
                 d2p->rssid[b][l].n_ssid = r;
@@ -147,8 +147,8 @@ compress_left_right_context_tree(dict2pid_t * d2p)
 
     n_ci = mdef->n_ciphone;
 
-    tmpssid = ckd_calloc(n_ci, sizeof(s3ssid_t));
-    tmpcimap = ckd_calloc(n_ci, sizeof(s3cipid_t));
+    tmpssid = (s3ssid_t *)ckd_calloc(n_ci, sizeof(s3ssid_t));
+    tmpcimap = (s3cipid_t *)ckd_calloc(n_ci, sizeof(s3cipid_t));
 
     assert(d2p->lrdiph_rc);
 
@@ -171,11 +171,11 @@ compress_left_right_context_tree(dict2pid_t * d2p)
                  r++);
 
             if (tmpssid[0] != BAD_S3SSID) {
-                d2p->lrssid[b][l].ssid = ckd_calloc(r, sizeof(s3ssid_t));
+                d2p->lrssid[b][l].ssid = (s3ssid_t *)ckd_calloc(r, sizeof(s3ssid_t));
                 memcpy(d2p->lrssid[b][l].ssid, tmpssid,
                        r * sizeof(s3ssid_t));
                 d2p->lrssid[b][l].cimap =
-                    ckd_calloc(mdef->n_ciphone, sizeof(s3cipid_t));
+                    (s3cipid_t *)ckd_calloc(mdef->n_ciphone, sizeof(s3cipid_t));
                 memcpy(d2p->lrssid[b][l].cimap, tmpcimap,
                        (mdef->n_ciphone) * sizeof(s3cipid_t));
                 d2p->lrssid[b][l].n_ssid = r;
@@ -330,7 +330,7 @@ dict2pid_add_word(dict2pid_t *d2p,
             E_DEBUG("Filling in right-context diphones for %s(%s,?)\n",
                    bin_mdef_ciphone_str(mdef, dict_last_phone(d, wid)),
                    bin_mdef_ciphone_str(mdef, dict_second_last_phone(d, wid)));
-            rmap = ckd_calloc(bin_mdef_n_ciphone(mdef), sizeof(*rmap));
+            rmap = (s3ssid_t *)ckd_calloc(bin_mdef_n_ciphone(mdef), sizeof(*rmap));
             for (r = 0; r < bin_mdef_n_ciphone(mdef); r++) {
                 int p
                     = bin_mdef_phone_id_nearest(mdef,
@@ -339,8 +339,8 @@ dict2pid_add_word(dict2pid_t *d2p,
                                                 WORD_POSN_END);
                 rmap[r] = bin_mdef_pid2ssid(mdef, p);
             }
-            tmpssid = ckd_calloc(bin_mdef_n_ciphone(mdef), sizeof(*tmpssid));
-            tmpcimap = ckd_calloc(bin_mdef_n_ciphone(mdef), sizeof(*tmpcimap));
+            tmpssid = (s3ssid_t *)ckd_calloc(bin_mdef_n_ciphone(mdef), sizeof(*tmpssid));
+            tmpcimap = (s3cipid_t *)ckd_calloc(bin_mdef_n_ciphone(mdef), sizeof(*tmpcimap));
             compress_table(rmap, tmpssid, tmpcimap, bin_mdef_n_ciphone(mdef));
             for (r = 0; r < mdef->n_ciphone && tmpssid[r] != BAD_S3SSID; r++)
                 ;
@@ -430,9 +430,9 @@ dict2pid_build(bin_mdef_t * mdef, dict_t * dict)
     }
 
     /* Track which diphones / ciphones have been seen. */
-    ldiph = bitvec_alloc(mdef->n_ciphone * mdef->n_ciphone);
-    rdiph = bitvec_alloc(mdef->n_ciphone * mdef->n_ciphone);
-    single = bitvec_alloc(mdef->n_ciphone);
+    ldiph = (bitvec_t *)bitvec_alloc(mdef->n_ciphone * mdef->n_ciphone);
+    rdiph = (bitvec_t *)bitvec_alloc(mdef->n_ciphone * mdef->n_ciphone);
+    single = (bitvec_t *)bitvec_alloc(mdef->n_ciphone);
 
     for (w = 0; w < dict_size(dict2pid->dict); w++) {
         pronlen = dict_pronlen(dict, w);

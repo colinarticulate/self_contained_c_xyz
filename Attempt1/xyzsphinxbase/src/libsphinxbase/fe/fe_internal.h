@@ -70,6 +70,9 @@ enum {
         DCT_HTK = 2
 };
 
+
+
+
 typedef struct melfb_s melfb_t;
 /** Base Struct to hold all structure for MFCC computation. */
 struct melfb_s {
@@ -151,6 +154,7 @@ struct fe_s {
     /* Half of a Hamming Window. */
     window_t *hamming_window;
 
+    //typedef struct noise_stats_s noise_stats_t;
     /* Noise removal  */
     noise_stats_t *noise_stats;
 

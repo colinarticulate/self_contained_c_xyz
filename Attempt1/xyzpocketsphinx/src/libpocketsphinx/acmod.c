@@ -237,7 +237,7 @@ acmod_init(cmd_ln_t *config, logmath_t *lmath, fe_t *fe, feat_t *fcb)
 {
     acmod_t *acmod;
 
-    acmod = ckd_calloc(1, sizeof(*acmod));
+    acmod = (acmod_t *)ckd_calloc(1, sizeof(*acmod));
     acmod->config = cmd_ln_retain(config);
     acmod->lmath = lmath;
     acmod->state = ACMOD_IDLE;
@@ -284,15 +284,15 @@ acmod_init(cmd_ln_t *config, logmath_t *lmath, fe_t *fe, feat_t *fcb)
     /* Feature buffer has to be at least as large as MFCC buffer. */
     acmod->n_feat_alloc = acmod->n_mfc_alloc + cmd_ln_int32_r(config, "-pl_window");
     acmod->feat_buf = feat_array_alloc(acmod->fcb, acmod->n_feat_alloc);
-    acmod->framepos = ckd_calloc(acmod->n_feat_alloc, sizeof(*acmod->framepos));
+    acmod->framepos = (long *)ckd_calloc(acmod->n_feat_alloc, sizeof(*acmod->framepos));
 
     acmod->utt_start_frame = 0;
 
     /* Senone computation stuff. */
-    acmod->senone_scores = ckd_calloc(bin_mdef_n_sen(acmod->mdef),
+    acmod->senone_scores = (int16 *)ckd_calloc(bin_mdef_n_sen(acmod->mdef),
                                                      sizeof(*acmod->senone_scores));
-    acmod->senone_active_vec = bitvec_alloc(bin_mdef_n_sen(acmod->mdef));
-    acmod->senone_active = ckd_calloc(bin_mdef_n_sen(acmod->mdef),
+    acmod->senone_active_vec = (bitvec_t *)bitvec_alloc(bin_mdef_n_sen(acmod->mdef));
+    acmod->senone_active = (uint8 *)ckd_calloc(bin_mdef_n_sen(acmod->mdef),
                                                      sizeof(*acmod->senone_active));
     acmod->log_zero = logmath_get_zero(acmod->lmath);
     acmod->compallsen = cmd_ln_boolean_r(config, "-compallsen");
@@ -409,7 +409,7 @@ acmod_grow_feat_buf(acmod_t *acmod, int nfr)
 
     acmod->feat_buf = feat_array_realloc(acmod->fcb, acmod->feat_buf,
                                          acmod->n_feat_alloc, nfr);
-    acmod->framepos = ckd_realloc(acmod->framepos,
+    acmod->framepos = (long *)ckd_realloc(acmod->framepos,
                                   nfr * sizeof(*acmod->framepos));
     acmod->n_feat_alloc = nfr;
 }
@@ -556,7 +556,7 @@ acmod_process_full_raw(acmod_t *acmod,
         return -1;
     if (acmod->n_mfc_alloc < nfr + 1) {
         ckd_free_2d(acmod->mfc_buf);
-        acmod->mfc_buf = ckd_calloc_2d(nfr + 1, fe_get_output_size(acmod->fe),
+        acmod->mfc_buf = (mfcc_t **)ckd_calloc_2d(nfr + 1, fe_get_output_size(acmod->fe),
                                        sizeof(**acmod->mfc_buf));
         acmod->n_mfc_alloc = nfr + 1;
     }
@@ -1332,7 +1332,7 @@ acmod_set_rawdata_size(acmod_t *acmod, int32 size)
     acmod->rawdata_size = size;
     if (acmod->rawdata_size > 0) {
 	ckd_free(acmod->rawdata);
-	acmod->rawdata = ckd_calloc(size, sizeof(int16));
+	acmod->rawdata = (int16 *)ckd_calloc(size, sizeof(int16));
     }
 }
 

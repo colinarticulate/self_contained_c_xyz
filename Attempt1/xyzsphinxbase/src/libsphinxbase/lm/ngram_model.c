@@ -427,7 +427,7 @@ ngram_score(ngram_model_t * model, const char *word, ...)
         ++n_hist;
     va_end(history);
 
-    histid = ckd_calloc(n_hist, sizeof(*histid));
+    histid = (int32 *)ckd_calloc(n_hist, sizeof(*histid));
     va_start(history, word);
     n_hist = 0;
     while ((hword = va_arg(history, const char *)) != NULL) {
@@ -506,7 +506,7 @@ ngram_probv(ngram_model_t * model, const char *word, ...)
         ++n_hist;
     va_end(history);
 
-    histid = ckd_calloc(n_hist, sizeof(*histid));
+    histid = (int32 *)ckd_calloc(n_hist, sizeof(*histid));
     va_start(history, word);
     n_hist = 0;
     while ((hword = va_arg(history, const char *)) != NULL) {
@@ -634,7 +634,7 @@ ngram_add_word_internal(ngram_model_t * model,
     /* Reallocate word_str if necessary. */
     if (model->n_words >= model->n_1g_alloc) {
         model->n_1g_alloc += UG_ALLOC_STEP;
-        model->word_str = ckd_realloc(model->word_str,
+        model->word_str = (char **)ckd_realloc(model->word_str,
                                       sizeof(*model->word_str) *
                                       model->n_1g_alloc);
     }
@@ -690,12 +690,12 @@ ngram_class_new(ngram_model_t * model, int32 tag_wid, int32 start_wid,
     float32 tprob;
     int i;
 
-    lmclass = ckd_calloc(1, sizeof(*lmclass));
+    lmclass = (ngram_class_t *)ckd_calloc(1, sizeof(*lmclass));
     lmclass->tag_wid = tag_wid;
     /* wid_base is the wid (minus class tag) of the first word in the list. */
     lmclass->start_wid = start_wid;
     lmclass->n_words = glist_count(classwords);
-    lmclass->prob1 = ckd_calloc(lmclass->n_words, sizeof(*lmclass->prob1));
+    lmclass->prob1 = (int32 *)ckd_calloc(lmclass->n_words, sizeof(*lmclass->prob1));
     lmclass->nword_hash = NULL;
     lmclass->n_hash = 0;
     tprob = 0.0;
@@ -719,11 +719,12 @@ int32
 ngram_class_add_word(ngram_class_t * lmclass, int32 wid, int32 lweight)
 {
     int32 hash;
+    typedef struct ngram_hash_s ngram_hash_t;
 
     if (lmclass->nword_hash == NULL) {
         /* Initialize everything in it to -1 */
         lmclass->nword_hash =
-            ckd_malloc(NGRAM_HASH_SIZE * sizeof(*lmclass->nword_hash));
+            (struct ngram_class_s::ngram_hash_s *)ckd_malloc(NGRAM_HASH_SIZE * sizeof(*lmclass->nword_hash));
         memset(lmclass->nword_hash, 0xff,
                NGRAM_HASH_SIZE * sizeof(*lmclass->nword_hash));
         lmclass->n_hash = NGRAM_HASH_SIZE;
@@ -749,7 +750,7 @@ ngram_class_add_word(ngram_class_t * lmclass, int32 wid, int32 lweight)
         /* Does we has any more bukkit? */
         if (lmclass->n_hash_inuse == lmclass->n_hash) {
             /* Oh noes!  Ok, we makes more. */
-            lmclass->nword_hash = ckd_realloc(lmclass->nword_hash,
+            lmclass->nword_hash = (struct ngram_class_s::ngram_hash_s *)ckd_realloc(lmclass->nword_hash,
                                               lmclass->n_hash * 2 *
                                               sizeof(*lmclass->
                                                      nword_hash));
@@ -877,9 +878,9 @@ ngram_model_add_class(ngram_model_t * model,
 
     ++model->n_classes;
     if (model->classes == NULL)
-        model->classes = ckd_calloc(1, sizeof(*model->classes));
+        model->classes = (struct ngram_class_s**)ckd_calloc(1, sizeof(*model->classes));
     else
-        model->classes = ckd_realloc(model->classes,
+        model->classes = (struct ngram_class_s**)ckd_realloc(model->classes,
                                      model->n_classes *
                                      sizeof(*model->classes));
     model->classes[classid] = lmclass;
@@ -950,18 +951,18 @@ read_classdef_file(hash_table_t * classes, const char *file_name)
                 inclass = FALSE;
 
                 /* Construct a class from the list of words collected. */
-                classdef = ckd_calloc(1, sizeof(*classdef));
+                classdef = (classdef_t *)ckd_calloc(1, sizeof(*classdef));
                 classwords = glist_reverse(classwords);
                 classprobs = glist_reverse(classprobs);
                 classdef->n_words = glist_count(classwords);
-                classdef->words = ckd_calloc(classdef->n_words,
+                classdef->words = (char **)ckd_calloc(classdef->n_words,
                                              sizeof(*classdef->words));
-                classdef->weights = ckd_calloc(classdef->n_words,
+                classdef->weights = (float32 *)ckd_calloc(classdef->n_words,
                                                sizeof(*classdef->weights));
                 word = classwords;
                 weight = classprobs;
                 for (i = 0; i < classdef->n_words; ++i) {
-                    classdef->words[i] = gnode_ptr(word);
+                    classdef->words[i] = (char *)gnode_ptr(word);
                     classdef->weights[i] = gnode_float32(weight);
                     word = gnode_next(word);
                     weight = gnode_next(weight);
@@ -1048,8 +1049,8 @@ ngram_model_read_classdef(ngram_model_t * model, const char *file_name)
     /* Create a new class in the language model for each classdef. */
     hl = hash_table_tolist(classes, NULL);
     for (gn = hl; gn; gn = gnode_next(gn)) {
-        hash_entry_t *he = gnode_ptr(gn);
-        classdef_t *classdef = he->val;
+        hash_entry_t *he = (hash_entry_t *)gnode_ptr(gn);
+        classdef_t *classdef = (classdef_t *)he->val;
 
         if (ngram_model_add_class(model, he->key, 1.0,
                                   classdef->words,
@@ -1061,9 +1062,9 @@ ngram_model_read_classdef(ngram_model_t * model, const char *file_name)
 
   error_out:
     for (gn = hl; gn; gn = gnode_next(gn)) {
-        hash_entry_t *he = gnode_ptr(gn);
+        hash_entry_t *he = (hash_entry_t *)gnode_ptr(gn);
         ckd_free((char *) he->key);
-        classdef_free(he->val);
+        classdef_free((classdef_t *)he->val);
     }
     glist_free(hl);
     hash_table_free(classes);

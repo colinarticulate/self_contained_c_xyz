@@ -114,7 +114,8 @@ feat_read_lda(feat_t *feat, const char *ldafile, int32 dim)
             fclose(fh);
             return -1;
         }
-        feat->lda = (void *)outlda;
+        //feat->lda = (void *)outlda;
+        feat->lda = (mfcc_t ***)outlda;
     }
     fclose(fh);
     
@@ -145,7 +146,7 @@ feat_lda_transform(feat_t *fcb, mfcc_t ***inout_feat, uint32 nfr)
     mfcc_t *tmp;
     uint32 i, j, k;
 
-    tmp = ckd_calloc(fcb->stream_len[0], sizeof(mfcc_t));
+    tmp = (mfcc_t *)ckd_calloc(fcb->stream_len[0], sizeof(mfcc_t));
     for (i = 0; i < nfr; ++i) {
         /* Do the matrix multiplication inline here since fcb->lda
          * is transposed (eigenvectors in rows not columns). */

@@ -37,7 +37,7 @@
 #ifndef FE_WARP_inverse_linear_H
 #define FE_WARP_inverse_linear_H
 
-#include "../../../include/yzsphinxbase/fe.h"
+#include "../../../include/xyzsphinxbase/fe.h"
 
 
 #ifdef __cplusplus
