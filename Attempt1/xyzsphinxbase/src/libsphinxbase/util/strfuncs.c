@@ -84,7 +84,7 @@ string_join(const char *base, ...)
     len++;
     va_end(args);
 
-    out = ckd_calloc(len, 1);
+    out = (char *)ckd_calloc(len, 1);
     va_start(args, base);
     strcpy(out, base);
     while ((c = va_arg(args, const char *)) != NULL) {

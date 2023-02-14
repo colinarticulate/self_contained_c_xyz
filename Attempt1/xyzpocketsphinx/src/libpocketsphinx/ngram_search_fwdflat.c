@@ -104,9 +104,9 @@ ngram_fwdflat_allocate_1ph(ngram_search_t *ngs)
         if (dict_is_single_phone(dict, w))
             ++ngs->n_1ph_words;
     }
-    ngs->single_phone_wid = ckd_calloc(ngs->n_1ph_words,
+    ngs->single_phone_wid = (int32 *)ckd_calloc(ngs->n_1ph_words,
                                        sizeof(*ngs->single_phone_wid));
-    ngs->rhmm_1ph = ckd_calloc(ngs->n_1ph_words, sizeof(*ngs->rhmm_1ph));
+    ngs->rhmm_1ph = (root_chan_t *)ckd_calloc(ngs->n_1ph_words, sizeof(*ngs->rhmm_1ph));
     i = 0;
     for (w = 0; w < n_words; w++) {
         if (!dict_is_single_phone(dict, w))
@@ -150,10 +150,10 @@ ngram_fwdflat_init(ngram_search_t *ngs)
     int n_words;
 
     n_words = ps_search_n_words(ngs);
-    ngs->fwdflat_wordlist = ckd_calloc(n_words + 1, sizeof(*ngs->fwdflat_wordlist));
-    ngs->expand_word_flag = bitvec_alloc(n_words);
-    ngs->expand_word_list = ckd_calloc(n_words + 1, sizeof(*ngs->expand_word_list));
-    ngs->frm_wordlist = ckd_calloc(ngs->n_frame_alloc, sizeof(*ngs->frm_wordlist));
+    ngs->fwdflat_wordlist = (int32 *)ckd_calloc(n_words + 1, sizeof(*ngs->fwdflat_wordlist));
+    ngs->expand_word_flag = (bitvec_t *)bitvec_alloc(n_words);
+    ngs->expand_word_list = (int32 *)ckd_calloc(n_words + 1, sizeof(*ngs->expand_word_list));
+    ngs->frm_wordlist = (ps_latnode_t **)ckd_calloc(ngs->n_frame_alloc, sizeof(*ngs->frm_wordlist));
     ngs->min_ef_width = cmd_ln_int32_r(ps_search_config(ngs), "-fwdflatefwid");
     ngs->max_sf_win = cmd_ln_int32_r(ps_search_config(ngs), "-fwdflatsfwin");
     E_INFO("fwdflat: min_ef_width = %d, max_sf_win = %d\n",
@@ -201,9 +201,9 @@ ngram_fwdflat_reinit(ngram_search_t *ngs)
     ckd_free(ngs->expand_word_list);
     bitvec_free(ngs->expand_word_flag);
     n_words = ps_search_n_words(ngs);
-    ngs->fwdflat_wordlist = ckd_calloc(n_words + 1, sizeof(*ngs->fwdflat_wordlist));
-    ngs->expand_word_flag = bitvec_alloc(n_words);
-    ngs->expand_word_list = ckd_calloc(n_words + 1, sizeof(*ngs->expand_word_list));
+    ngs->fwdflat_wordlist = (int32 *)ckd_calloc(n_words + 1, sizeof(*ngs->fwdflat_wordlist));
+    ngs->expand_word_flag = (bitvec_t *)bitvec_alloc(n_words);
+    ngs->expand_word_list = (int32 *)ckd_calloc(n_words + 1, sizeof(*ngs->expand_word_list));
     
     /* No tree-search; take care of the expansion list and single phone words. */
     if (!ngs->fwdtree) {
@@ -211,7 +211,7 @@ ngram_fwdflat_reinit(ngram_search_t *ngs)
         ngram_fwdflat_free_1ph(ngs);
         /* Reallocate word_chan. */
         ckd_free(ngs->word_chan);
-        ngs->word_chan = ckd_calloc(dict_size(ps_search_dict(ngs)),
+        ngs->word_chan = (chan_t **)ckd_calloc(dict_size(ps_search_dict(ngs)),
                                     sizeof(*ngs->word_chan));
         /* Rebuild full expansion list from LM words. */
         ngram_fwdflat_expand_all(ngs);
@@ -261,7 +261,7 @@ build_fwdflat_wordlist(ngram_search_t *ngs)
             node->lef = ef;
         else {
             /* New node; link to head of list */
-            node = listelem_malloc(ngs->latnode_alloc);
+            node = (ps_latnode_t *)listelem_malloc(ngs->latnode_alloc);
             node->wid = wid;
             node->fef = node->lef = ef;
 
@@ -333,7 +333,7 @@ build_fwdflat_chan(ngram_search_t *ngs)
         /* Multiplex root HMM for first phone (one root per word, flat
          * lexicon).  diphone is irrelevant here, for the time being,
          * at least. */
-        rhmm = listelem_malloc(ngs->root_chan_alloc);
+        rhmm = (root_chan_t *)listelem_malloc(ngs->root_chan_alloc);
         rhmm->ci2phone = dict_second_phone(dict, wid);
         rhmm->ciphone = dict_first_phone(dict, wid);
         rhmm->next = NULL;
@@ -344,7 +344,7 @@ build_fwdflat_chan(ngram_search_t *ngs)
         /* HMMs for word-internal phones */
         prevhmm = NULL;
         for (p = 1; p < dict_pronlen(dict, wid) - 1; p++) {
-            hmm = listelem_malloc(ngs->chan_alloc);
+            hmm = (chan_t *)listelem_malloc(ngs->chan_alloc);
             hmm->ciphone = dict_pron(dict, wid, p);
             hmm->info.rc_id = (p == dict_pronlen(dict, wid) - 1) ? 0 : -1;
             hmm->next = NULL;

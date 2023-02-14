@@ -79,7 +79,7 @@ logmath_init(float64 base, int shift, int use_table)
     }
     
     /* Set up various necessary constants. */
-    lmath = ckd_calloc(1, sizeof(*lmath));
+    lmath = (logmath_t *)ckd_calloc(1, sizeof(*lmath));
     lmath->refcount = 1;
     lmath->base = base;
     lmath->log_of_base = log(base);
@@ -190,7 +190,7 @@ logmath_read(const char *file_name)
         return NULL;
     }
 
-    lmath = ckd_calloc(1, sizeof(*lmath));
+    lmath = (logmath_t *)ckd_calloc(1, sizeof(*lmath));
     /* Default values. */
     lmath->t.shift = 0;
     lmath->t.width = 2;

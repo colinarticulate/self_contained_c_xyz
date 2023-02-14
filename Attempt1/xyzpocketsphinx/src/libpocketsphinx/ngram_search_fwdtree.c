@@ -77,14 +77,14 @@ init_search_tree(ngram_search_t *ngs)
     E_INFO("Initializing search tree\n");
 
     n_words = ps_search_n_words(ngs);
-    ngs->homophone_set = ckd_calloc(n_words, sizeof(*ngs->homophone_set));
+    ngs->homophone_set = (int32 *)ckd_calloc(n_words, sizeof(*ngs->homophone_set));
 
     /* Find #single phone words, and #unique first diphones (#root channels) in dict. */
     ndiph = 0;
     ngs->n_1ph_words = 0;
     n_ci = bin_mdef_n_ciphone(ps_search_acmod(ngs)->mdef);
     /* Allocate a bitvector with flags for each possible diphone. */
-    dimap = bitvec_alloc(n_ci * n_ci);
+    dimap = (bitvec_t *)bitvec_alloc(n_ci * n_ci);
     for (w = 0; w < n_words; w++) {
         if (!dict_real_word(dict, w))
             continue;
@@ -121,7 +121,7 @@ init_search_tree(ngram_search_t *ngs)
 
     /* Allocate and initialize root channels */
     ngs->root_chan =
-        ckd_calloc(ngs->n_root_chan_alloc, sizeof(*ngs->root_chan));
+        (root_chan_t *)ckd_calloc(ngs->n_root_chan_alloc, sizeof(*ngs->root_chan));
     for (i = 0; i < ngs->n_root_chan_alloc; i++) {
         hmm_init(ngs->hmmctx, &ngs->root_chan[i].hmm, TRUE, -1, -1);
         ngs->root_chan[i].penult_phn_wid = -1;
@@ -130,7 +130,7 @@ init_search_tree(ngram_search_t *ngs)
 
     /* Permanently allocate and initialize channels for single-phone
      * words (1/word). */
-    ngs->rhmm_1ph = ckd_calloc(ngs->n_1ph_words, sizeof(*ngs->rhmm_1ph));
+    ngs->rhmm_1ph = (root_chan_t *)ckd_calloc(ngs->n_1ph_words, sizeof(*ngs->rhmm_1ph));
     i = 0;
     for (w = 0; w < n_words; w++) {
         if (!dict_is_single_phone(dict, w))
@@ -147,7 +147,7 @@ init_search_tree(ngram_search_t *ngs)
         i++;
     }
 
-    ngs->single_phone_wid = ckd_calloc(ngs->n_1ph_words,
+    ngs->single_phone_wid = (int32 *)ckd_calloc(ngs->n_1ph_words,
                                        sizeof(*ngs->single_phone_wid));
 }
 
@@ -249,7 +249,7 @@ create_search_channels(ngram_search_t *ngs)
             tmatid = bin_mdef_pid2tmatid(ps_search_acmod(ngs)->mdef, dict_pron(dict, w, 1));
             hmm = rhmm->next;
             if (hmm == NULL) {
-                rhmm->next = hmm = listelem_malloc(ngs->chan_alloc);
+                rhmm->next = hmm = (chan_t *)listelem_malloc(ngs->chan_alloc);
                 init_nonroot_chan(ngs, hmm, ph, dict_pron(dict, w, 1), tmatid);
                 ngs->n_nonroot_chan++;
             }
@@ -259,7 +259,7 @@ create_search_channels(ngram_search_t *ngs)
                 for (; hmm && (hmm_nonmpx_ssid(&hmm->hmm) != ph); hmm = hmm->alt)
                     prev_hmm = hmm;
                 if (!hmm) {     /* thanks, rkm! */
-                    prev_hmm->alt = hmm = listelem_malloc(ngs->chan_alloc);
+                    prev_hmm->alt = hmm = (chan_t *)listelem_malloc(ngs->chan_alloc);
                     init_nonroot_chan(ngs, hmm, ph, dict_pron(dict, w, 1), tmatid);
                     ngs->n_nonroot_chan++;
                 }
@@ -271,7 +271,7 @@ create_search_channels(ngram_search_t *ngs)
                 ph = dict2pid_internal(d2p, w, p);
                 tmatid = bin_mdef_pid2tmatid(ps_search_acmod(ngs)->mdef, dict_pron(dict, w, p));
                 if (!hmm->next) {
-                    hmm->next = listelem_malloc(ngs->chan_alloc);
+                    hmm->next = (struct chan_s *)listelem_malloc(ngs->chan_alloc);
                     hmm = hmm->next;
                     init_nonroot_chan(ngs, hmm, ph, dict_pron(dict, w, p), tmatid);
                     ngs->n_nonroot_chan++;
@@ -283,7 +283,7 @@ create_search_channels(ngram_search_t *ngs)
                          hmm = hmm->alt)
                         prev_hmm = hmm;
                     if (!hmm) { /* thanks, rkm! */
-                        prev_hmm->alt = hmm = listelem_malloc(ngs->chan_alloc);
+                        prev_hmm->alt = hmm = (chan_t *)listelem_malloc(ngs->chan_alloc);
                         init_nonroot_chan(ngs, hmm, ph, dict_pron(dict, w, p), tmatid);
                         ngs->n_nonroot_chan++;
                     }
@@ -328,7 +328,7 @@ create_search_channels(ngram_search_t *ngs)
         /* Free old active channel list array if any and allocate new one */
         if (ngs->active_chan_list)
             ckd_free_2d(ngs->active_chan_list);
-        ngs->active_chan_list = ckd_calloc_2d(2, ngs->max_nonroot_chan,
+        ngs->active_chan_list = (chan_t ***)ckd_calloc_2d(2, ngs->max_nonroot_chan,
                                               sizeof(**ngs->active_chan_list));
     }
 
@@ -384,9 +384,9 @@ void
 ngram_fwdtree_init(ngram_search_t *ngs)
 {
     /* Allocate bestbp_rc, lastphn_cand, last_ltrans */
-    ngs->bestbp_rc = ckd_calloc(bin_mdef_n_ciphone(ps_search_acmod(ngs)->mdef),
+    ngs->bestbp_rc = (bestbp_rc_t *)ckd_calloc(bin_mdef_n_ciphone(ps_search_acmod(ngs)->mdef),
                                 sizeof(*ngs->bestbp_rc));
-    ngs->lastphn_cand = ckd_calloc(ps_search_n_words(ngs),
+    ngs->lastphn_cand = (lastphn_cand_t *)ckd_calloc(ps_search_n_words(ngs),
                                    sizeof(*ngs->lastphn_cand));
     init_search_tree(ngs);
     create_search_channels(ngs);
@@ -459,10 +459,10 @@ ngram_fwdtree_reinit(ngram_search_t *ngs)
     deinit_search_tree(ngs);
     /* Reallocate things that depend on the number of words. */
     ckd_free(ngs->lastphn_cand);
-    ngs->lastphn_cand = ckd_calloc(ps_search_n_words(ngs),
+    ngs->lastphn_cand = (lastphn_cand_t *)ckd_calloc(ps_search_n_words(ngs),
                                    sizeof(*ngs->lastphn_cand));
     ckd_free(ngs->word_chan);
-    ngs->word_chan = ckd_calloc(ps_search_n_words(ngs),
+    ngs->word_chan = (chan_t **)ckd_calloc(ps_search_n_words(ngs),
                                 sizeof(*ngs->word_chan));
     /* Rebuild the search tree. */
     init_search_tree(ngs);
@@ -939,13 +939,13 @@ last_phone_transition(ngram_search_t *ngs, int frame_idx)
                 if (n_cand_sf >= ngs->cand_sf_alloc) {
                     if (ngs->cand_sf_alloc == 0) {
                         ngs->cand_sf =
-                            ckd_calloc(CAND_SF_ALLOCSIZE,
+                            (cand_sf_t *)ckd_calloc(CAND_SF_ALLOCSIZE,
                                        sizeof(*ngs->cand_sf));
                         ngs->cand_sf_alloc = CAND_SF_ALLOCSIZE;
                     }
                     else {
                         ngs->cand_sf_alloc += CAND_SF_ALLOCSIZE;
-                        ngs->cand_sf = ckd_realloc(ngs->cand_sf,
+                        ngs->cand_sf = (cand_sf_t *)ckd_realloc(ngs->cand_sf,
                                                    ngs->cand_sf_alloc
                                                    * sizeof(*ngs->cand_sf));
                         E_INFO("cand_sf[] increased to %d entries\n",

@@ -115,7 +115,7 @@ heap_dump(heapnode_t * top, int32 level)
 heap_t *
 heap_new(void)
 {
-    heap_t *h = ckd_calloc(1, sizeof(*h));
+    heap_t *h = (heap_t *)ckd_calloc(1, sizeof(*h));
     return h;
 }
 

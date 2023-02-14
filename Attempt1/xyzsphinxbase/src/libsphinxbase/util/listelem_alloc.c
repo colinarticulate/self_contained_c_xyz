@@ -100,7 +100,7 @@ listelem_alloc_init(size_t elemsize)
              (unsigned long)rounded);
         elemsize = rounded;
     }
-    list = ckd_calloc(1, sizeof(*list));
+    list = (listelem_alloc_t *)ckd_calloc(1, sizeof(*list));
     list->freelist = NULL;
     list->blocks = NULL;
     list->elemsize = elemsize;
@@ -214,7 +214,7 @@ __listelem_malloc_id__(listelem_alloc_t *list, char *caller_file,
         block = NULL;
         blkidx = 0;
         for (gn = list->blocks; gn; gn = gnode_next(gn)) {
-            block = gnode_ptr(gn);
+            block = (char **)gnode_ptr(gn);
             blksize = gnode_int32(gn2) * list->elemsize / sizeof(*block);
             if (ptr >= block && ptr < block + blksize)
                 break;

@@ -187,7 +187,7 @@ fsg_search_init(const char *name,
                 dict_t *dict,
                 dict2pid_t *d2p)
 {
-    fsg_search_t *fsgs = ckd_calloc(1, sizeof(*fsgs));
+    fsg_search_t *fsgs = (fsg_search_t *)ckd_calloc(1, sizeof(*fsgs));
     ps_search_init(ps_search_base(fsgs), &fsg_funcs, PS_SEARCH_TYPE_FSG, name, config, acmod, dict, d2p);
 
     fsgs->fsg = fsg_model_retain(fsg);
@@ -1037,7 +1037,7 @@ fsg_search_hyp(ps_search_t *search, int32 *out_score)
 	search->hyp_str = NULL;
 	return search->hyp_str;
     }
-    search->hyp_str = ckd_calloc(1, len);
+    search->hyp_str = (char *)ckd_calloc(1, len);
 
     bp = bpidx;
     c = search->hyp_str + len - 1;
@@ -1150,7 +1150,7 @@ fsg_search_seg_iter(ps_search_t *search)
      * to get the entire backtrace in order to produce it.  On the
      * other hand, all we actually need is the bptbl IDs, and we can
      * allocate a fixed-size array of them. */
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (fsg_seg_t *)ckd_calloc(1, sizeof(*itor));
     itor->base.vt = &fsg_segfuncs;
     itor->base.search = search;
     itor->base.lwf = 1.0;
@@ -1165,7 +1165,7 @@ fsg_search_seg_iter(ps_search_t *search)
         ckd_free(itor);
         return NULL;
     }
-    itor->hist = ckd_calloc(itor->n_hist, sizeof(*itor->hist));
+    itor->hist = (fsg_hist_entry_t **)ckd_calloc(itor->n_hist, sizeof(*itor->hist));
     cur = itor->n_hist - 1;
     bp = bpidx;
     while (bp > 0) {
@@ -1234,7 +1234,7 @@ new_node(ps_lattice_t *dag, fsg_model_t *fsg, int sf, int ef, int32 wid, int32 n
     }
     else {
         /* New node; link to head of list */
-        node = listelem_malloc(dag->latnode_alloc);
+        node = (ps_latnode_t *)listelem_malloc(dag->latnode_alloc);
         node->wid = wid;
         node->sf = sf;
         node->fef = node->lef = ef;
@@ -1274,7 +1274,7 @@ find_start_node(fsg_search_t *fsgs, ps_lattice_t *dag)
      * to create an artificial start node with epsilon transitions to
      * all of them. */
     if (nstart == 1) {
-        node = gnode_ptr(start);
+        node = (ps_latnode_t *)gnode_ptr(start);
     }
     else {
         gnode_t *st;
@@ -1285,7 +1285,7 @@ find_start_node(fsg_search_t *fsgs, ps_lattice_t *dag)
             bitvec_set(fsgs->fsg->silwords, wid);
         node = new_node(dag, fsgs->fsg, 0, 0, wid, -1, 0);
         for (st = start; st; st = gnode_next(st))
-            ps_lattice_link(dag, node, gnode_ptr(st), 0, 0);
+            ps_lattice_link(dag, node, (ps_latnode_t *)gnode_ptr(st), 0, 0);
     }
     glist_free(start);
     return node;
@@ -1310,7 +1310,7 @@ find_end_node(fsg_search_t *fsgs, ps_lattice_t *dag)
     }
 
     if (nend == 1) {
-        node = gnode_ptr(end);
+        node = (ps_latnode_t *)gnode_ptr(end);
     }
     else if (nend == 0) {
         ps_latnode_t *last = NULL;
@@ -1343,7 +1343,7 @@ find_end_node(fsg_search_t *fsgs, ps_lattice_t *dag)
         /* Use the "best" (in reality it will be the only) exit link
          * score from this final node as the link score. */
         for (st = end; st; st = gnode_next(st)) {
-            ps_latnode_t *src = gnode_ptr(st);
+            ps_latnode_t *src = (ps_latnode_t *)gnode_ptr(st);
             ps_lattice_link(dag, src, node, src->info.best_exit, fsgs->frame);
         }
     }
@@ -1360,7 +1360,7 @@ mark_reachable(ps_lattice_t *dag, ps_latnode_t *end)
     end->reachable = TRUE;
     q = glist_add_ptr(NULL, end);
     while (q) {
-        ps_latnode_t *node = gnode_ptr(q);
+        ps_latnode_t *node = (ps_latnode_t *)gnode_ptr(q);
         latlink_list_t *x;
 
         /* Pop the front of the list. */

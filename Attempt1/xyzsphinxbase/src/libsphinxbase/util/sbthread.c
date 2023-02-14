@@ -411,7 +411,7 @@ sbthread_start(cmd_ln_t *config, sbthread_main func, void *arg)
     sbthread_t *th;
     int rv;
 
-    th = ckd_calloc(1, sizeof(*th));
+    th = (sbthread_t *)ckd_calloc(1, sizeof(*th));
     th->config = config;
     th->func = func;
     th->arg = arg;
@@ -448,7 +448,7 @@ sbmsgq_init(size_t depth)
 {
     sbmsgq_t *msgq;
 
-    msgq = ckd_calloc(1, sizeof(*msgq));
+    msgq = (sbmsgq_t *)ckd_calloc(1, sizeof(*msgq));
     msgq->depth = depth;
     if (pthread_cond_init(&msgq->cond, NULL) != 0) {
         ckd_free(msgq);
@@ -459,8 +459,8 @@ sbmsgq_init(size_t depth)
         ckd_free(msgq);
         return NULL;
     }
-    msgq->data = ckd_calloc(depth, 1);
-    msgq->msg = ckd_calloc(depth, 1);
+    msgq->data = (char *)ckd_calloc(depth, 1);
+    msgq->msg = (char *)ckd_calloc(depth, 1);
     return msgq;
 }
 
@@ -616,7 +616,7 @@ sbevent_init(void)
     sbevent_t *evt;
     int rv;
 
-    evt = ckd_calloc(1, sizeof(*evt));
+    evt = (sbevent_t *)ckd_calloc(1, sizeof(*evt));
     if ((rv = pthread_mutex_init(&evt->mtx, NULL)) != 0) {
         E_ERROR("Failed to initialize mutex: %d\n", rv);
         ckd_free(evt);
@@ -675,7 +675,7 @@ sbmtx_init(void)
 {
     sbmtx_t *mtx;
 
-    mtx = ckd_calloc(1, sizeof(*mtx));
+    mtx = (sbmtx_t *)ckd_calloc(1, sizeof(*mtx));
     if (pthread_mutex_init(&mtx->mtx, NULL) != 0) {
         ckd_free(mtx);
         return NULL;

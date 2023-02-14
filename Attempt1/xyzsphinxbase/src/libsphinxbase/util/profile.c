@@ -112,7 +112,7 @@ pctr_new(char *nm)
 {
     pctr_t *pc;
 
-    pc = ckd_calloc(1, sizeof(pctr_t));
+    pc = (pctr_t *)ckd_calloc(1, sizeof(pctr_t));
     pc->name = ckd_salloc(nm);
     pc->count = 0;
 

@@ -206,10 +206,10 @@ tmat_init(char const *file_name, logmath_t *lmath, float64 tpfloor, int32 brepor
     }
 
     /* Allocate memory for tmat data */
-    t->tp = ckd_calloc_3d(t->n_tmat, n_src, n_dst, sizeof(***t->tp));
+    t->tp = (uint8 ***)ckd_calloc_3d(t->n_tmat, n_src, n_dst, sizeof(***t->tp));
 
     /* Temporary structure to read in the float data */
-    tp = ckd_calloc_2d(n_src, n_dst, sizeof(**tp));
+    tp = (float32 **)ckd_calloc_2d(n_src, n_dst, sizeof(**tp));
 
     /* Read transition matrices, normalize and floor them, and convert to log domain */
     tp_per_tmat = n_src * n_dst;

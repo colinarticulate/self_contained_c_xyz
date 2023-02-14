@@ -56,7 +56,7 @@ ps_mllr_read(char const *regmatfile)
     FILE *fp;
     int n, i, m, j, k;
 
-    mllr = ckd_calloc(1, sizeof(*mllr));
+    mllr = (ps_mllr_t *)ckd_calloc(1, sizeof(*mllr));
     mllr->refcnt = 1;
 
     if ((fp = fopen(regmatfile, "r")) == NULL) {
@@ -77,7 +77,7 @@ ps_mllr_read(char const *regmatfile)
         goto error_out;
     }
     mllr->n_feat = n;
-    mllr->veclen = ckd_calloc(mllr->n_feat, sizeof(*mllr->veclen));
+    mllr->veclen = (int *)ckd_calloc(mllr->n_feat, sizeof(*mllr->veclen));
 
     mllr->A = (float32 ****) ckd_calloc(mllr->n_feat, sizeof(float32 **));
     mllr->b = (float32 ***) ckd_calloc(mllr->n_feat, sizeof(float32 *));

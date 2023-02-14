@@ -181,7 +181,7 @@ gauden_param_read(const char *file_name,
     *out_n_density = n_density;
 
     /* #Dimensions in each feature stream */
-    veclen = ckd_calloc(n_feat, sizeof(uint32));
+    veclen = (int32 *)ckd_calloc(n_feat, sizeof(uint32));
     *out_veclen = veclen;
     if (bio_fread(veclen, sizeof(int32), n_feat, fp, byteswap, &chksum) !=
         n_feat) {
@@ -273,7 +273,7 @@ gauden_dist_precompute(gauden_t * g, logmath_t *lmath, float32 varfloor)
 
     floored = 0;
     /* Allocate space for determinants */
-    g->det = ckd_calloc_3d(g->n_mgau, g->n_feat, g->n_density, sizeof(***g->det));
+    g->det = (mfcc_t ***)ckd_calloc_3d(g->n_mgau, g->n_feat, g->n_density, sizeof(***g->det));
 
     for (m = 0; m < g->n_mgau; m++) {
         for (f = 0; f < g->n_feat; f++) {

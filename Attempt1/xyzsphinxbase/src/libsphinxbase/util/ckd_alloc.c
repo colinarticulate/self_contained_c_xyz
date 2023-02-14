@@ -329,19 +329,19 @@ __ckd_calloc_4d__(size_t d1,
 		file, line, __FILE__, __LINE__);
     }
 
-    tmp1 = calloc(d1 * d2 * d3, sizeof(void *));
+    tmp1 = (void **)calloc(d1 * d2 * d3, sizeof(void *));
     if (tmp1 == NULL) {
 	E_FATAL("ckd_calloc_4d failed for caller at %s(%d) at %s(%d)\n",
 		file, line, __FILE__, __LINE__);
     }
 
-    tmp2 = ckd_calloc(d1 * d2, sizeof(void **));
+    tmp2 = (void ***)ckd_calloc(d1 * d2, sizeof(void **));
     if (tmp2 == NULL) {
 	E_FATAL("ckd_calloc_4d failed for caller at %s(%d) at %s(%d)\n",
 		file, line, __FILE__, __LINE__);
     }
 
-    out = ckd_calloc(d1, sizeof(void ***));
+    out = (void ****)ckd_calloc(d1, sizeof(void ***));
     if (out == NULL) {
 	E_FATAL("ckd_calloc_4d failed for caller at %s(%d) at %s(%d)\n",
 		file, line, __FILE__, __LINE__);
@@ -391,9 +391,9 @@ __ckd_alloc_3d_ptr(size_t d1,
     void ***out;
     size_t i, j;
 
-    tmp1 = __ckd_calloc__(d1 * d2, sizeof(void *), file, line);
+    tmp1 = (void **)__ckd_calloc__(d1 * d2, sizeof(void *), file, line);
 
-    out  = __ckd_calloc__(d1, sizeof(void **), file, line);
+    out  = (void ***)__ckd_calloc__(d1, sizeof(void **), file, line);
 
     for (i = 0, j = 0; i < d1*d2; i++, j += d3) {
 	tmp1[i] = &((char *)store)[j*elem_size];
@@ -417,7 +417,7 @@ __ckd_alloc_2d_ptr(size_t d1,
     void **out;
     size_t i, j;
 
-    out = __ckd_calloc__(d1, sizeof(void *), file, line);
+    out = (void **)__ckd_calloc__(d1, sizeof(void *), file, line);
 
     for (i = 0, j = 0; i < d1; i++, j += d2) {
 	out[i] = &((char *)store)[j*elem_size];

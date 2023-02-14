@@ -467,7 +467,7 @@ sseq_compress(mdef_t * m)
     }
 
     /* Generate compacted sseq table */
-    sseq = ckd_calloc_2d(n_sseq, m->n_emit_state, sizeof(**sseq)); /* freed in mdef_free() */
+    sseq = (uint16 **)ckd_calloc_2d(n_sseq, m->n_emit_state, sizeof(**sseq)); /* freed in mdef_free() */
 
     g = hash_table_tolist(h, &j);
     assert(j == n_sseq);
@@ -603,7 +603,7 @@ mdef_init(char *mdeffile, int32 breport)
     m->phone = (phone_t *) ckd_calloc(m->n_phone, sizeof(phone_t));     /* freed in mdef_free */
 
     /* Allocate space for state->senone map for each phone */
-    senmap = ckd_calloc_2d(m->n_phone, m->n_emit_state, sizeof(**senmap));      /* freed in mdef_free */
+    senmap = (uint16 **)ckd_calloc_2d(m->n_phone, m->n_emit_state, sizeof(**senmap));      /* freed in mdef_free */
     m->sseq = senmap;           /* TEMPORARY; until it is compressed into just the unique ones */
 
     /* Allocate initial space for <ci,lc,rc,wpos> -> pid mapping */

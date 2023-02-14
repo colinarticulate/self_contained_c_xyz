@@ -68,12 +68,12 @@ hmm_context_init(int32 n_emit_state,
         return NULL;
     }
 
-    ctx = ckd_calloc(1, sizeof(*ctx));
+    ctx = (hmm_context_t *)ckd_calloc(1, sizeof(*ctx));
     ctx->n_emit_state = n_emit_state;
     ctx->tp = tp;
     ctx->senscore = senscore;
     ctx->sseq = sseq;
-    ctx->st_sen_scr = ckd_calloc(n_emit_state, sizeof(*ctx->st_sen_scr));
+    ctx->st_sen_scr = (int32 *)ckd_calloc(n_emit_state, sizeof(*ctx->st_sen_scr));
 
     return ctx;
 }

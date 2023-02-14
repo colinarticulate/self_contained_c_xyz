@@ -174,7 +174,7 @@ ps_free_searches(ps_decoder_t *ps)
         hash_iter_t *search_it;
         for (search_it = hash_table_iter(ps->searches); search_it;
              search_it = hash_table_iter_next(search_it)) {
-            ps_search_free(hash_entry_val(search_it->ent));
+            ps_search_free((ps_search_t *)hash_entry_val(search_it->ent));
         }
         hash_table_free(ps->searches);
     }
@@ -583,7 +583,7 @@ ps_init(cmd_ln_t *config)
 	return NULL;
     }
 
-    ps = ckd_calloc(1, sizeof(*ps));
+    ps = (ps_decoder_t *)ckd_calloc(1, sizeof(*ps));
     ps->refcount = 1;
     if (ps_reinit(ps, config) < 0) {
         ps_free(ps);
@@ -602,7 +602,7 @@ ps_init_buffered(cmd_ln_t *config, void *buffer, size_t size) // buffer for jsgf
 	return NULL;
     }
 
-    ps = ckd_calloc(1, sizeof(*ps));
+    ps = (ps_decoder_t *)ckd_calloc(1, sizeof(*ps));
     ps->refcount = 1;
     if (ps_reinit_buffered(ps, config, buffer, size) < 0) {
         ps_free(ps);
@@ -714,7 +714,7 @@ ps_get_search(ps_decoder_t *ps)
 int 
 ps_unset_search(ps_decoder_t *ps, const char *name)
 {
-    ps_search_t *search = hash_table_delete(ps->searches, name);
+    ps_search_t *search = (ps_search_t *)hash_table_delete(ps->searches, name);
     if (!search)
         return -1;
     if (ps->search == search)
@@ -1054,7 +1054,7 @@ ps_load_dict(ps_decoder_t *ps, char const *dictfile,
     /* And tell all searches to reconfigure themselves. */
     for (search_it = hash_table_iter(ps->searches); search_it;
        search_it = hash_table_iter_next(search_it)) {
-        if (ps_search_reinit(hash_entry_val(search_it->ent), dict, d2p) < 0) {
+        if (ps_search_reinit((ps_search_t *)hash_entry_val(search_it->ent), dict, d2p) < 0) {
             hash_table_iter_free(search_it);
             return -1;
         }
@@ -1085,9 +1085,9 @@ ps_add_word(ps_decoder_t *ps,
     /* Parse phones into an array of phone IDs. */
     tmp = ckd_salloc(phones);
     np = str2words(tmp, NULL, 0);
-    phonestr = ckd_calloc(np, sizeof(*phonestr));
+    phonestr = (char **)ckd_calloc(np, sizeof(*phonestr));
     str2words(tmp, phonestr, np);
-    pron = ckd_calloc(np, sizeof(*pron));
+    pron = (s3cipid_t *)ckd_calloc(np, sizeof(*pron));
     for (i = 0; i < np; ++i) {
         pron[i] = bin_mdef_ciphone_id(ps->acmod->mdef, phonestr[i]);
         if (pron[i] == -1) {
@@ -1117,7 +1117,7 @@ ps_add_word(ps_decoder_t *ps,
     /* TODO: we definitely need to refactor this */
     for (search_it = hash_table_iter(ps->searches); search_it;
          search_it = hash_table_iter_next(search_it)) {
-        ps_search_t *search = hash_entry_val(search_it->ent);
+        ps_search_t *search = (ps_search_t *)hash_entry_val(search_it->ent);
         if (!strcmp(PS_SEARCH_TYPE_NGRAM, ps_search_type(search))) {
             ngram_model_t *lmset = ((ngram_search_t *) search)->lmset;
             if (ngram_model_add_word(lmset, word, 1.0) == NGRAM_INVALID_WID) {
@@ -1152,7 +1152,7 @@ ps_lookup_word(ps_decoder_t *ps, const char *word)
 
     for (phlen = j = 0; j < dict_pronlen(dict, wid); ++j)
         phlen += strlen(dict_ciphone_str(dict, wid, j)) + 1;
-    phones = ckd_calloc(1, phlen);
+    phones = (char *)ckd_calloc(1, phlen);
     for (j = 0; j < dict_pronlen(dict, wid); ++j) {
         strcat(phones, dict_ciphone_str(dict, wid, j));
         if (j != dict_pronlen(dict, wid) - 1)
@@ -1174,7 +1174,7 @@ ps_decode_raw(ps_decoder_t *ps, FILE *rawfh,
     /* If this file is seekable or maxsamps is specified, then decode
      * the whole thing at once. */
     if (maxsamps != -1) {
-        data = ckd_calloc(maxsamps, sizeof(*data));
+        data = (int16 *)ckd_calloc(maxsamps, sizeof(*data));
         total = fread(data, sizeof(*data), maxsamps, rawfh);
         ps_process_raw(ps, data, total, FALSE, TRUE);
         ckd_free(data);
@@ -1184,7 +1184,7 @@ ps_decode_raw(ps_decoder_t *ps, FILE *rawfh,
         fseek(rawfh, pos, SEEK_SET);
         maxsamps = endpos - pos;
 
-        data = ckd_calloc(maxsamps, sizeof(*data));
+        data = (int16 *)ckd_calloc(maxsamps, sizeof(*data));
         total = fread(data, sizeof(*data), maxsamps, rawfh);
         ps_process_raw(ps, data, total, FALSE, TRUE);
         ckd_free(data);

@@ -105,8 +105,8 @@ fsg_lextree_lc_rc(fsg_lextree_t *lextree)
      * lextree->lc[s] = set of left context CIphones for state s.  Similarly, rc[s]
      * for right context CIphones.
      */
-    lextree->lc = ckd_calloc_2d(fsg->n_state, n_ci + 1, sizeof(**lextree->lc));
-    lextree->rc = ckd_calloc_2d(fsg->n_state, n_ci + 1, sizeof(**lextree->rc));
+    lextree->lc = (int16 **)ckd_calloc_2d(fsg->n_state, n_ci + 1, sizeof(**lextree->lc));
+    lextree->rc = (int16 **)ckd_calloc_2d(fsg->n_state, n_ci + 1, sizeof(**lextree->rc));
     E_INFO("Allocated %d bytes (%d KiB) for left and right context phones\n",
            fsg->n_state * (n_ci + 1) * 2,
            fsg->n_state * (n_ci + 1) * 2 / 1024);
@@ -222,11 +222,11 @@ fsg_lextree_init(fsg_model_t * fsg, dict_t *dict, dict2pid_t *d2p,
     fsg_lextree_t *lextree;
     fsg_pnode_t *pn;
 
-    lextree = ckd_calloc(1, sizeof(fsg_lextree_t));
+    lextree = (fsg_lextree_t *)ckd_calloc(1, sizeof(fsg_lextree_t));
     lextree->fsg = fsg;
-    lextree->root = ckd_calloc(fsg_model_n_state(fsg),
+    lextree->root = (fsg_pnode_t **)ckd_calloc(fsg_model_n_state(fsg),
                                sizeof(fsg_pnode_t *));
-    lextree->alloc_head = ckd_calloc(fsg_model_n_state(fsg),
+    lextree->alloc_head = (fsg_pnode_t **)ckd_calloc(fsg_model_n_state(fsg),
                                      sizeof(fsg_pnode_t *));
     lextree->ctx = ctx;
     lextree->dict = dict;

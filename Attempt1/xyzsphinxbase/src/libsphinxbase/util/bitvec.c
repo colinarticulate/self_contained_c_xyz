@@ -70,7 +70,7 @@ bitvec_realloc(bitvec_t *vec,
     size_t old_size = bitvec_size(old_len);
     size_t new_size = bitvec_size(new_len);
     
-    new_vec = ckd_realloc(vec, new_size * sizeof(bitvec_t));
+    new_vec = (bitvec_t *)ckd_realloc(vec, new_size * sizeof(bitvec_t));
     if (new_size > old_size)
 	memset(new_vec + old_size, 0, (new_size - old_size) * sizeof(bitvec_t));
 

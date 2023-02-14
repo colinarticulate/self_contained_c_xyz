@@ -51,7 +51,7 @@
 ps_alignment_t *
 ps_alignment_init(dict2pid_t *d2p)
 {
-    ps_alignment_t *al = ckd_calloc(1, sizeof(*al));
+    ps_alignment_t *al = (ps_alignment_t *)ckd_calloc(1, sizeof(*al));
     al->d2p = dict2pid_retain(d2p);
     al->refcount = 1;
     return al;
@@ -105,7 +105,7 @@ ps_alignment_vector_grow_one(ps_alignment_vector_t *vec)
                           &vec->n_ent, sizeof(*vec->seq));
     if (ptr == NULL)
         return NULL;
-    vec->seq = ptr;
+    vec->seq = (ps_alignment_entry_t *)ptr;
     return vec->seq + vec->n_ent - 1;
 }
 
@@ -383,7 +383,7 @@ ps_alignment_words(ps_alignment_t *al)
 
     if (al->word.n_ent == 0)
         return NULL;
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (ps_alignment_iter_t *)ckd_calloc(1, sizeof(*itor));
     itor->al = al;
     itor->vec = &al->word;
     itor->pos = 0;
@@ -397,7 +397,7 @@ ps_alignment_phones(ps_alignment_t *al)
 
     if (al->sseq.n_ent == 0)
         return NULL;
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (ps_alignment_iter_t *)ckd_calloc(1, sizeof(*itor));
     itor->al = al;
     itor->vec = &al->sseq;
     itor->pos = 0;
@@ -411,7 +411,7 @@ ps_alignment_states(ps_alignment_t *al)
 
     if (al->state.n_ent == 0)
         return NULL;
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (ps_alignment_iter_t *)ckd_calloc(1, sizeof(*itor));
     itor->al = al;
     itor->vec = &al->state;
     itor->pos = 0;
@@ -478,7 +478,7 @@ ps_alignment_iter_up(ps_alignment_iter_t *itor)
         return NULL;
     if (itor->vec->seq[itor->pos].parent == PS_ALIGNMENT_NONE)
         return NULL;
-    itor2 = ckd_calloc(1, sizeof(*itor2));
+    itor2 = (ps_alignment_iter_t *)ckd_calloc(1, sizeof(*itor2));
     itor2->al = itor->al;
     itor2->pos = itor->vec->seq[itor->pos].parent;
     if (itor->vec == &itor->al->sseq)
@@ -498,7 +498,7 @@ ps_alignment_iter_down(ps_alignment_iter_t *itor)
         return NULL;
     if (itor->vec->seq[itor->pos].child == PS_ALIGNMENT_NONE)
         return NULL;
-    itor2 = ckd_calloc(1, sizeof(*itor2));
+    itor2 = (ps_alignment_iter_t *)ckd_calloc(1, sizeof(*itor2));
     itor2->al = itor->al;
     itor2->pos = itor->vec->seq[itor->pos].child;
     if (itor->vec == &itor->al->word)

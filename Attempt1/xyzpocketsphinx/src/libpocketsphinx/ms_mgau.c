@@ -152,7 +152,7 @@ ms_mgau_init(acmod_t *acmod, logmath_t *lmath, bin_mdef_t *mdef)
     msg->dist = (gauden_dist_t ***)
         ckd_calloc_3d(g->n_mgau, g->n_feat, msg->topn,
                       sizeof(gauden_dist_t));
-    msg->mgau_active = ckd_calloc(g->n_mgau, sizeof(int8));
+    msg->mgau_active = (uint8 *)ckd_calloc(g->n_mgau, sizeof(int8));
 
     mg = (ps_mgau_t *)msg;
     mg->vt = &ms_mgau_funcs;

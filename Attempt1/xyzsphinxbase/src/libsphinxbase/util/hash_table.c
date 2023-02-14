@@ -375,7 +375,8 @@ hash_table_lookup_bkey_int32(hash_table_t * h, const char *key, size_t len, int3
 static void *
 enter(hash_table_t * h, uint32 hash, const char *key, size_t len, void *val, int32 replace)
 {
-    hash_entry_t *cur, *new;
+    hash_entry_t *cur;
+    hash_entry_t *new;
 
     if ((cur = lookup(h, hash, key, len)) != NULL) {
         void *oldval;

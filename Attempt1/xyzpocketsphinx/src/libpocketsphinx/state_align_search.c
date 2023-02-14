@@ -127,7 +127,7 @@ extend_tokenstack(state_align_search_t *sas, int frame_idx)
 {
     if (frame_idx >= sas->n_fr_alloc) {
         sas->n_fr_alloc = frame_idx + TOKEN_STEP + 1;
-        sas->tokens = ckd_realloc(sas->tokens,
+        sas->tokens = (state_align_hist_t *)ckd_realloc(sas->tokens,
                                   sas->n_emit_state * sas->n_fr_alloc
                                   * sizeof(*sas->tokens));
     }
@@ -333,7 +333,7 @@ state_align_search_seg_iter(ps_search_t * search)
     itor = ps_alignment_words(sas->al);
     if (itor == NULL)
         return NULL;
-    seg = ckd_calloc(1, sizeof(state_align_seg_t));
+    seg = (state_align_seg_t *)ckd_calloc(1, sizeof(state_align_seg_t));
     seg->base.vt = &state_align_segfuncs;
     seg->base.search = search;
     seg->itor = itor;
@@ -367,7 +367,7 @@ state_align_search_hyp(ps_search_t *search, int32 *out_score)
         }
         hyp_len += strlen(word) + 1;
     }
-    search->hyp_str = ckd_calloc(hyp_len + 1, sizeof(*search->hyp_str));
+    search->hyp_str = (char *)ckd_calloc(hyp_len + 1, sizeof(*search->hyp_str));
     for (itor = ps_alignment_words(sas->al);
          itor; itor = ps_alignment_iter_next(itor)) {
         ps_alignment_entry_t *ent = ps_alignment_iter_get(itor);
@@ -403,7 +403,7 @@ state_align_search_init(const char *name,
     ps_alignment_iter_t *itor;
     hmm_t *hmm;
 
-    sas = ckd_calloc(1, sizeof(*sas));
+    sas = (state_align_search_t *)ckd_calloc(1, sizeof(*sas));
     ps_search_init(ps_search_base(sas), &state_align_search_funcs,
 		   PS_SEARCH_TYPE_STATE_ALIGN, name,
                    config, acmod, al->d2p->dict, al->d2p);
@@ -418,7 +418,7 @@ state_align_search_init(const char *name,
     /* Generate HMM vector from phone level of alignment. */
     sas->n_phones = ps_alignment_n_phones(al);
     sas->n_emit_state = ps_alignment_n_states(al);
-    sas->hmms = ckd_calloc(sas->n_phones, sizeof(*sas->hmms));
+    sas->hmms = (hmm_t *)ckd_calloc(sas->n_phones, sizeof(*sas->hmms));
     for (hmm = sas->hmms, itor = ps_alignment_phones(al); itor;
          ++hmm, itor = ps_alignment_iter_next(itor)) {
         ps_alignment_entry_t *ent = ps_alignment_iter_get(itor);

@@ -1043,7 +1043,7 @@ read_sendump(s2_semi_mgau_t *s, bin_mdef_t *mdef, char const *file)
     else {
         /* Get cluster codebook if any. */
         if (n_clust) {
-            s->mixw_cb = ckd_calloc(1, n_clust);
+            s->mixw_cb = (uint8 *)ckd_calloc(1, n_clust);
             if (fread(s->mixw_cb, 1, n_clust, fp) != (size_t) n_clust) {
                 E_ERROR("Failed to read %d bytes from sendump\n", n_clust);
                 goto error_out;
@@ -1053,7 +1053,7 @@ read_sendump(s2_semi_mgau_t *s, bin_mdef_t *mdef, char const *file)
 
     /* Set up pointers, or read, or whatever */
     if (s->sendump_mmap) {
-        s->mixw = ckd_calloc_2d(n_feat, n_density, sizeof(*s->mixw));
+        s->mixw = (uint8 ***)ckd_calloc_2d(n_feat, n_density, sizeof(*s->mixw));
         for (n = 0; n < n_feat; n++) {
             int step = c;
             if (n_bits == 4)
@@ -1065,7 +1065,7 @@ read_sendump(s2_semi_mgau_t *s, bin_mdef_t *mdef, char const *file)
         }
     }
     else {
-        s->mixw = ckd_calloc_3d(n_feat, n_density, n_sen, sizeof(***s->mixw));
+        s->mixw = (uint8 ***)ckd_calloc_3d(n_feat, n_density, n_sen, sizeof(***s->mixw));
         /* Read pdf values and ids */
         for (n = 0; n < n_feat; n++) {
             int step = c;
@@ -1152,7 +1152,7 @@ read_mixw(s2_semi_mgau_t * s, char const *file_name, double SmoothMin)
     s->n_sen = n_sen;
 
     /* Quantized mixture weight arrays. */
-    s->mixw = ckd_calloc_3d(n_feat, s->g->n_density, n_sen, sizeof(***s->mixw));
+    s->mixw = (uint8 ***)ckd_calloc_3d(n_feat, s->g->n_density, n_sen, sizeof(***s->mixw));
 
     /* Temporary structure to read in floats before conversion to (int32) logs3 */
     pdf = (float32 *) ckd_calloc(n_comp, sizeof(float32));
@@ -1240,7 +1240,7 @@ s2_semi_mgau_init(acmod_t *acmod)
     int i;
     int n_feat;
 
-    s = ckd_calloc(1, sizeof(*s));
+    s = (s2_semi_mgau_t *)ckd_calloc(1, sizeof(*s));
     s->config = acmod->config;
 
     s->lmath = logmath_retain(acmod->lmath);
@@ -1298,7 +1298,7 @@ s2_semi_mgau_init(acmod_t *acmod)
     s->ds_ratio = cmd_ln_int32_r(s->config, "-ds");
 
     /* Determine top-N for each feature */
-    s->topn_beam = ckd_calloc(n_feat, sizeof(*s->topn_beam));
+    s->topn_beam = (uint8 *)ckd_calloc(n_feat, sizeof(*s->topn_beam));
     s->max_topn = cmd_ln_int32_r(s->config, "-topn");
     split_topn(cmd_ln_str_r(s->config, "-topn_beam"), s->topn_beam, n_feat);
     E_INFO("Maximum top-N: %d ", s->max_topn);
@@ -1313,7 +1313,7 @@ s2_semi_mgau_init(acmod_t *acmod)
     s->topn_hist = (vqFeature_t ***)
         ckd_calloc_3d(s->n_topn_hist, n_feat, s->max_topn,
                       sizeof(***s->topn_hist));
-    s->topn_hist_n = ckd_calloc_2d(s->n_topn_hist, n_feat,
+    s->topn_hist_n = (uint8 **)ckd_calloc_2d(s->n_topn_hist, n_feat,
                                    sizeof(**s->topn_hist_n));
     for (i = 0; i < s->n_topn_hist; ++i) {
         int j;

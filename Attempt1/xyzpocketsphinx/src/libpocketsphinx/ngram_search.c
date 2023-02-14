@@ -155,7 +155,7 @@ ngram_search_init(const char *name,
     acmod_set_grow(acmod, cmd_ln_boolean_r(config, "-fwdflat") &&
                           cmd_ln_boolean_r(config, "-fwdtree"));
 
-    ngs = ckd_calloc(1, sizeof(*ngs));
+    ngs = (ngram_search_t *)ckd_calloc(1, sizeof(*ngs));
     ps_search_init(&ngs->base, &ngram_funcs, PS_SEARCH_TYPE_NGRAM, name, config, acmod, dict, d2p);
 
     ngs->hmmctx = hmm_context_init(bin_mdef_n_emit_state(acmod->mdef),
@@ -172,30 +172,30 @@ ngram_search_init(const char *name,
     ngram_search_calc_beams(ngs);
 
     /* Allocate a billion different tables for stuff. */
-    ngs->word_chan = ckd_calloc(dict_size(dict),
+    ngs->word_chan = (chan_t **)ckd_calloc(dict_size(dict),
                                 sizeof(*ngs->word_chan));
-    ngs->word_lat_idx = ckd_calloc(dict_size(dict),
+    ngs->word_lat_idx = (int32 *)ckd_calloc(dict_size(dict),
                                    sizeof(*ngs->word_lat_idx));
-    ngs->word_active = bitvec_alloc(dict_size(dict));
-    ngs->last_ltrans = ckd_calloc(dict_size(dict),
+    ngs->word_active = (bitvec_t *)bitvec_alloc(dict_size(dict));
+    ngs->last_ltrans = (last_ltrans_t *)ckd_calloc(dict_size(dict),
                                   sizeof(*ngs->last_ltrans));
 
     /* FIXME: All these structures need to be made dynamic with
      * garbage collection. */
     ngs->bp_table_size = cmd_ln_int32_r(config, "-latsize");
-    ngs->bp_table = ckd_calloc(ngs->bp_table_size,
+    ngs->bp_table = (bptbl_t *)ckd_calloc(ngs->bp_table_size,
                                sizeof(*ngs->bp_table));
     /* FIXME: This thing is frickin' huge. */
     ngs->bscore_stack_size = ngs->bp_table_size * 20;
-    ngs->bscore_stack = ckd_calloc(ngs->bscore_stack_size,
+    ngs->bscore_stack = (int32 *)ckd_calloc(ngs->bscore_stack_size,
                                    sizeof(*ngs->bscore_stack));
     ngs->n_frame_alloc = 256;
-    ngs->bp_table_idx = ckd_calloc(ngs->n_frame_alloc + 1,
+    ngs->bp_table_idx = (int32 *)ckd_calloc(ngs->n_frame_alloc + 1,
                                    sizeof(*ngs->bp_table_idx));
     ++ngs->bp_table_idx; /* Make bptableidx[-1] valid */
 
     /* Allocate active word list array */
-    ngs->active_word_list = ckd_calloc_2d(2, dict_size(dict),
+    ngs->active_word_list = (int32 **)ckd_calloc_2d(2, dict_size(dict),
                                           sizeof(**ngs->active_word_list));
 
     ngs->lmset = ngram_model_set_init(config, &lm, &lmname, NULL, 1);
@@ -255,11 +255,11 @@ ngram_search_reinit(ps_search_t *search, dict_t *dict, dict2pid_t *d2p)
         ckd_free(ngs->word_active);
         ckd_free(ngs->last_ltrans);
         ckd_free_2d(ngs->active_word_list);
-        ngs->word_lat_idx = ckd_calloc(search->n_words, sizeof(*ngs->word_lat_idx));
-        ngs->word_active = bitvec_alloc(search->n_words);
-        ngs->last_ltrans = ckd_calloc(search->n_words, sizeof(*ngs->last_ltrans));
+        ngs->word_lat_idx = (int32 *)ckd_calloc(search->n_words, sizeof(*ngs->word_lat_idx));
+        ngs->word_active = (bitvec_t *)bitvec_alloc(search->n_words);
+        ngs->last_ltrans = (last_ltrans_t *)ckd_calloc(search->n_words, sizeof(*ngs->last_ltrans));
         ngs->active_word_list
-            = ckd_calloc_2d(2, search->n_words,
+            = (int32 **)ckd_calloc_2d(2, search->n_words,
                             sizeof(**ngs->active_word_list));
     }
 
@@ -333,11 +333,11 @@ ngram_search_mark_bptable(ngram_search_t *ngs, int frame_idx)
 {
     if (frame_idx >= ngs->n_frame_alloc) {
         ngs->n_frame_alloc *= 2;
-        ngs->bp_table_idx = ckd_realloc(ngs->bp_table_idx - 1,
+        ngs->bp_table_idx = (int32 *)ckd_realloc(ngs->bp_table_idx - 1,
                                         (ngs->n_frame_alloc + 1)
                                         * sizeof(*ngs->bp_table_idx));
         if (ngs->frm_wordlist) {
-            ngs->frm_wordlist = ckd_realloc(ngs->frm_wordlist,
+            ngs->frm_wordlist = (ps_latnode_t **)ckd_realloc(ngs->frm_wordlist,
                                             ngs->n_frame_alloc
                                             * sizeof(*ngs->frm_wordlist));
         }
@@ -456,7 +456,7 @@ ngram_search_save_bp(ngram_search_t *ngs, int frame_idx,
         /* Expand the backpointer tables if necessary. */
         if (ngs->bpidx >= ngs->bp_table_size) {
             ngs->bp_table_size *= 2;
-            ngs->bp_table = ckd_realloc(ngs->bp_table,
+            ngs->bp_table = (bptbl_t *)ckd_realloc(ngs->bp_table,
                                         ngs->bp_table_size
                                         * sizeof(*ngs->bp_table));
             E_INFO("Resized backpointer table to %d entries\n", ngs->bp_table_size);
@@ -464,7 +464,7 @@ ngram_search_save_bp(ngram_search_t *ngs, int frame_idx,
         if (ngs->bss_head >= ngs->bscore_stack_size
             - bin_mdef_n_ciphone(ps_search_acmod(ngs)->mdef)) {
             ngs->bscore_stack_size *= 2;
-            ngs->bscore_stack = ckd_realloc(ngs->bscore_stack,
+            ngs->bscore_stack = (int32 *)ckd_realloc(ngs->bscore_stack,
                                             ngs->bscore_stack_size
                                             * sizeof(*ngs->bscore_stack));
             E_INFO("Resized score stack to %d entries\n", ngs->bscore_stack_size);
@@ -574,7 +574,7 @@ ngram_search_bp_hyp(ngram_search_t *ngs, int bpidx)
 	base->hyp_str = NULL;
 	return base->hyp_str;
     }
-    base->hyp_str = ckd_calloc(1, len);
+    base->hyp_str = (char *)ckd_calloc(1, len);
 
     bp = bpidx;
     c = base->hyp_str + len - 1;
@@ -614,7 +614,7 @@ ngram_search_alloc_all_rc(ngram_search_t *ngs, int32 w)
     tmatid = bin_mdef_pid2tmatid(ps_search_acmod(ngs)->mdef, ciphone);
     hmm = ngs->word_chan[w];
     if ((hmm == NULL) || (hmm_nonmpx_ssid(&hmm->hmm) != rssid->ssid[0])) {
-        hmm = listelem_malloc(ngs->chan_alloc);
+        hmm = (chan_t *)listelem_malloc(ngs->chan_alloc);
         hmm->next = ngs->word_chan[w];
         ngs->word_chan[w] = hmm;
 
@@ -628,7 +628,7 @@ ngram_search_alloc_all_rc(ngram_search_t *ngs, int32 w)
     }
     for (i = 1; i < rssid->n_ssid; ++i) {
         if ((hmm->next == NULL) || (hmm_nonmpx_ssid(&hmm->next->hmm) != rssid->ssid[i])) {
-            thmm = listelem_malloc(ngs->chan_alloc);
+            thmm = (chan_t *)listelem_malloc(ngs->chan_alloc);
             thmm->next = hmm->next;
             hmm->next = thmm;
             hmm = thmm;
@@ -971,7 +971,7 @@ ngram_search_bp_iter(ngram_search_t *ngs, int bpidx, float32 lwf)
      * to get the entire backtrace in order to produce it.  On the
      * other hand, all we actually need is the bptbl IDs, and we can
      * allocate a fixed-size array of them. */
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (bptbl_seg_t *)ckd_calloc(1, sizeof(*itor));
     itor->base.vt = &ngram_bp_segfuncs;
     itor->base.search = ps_search_base(ngs);
     itor->base.lwf = lwf;
@@ -986,7 +986,7 @@ ngram_search_bp_iter(ngram_search_t *ngs, int bpidx, float32 lwf)
         ckd_free(itor);
         return NULL;
     }
-    itor->bpidx = ckd_calloc(itor->n_bpidx, sizeof(*itor->bpidx));
+    itor->bpidx = (int32 *)ckd_calloc(itor->n_bpidx, sizeof(*itor->bpidx));
     cur = itor->n_bpidx - 1;
     bp = bpidx;
     while (bp != NO_BP) {
@@ -1109,7 +1109,7 @@ create_dag_nodes(ngram_search_t *ngs, ps_lattice_t *dag)
             node->lef = i;
         else {
             /* New node; link to head of list */
-            node = listelem_malloc(dag->latnode_alloc);
+            node = (ps_latnode_t *)listelem_malloc(dag->latnode_alloc);
             node->wid = wid;
             node->sf = sf; /* This is a frame index. */
             node->fef = node->lef = i; /* These are backpointer indices (argh) */

@@ -172,7 +172,7 @@ kws_search_sen_active(kws_search_t * kwss)
 
     /* activate hmms in active nodes */
     for (gn = kwss->keyphrases; gn; gn = gnode_next(gn)) {
-        kws_keyphrase_t *keyphrase = gnode_ptr(gn);
+        kws_keyphrase_t *keyphrase = (kws_keyphrase_t *)gnode_ptr(gn);
         for (i = 0; i < keyphrase->n_hmms; i++) {
             if (hmm_is_active(kws_nth_hmm(keyphrase, i)))
                 acmod_activate_hmm(ps_search_acmod(kwss), kws_nth_hmm(keyphrase, i));
@@ -204,7 +204,7 @@ kws_search_hmm_eval(kws_search_t * kwss, int16 const *senscr)
     }
     /* evaluate hmms for active nodes */
     for (gn = kwss->keyphrases; gn; gn = gnode_next(gn)) {
-        kws_keyphrase_t *keyphrase = gnode_ptr(gn);
+        kws_keyphrase_t *keyphrase = (kws_keyphrase_t *)gnode_ptr(gn);
         for (i = 0; i < keyphrase->n_hmms; i++) {
             hmm_t *hmm = kws_nth_hmm(keyphrase, i);
 
@@ -233,7 +233,7 @@ kws_search_hmm_prune(kws_search_t * kwss)
     thresh = kwss->bestscore + kwss->beam;
 
     for (gn = kwss->keyphrases; gn; gn = gnode_next(gn)) {
-        kws_keyphrase_t *keyphrase = gnode_ptr(gn);
+        kws_keyphrase_t *keyphrase = (kws_keyphrase_t *)gnode_ptr(gn);
         for (i = 0; i < keyphrase->n_hmms; i++) {
     	    hmm_t *hmm = kws_nth_hmm(keyphrase, i);
             if (hmm_is_active(hmm) && hmm_bestscore(hmm) < thresh)
@@ -267,7 +267,7 @@ kws_search_trans(kws_search_t * kwss)
 
     /* Check whether keyphrase wasn't spotted yet */
     for (gn = kwss->keyphrases; gn; gn = gnode_next(gn)) {
-        kws_keyphrase_t *keyphrase = gnode_ptr(gn);
+        kws_keyphrase_t *keyphrase = (kws_keyphrase_t *)gnode_ptr(gn);
         hmm_t *last_hmm;
         
         if (keyphrase->n_hmms < 1)
@@ -302,7 +302,7 @@ kws_search_trans(kws_search_t * kwss)
 
     /* Activate new keyphrase nodes, enter their hmms */
     for (gn = kwss->keyphrases; gn; gn = gnode_next(gn)) {
-        kws_keyphrase_t *keyphrase = gnode_ptr(gn);
+        kws_keyphrase_t *keyphrase = (kws_keyphrase_t *)gnode_ptr(gn);
         
         if (keyphrase->n_hmms < 1)
     	    continue;
@@ -350,7 +350,7 @@ kws_search_read_list(kws_search_t *kwss, const char* keyfile)
 	if (li->len == 0)
 	    continue;
 
-	keyphrase = ckd_calloc(1, sizeof(kws_keyphrase_t));
+	keyphrase = (kws_keyphrase_t *)ckd_calloc(1, sizeof(kws_keyphrase_t));
 
         line = li->buf;
         end = strlen(line) - 1;
@@ -417,7 +417,7 @@ kws_search_init(const char *name,
 	    return NULL;
 	}
     } else {
-        kws_keyphrase_t *k = ckd_calloc(1, sizeof(kws_keyphrase_t));
+        kws_keyphrase_t *k = (kws_keyphrase_t *)ckd_calloc(1, sizeof(kws_keyphrase_t));
         k->threshold = kwss->def_threshold;
         k->word = ckd_salloc(keyphrase);
         kwss->keyphrases = glist_add_ptr(NULL, k);
@@ -463,7 +463,7 @@ kws_search_free(ps_search_t * search)
 
     ckd_free(kwss->pl_hmms);
     for (gn = kwss->keyphrases; gn; gn = gnode_next(gn)) {
-	kws_keyphrase_t *keyphrase = gnode_ptr(gn);
+	kws_keyphrase_t *keyphrase = (kws_keyphrase_t *)gnode_ptr(gn);
         ckd_free(keyphrase->hmms);
         ckd_free(keyphrase->word);
         ckd_free(keyphrase);
@@ -516,7 +516,7 @@ kws_search_reinit(ps_search_t * search, dict_t * dict, dict2pid_t * d2p)
     }
 
     for (gn = kwss->keyphrases; gn; gn = gnode_next(gn)) {
-        kws_keyphrase_t *keyphrase = gnode_ptr(gn);
+        kws_keyphrase_t *keyphrase = (kws_keyphrase_t *)gnode_ptr(gn);
 
         /* Initialize keyphrase HMMs */
         tmp_keyphrase = (char *) ckd_salloc(keyphrase->word);

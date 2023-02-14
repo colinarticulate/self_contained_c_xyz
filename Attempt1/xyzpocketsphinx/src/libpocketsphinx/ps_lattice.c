@@ -82,9 +82,9 @@ ps_lattice_link(ps_lattice_t *dag, ps_latnode_t *from, ps_latnode_t *to,
         ps_latlink_t *link;
 
         /* No link between the two nodes; create a new one */
-        link = listelem_malloc(dag->latlink_alloc);
-        fwdlink = listelem_malloc(dag->latlink_list_alloc);
-        revlink = listelem_malloc(dag->latlink_list_alloc);
+        link = (ps_latlink_t *)listelem_malloc(dag->latlink_alloc);
+        fwdlink = (latlink_list_t *)listelem_malloc(dag->latlink_list_alloc);
+        revlink = (latlink_list_t *)listelem_malloc(dag->latlink_list_alloc);
 
         link->from = from;
         link->to = to;
@@ -403,7 +403,7 @@ ps_lattice_read(ps_decoder_t *ps,
     int32 pip, silpen, fillpen;
     ps_latnode_t **pnodes;
 
-    dag = ckd_calloc(1, sizeof(*dag));
+    dag = (ps_lattice_t *)ckd_calloc(1, sizeof(*dag));
 
     if (ps) {
         dag->search = ps->search;
@@ -474,7 +474,7 @@ ps_lattice_read(ps_decoder_t *ps,
     }
 
     /* Read nodes */
-    darray = ckd_calloc(n_nodes, sizeof(*darray));
+    darray = (ps_latnode_t **)ckd_calloc(n_nodes, sizeof(*darray));
     pnodes = &dag->nodes;
     for (i = 0; i < n_nodes; i++) {
         int32 w;
@@ -516,7 +516,7 @@ ps_lattice_read(ps_decoder_t *ps,
             goto load_error;
         }
 
-        *pnodes = listelem_malloc(dag->latnode_alloc);
+        *pnodes = (ps_latnode_t *)listelem_malloc(dag->latnode_alloc);
         node = *pnodes;
         darray[i] = node;
         node->wid = w;
@@ -641,7 +641,7 @@ ps_lattice_init_search(ps_search_t *search, int n_frame)
 {
     ps_lattice_t *dag;
 
-    dag = ckd_calloc(1, sizeof(*dag));
+    dag = (ps_lattice_t *)ckd_calloc(1, sizeof(*dag));
     dag->search = search;
     dag->dict = dict_retain(search->dict);
     dag->lmath = logmath_retain(search->acmod->lmath);
@@ -852,7 +852,7 @@ ps_lattice_hyp(ps_lattice_t *dag, ps_latlink_t *link)
 
     /* Backtrace again to construct hypothesis string. */
     ckd_free(dag->hyp_str);
-    dag->hyp_str = ckd_calloc(1, len+1); /* extra one incase the hyp is empty */
+    dag->hyp_str = (char *)ckd_calloc(1, len+1); /* extra one incase the hyp is empty */
     c = dag->hyp_str + len - 1;
     if (dict_real_word(dag->dict, link->to->basewid)) {
 	char *wstr = dict_wordstr(dag->dict, link->to->basewid);
@@ -1013,7 +1013,7 @@ ps_lattice_seg_iter(ps_lattice_t *dag, ps_latlink_t *link, float32 lwf)
     /* Calling this an "iterator" is a bit of a misnomer since we have
      * to get the entire backtrace in order to produce it.
      */
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (dag_seg_t *)ckd_calloc(1, sizeof(*itor));
     itor->base.vt = &ps_lattice_segfuncs;
     itor->base.search = dag->search;
     itor->base.lwf = lwf;
@@ -1028,7 +1028,7 @@ ps_lattice_seg_iter(ps_lattice_t *dag, ps_latlink_t *link, float32 lwf)
         return NULL;
     }
 
-    itor->links = ckd_calloc(itor->n_links, sizeof(*itor->links));
+    itor->links = (ps_latlink_t **)ckd_calloc(itor->n_links, sizeof(*itor->links));
     cur = itor->n_links - 1;
     for (l = link; l; l = l->best_prev) {
         itor->links[cur] = l;
@@ -1044,7 +1044,7 @@ latlink_list_new(ps_lattice_t *dag, ps_latlink_t *link, latlink_list_t *next)
 {
     latlink_list_t *ll;
 
-    ll = listelem_malloc(dag->latlink_list_alloc);
+    ll = (latlink_list_t *)listelem_malloc(dag->latlink_list_alloc);
     ll->link = link;
     ll->next = next;
 
@@ -1670,7 +1670,7 @@ path_extend(ps_astar_t *nbest, ps_latpath_t * path)
             continue;
 
         /* Create path extension and compute exact score for this extension */
-        newpath = listelem_malloc(nbest->latpath_alloc);
+        newpath = (ps_latpath_t *)listelem_malloc(nbest->latpath_alloc);
         newpath->node = x->link->to;
         newpath->parent = path;
         newpath->score = path->score + x->link->ascr;
@@ -1719,7 +1719,7 @@ ps_astar_start(ps_lattice_t *dag,
     ps_astar_t *nbest;
     ps_latnode_t *node;
 
-    nbest = ckd_calloc(1, sizeof(*nbest));
+    nbest = (ps_astar_t *)ckd_calloc(1, sizeof(*nbest));
     nbest->dag = dag;
     nbest->lmset = lmset;
     nbest->lwf = lwf;
@@ -1750,7 +1750,7 @@ ps_astar_start(ps_lattice_t *dag,
             int32 n_used;
 
             best_rem_score(nbest, node);
-            path = listelem_malloc(nbest->latpath_alloc);
+            path = (ps_latpath_t *)listelem_malloc(nbest->latpath_alloc);
             path->node = node;
             path->parent = NULL;
             if (nbest->lmset)
@@ -1827,7 +1827,7 @@ ps_astar_hyp(ps_astar_t *nbest, ps_latpath_t *path)
     }
 
     /* Backtrace again to construct hypothesis string. */
-    hyp = ckd_calloc(1, len);
+    hyp = (char *)ckd_calloc(1, len);
     c = hyp + len - 1;
     for (p = path; p; p = p->parent) {
         if (dict_real_word(ps_search_dict(search), p->node->basewid)) {
@@ -1903,7 +1903,7 @@ ps_astar_seg_iter(ps_astar_t *astar, ps_latpath_t *path, float32 lwf)
     int cur;
 
     /* Backtrace and make an iterator, this should look familiar by now. */
-    itor = ckd_calloc(1, sizeof(*itor));
+    itor = (astar_seg_t *)ckd_calloc(1, sizeof(*itor));
     itor->base.vt = &ps_astar_segfuncs;
     itor->base.search = astar->dag->search;
     itor->base.lwf = lwf;
@@ -1911,7 +1911,7 @@ ps_astar_seg_iter(ps_astar_t *astar, ps_latpath_t *path, float32 lwf)
     for (p = path; p; p = p->parent) {
         ++itor->n_nodes;
     }
-    itor->nodes = ckd_calloc(itor->n_nodes, sizeof(*itor->nodes));
+    itor->nodes = (ps_latnode_t **)ckd_calloc(itor->n_nodes, sizeof(*itor->nodes));
     cur = itor->n_nodes - 1;
     for (p = path; p; p = p->parent) {
         itor->nodes[cur] = p->node;

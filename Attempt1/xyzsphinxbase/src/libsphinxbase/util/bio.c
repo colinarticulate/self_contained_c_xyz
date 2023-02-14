@@ -424,7 +424,7 @@ bio_fread_2d(void ***arr,
 
     *d1 = l_d1;
     *d2 = l_d2;
-    *arr = ckd_alloc_2d_ptr(l_d1, l_d2, raw, e_sz);
+    *arr = (void **)ckd_alloc_2d_ptr(l_d1, l_d2, raw, e_sz);
 
     return n;
 }
@@ -483,7 +483,7 @@ bio_fread_3d(void ****arr,
 
     assert(n == l_d1 * l_d2 * l_d3);
 
-    *arr = ckd_alloc_3d_ptr(l_d1, l_d2, l_d3, raw, e_sz);
+    *arr = (void ***)ckd_alloc_3d_ptr(l_d1, l_d2, l_d3, raw, e_sz);
     *d1 = l_d1;
     *d2 = l_d2;
     *d3 = l_d3;
@@ -608,7 +608,7 @@ bio_read_wavfile(char const *directory,
     l = strlen(filename);
     if ((n <= l) && (0 == strcmp(filename + l - n, extension)))
         extension = "";
-    inputfile = ckd_calloc(strlen(directory) + l + n + 2, 1);
+    inputfile = (char *)ckd_calloc(strlen(directory) + l + n + 2, 1);
     if (directory) {
         sprintf(inputfile, "%s/%s%s", directory, filename, extension);
     } else {
@@ -631,7 +631,7 @@ bio_read_wavfile(char const *directory,
         n -= header;
     }
     n /= sizeof(int16);
-    data = ckd_calloc(n, sizeof(*data));
+    data = (int16 *)ckd_calloc(n, sizeof(*data));
     if ((l = fread(data, sizeof(int16), n, uttfp)) < n) {
         E_ERROR_SYSTEM("Failed to read %d samples from %s: %d", n, inputfile, l);
         ckd_free(data);

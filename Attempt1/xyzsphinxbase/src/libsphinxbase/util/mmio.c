@@ -232,7 +232,7 @@ mmio_file_read(const char *filename)
         return NULL;
     }
     close(fd);
-    mf = ckd_calloc(1, sizeof(*mf));
+    mf = (mmio_file_t *)ckd_calloc(1, sizeof(*mf));
     mf->ptr = ptr;
     /* Align map size to next page. */
     pagesize = sysconf(_SC_PAGESIZE);

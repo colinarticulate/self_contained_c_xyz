@@ -110,7 +110,7 @@ senone_mgau_map_read(senone_t * s, char const *file_name)
 		     byteswap, &chksum) < 0) {
         E_FATAL("bio_fread_1d(%s) failed\n", file_name);
     }
-    s->mgau = ptr;
+    s->mgau = (uint32 *)ptr;
     E_INFO("Mapping %d senones to %d codebooks\n", s->n_sen, s->n_gauden);
 
     /* Infer n_gauden if not present in this version */
