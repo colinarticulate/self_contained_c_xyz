@@ -1,0 +1,56 @@
+//https://stackoverflow.com/questions/58751821/how-to-configure-vscode-for-gtk3-for-intellisense-build-debug-and-g
+{
+    "env": {
+        "myDefaultIncludePath": [
+            "${myDefaultIncludePath}",
+            // "${workspaceFolder}",
+            // "${workspaceFolder}/pocketsphinx/include",
+            // "${workspaceFolder}/sphinxbase/include",
+            // "${workspaceFolder}/sphinxbase/include/sphinxbase"
+            // "${fileDirname}/sphinxbase/include",
+            // "${fileDirname}/sphinxbase/include/sphinxbase",
+            // "${fileDirname}/pocketsphinx/include"
+            "/home/dbarbera/Repositories/mySphinx/sphinxbase/include",
+            "/home/dbarbera/Repositories/mySphinx/sphinxbase/include/sphinxbase",
+            "/home/dbarbera/Repositories/mySphinx/pocketsphinx/include"
+        ],
+        "myCompilerPath": "/usr/bin/gcc" //"$(which gcc)"//"/usr/local/bin/gcc"
+    },
+    "configurations": [
+        {
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "includePath": [
+                "/usr/include",
+                "/usr/include/c++/9",
+                "/usr/include/clang/10/include",
+                "/usr/include/boost",
+                "/usr/include/x86_64-linux-gnu/c++/9",
+                "/home/dbarbera/Repositories/mySphinx/sphinxbase/include",
+                "/home/dbarbera/Repositories/mySphinx/sphinxbase/include/sphinxbase",
+                "/home/dbarbera/Repositories/mySphinx/pocketsphinx/include"
+            ],
+            "compilerPath": "/usr/bin/clang", //"/usr/local/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+        // {
+        //     "name": "            \"-I${fileDirname}/sphinxbase/include\",             \"-I${fileDirname}/sphinxbase/include/sphinxbase\",             \"-I${fileDirname}/pocketsphinx/include\"",
+        //     "includePath": [
+        //         "${default}"
+        //     ],
+        //     "compilerPath": "/usr/bin/gcc",
+        //     "cStandard": "c11",
+        //     "cppStandard": "c++14",
+        //     "intelliSenseMode": "linux-gcc-x64"
+        // }
+    ],
+    "version": 4
+}

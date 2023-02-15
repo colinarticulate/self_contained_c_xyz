@@ -1,0 +1,65 @@
+To check for race conditions use valgrind on your executable:
+
+$ valgrind --tool=helgrind ./ps_plus-debug
+
+
+
+Race conditions analysis:
+
+1)
+
+==22375== Possible data race during read of size 4 at 0x492CD08 by thread #3
+==22375== Locks held: none
+==22375==    at 0x48F5C08: genrand_int32 (genrand.c:128)
+==22375==    by 0x48F5D6C: genrand_int31 (genrand.c:163)
+==22375==    by 0x4906014: fe_read_frame (fe_sigproc.c:837)
+==22375==    by 0x4903EDC: fe_process_frames_ext (fe_interface.c:516)
+==22375==    by 0x4904003: fe_process_frames (fe_interface.c:384)
+==22375==    by 0x11FD25: XYZ_Batch::_acmod_process_full_raw(acmod_s*, short const**, unsigned long*) (batch_plus.h:856)
+==22375==    by 0x11F5CF: XYZ_Batch::_acmod_process_raw(acmod_s*, short const**, unsigned long*, int) (batch_plus.h:710)
+==22375==    by 0x11F55A: XYZ_Batch::_ps_process_raw(ps_decoder_s*, short const*, unsigned long, int, int) (batch_plus.h:683)
+==22375==    by 0x11F38F: XYZ_Batch::decode_raw(_IO_FILE*, long) (batch_plus.h:633)
+==22375==    by 0x11F20C: XYZ_Batch::process_one_ctl_line(int, int) (batch_plus.h:578)
+==22375==    by 0x11EF3D: XYZ_Batch::process() (batch_plus.h:511)
+==22375==    by 0x11CAD0: p_process_batch(void*) (ps_plus.cpp:252)
+==22375== 
+==22375== This conflicts with a previous write of size 4 by thread #2
+==22375== Locks held: none
+==22375==    at 0x48F5BE4: init_genrand (genrand.c:108)
+==22375==    by 0x48F5D53: genrand_int32 (genrand.c:132)
+==22375==    by 0x48F5D6C: genrand_int31 (genrand.c:163)
+==22375==    by 0x4906014: fe_read_frame (fe_sigproc.c:837)
+==22375==    by 0x4903EDC: fe_process_frames_ext (fe_interface.c:516)
+==22375==    by 0x4904003: fe_process_frames (fe_interface.c:384)
+==22375==    by 0x11FD25: XYZ_Batch::_acmod_process_full_raw(acmod_s*, short const**, unsigned long*) (batch_plus.h:856)
+==22375==    by 0x11F5CF: XYZ_Batch::_acmod_process_raw(acmod_s*, short const**, unsigned long*, int) (batch_plus.h:710)
+==22375==  Address 0x492cd08 is 0 bytes inside data symbol "mti"
+
+2)
+==22375== 
+==22375== Possible data race during write of size 4 at 0x132C20 by thread #3
+==22375== Locks held: none
+==22375==    at 0x11B036: _fe_warp_inverse_linear_set_parameters(char const*, float) (batch_plus.h:305)
+==22375==    by 0x122E43: XYZ_Batch::_fe_warp_set_parameters(melfb_s*, char const*, float) (batch_plus.h:2062)
+==22375==    by 0x122DDE: XYZ_Batch::_fe_parse_melfb_params(cmd_ln_s*, fe_s*, melfb_s*) (batch_plus.h:2001)
+==22375==    by 0x122893: XYZ_Batch::_fe_init_auto_r(cmd_ln_s*) (batch_plus.h:1923)
+==22375==    by 0x121967: XYZ_Batch::_acmod_init(cmd_ln_s*, logmath_s*, fe_s*, feat_s*) (batch_plus.h:1653)
+==22375==    by 0x12125F: XYZ_Batch::ps_plus_reinit() (batch_plus.h:1424)
+==22375==    by 0x120F7C: XYZ_Batch::ps_plus_init() (batch_plus.h:1341)
+==22375==    by 0x11EC17: XYZ_Batch::init_recognition() (batch_plus.h:442)
+==22375==    by 0x11CAC1: p_process_batch(void*) (ps_plus.cpp:251)
+==22375==    by 0x4842B1A: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_helgrind-amd64-linux.so)
+==22375==    by 0x4877608: start_thread (pthread_create.c:477)
+==22375==    by 0x4D81162: clone (clone.S:95)
+==22375== 
+==22375== This conflicts with a previous write of size 4 by thread #2
+==22375== Locks held: none
+==22375==    at 0x11B036: _fe_warp_inverse_linear_set_parameters(char const*, float) (batch_plus.h:305)
+==22375==    by 0x122E43: XYZ_Batch::_fe_warp_set_parameters(melfb_s*, char const*, float) (batch_plus.h:2062)
+==22375==    by 0x122DDE: XYZ_Batch::_fe_parse_melfb_params(cmd_ln_s*, fe_s*, melfb_s*) (batch_plus.h:2001)
+==22375==    by 0x122893: XYZ_Batch::_fe_init_auto_r(cmd_ln_s*) (batch_plus.h:1923)
+==22375==    by 0x121967: XYZ_Batch::_acmod_init(cmd_ln_s*, logmath_s*, fe_s*, feat_s*) (batch_plus.h:1653)
+==22375==    by 0x12125F: XYZ_Batch::ps_plus_reinit() (batch_plus.h:1424)
+==22375==    by 0x120F7C: XYZ_Batch::ps_plus_init() (batch_plus.h:1341)
+==22375==    by 0x11EC17: XYZ_Batch::init_recognition() (batch_plus.h:442)
+==22375==  Address 0x132c20 is 0 bytes inside data symbol "_ZL18_nyquist_frequency"
