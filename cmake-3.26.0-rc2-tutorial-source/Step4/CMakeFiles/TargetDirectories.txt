@@ -1,0 +1,6 @@
+/home/dbarbera/Repositories/self_contained_c_xyz/cmake-3.26.0-rc2-tutorial-source/Step4/CMakeFiles/Tutorial.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/cmake-3.26.0-rc2-tutorial-source/Step4/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/cmake-3.26.0-rc2-tutorial-source/Step4/CMakeFiles/rebuild_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/cmake-3.26.0-rc2-tutorial-source/Step4/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/cmake-3.26.0-rc2-tutorial-source/Step4/MathFunctions/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/cmake-3.26.0-rc2-tutorial-source/Step4/MathFunctions/CMakeFiles/rebuild_cache.dir

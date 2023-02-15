@@ -1,0 +1,5 @@
+project(xyzpocketsphinx)
+
+add_executable(xyzpocketsphinx_batch batch.c)
+add_executable(xyzpocketsphinx_continuous continuous.c)
+add_executable(xyzpocketsphinx_mdef_convert mdef_convert.c)

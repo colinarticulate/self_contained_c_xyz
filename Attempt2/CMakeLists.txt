@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.4.1)
+
+project(xyzpocketsphinx_plus)#PROJECT_SOURCE_DIR#CMAKE_SOURCE_DIR
+
+target_compile_features(pocketsphinx_compiler_flags INTERFACE c_std_11)
+target_compile_features(sphinxbase_compiler_flags INTERFACE c_std_11)
+
+add_subdirectory(xyzpocketsphinx)
+add_subdirectory(xyzsphinxbase)
