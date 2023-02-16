@@ -1,6 +1,0 @@
-add_subdirectory(libsphinxad)
-add_subdirectory(libsphinxbase)
-# add_subdirectory(sphinx_adtools)
-# add_subdirectory(sphinx_cepview)
-# add_subdirectory(sphinx_jsgf2fsg)
-# add_subdirectory(sphinx_lmtools)
