@@ -50,11 +50,14 @@ cmake_ninja_workdir = /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/
 build cmake_object_order_depends_target_ps_plus: phony || cmake_object_order_depends_target_xyzpocketsphinx cmake_object_order_depends_target_xyzsphinxad cmake_object_order_depends_target_xyzsphinxbase
 
 build CMakeFiles/ps_plus.dir/ps_plus.cpp.o: CXX_COMPILER__ps_plus_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus.cpp || cmake_object_order_depends_target_ps_plus
+  DEFINES = -DHAVE_CONFIG_H
   DEP_FILE = CMakeFiles/ps_plus.dir/ps_plus.cpp.o.d
-  FLAGS = -g
+  FLAGS = -g -O3
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2 -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/aside_ps_library -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = CMakeFiles/ps_plus.dir
   OBJECT_FILE_DIR = CMakeFiles/ps_plus.dir
+  TARGET_COMPILE_PDB = CMakeFiles/ps_plus.dir/
+  TARGET_PDB = ../bin/ps_plus.pdb
 
 
 # =============================================================================
@@ -62,16 +65,17 @@ build CMakeFiles/ps_plus.dir/ps_plus.cpp.o: CXX_COMPILER__ps_plus_Debug /home/db
 
 
 #############################################
-# Link the executable ps_plus
+# Link the executable ../bin/ps_plus
 
-build ps_plus: CXX_EXECUTABLE_LINKER__ps_plus_Debug CMakeFiles/ps_plus.dir/ps_plus.cpp.o | xyzpocketsphinx/libxyzpocketsphinx.so xyzsphinxbase/libxyzsphinxad.so xyzsphinxbase/libxyzsphinxbase.so || xyzpocketsphinx/libxyzpocketsphinx.so xyzsphinxbase/libxyzsphinxad.so xyzsphinxbase/libxyzsphinxbase.so
+build ../bin/ps_plus: CXX_EXECUTABLE_LINKER__ps_plus_Debug CMakeFiles/ps_plus.dir/ps_plus.cpp.o | xyzpocketsphinx/libxyzpocketsphinx.so xyzsphinxbase/libxyzsphinxad.so xyzsphinxbase/libxyzsphinxbase.so || xyzpocketsphinx/libxyzpocketsphinx.so xyzsphinxbase/libxyzsphinxad.so xyzsphinxbase/libxyzsphinxbase.so
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzpocketsphinx:/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzsphinxbase  xyzpocketsphinx/libxyzpocketsphinx.so  xyzsphinxbase/libxyzsphinxad.so  xyzsphinxbase/libxyzsphinxbase.so
   OBJECT_DIR = CMakeFiles/ps_plus.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = ps_plus
-  TARGET_PDB = ps_plus.dbg
+  TARGET_COMPILE_PDB = CMakeFiles/ps_plus.dir/
+  TARGET_FILE = ../bin/ps_plus
+  TARGET_PDB = ../bin/ps_plus.pdb
 
 
 #############################################
@@ -117,6 +121,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/acmod.c
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/allphone_search.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -125,6 +131,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/allphon
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/bin_mdef.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -133,6 +141,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/bin_mde
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/blkarray_list.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -141,6 +151,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/blkarra
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/dict.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -149,6 +161,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/dict.c.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/dict2pid.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -157,6 +171,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/dict2pi
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_history.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -165,6 +181,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_his
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_lextree.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -173,6 +191,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_lex
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_search.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -181,6 +201,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_sea
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/hmm.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/hmm.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -189,6 +211,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/hmm.c.o
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/kws_detections.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -197,6 +221,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/kws_det
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/kws_search.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_search.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -205,6 +231,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/kws_sea
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/mdef.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/mdef.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -213,6 +241,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/mdef.c.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_gauden.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -221,6 +251,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_gaud
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_mgau.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -229,6 +261,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_mgau
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_senone.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -237,6 +271,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_seno
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_search.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -245,6 +281,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_s
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_search_fwdflat.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -253,6 +291,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_s
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_search_fwdtree.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -261,6 +301,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_s
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/phone_loop_search.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -269,6 +311,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/phone_l
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/pocketsphinx.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -277,6 +321,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/pockets
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_alignment.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -285,6 +331,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_alig
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_lattice.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -293,6 +341,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_latt
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_mllr.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -301,6 +351,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_mllr
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ptm_mgau.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -309,6 +361,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ptm_mga
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/s2_semi_mgau.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -317,6 +371,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/s2_semi
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/state_align_search.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -325,6 +381,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/state_a
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/tmat.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/tmat.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -333,6 +391,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/tmat.c.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/vector.c.o: C_COMPILER__xyzpocketsphinx_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/vector.c || cmake_object_order_depends_target_xyzpocketsphinx
   DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
@@ -341,6 +401,8 @@ build xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/vector.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
   OBJECT_FILE_DIR = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 
 # =============================================================================
@@ -358,8 +420,9 @@ build xyzpocketsphinx/libxyzpocketsphinx.so: C_SHARED_LIBRARY_LINKER__xyzpockets
   PRE_LINK = :
   SONAME = libxyzpocketsphinx.so
   SONAME_FLAG = -Wl,-soname,
+  TARGET_COMPILE_PDB = xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/
   TARGET_FILE = xyzpocketsphinx/libxyzpocketsphinx.so
-  TARGET_PDB = xyzpocketsphinx.so.dbg
+  TARGET_PDB = xyzpocketsphinx/libxyzpocketsphinx.pdb
 
 
 #############################################
@@ -405,6 +468,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_interfa
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_noise.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -413,6 +478,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_noise.c
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_prespch_buf.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -421,6 +488,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_prespch
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_sigproc.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -429,6 +498,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_sigproc
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -437,6 +508,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp.c.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_affine.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -445,6 +518,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_af
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_inverse_linear.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -453,6 +528,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_in
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_piecewise_linear.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -461,6 +538,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_pi
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fixlog.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -469,6 +548,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fixlog.c.o
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/yin.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/yin.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -477,6 +558,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/yin.c.o: C
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/agc.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/agc.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -485,6 +568,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/agc.c.o:
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/cmn.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -493,6 +578,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/cmn.c.o:
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/cmn_live.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -501,6 +588,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/cmn_live
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/feat.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/feat.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -509,6 +598,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/feat.c.o
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/lda.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/lda.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -517,6 +608,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/lda.c.o:
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/fsg_model.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -525,6 +618,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/fsg_model.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -533,6 +628,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf.c.o: 
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf_parser.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -541,6 +638,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf_parse
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf_scanner.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -549,6 +648,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf_scann
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/lm_trie.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -557,6 +658,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/lm_trie.c.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/lm_trie_quant.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -565,6 +668,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/lm_trie_qu
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_model.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -573,6 +678,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_mode
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_model_set.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -581,6 +688,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_mode
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_model_trie.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -589,6 +698,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_mode
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngrams_raw.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -597,6 +708,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngrams_raw
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bio.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bio.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -605,6 +718,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bio.c.o:
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bitarr.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitarr.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -613,6 +728,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bitarr.c
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bitvec.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitvec.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -621,6 +738,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bitvec.c
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/blas_lite.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -629,6 +748,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/blas_lit
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/case.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/case.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -637,6 +758,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/case.c.o
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/ckd_alloc.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -645,6 +768,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/ckd_allo
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/cmd_ln.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -653,6 +778,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/cmd_ln.c
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/dtoa.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/dtoa.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -661,6 +788,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/dtoa.c.o
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/err.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/err.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -669,6 +798,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/err.c.o:
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/errno.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/errno.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -677,6 +808,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/errno.c.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/f2c_lite.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -685,6 +818,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/f2c_lite
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/filename.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/filename.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -693,6 +828,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/filename
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/genrand.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/genrand.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -701,6 +838,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/genrand.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/glist.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/glist.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -709,6 +848,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/glist.c.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/hash_table.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/hash_table.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -717,6 +858,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/hash_tab
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/heap.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/heap.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -725,6 +868,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/heap.c.o
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/listelem_alloc.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -733,6 +878,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/listelem
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/logmath.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/logmath.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -741,6 +888,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/logmath.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/matrix.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/matrix.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -749,6 +898,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/matrix.c
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/mmio.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/mmio.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -757,6 +908,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/mmio.c.o
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/pio.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/pio.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -765,6 +918,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/pio.c.o:
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/priority_queue.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -773,6 +928,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/priority
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/profile.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/profile.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -781,6 +938,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/profile.
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/sbthread.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/sbthread.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -789,6 +948,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/sbthread
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/slamch.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slamch.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -797,6 +958,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/slamch.c
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/slapack_lite.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -805,6 +968,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/slapack_
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/strfuncs.c.o: C_COMPILER__xyzsphinxbase_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c || cmake_object_order_depends_target_xyzsphinxbase
   DEFINES = -DHAVE_CONFIG_H -Dxyzsphinxbase_EXPORTS
@@ -813,6 +978,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/strfuncs
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 
 # =============================================================================
@@ -829,8 +996,9 @@ build xyzsphinxbase/libxyzsphinxbase.so: C_SHARED_LIBRARY_LINKER__xyzsphinxbase_
   PRE_LINK = :
   SONAME = libxyzsphinxbase.so
   SONAME_FLAG = -Wl,-soname,
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/
   TARGET_FILE = xyzsphinxbase/libxyzsphinxbase.so
-  TARGET_PDB = xyzsphinxbase.so.dbg
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxbase.pdb
 
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target xyzsphinxad
@@ -848,6 +1016,8 @@ build xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/src/libsphinxad/ad_base.c.o: C_CO
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxad.dir
   OBJECT_FILE_DIR = xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/src/libsphinxad
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxad.pdb
 
 
 # =============================================================================
@@ -865,8 +1035,9 @@ build xyzsphinxbase/libxyzsphinxad.so: C_SHARED_LIBRARY_LINKER__xyzsphinxad_Debu
   PRE_LINK = :
   SONAME = libxyzsphinxad.so
   SONAME_FLAG = -Wl,-soname,
+  TARGET_COMPILE_PDB = xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/
   TARGET_FILE = xyzsphinxbase/libxyzsphinxad.so
-  TARGET_PDB = xyzsphinxad.so.dbg
+  TARGET_PDB = xyzsphinxbase/libxyzsphinxad.pdb
 
 
 #############################################
@@ -900,6 +1071,8 @@ build libxyzsphinxad.so: phony xyzsphinxbase/libxyzsphinxad.so
 
 build libxyzsphinxbase.so: phony xyzsphinxbase/libxyzsphinxbase.so
 
+build ps_plus: phony ../bin/ps_plus
+
 build xyzpocketsphinx: phony xyzpocketsphinx/libxyzpocketsphinx.so
 
 build xyzsphinxad: phony xyzsphinxbase/libxyzsphinxad.so
@@ -914,7 +1087,7 @@ build xyzsphinxbase: phony xyzsphinxbase/libxyzsphinxbase.so
 #############################################
 # Folder: /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build
 
-build all: phony ps_plus xyzpocketsphinx/all xyzsphinxbase/all
+build all: phony ../bin/ps_plus xyzpocketsphinx/all xyzsphinxbase/all
 
 # =============================================================================
 
@@ -937,14 +1110,14 @@ build xyzsphinxbase/all: phony xyzsphinxbase/libxyzsphinxbase.so xyzsphinxbase/l
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../xyzpocketsphinx/CMakeLists.txt ../xyzpocketsphinx/include/config.h.in ../xyzsphinxbase/CMakeLists.txt ../xyzsphinxbase/include/config.h.in ../xyzsphinxbase/include/sphinx_config.h.in /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../xyzpocketsphinx/CMakeLists.txt ../xyzpocketsphinx/include/config.h.in ../xyzsphinxbase/CMakeLists.txt ../xyzsphinxbase/include/config.h.in ../xyzsphinxbase/include/sphinx_config.h.in /usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../xyzpocketsphinx/CMakeLists.txt ../xyzpocketsphinx/include/config.h.in ../xyzsphinxbase/CMakeLists.txt ../xyzsphinxbase/include/config.h.in ../xyzsphinxbase/include/sphinx_config.h.in /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../xyzpocketsphinx/CMakeLists.txt ../xyzpocketsphinx/include/config.h.in ../xyzsphinxbase/CMakeLists.txt ../xyzsphinxbase/include/config.h.in ../xyzsphinxbase/include/sphinx_config.h.in /usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
 
 
 #############################################

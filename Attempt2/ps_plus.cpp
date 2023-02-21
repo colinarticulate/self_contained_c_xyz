@@ -1,5 +1,5 @@
 #include <chrono>
-//#include <thread>
+#include <thread>
 #include <pthread.h> 
 
 #include "ps_plus.h"
@@ -51,6 +51,13 @@ void process(XYZ_PocketSphinx *ps, PS_Data *data) {
         ps->terminate(); 
 }
 
+void process_batch(XYZ_Batch *ps, PS_Batch_Data *data) {
+        ps->init((void*)data->wav.buffer, (size_t)data->wav.size, (int)data->params.size, data->params.p);
+        ps->init_recognition();
+        ps->process();
+        ps->terminate(); 
+}
+
 void init(XYZ_PocketSphinx *ps, PS_Data *data) {
         ps->init((void*)(data->jsgf.buffer), (size_t)data->jsgf.size, (void*)data->wav.buffer, (size_t)data->wav.size, (int)data->params.size, data->params.p);
         ps->init_recognition();
@@ -63,73 +70,141 @@ void process_no_init(XYZ_PocketSphinx *ps) {
         ps->terminate(); 
 }
 
-// void parallel_encapsulated(PS_Data data[5]) {
-//     XYZ_PocketSphinx ps[5];
-//     //std::thread threads[5];
+void parallel_encapsulated(PS_Data data[5]) {
+    XYZ_PocketSphinx ps[5];
+    //std::thread threads[5];
 
-// 	high_resolution_clock::time_point start;
-// 	high_resolution_clock::time_point end;
-//     // high_resolution_clock::time_point starts[5];
-// 	// high_resolution_clock::time_point ends[5];
+	high_resolution_clock::time_point start;
+	high_resolution_clock::time_point end;
+    // high_resolution_clock::time_point starts[5];
+	// high_resolution_clock::time_point ends[5];
 
-//     start=high_resolution_clock::now();
-//     // for(int i = 0; i< 5; i++) {
-//     //     init(&ps[i], &data[i]);
+    start=high_resolution_clock::now();
+    // for(int i = 0; i< 5; i++) {
+    //     init(&ps[i], &data[i]);
 
-//     // }
-//     // printf("debug:");
-//     // for(int i = 0; i< 5; i++) {
+    // }
+    // printf("debug:");
+    // for(int i = 0; i< 5; i++) {
         
-//     //     threads[i](process, &ps[i], &data[i]);
-//     //     //process(&ps[i],&data[i]);
-//     //     //process_no_init(&ps[i]);
+    //     threads[i](process, &ps[i], &data[i]);
+    //     //process(&ps[i],&data[i]);
+    //     //process_no_init(&ps[i]);
         
-//     // }
-//     // for(int i = 0; i< 5; i++) {
-//     //     threads[i].join();
-//     // }
+    // }
+    // for(int i = 0; i< 5; i++) {
+    //     threads[i].join();
+    // }
 
-//     std::thread t0(process, &ps[0],&data[0]);
-//     std::thread t1(process, &ps[1],&data[1]);
-//     std::thread t2(process, &ps[2],&data[2]);
-//     std::thread t3(process, &ps[3],&data[3]);
-//     std::thread t4(process, &ps[4],&data[4]);
+    std::thread t0(process, &ps[0],&data[0]);
+    std::thread t1(process, &ps[1],&data[1]);
+    std::thread t2(process, &ps[2],&data[2]);
+    std::thread t3(process, &ps[3],&data[3]);
+    std::thread t4(process, &ps[4],&data[4]);
     
-//     // int i=0;
-//     // ps[i].init((void*)(data[i].jsgf.buffer), (size_t)data[i].jsgf.size, (void*)data[i].wav.buffer, (size_t)data[i].wav.size, (int)data[i].params.size, data[i].params.p);
-//     // ps[i].init_recognition();
-//     // ps[i].recognize_from_buffered_file();
-//     // ps[i].terminate();
-//     // std::thread t0(process_no_init, &ps[i]);
+    // int i=0;
+    // ps[i].init((void*)(data[i].jsgf.buffer), (size_t)data[i].jsgf.size, (void*)data[i].wav.buffer, (size_t)data[i].wav.size, (int)data[i].params.size, data[i].params.p);
+    // ps[i].init_recognition();
+    // ps[i].recognize_from_buffered_file();
+    // ps[i].terminate();
+    // std::thread t0(process_no_init, &ps[i]);
     
-//     t0.join();
-//     t1.join();
-//     t2.join();
-//     t3.join();
-//     t4.join();
+    t0.join();
+    t1.join();
+    t2.join();
+    t3.join();
+    t4.join();
         
 
 
-//    end=high_resolution_clock::now();
+   end=high_resolution_clock::now();
 
-//     for(int i = 0; i< 5; i++) {
-//         strcpy(data[i].result.result,ps[i]._result);
-//         data[i].result.size = ps[i]._result_size;
-//     }
+    for(int i = 0; i< 5; i++) {
+        strcpy(data[i].result.result,ps[i]._result);
+        data[i].result.size = ps[i]._result_size;
+    }
 
-//     //double total=0;
-//     for(int i = 0; i< 5; i++) {
-//         int frate = atoi(get_value(data[i].params.p,"-frate"));
-//         printf("%d\t%s\n",frate,data[i].result.result);
-//         // printf("%d\t%s\t\t%lfms\n",frate,data[i].result.result,duration<double, std::milli>(ends[i] - starts[i]).count());
-//         // total = total + duration<double, std::milli>(ends[i] - starts[i]).count();
-//     }
+    //double total=0;
+    for(int i = 0; i< 5; i++) {
+        int frate = atoi(get_value(data[i].params.p,"-frate"));
+        printf("%d\t%s\n",frate,data[i].result.result);
+        // printf("%d\t%s\t\t%lfms\n",frate,data[i].result.result,duration<double, std::milli>(ends[i] - starts[i]).count());
+        // total = total + duration<double, std::milli>(ends[i] - starts[i]).count();
+    }
 
-// 	auto dur_us = duration<double, std::micro>(end - start).count();
-// 	auto dur_ms = duration<double, std::milli>(end - start).count();
-// 	printf("Time: %lfus %lfms\n", dur_us, dur_ms);
-//     //printf("Computation time on task: %lfms\n", total);
-// }
+	auto dur_us = duration<double, std::micro>(end - start).count();
+	auto dur_ms = duration<double, std::milli>(end - start).count();
+	printf("Time: %lfus %lfms\n", dur_us, dur_ms);
+    //printf("Computation time on task: %lfms\n", total);
+}
+
+void parallel_encapsulated_batch(PS_Batch_Data data[5]) {
+    XYZ_Batch ps[5];
+    //std::thread threads[5];
+
+	high_resolution_clock::time_point start;
+	high_resolution_clock::time_point end;
+    // high_resolution_clock::time_point starts[5];
+	// high_resolution_clock::time_point ends[5];
+
+    start=high_resolution_clock::now();
+    // for(int i = 0; i< 5; i++) {
+    //     init(&ps[i], &data[i]);
+
+    // }
+    // printf("debug:");
+    // for(int i = 0; i< 5; i++) {
+        
+    //     threads[i](process, &ps[i], &data[i]);
+    //     //process(&ps[i],&data[i]);
+    //     //process_no_init(&ps[i]);
+        
+    // }
+    // for(int i = 0; i< 5; i++) {
+    //     threads[i].join();
+    // }
+
+    std::thread t0(process_batch, &ps[0],&data[0]);
+    std::thread t1(process_batch, &ps[1],&data[1]);
+    std::thread t2(process_batch, &ps[2],&data[2]);
+    std::thread t3(process_batch, &ps[3],&data[3]);
+    std::thread t4(process_batch, &ps[4],&data[4]);
+    
+    // int i=0;
+    // ps[i].init((void*)(data[i].jsgf.buffer), (size_t)data[i].jsgf.size, (void*)data[i].wav.buffer, (size_t)data[i].wav.size, (int)data[i].params.size, data[i].params.p);
+    // ps[i].init_recognition();
+    // ps[i].recognize_from_buffered_file();
+    // ps[i].terminate();
+    // std::thread t0(process_no_init, &ps[i]);
+    
+    t0.join();
+    t1.join();
+    t2.join();
+    t3.join();
+    t4.join();
+        
+
+
+   end=high_resolution_clock::now();
+
+    for(int i = 0; i< 5; i++) {
+        strcpy(data[i].result.result,ps[i]._result);
+        data[i].result.size = ps[i]._result_size;
+    }
+
+    //double total=0;
+    for(int i = 0; i< 5; i++) {
+        int frate = atoi(get_value(data[i].params.p,"-frate"));
+        printf("%d\t%s\n",frate,data[i].result.result);
+        // printf("%d\t%s\t\t%lfms\n",frate,data[i].result.result,duration<double, std::milli>(ends[i] - starts[i]).count());
+        // total = total + duration<double, std::milli>(ends[i] - starts[i]).count();
+    }
+
+	auto dur_us = duration<double, std::micro>(end - start).count();
+	auto dur_ms = duration<double, std::milli>(end - start).count();
+	printf("Time: %lfus %lfms\n", dur_us, dur_ms);
+    //printf("Computation time on task: %lfms\n", total);
+}
 
 
 void sequential_encapsulated_batch(PS_Batch_Data data[5]) {
@@ -321,8 +396,8 @@ main()
     // data.load(params125);
 
     //sequential_encapsulated(data);
-    //parallel_encapsulated(data);
-    parallel_encapsualted_with_pthreads(data);
+    parallel_encapsulated(data);
+    //parallel_encapsualted_with_pthreads(data);
 
     // int i=4;
     // XYZ_PocketSphinx ps1;
@@ -341,7 +416,8 @@ main()
                     batch_data);
     
     //sequential_encapsulated_batch(batch_data);
-    parallel_encapsualted_batch_with_pthreads(batch_data);
+    parallel_encapsulated_batch(batch_data);
+    //parallel_encapsualted_batch_with_pthreads(batch_data);
     
     printf("Working on it...\n");
 

@@ -5,17 +5,18 @@ project(ps_plus)#PROJECT_SOURCE_DIR#CMAKE_SOURCE_DIR
 # target_compile_features(pocketsphinx_compiler_flags INTERFACE c_std_11)
 # target_compile_features(sphinxbase_compiler_flags INTERFACE c_std_11)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of the executable
 
 add_subdirectory(xyzpocketsphinx)
 add_subdirectory(xyzsphinxbase)
 # list(APPEND EXTRA_LIBS xyzpocketsphinx xyzsphinxbase xyzsphinxad)
 
+add_definitions(-DHAVE_CONFIG_H)
+add_compile_options(-O3)
+
 target_link_libraries(xyzsphinxad PUBLIC xyzsphinxbase)
 target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad)
-target_include_directories(xyzpocketsphinx PUBLIC
-                           "${PROJECT_BINARY_DIR}"
-                           )
+target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
 
 add_executable(ps_plus ps_plus.cpp )
 

@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             //"program": "${fileDirname}/${fileBasenameNoExtension}-debug",
-            "program": "${workspaceFolder}/ps_plus-debug",
+            "program": "${workspaceFolder}/bin/ps_plus",
             //"args": ["-infile","$(pwd)/goforward.raw"],
             //"args":["$($(cat $(pwd)/data/options4.txt))"],
             //"args": ["$(pwd)/options3.txt | tr -d '\r\n' | cat"],

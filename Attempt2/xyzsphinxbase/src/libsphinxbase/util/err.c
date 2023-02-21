@@ -80,110 +80,112 @@ static void* err_user_data;
 void
 err_msg(err_lvl_t lvl, const char *path, long ln, const char *fmt, ...)
 {
-    static const char *err_prefix[ERR_MAX] = {
-        "DEBUG", "INFO", "INFOCONT", "WARN", "ERROR", "FATAL"
-    };
+    // C++ no-logging:
+    // static const char *err_prefix[ERR_MAX] = {
+    //     "DEBUG", "INFO", "INFOCONT", "WARN", "ERROR", "FATAL"
+    // };
 
-    char msg[1024];
-    va_list ap;
+    // char msg[1024];
+    // va_list ap;
 
-    if (!err_cb)
-        return;
+    // if (!err_cb)
+    //     return;
 
-    va_start(ap, fmt);
-    vsnprintf(msg, sizeof(msg), fmt, ap);
-    va_end(ap);
+    // va_start(ap, fmt);
+    // vsnprintf(msg, sizeof(msg), fmt, ap);
+    // va_end(ap);
 
-    if (path) {
-        const char *fname = path2basename(path);
-        if (lvl == ERR_INFOCONT)
-    	    err_cb(err_user_data, lvl, "%s(%ld): %s", fname, ln, msg);
-        else if (lvl == ERR_INFO)
-            err_cb(err_user_data, lvl, "%s: %s(%ld): %s", err_prefix[lvl], fname, ln, msg);
-        else
-    	    err_cb(err_user_data, lvl, "%s: \"%s\", line %ld: %s", err_prefix[lvl], fname, ln, msg);
-    } else {
-        err_cb(err_user_data, lvl, "%s", msg);
-    }
+    // if (path) {
+    //     const char *fname = path2basename(path);
+    //     if (lvl == ERR_INFOCONT)
+    // 	    err_cb(err_user_data, lvl, "%s(%ld): %s", fname, ln, msg);
+    //     else if (lvl == ERR_INFO)
+    //         err_cb(err_user_data, lvl, "%s: %s(%ld): %s", err_prefix[lvl], fname, ln, msg);
+    //     else
+    // 	    err_cb(err_user_data, lvl, "%s: \"%s\", line %ld: %s", err_prefix[lvl], fname, ln, msg);
+    // } else {
+    //     err_cb(err_user_data, lvl, "%s", msg);
+    // }
 }
 
 #ifdef _WIN32_WCE /* No strerror for WinCE, so a separate implementation */
 void
 err_msg_system(err_lvl_t lvl, const char *path, long ln, const char *fmt, ...)
 {
-    static const char *err_prefix[ERR_MAX] = {
-        "DEBUG", "INFO", "INFOCONT", "WARN", "ERROR", "FATAL"
-    };
+    // static const char *err_prefix[ERR_MAX] = {
+    //     "DEBUG", "INFO", "INFOCONT", "WARN", "ERROR", "FATAL"
+    // };
 
-    va_list ap;
-    LPVOID error_wstring;
-    DWORD error;
-    char msg[1024];
-    char error_string[1024];
+    // va_list ap;
+    // LPVOID error_wstring;
+    // DWORD error;
+    // char msg[1024];
+    // char error_string[1024];
 
-    if (!err_cb)
-        return;
+    // if (!err_cb)
+    //     return;
 
-    error = GetLastError();
-    FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER | 
-                  FORMAT_MESSAGE_FROM_SYSTEM | 
-                  FORMAT_MESSAGE_IGNORE_INSERTS,
-                  NULL,
-                  error,
-                  0, // Default language
-                  (LPTSTR) &error_wstring,
-                  0,
-                  NULL);
-    wcstombs(error_string, error_wstring, 1023);
-    LocalFree(error_wstring);
+    // error = GetLastError();
+    // FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER | 
+    //               FORMAT_MESSAGE_FROM_SYSTEM | 
+    //               FORMAT_MESSAGE_IGNORE_INSERTS,
+    //               NULL,
+    //               error,
+    //               0, // Default language
+    //               (LPTSTR) &error_wstring,
+    //               0,
+    //               NULL);
+    // wcstombs(error_string, error_wstring, 1023);
+    // LocalFree(error_wstring);
 
-    va_start(ap, fmt);
-    vsnprintf(msg, sizeof(msg), fmt, ap);
-    va_end(ap);
+    // va_start(ap, fmt);
+    // vsnprintf(msg, sizeof(msg), fmt, ap);
+    // va_end(ap);
 
-    if (path) {
-        const char *fname = path2basename(path);
-        if (lvl == ERR_INFOCONT)
-    	    err_cb(err_user_data, lvl, "%s(%ld): %s: %s\n", fname, ln, msg, error_string);
-        else if (lvl == ERR_INFO)
-            err_cb(err_user_data, lvl, "%s: %s(%ld): %s: %s\n", err_prefix[lvl], fname, ln, msg, error_string);
-        else
-    	    err_cb(err_user_data, lvl, "%s: \"%s\", line %ld: %s: %s\n", err_prefix[lvl], fname, ln, msg, error_string);
-    } else {
-        err_cb(err_user_data, lvl, "%s: %s\n", msg, error_string);
-    }
+    // if (path) {
+    //     const char *fname = path2basename(path);
+    //     if (lvl == ERR_INFOCONT)
+    // 	    err_cb(err_user_data, lvl, "%s(%ld): %s: %s\n", fname, ln, msg, error_string);
+    //     else if (lvl == ERR_INFO)
+    //         err_cb(err_user_data, lvl, "%s: %s(%ld): %s: %s\n", err_prefix[lvl], fname, ln, msg, error_string);
+    //     else
+    // 	    err_cb(err_user_data, lvl, "%s: \"%s\", line %ld: %s: %s\n", err_prefix[lvl], fname, ln, msg, error_string);
+    // } else {
+    //     err_cb(err_user_data, lvl, "%s: %s\n", msg, error_string);
+    // }
 }
 #else
 void
 err_msg_system(err_lvl_t lvl, const char *path, long ln, const char *fmt, ...)
 {
-    int local_errno = errno;
+    // C++ no-logging:
+    // int local_errno = errno;
     
-    static const char *err_prefix[ERR_MAX] = {
-        "DEBUG", "INFO", "INFOCONT", "WARN", "ERROR", "FATAL"
-    };
+    // static const char *err_prefix[ERR_MAX] = {
+    //     "DEBUG", "INFO", "INFOCONT", "WARN", "ERROR", "FATAL"
+    // };
 
-    char msg[1024];
-    va_list ap;
+    // char msg[1024];
+    // va_list ap;
 
-    if (!err_cb)
-        return;
+    // if (!err_cb)
+    //     return;
 
-    va_start(ap, fmt);
-    vsnprintf(msg, sizeof(msg), fmt, ap);
-    va_end(ap);
+    // va_start(ap, fmt);
+    // vsnprintf(msg, sizeof(msg), fmt, ap);
+    // va_end(ap);
 
-    if (path) {
-        const char *fname = path2basename(path);
-        if (lvl == ERR_INFOCONT)
-    	    err_cb(err_user_data, lvl, "%s(%ld): %s: %s\n", fname, ln, msg, strerror(local_errno));
-        else if (lvl == ERR_INFO)
-            err_cb(err_user_data, lvl, "%s: %s(%ld): %s: %s\n", err_prefix[lvl], fname, ln, msg, strerror(local_errno));
-        else
-    	    err_cb(err_user_data, lvl, "%s: \"%s\", line %ld: %s: %s\n", err_prefix[lvl], fname, ln, msg, strerror(local_errno));
-    } else {
-        err_cb(err_user_data, lvl, "%s: %s\n", msg, strerror(local_errno));
-    }
+    // if (path) {
+    //     const char *fname = path2basename(path);
+    //     if (lvl == ERR_INFOCONT)
+    // 	    err_cb(err_user_data, lvl, "%s(%ld): %s: %s\n", fname, ln, msg, strerror(local_errno));
+    //     else if (lvl == ERR_INFO)
+    //         err_cb(err_user_data, lvl, "%s: %s(%ld): %s: %s\n", err_prefix[lvl], fname, ln, msg, strerror(local_errno));
+    //     else
+    // 	    err_cb(err_user_data, lvl, "%s: \"%s\", line %ld: %s: %s\n", err_prefix[lvl], fname, ln, msg, strerror(local_errno));
+    // } else {
+    //     err_cb(err_user_data, lvl, "%s: %s\n", msg, strerror(local_errno));
+    // }
 }
 #endif
 
@@ -191,34 +193,34 @@ err_msg_system(err_lvl_t lvl, const char *path, long ln, const char *fmt, ...)
 static void
 err_logcat_cb(void *user_data, err_lvl_t lvl, const char *fmt, ...)
 {
-    static const int android_level[ERR_MAX] = {ANDROID_LOG_DEBUG, ANDROID_LOG_INFO,
-         ANDROID_LOG_INFO, ANDROID_LOG_WARN, ANDROID_LOG_ERROR, ANDROID_LOG_ERROR};
+    // static const int android_level[ERR_MAX] = {ANDROID_LOG_DEBUG, ANDROID_LOG_INFO,
+    //      ANDROID_LOG_INFO, ANDROID_LOG_WARN, ANDROID_LOG_ERROR, ANDROID_LOG_ERROR};
 
-    va_list ap;
-    va_start(ap, fmt);
-    __android_log_vprint(android_level[lvl], "cmusphinx", fmt, ap);
-    va_end(ap);
+    // va_list ap;
+    // va_start(ap, fmt);
+    // __android_log_vprint(android_level[lvl], "cmusphinx", fmt, ap);
+    // va_end(ap);
 }
 #elif defined(_WIN32_WCE)
 static void
 err_wince_cb(void *user_data, err_lvl_t lvl, const char *fmt, ...)
 {
-    char msg[1024];
-    WCHAR *wmsg;
-    size_t size;
-    va_list ap;
+//     char msg[1024];
+//     WCHAR *wmsg;
+//     size_t size;
+//     va_list ap;
 
-    va_start(ap, fmt);
-    _vsnprintf(msg, sizeof(msg), fmt, ap);
-    va_end(ap);
+//     va_start(ap, fmt);
+//     _vsnprintf(msg, sizeof(msg), fmt, ap);
+//     va_end(ap);
 
-    size = mbstowcs(NULL, msg, 0) + 1;
-    wmsg = ckd_calloc(size, sizeof(*wmsg));
-    mbstowcs(wmsg, msg, size);
+//     size = mbstowcs(NULL, msg, 0) + 1;
+//     wmsg = ckd_calloc(size, sizeof(*wmsg));
+//     mbstowcs(wmsg, msg, size);
 
-    OutputDebugStringW(wmsg);
-    ckd_free(wmsg);
-}
+//     OutputDebugStringW(wmsg);
+//     ckd_free(wmsg);
+// }
 #else
 void
 err_logfp_cb(void *user_data, err_lvl_t lvl, const char *fmt, ...)
