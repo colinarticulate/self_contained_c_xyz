@@ -4,7 +4,7 @@
 
 #include "ps_plus.h"
 #include "batch_plus.h"
-#include "data.h"
+#include "data.hpp"
 
 using namespace std::chrono;
 
@@ -395,7 +395,7 @@ main()
     // DATA data(5);
     // data.load(params125);
 
-    //sequential_encapsulated(data);
+    sequential_encapsulated(data);
     parallel_encapsulated(data);
     //parallel_encapsualted_with_pthreads(data);
 
@@ -415,7 +415,7 @@ main()
                     batch_params125, batch_params125_size,
                     batch_data);
     
-    //sequential_encapsulated_batch(batch_data);
+    sequential_encapsulated_batch(batch_data);
     parallel_encapsulated_batch(batch_data);
     //parallel_encapsualted_batch_with_pthreads(batch_data);
     
