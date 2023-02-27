@@ -12,7 +12,6 @@
 		[
 			"add_executable",
 			"target_link_libraries",
-			"add_compile_options",
 			"add_definitions",
 			"target_include_directories"
 		],
@@ -40,17 +39,11 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 15,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
 				"line" : 14,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 3,
 				"file" : 0,
 				"line" : 27,
 				"parent" : 0
@@ -64,39 +57,35 @@
 			[
 				{
 					"fragment" : "-g"
-				},
-				{
-					"backtrace" : 3,
-					"fragment" : "-O3"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 3,
 					"define" : "HAVE_CONFIG_H"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/aside_ps_library"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase/fe"
 				},
 				{

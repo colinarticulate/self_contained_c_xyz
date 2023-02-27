@@ -89,7 +89,12 @@
         "phone_loop_search.h": "c",
         "logmath.h": "c",
         "genrand.h": "c",
-        "ckd_alloc.h": "c"
+        "ckd_alloc.h": "c",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "stop_token": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

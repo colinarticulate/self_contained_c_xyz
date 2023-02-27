@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_ps_plus: phony || cmake_object_order_dep
 build CMakeFiles/ps_plus.dir/ps_plus.cpp.o: CXX_COMPILER__ps_plus_Debug /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus.cpp || cmake_object_order_depends_target_ps_plus
   DEFINES = -DHAVE_CONFIG_H
   DEP_FILE = CMakeFiles/ps_plus.dir/ps_plus.cpp.o.d
-  FLAGS = -g -O3
+  FLAGS = -g
   INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2 -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/aside_ps_library -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase/fe -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad
   OBJECT_DIR = CMakeFiles/ps_plus.dir
   OBJECT_FILE_DIR = CMakeFiles/ps_plus.dir

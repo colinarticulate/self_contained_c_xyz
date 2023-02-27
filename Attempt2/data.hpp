@@ -4,13 +4,15 @@
 
 // #if __ANDROID__
 
-#define DATA_PATH "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/"
+//#define DATA_PATH "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/"
+#define DATA_PATH "@"
+
 
 // #elif __linux__
 
 // #define DATA_PATH 
 
-
+std::string ps_fields[]={"-dict","-featparams", "-hmm", "-infile", "-jsgf", "-logfn"};
 
 const char *params125[] = {
 "pocketsphinx_continuous",
@@ -28,7 +30,7 @@ const char *params125[] = {
 "-frate", "125",
 "-fsgusefiller", "no",
 "-fwdflat", "no",
-"-hmm",DATA_PATH "Models/art-en-us/en-us",
+"-hmm", DATA_PATH "Models/art-en-us/en-us",
 "-infile", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/allowed1_philip_fixed_trimmed.wav",
 "-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_a3ecf04d-a77a-4269-9eb5-395f8dfbdd8a_allowed1_philip_fixed_trimmed.wav.jsgf",
 "-logfn", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/log/e1e0d844-812b-496c-83fb-712de847f8a7_a3ecf04d_frate_125_debug_from_c_.log",
@@ -241,6 +243,8 @@ const int params105_size=77;
 
 //--------------------------- BATCH -------------------------
 
+std::string batch_fields[] = {"-cepdir", "-ctl", "-dict", "-hmm", "-logfn"};
+
 const char *batch_params72[] = {
 "pocketsphinx_batch",
 "-adcin", "yes",
@@ -438,6 +442,127 @@ const char *batch_params125[] = {
 const int batch_params125_size=63;
 
 
+
+//*************************************************************************************************
+char* get_value(char *params[], const char *key);
+
+
+struct BinaryData {
+    void *buffer;
+    int size;
+};
+
+struct CharData {
+    char **p;
+    int size;
+};
+
+struct ResultData {
+    char result[512];
+    int size;
+};
+
+struct PS_Data {
+    struct BinaryData jsgf;
+    struct BinaryData wav;
+    struct CharData params;
+    struct ResultData result;
+};
+
+struct PS_Batch_Data {
+    struct BinaryData wav;
+    struct CharData params;
+    struct ResultData result;
+};
+
+
+class PS_DYNAMIC_DATA {
+    public:
+    char **_p1;
+    static const int p_size=77;
+
+    PS_DYNAMIC_DATA(const char *p1[], const int p1_size, 
+                            const char *p2[], const int p2_size, 
+                            const char *p3[], const int p3_size,
+                            const char *p4[], const int p4_size,
+                            const char *p5[], const int p5_size,
+                            std::string data_path, 
+                            struct PS_Data data[5]) {
+        
+        std::string parameters[p1_size];
+        init_params(p1, p1_size, data_path, parameters);
+
+        //_p1_size = p1_size;
+        deep_copy(parameters, _p1);
+                       
+    }
+
+    void init_params(const char *p[], const int p_size, std::string data_path, std::string* parameters) {
+    //std::string parameters[p_size];
+
+    int j=0;
+    for(int i=0; i<p_size; i++) {
+        std::string parameter = std::string((const char *)p[i]);
+
+        parameters[i] = parameter;
+        if (parameter == ps_fields[j]){
+            const char *path = get_value((char**)p, ps_fields[j].data());
+            std::string spath(path);
+            spath.replace(spath.begin(),spath.begin()+1,data_path);
+
+            parameters[i+1] = spath;
+            i++;
+            j++;
+        }
+    }
+
+    //return parameters;
+
+}
+
+    void deep_copy(std::string parameters[p_size], char **dp) {
+
+                
+        dp = (char**)malloc((p_size+1) * sizeof(char*));
+        for(int i = 0; i < p_size; ++i)
+        {
+            size_t length = strlen(parameters[i].c_str())+1;
+            dp[i] = (char*)malloc(length);
+            memcpy(dp[i], parameters[i].c_str(), length);
+        }
+        dp[p_size] = NULL;
+
+        // do operations on new_argv
+
+    }
+
+    void delete_deep_copy(char **dp, int dp_size) {
+        for(int i = 0; i < dp_size; ++i)
+        {
+            free(dp[i]);
+        }
+        free(dp);
+    }
+
+
+
+    ~PS_DYNAMIC_DATA(){
+        delete_deep_copy(_p1, p_size);
+    }
+
+};
+
+
+
+
+//*************************************************************************************************
+
+
+
+
+
+
+
 void* create_buffer(int* bsize, const char* filename, const char* mode){
     FILE* file = NULL;
     file = fopen(filename, mode);
@@ -525,33 +650,13 @@ char* get_audiofile(const char *ctl_file, const char *audio_dir, const char *ext
 }
 
 
-struct BinaryData {
-    void *buffer;
-    int size;
-};
-
-struct CharData {
-    char **p;
-    int size;
-};
-
-struct ResultData {
-    char result[512];
-    int size;
-};
-
-struct PS_Data {
-    struct BinaryData jsgf;
-    struct BinaryData wav;
-    struct CharData params;
-    struct ResultData result;
-};
-
-struct PS_Batch_Data {
-    struct BinaryData wav;
-    struct CharData params;
-    struct ResultData result;
-};
+void dynamic_data_loading(  const char *p1[], const int p1_size, 
+                            const char *p2[], const int p2_size, 
+                            const char *p3[], const int p3_size,
+                            const char *p4[], const int p4_size,
+                            const char *p5[], const int p5_size,
+                            std::string data_path, 
+                            struct PS_Data data[5]) ;
 
 void load_data(const char *p1[], const int p1_size, 
                const char *p2[], const int p2_size, 
@@ -560,6 +665,9 @@ void load_data(const char *p1[], const int p1_size,
                const char *p5[], const int p5_size,
                struct PS_Data data[5]) {
 //void load_data(char *p1[], char *p2[], char *p3[], char *p4[], char *p5[], struct Data data[
+    std::string path("/path/in/device/");
+    dynamic_data_loading(p1, p1_size, p2, p2_size, p3, p3_size, p4, p4_size, p5, p5_size, path, data);
+
     data[0].params.p=(char**)p1;
     data[0].params.size=p1_size;
     
@@ -619,6 +727,35 @@ void load_data_batch(const char *p1[], const int p1_size,
     }
 
     //printf("working on it");
+
+}
+
+
+
+
+void dynamic_data_loading(  const char *p1[], const int p1_size, 
+                            const char *p2[], const int p2_size, 
+                            const char *p3[], const int p3_size,
+                            const char *p4[], const int p4_size,
+                            const char *p5[], const int p5_size,
+                            std::string data_path, 
+                            struct PS_Data data[5]) {
+
+    // std::string parameters[p1_size];
+    // init_params(p1, p1_size, data_path, parameters);
+
+    PS_DYNAMIC_DATA ps_data(p1, p1_size, 
+                            p2, p2_size, 
+                            p3, p3_size,
+                            p4, p4_size,
+                            p5, p5_size,
+                            data_path, 
+                            data);
+    
+
+    printf("Working on it ...\n");
+
+
 
 }
 
