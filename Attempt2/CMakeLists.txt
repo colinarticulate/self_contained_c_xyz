@@ -18,7 +18,8 @@ target_link_libraries(xyzsphinxad PUBLIC xyzsphinxbase)
 target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad)
 target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
 
-add_executable(ps_plus ps_plus.cpp )
+#add_executable(ps_plus ps_plus.cpp )
+add_executable(ps_plus c_demo.cpp )
 
 target_link_libraries(ps_plus PUBLIC xyzpocketsphinx)
 

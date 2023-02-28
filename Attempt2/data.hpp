@@ -1,4 +1,8 @@
+#ifndef DATA_INCLUDED
+#define DATA_INCLUDED
+
 #include <string>
+#include <string.h>
 
 #include <xyzsphinxbase/err.h>
 
@@ -445,7 +449,8 @@ const int batch_params125_size=63;
 
 //*************************************************************************************************
 char* get_value(char *params[], const char *key);
-
+void* create_buffer(int* bsize, const char* filename, const char* mode);
+char* get_audiofile(const char *ctl_file, const char *audio_dir, const char *extension );
 
 struct BinaryData {
     void *buffer;
@@ -475,65 +480,98 @@ struct PS_Batch_Data {
     struct ResultData result;
 };
 
-
 class PS_DYNAMIC_DATA {
-    public:
+    private:
     char **_p1;
-    static const int p_size=77;
+    int _p1_size;
+    char **_p2;
+    int _p2_size;
+    char **_p3;
+    int _p3_size;
+    char **_p4;
+    int _p4_size;
+    char **_p5;
+    int _p5_size;
+
+    public:
+    PS_Data *data;
 
     PS_DYNAMIC_DATA(const char *p1[], const int p1_size, 
                             const char *p2[], const int p2_size, 
                             const char *p3[], const int p3_size,
                             const char *p4[], const int p4_size,
                             const char *p5[], const int p5_size,
-                            std::string data_path, 
-                            struct PS_Data data[5]) {
+                            std::string data_path) {
         
-        std::string parameters[p1_size];
-        init_params(p1, p1_size, data_path, parameters);
+        data = (PS_Data*)malloc(sizeof(PS_Data)*5);
 
-        //_p1_size = p1_size;
-        deep_copy(parameters, _p1);
-                       
-    }
+        _p1 = (char**)malloc(p1_size*sizeof(char*)+1);
+        _p1_size = p1_size;
+        create_deep_copy(p1, p1_size, data_path, _p1);
 
-    void init_params(const char *p[], const int p_size, std::string data_path, std::string* parameters) {
-    //std::string parameters[p_size];
+        _p2 = (char**)malloc(p2_size*sizeof(char*)+1);
+        _p2_size = p2_size;
+        create_deep_copy(p2, p2_size, data_path, _p2);
+        
+        _p3 = (char**)malloc(p3_size*sizeof(char*)+1);
+        _p3_size = p3_size;
+        create_deep_copy(p3, p3_size, data_path, _p3);
+        
+        _p4 = (char**)malloc(p4_size*sizeof(char*)+1);
+        _p4_size = p4_size;
+        create_deep_copy(p4, p4_size, data_path, _p4);
+        
+        _p5 = (char**)malloc(p5_size*sizeof(char*)+1);
+        _p5_size = p5_size;
+        create_deep_copy(p5, p5_size, data_path, _p5);
 
-    int j=0;
-    for(int i=0; i<p_size; i++) {
-        std::string parameter = std::string((const char *)p[i]);
+        data[0].params.p=_p1;
+        data[0].params.size=_p1_size;
+        data[1].params.p=_p2;
+        data[1].params.size=_p2_size;
+        data[2].params.p=_p3;
+        data[2].params.size=_p3_size; //number_parameters((char**)p3);->
+        data[3].params.p=_p4;
+        data[3].params.size=_p4_size; //number_parameters((char**)p4);
+        data[4].params.p=_p5;
+        data[4].params.size=_p5_size; //number_parameters((char**)p5);
 
-        parameters[i] = parameter;
-        if (parameter == ps_fields[j]){
-            const char *path = get_value((char**)p, ps_fields[j].data());
-            std::string spath(path);
-            spath.replace(spath.begin(),spath.begin()+1,data_path);
-
-            parameters[i+1] = spath;
-            i++;
-            j++;
+        for( int i =0; i< 5; i++){
+            data[i].jsgf.buffer = create_buffer( &data[i].jsgf.size, get_value(data[i].params.p, "-jsgf"), "rb");
+            data[i].wav.buffer  = create_buffer( &data[i].wav.size,  get_value(data[i].params.p, "-infile"), "rb");
+            memset(data[i].result.result, 'a', sizeof(char)*512);
+            data[i].result.size = 512;
         }
+      
     }
 
-    //return parameters;
+    void create_deep_copy(const char *p[], const int p_size, std::string data_path, char **dp) {
+        size_t length=0;
+        std::string parameter;
+        int j=0;
+        for(int i=0; i<p_size; i++) {
+            parameter = std::string((const char *)p[i]);
 
-}
+            length = strlen(parameter.c_str())+1;
+            dp[i] = (char*)malloc(length*sizeof(char));
+            memcpy(dp[i], parameter.c_str(), length);
 
-    void deep_copy(std::string parameters[p_size], char **dp) {
+            if (parameter == ps_fields[j]){
+                const char *path = get_value((char**)p, ps_fields[j].data());
+                std::string spath(path);
+                spath.replace(spath.begin(),spath.begin()+1,data_path);
 
-                
-        dp = (char**)malloc((p_size+1) * sizeof(char*));
-        for(int i = 0; i < p_size; ++i)
-        {
-            size_t length = strlen(parameters[i].c_str())+1;
-            dp[i] = (char*)malloc(length);
-            memcpy(dp[i], parameters[i].c_str(), length);
+                //parameters[i+1] = spath;
+                //parameter = std::string((const char *)p[i+1]);
+
+                length = strlen(spath.c_str())+1;
+                dp[i+1] = (char*)malloc(length*sizeof(char));
+                memcpy(dp[i+1], spath.c_str(), length);
+                i++;
+                j++;
+            }
         }
         dp[p_size] = NULL;
-
-        // do operations on new_argv
-
     }
 
     void delete_deep_copy(char **dp, int dp_size) {
@@ -544,10 +582,131 @@ class PS_DYNAMIC_DATA {
         free(dp);
     }
 
-
-
     ~PS_DYNAMIC_DATA(){
-        delete_deep_copy(_p1, p_size);
+        delete_deep_copy(_p1, _p1_size);
+        delete_deep_copy(_p2, _p2_size);
+        delete_deep_copy(_p3, _p3_size);
+        delete_deep_copy(_p4, _p4_size);
+        delete_deep_copy(_p5, _p5_size);
+        free(data);
+    }
+
+};
+
+
+class BATCH_DYNAMIC_DATA {
+    private:
+    char **_p1;
+    int _p1_size;
+    char **_p2;
+    int _p2_size;
+    char **_p3;
+    int _p3_size;
+    char **_p4;
+    int _p4_size;
+    char **_p5;
+    int _p5_size;
+
+    public:
+    PS_Batch_Data *data;
+
+    BATCH_DYNAMIC_DATA(const char *p1[], const int p1_size, 
+                            const char *p2[], const int p2_size, 
+                            const char *p3[], const int p3_size,
+                            const char *p4[], const int p4_size,
+                            const char *p5[], const int p5_size,
+                            std::string data_path) {
+        
+        data = (PS_Batch_Data*)malloc(sizeof(PS_Batch_Data)*5);
+
+        _p1 = (char**)malloc(p1_size*sizeof(char*)+1);
+        _p1_size = p1_size;
+        create_deep_copy(p1, p1_size, data_path, _p1);
+
+        _p2 = (char**)malloc(p2_size*sizeof(char*)+1);
+        _p2_size = p2_size;
+        create_deep_copy(p2, p2_size, data_path, _p2);
+        
+        _p3 = (char**)malloc(p3_size*sizeof(char*)+1);
+        _p3_size = p3_size;
+        create_deep_copy(p3, p3_size, data_path, _p3);
+        
+        _p4 = (char**)malloc(p4_size*sizeof(char*)+1);
+        _p4_size = p4_size;
+        create_deep_copy(p4, p4_size, data_path, _p4);
+        
+        _p5 = (char**)malloc(p5_size*sizeof(char*)+1);
+        _p5_size = p5_size;
+        create_deep_copy(p5, p5_size, data_path, _p5);
+
+        data[0].params.p=_p1;
+        data[0].params.size=_p1_size;
+        data[1].params.p=_p2;
+        data[1].params.size=_p2_size;
+        data[2].params.p=_p3;
+        data[2].params.size=_p3_size; //number_parameters((char**)p3);->
+        data[3].params.p=_p4;
+        data[3].params.size=_p4_size; //number_parameters((char**)p4);
+        data[4].params.p=_p5;
+        data[4].params.size=_p5_size; //number_parameters((char**)p5);
+
+    for( int i = 0; i < 5; i++){
+        //data[i].jsgf.buffer = create_buffer( &data[i].jsgf.size, get_value(data[i].params.p, "-jsgf"), "rb");
+        char *ctl_file = get_value(data[i].params.p, "-ctl");
+        char *cep_dir = get_value(data[i].params.p, "-cepdir");
+        char *extension = get_value(data[i].params.p, "-cepext");
+        char *ctl_audio_file = get_audiofile(ctl_file, cep_dir, extension);
+        data[i].wav.buffer  = create_buffer( &data[i].wav.size,  ctl_audio_file, "rb");
+        memset(data[i].result.result, 'a', sizeof(char)*512);
+        data[i].result.size = 512;
+    }
+      
+    }
+
+    void create_deep_copy(const char *p[], const int p_size, std::string data_path, char **dp) {
+        size_t length=0;
+        std::string parameter;
+        int j=0;
+        for(int i=0; i<p_size; i++) {
+            parameter = std::string((const char *)p[i]);
+
+            length = strlen(parameter.c_str())+1;
+            dp[i] = (char*)malloc(length*sizeof(char));
+            memcpy(dp[i], parameter.c_str(), length);
+
+            if (parameter == batch_fields[j]){
+                const char *path = get_value((char**)p, batch_fields[j].data());
+                std::string spath(path);
+                spath.replace(spath.begin(),spath.begin()+1,data_path);
+
+                //parameters[i+1] = spath;
+                //parameter = std::string((const char *)p[i+1]);
+
+                length = strlen(spath.c_str())+1;
+                dp[i+1] = (char*)malloc(length*sizeof(char));
+                memcpy(dp[i+1], spath.c_str(), length);
+                i++;
+                j++;
+            }
+        }
+        dp[p_size] = NULL;
+    }
+
+    void delete_deep_copy(char **dp, int dp_size) {
+        for(int i = 0; i < dp_size; ++i)
+        {
+            free(dp[i]);
+        }
+        free(dp);
+    }
+
+    ~BATCH_DYNAMIC_DATA(){
+        delete_deep_copy(_p1, _p1_size);
+        delete_deep_copy(_p2, _p2_size);
+        delete_deep_copy(_p3, _p3_size);
+        delete_deep_copy(_p4, _p4_size);
+        delete_deep_copy(_p5, _p5_size);
+        free(data);
     }
 
 };
@@ -655,8 +814,7 @@ void dynamic_data_loading(  const char *p1[], const int p1_size,
                             const char *p3[], const int p3_size,
                             const char *p4[], const int p4_size,
                             const char *p5[], const int p5_size,
-                            std::string data_path, 
-                            struct PS_Data data[5]) ;
+                            std::string data_path);
 
 void load_data(const char *p1[], const int p1_size, 
                const char *p2[], const int p2_size, 
@@ -665,8 +823,9 @@ void load_data(const char *p1[], const int p1_size,
                const char *p5[], const int p5_size,
                struct PS_Data data[5]) {
 //void load_data(char *p1[], char *p2[], char *p3[], char *p4[], char *p5[], struct Data data[
-    std::string path("/path/in/device/");
-    dynamic_data_loading(p1, p1_size, p2, p2_size, p3, p3_size, p4, p4_size, p5, p5_size, path, data);
+    // for testing only
+    // std::string path("/path/in/device/");
+    // dynamic_data_loading(p1, p1_size, p2, p2_size, p3, p3_size, p4, p4_size, p5, p5_size, path);
 
     data[0].params.p=(char**)p1;
     data[0].params.size=p1_size;
@@ -738,8 +897,7 @@ void dynamic_data_loading(  const char *p1[], const int p1_size,
                             const char *p3[], const int p3_size,
                             const char *p4[], const int p4_size,
                             const char *p5[], const int p5_size,
-                            std::string data_path, 
-                            struct PS_Data data[5]) {
+                            std::string data_path) {
 
     // std::string parameters[p1_size];
     // init_params(p1, p1_size, data_path, parameters);
@@ -749,8 +907,7 @@ void dynamic_data_loading(  const char *p1[], const int p1_size,
                             p3, p3_size,
                             p4, p4_size,
                             p5, p5_size,
-                            data_path, 
-                            data);
+                            data_path);
     
 
     printf("Working on it ...\n");
@@ -759,3 +916,4 @@ void dynamic_data_loading(  const char *p1[], const int p1_size,
 
 }
 
+#endif
