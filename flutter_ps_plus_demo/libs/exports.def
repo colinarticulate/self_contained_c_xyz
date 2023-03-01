@@ -1,0 +1,5 @@
+LIBRARY api
+EXPORTS
+    add
+    demo_ps
+    demo_ps_batch

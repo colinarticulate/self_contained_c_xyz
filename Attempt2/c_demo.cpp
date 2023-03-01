@@ -9,6 +9,95 @@
 
 using namespace std::chrono;
 
+struct Array
+{
+	char* array;
+	int len;
+};
+
+struct ArrayOfArray
+{
+    Array* array;
+    int len;
+};
+
+struct ArrayOfStrings
+{
+    char** array;
+    int num_arrays
+}
+
+void delete_results_container(Array* results, int n){
+    
+    for(int i = 0; i < n; i++) {
+        free(results[i].array);
+    }
+
+    free(results);
+}
+
+void delete_params_container(Array* results, int n) {
+    for(int i = 0; i < n; i++) {
+        free(results[i].array);
+    }
+
+    free(results);    
+}
+
+Array* create_results_container(PS_DYNAMIC_DATA* ps_data) {
+    Array* results = (Array*)malloc(sizeof(Array)*5);
+    for(int i=0; i<5; i++){
+        //char* location = ps_data.data[i].result.result;
+        //int result_size =  ps_data.data[i].result.size;
+        results[i].array =(char*)malloc(sizeof(char)*ps_data->data[i].result.size+1);
+        memcpy(results[i].array, ps_data->data[i].result.result,ps_data->data[i].result.size);
+
+        //results[i].len = ps_data.data[i].result.size;
+    }
+
+    return results;
+}
+
+Array* create_params_container(char** params, int n) {
+    Array* results = (Array*)malloc(sizeof(Array)*n);
+    for(int i=0; i<n; i++){
+        //char* location = ps_data.data[i].result.result;
+        //int result_size =  ps_data.data[i].result.size;
+        int param_size = strlen(params[i])+1;
+        results[i].array =(char*)malloc(sizeof(char)*param_size);
+        memcpy(results[i].array, params[i], param_size);
+
+        results[i].len = param_size;
+    }
+
+    return results;
+}
+
+
+
+ArrayOfStrings* create_params_sender(char** params, int n){
+    ArrayOfStrings* params = (Array*)malloc(sizeof(ArrayOfStrings)*n);
+    params->num_arrays = n;
+    params->array = (char**)malloc(sizeof(char*)*n);
+    for(int i=0; i<n; i++){
+        int param_size = strlen(params[i])+1;
+        params->array[i] =(char*)malloc(sizeof(char)*param_size);
+        memcpy(params->array[i], params[i], param_size);
+    }
+
+    return results;
+}
+
+void delete_params_sender(ArrayOfStrings* results) {
+    int n = results->num_arrays;
+
+    for(int i = 0; i < n; i++) {
+        free(results->array[i]);
+    }
+
+    free(results);    
+}
+
 
 int
 main()
@@ -38,8 +127,27 @@ main()
     //sequential_encapsulated_batch(ps_batch_data.data);
     parallel_encapsulated_batch(ps_batch_data.data);
     //parallel_encapsualted_batch_with_pthreads(batch_data);
-    
+
+    Array* results = create_results_container(&ps_data);//don't pass by value or we incurr segmentation fault as it will invoke
+                                                        //the destructor when running out of scope inside this function and also
+                                                        //again when exiting main and, hence, those mallocs
+                                                        // would have been freed already !!!-> seg fault!!!
+
+
+
+    //printf("Working on it...\n");
+
+    delete_results_container(results,5);
+
+    Array* arr_params = create_params_container(ps_data.data[0].params.p, ps_data.data[0].params.size);
     printf("Working on it...\n");
+    delete_params_container(arr_params, ps_data.data[0].params.size);
+
+    char** params = create_params_sender(ps_data.data[0].params.p, ps_data.data[0].params.size);
+    printf("Working on it...\n");
+    delete_params_sender(params, ps_data.data[0].params.size);
+
+
 
     return 0;
     
