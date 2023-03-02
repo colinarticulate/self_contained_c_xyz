@@ -23,7 +23,7 @@ Future<String> get _localPath async {
       : await getApplicationSupportDirectory();
   // final directory =
   //     await getApplicationSupportDirectory(); //Both Linux and iOS
-  //print('Persistent data path: $directory');
+  print('Persistent data path: $directory');
 
   //get info about the assets
   final manifestContent = await rootBundle.loadString('AssetManifest.json');
@@ -44,14 +44,14 @@ Future<String> get _localPath async {
     final pathfile =
         p.join(directory!.path, imagePaths[i].replaceAll("assets/", ""));
     final byteData = await rootBundle.load(imagePaths[i]);
-    //print('-->: $pathfile');
+    print('-->: $pathfile');
     final file = await File(pathfile).create(recursive: true);
     await file.writeAsBytes(byteData.buffer
         .asUint8List(byteData.offsetInBytes, byteData.lengthInBytes));
   }
 
-  //return directory!.path;
-  return "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/";
+  return directory!.path;
+  //return "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/";
 }
 
 Future<String> ps_demo(String device_path) async {

@@ -222,9 +222,9 @@ ArrayOfStrings* ps_demo(const char* data_path) {
                         params105, params105_size,
                         data_path);
 
-    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
-    sequential_encapsulated(ps_data.data);
+    //sequential_encapsulated(ps_data.data);
     //parallel_encapsulated(ps_data.data);
     //parallel_encapsualted_with_pthreads(ps_data.data);
     //Array results[5];
