@@ -4,6 +4,10 @@
 #define EXPORT extern "C" __attribute__((visibility("default"))) __attribute__((used))
 #endif
 
+//This is only for the sleep functions:
+#include <chrono>
+#include <thread>
+
 #include <cstring>
 #include <ctype.h>
 
@@ -105,12 +109,9 @@ const char *hello_world()
 
 
 ArrayOfStrings* create_params_sender(char** _params, int n){
-    ArrayOfStrings* params = (ArrayOfStrings*)malloc(sizeof(ArrayOfStrings)*n);
+    ArrayOfStrings* params = (ArrayOfStrings*)malloc(sizeof(ArrayOfStrings));
     params->num_arrays = n;
     params->array = (char**)malloc(sizeof(char*)*n);
-    // char buffer [33];
-    // itoa(n,buffer,10);
-    // params->array[0] = 
     for(int i=0; i<n; i++){
         int param_size = strlen(_params[i])+1;
         params->array[i] =(char*)malloc(sizeof(char)*param_size);
@@ -118,11 +119,12 @@ ArrayOfStrings* create_params_sender(char** _params, int n){
     }
 
     return params;
+    printf("CREATED PARAMS\n");
 }
 
 EXPORT
-ArrayOfStrings* get_some_parameters(){
-    std::string data_path("/not_yet_have_the_path/");
+ArrayOfStrings* get_some_parameters(char *data_path){
+    //std::string data_path("/not_yet_have_the_path/");
     PS_DYNAMIC_DATA ps_data(params125, params125_size,
                     params72, params72_size, 
                     params80, params80_size,
@@ -133,21 +135,21 @@ ArrayOfStrings* get_some_parameters(){
     return params;
 }
 
-
 EXPORT
-void delete_params_sender(ArrayOfStrings* results) {
-    int n = results->num_arrays;
+void delete_params_sender(ArrayOfStrings* params) {
+    int n = params->num_arrays;
 
     for(int i = 0; i < n; i++) {
-        free(results->array[i]);
+        free(params->array[i]);
     }
-    free(results->array);
-    free(results);    
+
+    free(params->array);
+    free(params);    
 }
 
 EXPORT
-void demo_ps(char* path) {
-    std::string data_path(path);
+ArrayOfStrings* demo_ps(char* data_path) {
+    //std::string data_path(path);
     PS_DYNAMIC_DATA ps_data(params125, params125_size,
                         params72, params72_size, 
                         params80, params80_size,
@@ -157,9 +159,11 @@ void demo_ps(char* path) {
 
 
     //sequential_encapsulated(ps_data.data);
-    parallel_encapsulated(ps_data.data);
+    //parallel_encapsulated(ps_data.data);
     //parallel_encapsualted_with_pthreads(data);
     //Array results[5];
+    ArrayOfStrings* params = create_params_sender(ps_data.data[0].params.p, ps_data.data[0].params.size);
+    return params;
     
 
 }
@@ -176,5 +180,56 @@ void demo_ps_batch(std::string data_path) {
     //sequential_encapsulated_batch(ps_batch_data.data);
     parallel_encapsulated_batch(ps_batch_data.data);
     //parallel_encapsualted_batch_with_pthreads(batch_data);
+
+}
+
+//***************************************
+
+ArrayOfStrings* create_results_sender(PS_DYNAMIC_DATA *ps_data){
+    ArrayOfStrings* params = (ArrayOfStrings*)malloc(sizeof(ArrayOfStrings));
+    int n = 5;
+    params->num_arrays = n;
+    params->array = (char**)malloc(sizeof(char*)*n);
+    for(int i=0; i<n; i++){
+        int param_size = strlen(ps_data->data[i].result.result)+1;
+        params->array[i] =(char*)malloc(sizeof(char)*param_size);
+        memcpy(params->array[i], ps_data->data[i].result.result, param_size);
+    }
+
+    return params;
+}
+
+EXPORT
+void delete_results_sender(ArrayOfStrings* results) {
+    int n = results->num_arrays;
+
+    for(int i = 0; i < n; i++) {
+        free(results->array[i]);
+    }
+
+    free(results->array);
+    free(results);    
+}
+
+
+EXPORT
+ArrayOfStrings* ps_demo(const char* data_path) {
+    //std::string data_path(path);
+    PS_DYNAMIC_DATA ps_data(params125, params125_size,
+                        params72, params72_size, 
+                        params80, params80_size,
+                        params91, params91_size,
+                        params105, params105_size,
+                        data_path);
+
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+    sequential_encapsulated(ps_data.data);
+    //parallel_encapsulated(ps_data.data);
+    //parallel_encapsualted_with_pthreads(ps_data.data);
+    //Array results[5];
+    ArrayOfStrings* params = create_results_sender(&ps_data);
+    return params;
+    
 
 }

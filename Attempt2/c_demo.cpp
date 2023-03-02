@@ -4,6 +4,9 @@
 
 // #include "ps_plus.h"
 // #include "batch_plus.h"
+#include <chrono>
+#include <thread>
+
 #include "data.hpp"
 #include "c_demo.h"
 
@@ -21,11 +24,11 @@ struct ArrayOfArray
     int len;
 };
 
-struct ArrayOfStrings
+typedef struct 
 {
     char** array;
-    int num_arrays
-}
+    int num_arrays;
+} ArrayOfStrings;
 
 void delete_results_container(Array* results, int n){
     
@@ -75,27 +78,82 @@ Array* create_params_container(char** params, int n) {
 
 
 
-ArrayOfStrings* create_params_sender(char** params, int n){
-    ArrayOfStrings* params = (Array*)malloc(sizeof(ArrayOfStrings)*n);
+ArrayOfStrings* create_params_sender(char** _params, int n){
+    ArrayOfStrings* params = (ArrayOfStrings*)malloc(sizeof(ArrayOfStrings));
     params->num_arrays = n;
     params->array = (char**)malloc(sizeof(char*)*n);
     for(int i=0; i<n; i++){
-        int param_size = strlen(params[i])+1;
+        int param_size = strlen(_params[i])+1;
         params->array[i] =(char*)malloc(sizeof(char)*param_size);
-        memcpy(params->array[i], params[i], param_size);
+        memcpy(params->array[i], _params[i], param_size);
     }
 
-    return results;
+    return params;
 }
 
-void delete_params_sender(ArrayOfStrings* results) {
+void delete_params_sender(ArrayOfStrings* params) {
+    int n = params->num_arrays;
+
+    for(int i = 0; i < n; i++) {
+        free(params->array[i]);
+    }
+
+    free(params->array);
+    free(params);    
+}
+
+
+
+ArrayOfStrings* create_results_sender(PS_DYNAMIC_DATA *ps_data){
+    ArrayOfStrings* params = (ArrayOfStrings*)malloc(sizeof(ArrayOfStrings));
+    int n = 5;
+    params->num_arrays = n;
+    params->array = (char**)malloc(sizeof(char*)*n);
+    for(int i=0; i<n; i++){
+        int param_size = strlen(ps_data->data[i].result.result)+1;
+        params->array[i] =(char*)malloc(sizeof(char)*param_size);
+        memcpy(params->array[i], ps_data->data[i].result.result, param_size);
+    }
+
+    return params;
+}
+
+void delete_results_sender(ArrayOfStrings* results) {
     int n = results->num_arrays;
 
     for(int i = 0; i < n; i++) {
         free(results->array[i]);
     }
 
+    free(results->array);
     free(results);    
+}
+
+
+
+ArrayOfStrings* ps_demo(const char* data_path) {
+    //std::string data_path(path);
+    PS_DYNAMIC_DATA ps_data(params125, params125_size,
+                        params72, params72_size, 
+                        params80, params80_size,
+                        params91, params91_size,
+                        params105, params105_size,
+                        data_path);
+    PS_DYNAMIC_DATA *ps_data_ptr = &ps_data;
+   
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+    //sequential_encapsulated(ps_data.data);
+    parallel_encapsulated(ps_data_ptr->data);
+    //parallel_encapsualted_with_pthreads(data);
+    //Array results[5];
+
+    
+
+    ArrayOfStrings* params = create_results_sender(ps_data_ptr);
+    return params;
+    
+
 }
 
 
@@ -104,16 +162,17 @@ main()
 {   
     std::string data_path("/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/");
 
-    PS_DYNAMIC_DATA ps_data(params125, params125_size,
-                            params72, params72_size, 
-                            params80, params80_size,
-                            params91, params91_size,
-                            params105, params105_size,
-                            data_path);
+    // PS_DYNAMIC_DATA ps_data(params125, params125_size,
+    //                         params72, params72_size, 
+    //                         params80, params80_size,
+    //                         params91, params91_size,
+    //                         params105, params105_size,
+    //                         data_path);
+
 
 
     //sequential_encapsulated(ps_data.data);
-    parallel_encapsulated(ps_data.data);
+    //parallel_encapsulated(ps_data.data);
     //parallel_encapsualted_with_pthreads(data);
 
 
@@ -125,30 +184,32 @@ main()
                                     data_path);
     
     //sequential_encapsulated_batch(ps_batch_data.data);
-    parallel_encapsulated_batch(ps_batch_data.data);
+    //parallel_encapsulated_batch(ps_batch_data.data);
     //parallel_encapsualted_batch_with_pthreads(batch_data);
 
-    Array* results = create_results_container(&ps_data);//don't pass by value or we incurr segmentation fault as it will invoke
-                                                        //the destructor when running out of scope inside this function and also
-                                                        //again when exiting main and, hence, those mallocs
-                                                        // would have been freed already !!!-> seg fault!!!
+    // Array* results = create_results_container(&ps_data);//don't pass by value or we incurr segmentation fault as it will invoke
+    //                                                     //the destructor when running out of scope inside this function and also
+    //                                                     //again when exiting main and, hence, those mallocs
+    //                                                     // would have been freed already !!!-> seg fault!!!
 
 
 
-    //printf("Working on it...\n");
+    // //printf("Working on it...\n");
 
-    delete_results_container(results,5);
+    // delete_results_container(results,5);
 
-    Array* arr_params = create_params_container(ps_data.data[0].params.p, ps_data.data[0].params.size);
+    // Array* arr_params = create_params_container(ps_data.data[0].params.p, ps_data.data[0].params.size);
+    // printf("Working on it...\n");
+    // delete_params_container(arr_params, ps_data.data[0].params.size);
+
+    // ArrayOfStrings* params = create_params_sender(ps_data.data[0].params.p, ps_data.data[0].params.size);
+    // printf("Working on it...\n");
+    // delete_params_sender(params);
+
+   
+    ArrayOfStrings* results = ps_demo(data_path.data());
     printf("Working on it...\n");
-    delete_params_container(arr_params, ps_data.data[0].params.size);
-
-    char** params = create_params_sender(ps_data.data[0].params.p, ps_data.data[0].params.size);
-    printf("Working on it...\n");
-    delete_params_sender(params, ps_data.data[0].params.size);
-
-
-
+    delete_results_sender(results);
     return 0;
     
 
