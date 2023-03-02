@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "ANDROID_ABI",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "arm64-v8a"
+		},
+		{
+			"name" : "ANDROID_NDK",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620"
+		},
+		{
+			"name" : "ANDROID_PLATFORM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "android-16"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -15,7 +51,31 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/addr2line"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-addr2line"
+		},
+		{
+			"name" : "CMAKE_ANDROID_ARCH_ABI",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "arm64-v8a"
+		},
+		{
+			"name" : "CMAKE_ANDROID_NDK",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -27,11 +87,47 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "Archiver"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ar"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar"
+		},
+		{
+			"name" : "CMAKE_ASM_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the compiler during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_ASM_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the compiler during debug builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_ASM_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the compiler during release builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -39,7 +135,7 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
@@ -55,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build"
+			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_ps_plus_demo/android/app/.cxx/Debug/1q471e6p/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +175,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "22"
+			"value" : "18"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -103,7 +199,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/bin/cmake"
+			"value" : "/home/dbarbera/Android/Sdk/cmake/3.18.1/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -115,7 +211,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/bin/cpack"
+			"value" : "/home/dbarbera/Android/Sdk/cmake/3.18.1/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -127,7 +223,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/bin/ctest"
+			"value" : "/home/dbarbera/Android/Sdk/cmake/3.18.1/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -139,11 +235,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "(This variable does not exist and should not be used)"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/bin/clang++"
+			"type" : "UNINITIALIZED",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -159,7 +255,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ar-14"
+			"value" : "CMAKE_CXX_COMPILER_AR-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -175,7 +271,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ranlib-14"
+			"value" : "CMAKE_CXX_COMPILER_RANLIB-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -187,7 +283,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the CXX compiler during all build types."
+					"value" : "Flags used by the compiler during all build types."
 				}
 			],
 			"type" : "STRING",
@@ -203,11 +299,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the CXX compiler during DEBUG builds."
+					"value" : "Flags used by the compiler during debug builds."
 				}
 			],
 			"type" : "STRING",
-			"value" : "-g"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_MINSIZEREL",
@@ -235,11 +331,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the CXX compiler during RELEASE builds."
+					"value" : "Flags used by the compiler during release builds."
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O3 -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
@@ -258,6 +354,22 @@
 			"value" : "-O2 -g -DNDEBUG"
 		},
 		{
+			"name" : "CMAKE_CXX_STANDARD_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Libraries linked by default with all C++ applications."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-latomic -lm"
+		},
+		{
 			"name" : "CMAKE_C_COMPILER",
 			"properties" : 
 			[
@@ -267,11 +379,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "(This variable does not exist and should not be used)"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/bin/clang"
+			"type" : "UNINITIALIZED",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -287,7 +399,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ar-14"
+			"value" : "CMAKE_C_COMPILER_AR-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -303,7 +415,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/llvm-ranlib-14"
+			"value" : "CMAKE_C_COMPILER_RANLIB-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -315,7 +427,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the C compiler during all build types."
+					"value" : "Flags used by the compiler during all build types."
 				}
 			],
 			"type" : "STRING",
@@ -331,11 +443,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the C compiler during DEBUG builds."
+					"value" : "Flags used by the compiler during debug builds."
 				}
 			],
 			"type" : "STRING",
-			"value" : "-g"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_MINSIZEREL",
@@ -363,11 +475,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the C compiler during RELEASE builds."
+					"value" : "Flags used by the compiler during release builds."
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O3 -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_RELWITHDEBINFO",
@@ -386,6 +498,22 @@
 			"value" : "-O2 -g -DNDEBUG"
 		},
 		{
+			"name" : "CMAKE_C_STANDARD_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Libraries linked by default with all C applications."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-latomic -lm"
+		},
+		{
 			"name" : "CMAKE_DLLTOOL",
 			"properties" : 
 			[
@@ -402,18 +530,6 @@
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
 		},
 		{
-			"name" : "CMAKE_EXECUTABLE_FORMAT",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Executable file format"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ELF"
-		},
-		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS",
 			"properties" : 
 			[
@@ -423,7 +539,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during all build types."
+					"value" : "Flags used by the linker."
 				}
 			],
 			"type" : "STRING",
@@ -502,8 +618,8 @@
 					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "BOOL",
-			"value" : "TRUE"
+			"type" : "UNINITIALIZED",
+			"value" : "ON"
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -575,7 +691,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2"
+			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_ps_plus_demo/libs"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -602,6 +718,18 @@
 			"value" : "1"
 		},
 		{
+			"name" : "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_ps_plus_demo/build/app/intermediates/cxx/Debug/1q471e6p/obj/arm64-v8a"
+		},
+		{
 			"name" : "CMAKE_LINKER",
 			"properties" : 
 			[
@@ -615,23 +743,19 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ld"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
-					"value" : "Program used to build from build.ninja files."
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "/usr/bin/ninja"
+			"type" : "UNINITIALIZED",
+			"value" : "/home/dbarbera/Android/Sdk/cmake/3.18.1/bin/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -643,7 +767,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of modules during all build types."
+					"value" : "Flags used by the linker during the creation of modules."
 				}
 			],
 			"type" : "STRING",
@@ -727,7 +851,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/nm"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -755,7 +879,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/objcopy"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objcopy"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -771,7 +895,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/objdump"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -831,11 +955,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "Ranlib"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ranlib"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -851,7 +975,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/readelf"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -863,7 +987,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/share/cmake-3.22"
+			"value" : "/home/dbarbera/Android/Sdk/cmake/3.18.1/share/cmake-3.18"
+		},
+		{
+			"name" : "CMAKE_RUNTIME_OUTPUT_DIRECTORY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_ps_plus_demo/build/app/intermediates/cxx/Debug/1q471e6p/obj/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -875,7 +1011,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of shared libraries during all build types."
+					"value" : "Flags used by the linker during the creation of dll's."
 				}
 			],
 			"type" : "STRING",
@@ -1067,11 +1203,47 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "Strip"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/strip"
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-strip"
+		},
+		{
+			"name" : "CMAKE_SYSTEM_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "Android"
+		},
+		{
+			"name" : "CMAKE_SYSTEM_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "16"
+		},
+		{
+			"name" : "CMAKE_TOOLCHAIN_FILE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The CMake toolchain file"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake"
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -1111,19 +1283,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build"
-		},
-		{
-			"name" : "ps_plus_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
+			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_ps_plus_demo/android/app/.cxx/Debug/1q471e6p/arm64-v8a"
 		},
 		{
 			"name" : "ps_plus_SOURCE_DIR",
@@ -1135,7 +1295,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2"
+			"value" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_ps_plus_demo/libs"
 		}
 	],
 	"kind" : "cache",

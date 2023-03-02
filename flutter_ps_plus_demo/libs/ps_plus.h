@@ -184,9 +184,9 @@ class XYZ_PocketSphinx {
         // int32 score;
  
         void* _jsgf_buffer; 
-        size_t _jsgf_buffer_size;
+        size_t _jsgf_buffer_size=0;
         void* _audio_buffer;
-        size_t _audio_buffer_size; 
+        size_t _audio_buffer_size=0; 
         int _argc; 
         char **_argv;
 

@@ -12,7 +12,7 @@ add_subdirectory(xyzsphinxbase)
 # list(APPEND EXTRA_LIBS xyzpocketsphinx xyzsphinxbase xyzsphinxad)
 
 add_definitions(-DHAVE_CONFIG_H)
-#add_compile_options(-O3)
+add_compile_options(-O3)
 
 target_link_libraries(xyzsphinxad PUBLIC xyzsphinxbase)
 target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad)

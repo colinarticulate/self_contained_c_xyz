@@ -160,7 +160,8 @@ ArrayOfStrings* ps_demo(const char* data_path) {
 int
 main()
 {   
-    std::string data_path("/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/");
+    //std::string data_path("/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/");
+    std::string data_path("/home/dbarbera/.local/share/com.example.flutter_ps_plus_demo/ps_plus/");
 
     // PS_DYNAMIC_DATA ps_data(params125, params125_size,
     //                         params72, params72_size, 

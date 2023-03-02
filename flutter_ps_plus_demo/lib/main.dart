@@ -55,10 +55,14 @@ Future<String> get _localPath async {
 }
 
 Future<String> ps_demo(String device_path) async {
+  device_path =
+      "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/";
+  final c_path = device_path.toNativeUtf8();
+  print(c_path);
+  print(c_path.toDartString());
   final stopwatch = Stopwatch()..start();
-  Pointer<ArrayOfStrings> result =
-      FFIBridge.c_ps_demo(device_path.toNativeUtf8());
-  await Future.delayed(const Duration(seconds: 1))!;
+  Pointer<ArrayOfStrings> result = FFIBridge.c_ps_demo(c_path);
+  //await Future.delayed(const Duration(seconds: 1))!;
   final timing = stopwatch.elapsed;
   print('ps_demo executed in ${timing}');
   final n = result.ref.num_arrays;
@@ -66,6 +70,8 @@ Future<String> ps_demo(String device_path) async {
   for (var i = 0; i < n; i++) {
     params.add(result.ref.array.elementAt(i).value.toDartString());
   }
+
+  malloc.free(c_path);
   //now we could delete result invoking delete method
 
   return "ps_demo finished in ${timing} ";

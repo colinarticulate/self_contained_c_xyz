@@ -213,8 +213,8 @@ void delete_results_sender(ArrayOfStrings* results) {
 
 
 EXPORT
-ArrayOfStrings* ps_demo(const char* data_path) {
-    //std::string data_path(path);
+ArrayOfStrings* ps_demo(const char* path) {
+    std::string data_path(path);
     PS_DYNAMIC_DATA ps_data(params125, params125_size,
                         params72, params72_size, 
                         params80, params80_size,
@@ -222,10 +222,10 @@ ArrayOfStrings* ps_demo(const char* data_path) {
                         params105, params105_size,
                         data_path);
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
     //sequential_encapsulated(ps_data.data);
-    //parallel_encapsulated(ps_data.data);
+    parallel_encapsulated(ps_data.data);
     //parallel_encapsualted_with_pthreads(ps_data.data);
     //Array results[5];
     ArrayOfStrings* params = create_results_sender(&ps_data);
