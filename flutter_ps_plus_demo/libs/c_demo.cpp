@@ -261,6 +261,28 @@ ArrayOfStrings* ps_demo(const char* path) {
 }
 
 EXPORT
+ArrayOfStrings* ps_demo_sequential(const char* path) {
+    std::string data_path(path);
+    PS_DYNAMIC_DATA ps_data(params125, params125_size,
+                        params72, params72_size, 
+                        params80, params80_size,
+                        params91, params91_size,
+                        params105, params105_size,
+                        data_path);
+
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+    sequential_encapsulated(ps_data.data);
+    //parallel_encapsulated(ps_data.data);
+    //parallel_encapsualted_with_pthreads(ps_data.data);
+    //Array results[5];
+    ArrayOfStrings* params = create_results_sender(&ps_data);
+    return params;
+    
+
+}
+
+EXPORT
 ArrayOfStrings* ps_batch_demo(const char* path) {
     std::string data_path(path);
     BATCH_DYNAMIC_DATA ps_batch_data(batch_params125, batch_params125_size,
@@ -274,6 +296,27 @@ ArrayOfStrings* ps_batch_demo(const char* path) {
 
     //sequential_encapsulated(ps_data.data);
     parallel_encapsulated_batch(ps_batch_data.data);
+    //parallel_encapsualted_with_pthreads(ps_data.data);
+    //Array results[5];
+    ArrayOfStrings* params = create_results_sender_batch(&ps_batch_data);
+    return params;
+    
+}
+
+EXPORT
+ArrayOfStrings* ps_batch_demo_sequential(const char* path) {
+    std::string data_path(path);
+    BATCH_DYNAMIC_DATA ps_batch_data(batch_params125, batch_params125_size,
+                        batch_params72, batch_params72_size, 
+                        batch_params80, batch_params80_size,
+                        batch_params91, batch_params91_size,
+                        batch_params105, batch_params105_size,
+                        data_path);
+
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+    sequential_encapsulated_batch(ps_batch_data.data);
+    //parallel_encapsulated_batch(ps_batch_data.data);
     //parallel_encapsualted_with_pthreads(ps_data.data);
     //Array results[5];
     ArrayOfStrings* params = create_results_sender_batch(&ps_batch_data);

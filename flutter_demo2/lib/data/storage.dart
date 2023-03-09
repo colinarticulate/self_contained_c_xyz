@@ -8,6 +8,7 @@ import 'package:path/path.dart' as p;
 
 class Storage {
   static String path = "";
+  static String _demo_path = "";
 
   //This should be static Future<bool>, and we check that the directory exists
   //in the device returning False if not
@@ -47,7 +48,7 @@ class Storage {
     }
     path = directory!.path;
 
-    return directory!.path;
+    return path;
     //return "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/";
   }
 }

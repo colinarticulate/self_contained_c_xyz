@@ -199,8 +199,34 @@ ArrayOfStrings* create_results_sender(PS_DYNAMIC_DATA *ps_data){
     return params;
 }
 
+ArrayOfStrings* create_results_sender_batch(BATCH_DYNAMIC_DATA *ps_data){
+    ArrayOfStrings* params = (ArrayOfStrings*)malloc(sizeof(ArrayOfStrings));
+    int n = 5;
+    params->num_arrays = n;
+    params->array = (char**)malloc(sizeof(char*)*n);
+    for(int i=0; i<n; i++){
+        int param_size = strlen(ps_data->data[i].result.result)+1;
+        params->array[i] =(char*)malloc(sizeof(char)*param_size);
+        memcpy(params->array[i], ps_data->data[i].result.result, param_size);
+    }
+
+    return params;
+}
+
 EXPORT
 void delete_results_sender(ArrayOfStrings* results) {
+    int n = results->num_arrays;
+
+    for(int i = 0; i < n; i++) {
+        free(results->array[i]);
+    }
+
+    free(results->array);
+    free(results);    
+}
+
+EXPORT
+void delete_results_sender_batch(ArrayOfStrings* results) {
     int n = results->num_arrays;
 
     for(int i = 0; i < n; i++) {
@@ -229,6 +255,71 @@ ArrayOfStrings* ps_demo(const char* path) {
     //parallel_encapsualted_with_pthreads(ps_data.data);
     //Array results[5];
     ArrayOfStrings* params = create_results_sender(&ps_data);
+    return params;
+    
+
+}
+
+EXPORT
+ArrayOfStrings* ps_demo_sequential(const char* path) {
+    std::string data_path(path);
+    PS_DYNAMIC_DATA ps_data(params125, params125_size,
+                        params72, params72_size, 
+                        params80, params80_size,
+                        params91, params91_size,
+                        params105, params105_size,
+                        data_path);
+
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+    sequential_encapsulated(ps_data.data);
+    //parallel_encapsulated(ps_data.data);
+    //parallel_encapsualted_with_pthreads(ps_data.data);
+    //Array results[5];
+    ArrayOfStrings* params = create_results_sender(&ps_data);
+    return params;
+    
+
+}
+
+EXPORT
+ArrayOfStrings* ps_batch_demo(const char* path) {
+    std::string data_path(path);
+    BATCH_DYNAMIC_DATA ps_batch_data(batch_params125, batch_params125_size,
+                        batch_params72, batch_params72_size, 
+                        batch_params80, batch_params80_size,
+                        batch_params91, batch_params91_size,
+                        batch_params105, batch_params105_size,
+                        data_path);
+
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+    //sequential_encapsulated(ps_data.data);
+    parallel_encapsulated_batch(ps_batch_data.data);
+    //parallel_encapsualted_with_pthreads(ps_data.data);
+    //Array results[5];
+    ArrayOfStrings* params = create_results_sender_batch(&ps_batch_data);
+    return params;
+    
+}
+
+EXPORT
+ArrayOfStrings* ps_batch_demo_sequential(const char* path) {
+    std::string data_path(path);
+    BATCH_DYNAMIC_DATA ps_batch_data(batch_params125, batch_params125_size,
+                        batch_params72, batch_params72_size, 
+                        batch_params80, batch_params80_size,
+                        batch_params91, batch_params91_size,
+                        batch_params105, batch_params105_size,
+                        data_path);
+
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
+    sequential_encapsulated_batch(ps_batch_data.data);
+    //parallel_encapsulated_batch(ps_batch_data.data);
+    //parallel_encapsualted_with_pthreads(ps_data.data);
+    //Array results[5];
+    ArrayOfStrings* params = create_results_sender_batch(&ps_batch_data);
     return params;
     
 

@@ -90,3 +90,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  assets:
+    - assets/ps_plus/Models/art-en-us/art_db.phone
+    - assets/ps_plus/Models/art-en-us/en-us/
+    - assets/ps_plus/allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/
+    - assets/ps_plus/allowed1_philip_allowed/audio/allowed1_philip_fixed_trimmed.wav
+    - assets/ps_plus/allowed1_philip_allowed/ctl/ctl_allowed1_philip_fixed_trimmed.txt
+    - assets/ps_plus/dictionaries/art_db.phone 

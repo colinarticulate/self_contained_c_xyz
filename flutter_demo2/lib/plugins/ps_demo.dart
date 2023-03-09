@@ -9,38 +9,16 @@ class ArrayOfStrings extends Struct {
   external int num_arrays;
 }
 
-Future<String> ps_demo(String device_path) async {
-  device_path =
-      "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/data/";
-  final c_path = device_path.toNativeUtf8();
-  print(c_path);
-  print(c_path.toDartString());
-  final stopwatch = Stopwatch()..start();
-  Pointer<ArrayOfStrings> result = FFIBridge.c_ps_demo(c_path);
-  //await Future.delayed(const Duration(seconds: 1))!;
-  final timing = stopwatch.elapsed;
-  print('ps_demo executed in ${timing}');
-  final n = result.ref.num_arrays;
-  final params = List.empty(growable: true);
-  for (var i = 0; i < n; i++) {
-    params.add(result.ref.array.elementAt(i).value.toDartString());
-  }
-
-  malloc.free(c_path);
-  //now we could delete result invoking delete method
-
-  return "ps_demo finished in ${timing} ";
-}
-
 class FFIBridge {
-  static String path = "";
+  static String _path = "";
 
   // This should be:
   // static Future<bool>, so we could check if we have all the files we need
   // so the plugin doesn't crash, return False if something is missing.
   static bool initialize(String device_path) {
-    path = device_path;
-    print('path from FFIBridge: $path');
+    _path =
+        device_path + "/ps_plus/"; // this need fixing to make it fault-proof.
+    print('demo path from FFIBridge: ${_path}');
 
     nativeApiLib = (DynamicLibrary.open('libps_plus.so')); // android and linux
 
@@ -68,6 +46,12 @@ class FFIBridge {
     c_ps_demo =
         _ps_demo.asFunction<Pointer<ArrayOfStrings> Function(Pointer<Utf8>)>();
 
+    final _ps_batch_demo = nativeApiLib.lookup<
+            NativeFunction<Pointer<ArrayOfStrings> Function(Pointer<Utf8>)>>(
+        'ps_batch_demo');
+    c_ps_batch_demo = _ps_batch_demo
+        .asFunction<Pointer<ArrayOfStrings> Function(Pointer<Utf8>)>();
+
     return true;
   }
 
@@ -77,6 +61,7 @@ class FFIBridge {
   static late Function _helloworld;
   static late Function c_get_some_parameters;
   static late Function c_ps_demo;
+  static late Function c_ps_batch_demo;
 
   static String capitalize(String str) {
     final _str = str.toNativeUtf8();
@@ -91,7 +76,8 @@ class FFIBridge {
   }
 
   static List<dynamic> get_some_parameters() {
-    Pointer<ArrayOfStrings> result = c_get_some_parameters(path.toNativeUtf8());
+    Pointer<ArrayOfStrings> result =
+        c_get_some_parameters(_path.toNativeUtf8());
     // print(result);
     // print(result.ref);
     // print(result.ref.num_arrays);
@@ -103,6 +89,48 @@ class FFIBridge {
     }
 
     return params;
+  }
+
+  static Future<String> ps_demo() async {
+    final c_path = _path.toNativeUtf8();
+    print(c_path);
+    print(c_path.toDartString());
+    final stopwatch = Stopwatch()..start();
+    Pointer<ArrayOfStrings> result = FFIBridge.c_ps_demo(c_path);
+    //await Future.delayed(const Duration(seconds: 1))!;
+    final timing = stopwatch.elapsed;
+    print('ps_demo executed in ${timing}');
+    final n = result.ref.num_arrays;
+    final params = List.empty(growable: true);
+    for (var i = 0; i < n; i++) {
+      params.add(result.ref.array.elementAt(i).value.toDartString());
+    }
+
+    malloc.free(c_path);
+    //now we could delete result invoking delete method
+
+    return "${timing}";
+  }
+
+  static Future<String> ps_batch_demo() async {
+    final c_path = _path.toNativeUtf8();
+    print(c_path);
+    print(c_path.toDartString());
+    final stopwatch = Stopwatch()..start();
+    Pointer<ArrayOfStrings> result = FFIBridge.c_ps_batch_demo(c_path);
+    //await Future.delayed(const Duration(seconds: 1))!;
+    final timing = stopwatch.elapsed;
+    print('ps_BATCH_demo executed in ${timing}');
+    final n = result.ref.num_arrays;
+    final params = List.empty(growable: true);
+    for (var i = 0; i < n; i++) {
+      params.add(result.ref.array.elementAt(i).value.toDartString());
+    }
+
+    malloc.free(c_path);
+    //now we could delete result invoking delete method
+
+    return "${timing}";
   }
 } // FFIBridge
 //------------------------------------------------------------

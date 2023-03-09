@@ -11,7 +11,7 @@ void main() async {
   FFIBridge.initialize(device_path);
 
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
         body: Center(
           child: Demo(),

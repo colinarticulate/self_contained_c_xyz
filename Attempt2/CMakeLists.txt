@@ -9,13 +9,24 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of t
 
 add_subdirectory(xyzpocketsphinx)
 add_subdirectory(xyzsphinxbase)
+
+if(ANDROID) 
+    add_subdirectory(android-stdioext)
+endif()
 # list(APPEND EXTRA_LIBS xyzpocketsphinx xyzsphinxbase xyzsphinxad)
 
 add_definitions(-DHAVE_CONFIG_H)
 add_compile_options(-O3)
 
+if(ANDROID) 
+    target_link_libraries(xyzsphinxbase PUBLIC android-stdioext)
+endif()
 target_link_libraries(xyzsphinxad PUBLIC xyzsphinxbase)
-target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad)
+if(ANDROID)
+    target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad android-stdioext)
+else() 
+    target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad)
+endif()
 target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
 
 #add_executable(ps_plus ps_plus.cpp )
