@@ -52,6 +52,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/android/app/.cxx/Debug/3l565d3u/arm64-v8a/xyzsphinxbase/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/android/app/.cxx/Debug/3l565d3u/arm64-v8a/xyzcrossplatform/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

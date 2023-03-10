@@ -34,6 +34,7 @@
  * ====================================================================
  *
  */
+#include<crossplatform.h>
 
 #include <string.h>
 #include <assert.h>
@@ -909,7 +910,7 @@ jsgf_parse_buffered_file(const char *filename, jsgf_t * parent, void *buffer, si
     }
     else {
         //in = fopen(filename, "r");
-        in = fmemopen(buffer, size, "r");
+        in = crossplatformfmemopen(buffer, size, "r");
         if (in == NULL) {
             E_ERROR_SYSTEM("Failed to open buffered file for parsing jsgf grammar");
             return NULL;

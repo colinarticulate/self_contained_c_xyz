@@ -9,36 +9,30 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of t
 
 add_subdirectory(xyzpocketsphinx)
 add_subdirectory(xyzsphinxbase)
+add_subdirectory(xyzcrossplatform)
 
-if(ANDROID) 
-    add_subdirectory(android-stdioext)
-endif()
-# list(APPEND EXTRA_LIBS xyzpocketsphinx xyzsphinxbase xyzsphinxad)
 
 add_definitions(-DHAVE_CONFIG_H)
 add_compile_options(-O3)
 
-if(ANDROID) 
-    target_link_libraries(xyzsphinxbase PUBLIC android-stdioext)
-endif()
+target_link_libraries(xyzsphinxbase PUBLIC xyzcrossplatform)
 target_link_libraries(xyzsphinxad PUBLIC xyzsphinxbase)
-if(ANDROID)
-    target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad android-stdioext)
-else() 
-    target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad)
-endif()
+target_link_libraries(xyzpocketsphinx PUBLIC xyzsphinxbase xyzsphinxad)
+
 target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
+# target_include_directories(xyzcrossplatform PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/crossplatform)
 
 #add_executable(ps_plus ps_plus.cpp )
 add_executable(ps_plus c_demo.cpp )
 
-target_link_libraries(ps_plus PUBLIC xyzpocketsphinx)
+#target_link_libraries(ps_plus PUBLIC xyzpocketsphinx)
+target_link_libraries(ps_plus PUBLIC  xyzpocketsphinx xyzcrossplatform)
 
-# target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
 
 target_include_directories(
 ps_plus PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}
 ps_plus PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/aside_ps_library
 ps_plus PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/_xyzsphinxbase
 ps_plus PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/_xyzsphinxbase/fe
+# ps_plus PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/xyzcrossplatform
 )

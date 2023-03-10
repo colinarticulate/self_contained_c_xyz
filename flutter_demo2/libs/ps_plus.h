@@ -1,6 +1,10 @@
 //Inspired by:
 //https://sourceforge.net/p/cmusphinx/discussion/help/thread/a445aa5c/
 //----------------------------------------------------- pocketsphinx.c
+
+//
+#include<crossplatform.h>
+
 /* System headers. */
 #include <stdio.h>
 #include <assert.h>
@@ -184,9 +188,9 @@ class XYZ_PocketSphinx {
         // int32 score;
  
         void* _jsgf_buffer; 
-        size_t _jsgf_buffer_size=0;
+        size_t _jsgf_buffer_size;
         void* _audio_buffer;
-        size_t _audio_buffer_size=0; 
+        size_t _audio_buffer_size; 
         int _argc; 
         char **_argv;
 
@@ -356,7 +360,7 @@ class XYZ_PocketSphinx {
             //                    fname);
             // }
             FILE* file = NULL;
-            file = fmemopen(_audio_buffer, _audio_buffer_size ,"rb");
+            file = crossplatformfmemopen(_audio_buffer, _audio_buffer_size ,"rb");
             // FILE* fresult = NULL;
             // fresult = fopen("./result.txt","w");
             // if (fresult == NULL ) {

@@ -1,9 +1,12 @@
+
+
 #include <stdexcept>
 #include <limits>
 #include <iostream>
 #include <chrono>
 #include <math.h> 
 #include <memory>
+#include <crossplatform.h>
 /* SphinxBase headers. */
 //#include <xyzsphinxbase/pio.h>
 // #include <xyzsphinxbase/err.h>
@@ -460,7 +463,7 @@ class XYZ_Batch {
             //                     cepext ? cepext : "", NULL);
             // if (uttid == NULL) uttid = file;
             debug_extract_cepstral_mean(_cmean_t1);
-            infh = fmemopen(_audio_buffer, _audio_buffer_size ,"rb");
+            infh = crossplatformfmemopen(_audio_buffer, _audio_buffer_size ,"rb");
             // if ((infh = fopen(infile, "rb")) == NULL) {
             //     E_ERROR_SYSTEM("Failed to open %s", infile);
             //     ckd_free(infile);

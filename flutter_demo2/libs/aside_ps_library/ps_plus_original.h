@@ -248,7 +248,7 @@ class XYZ_PocketSphinx {
             //                    fname);
             // }
             FILE* file = NULL;
-            file = fmemopen(_audio_buffer, _audio_buffer_size ,"rb");
+            file = crossplatformfmemopen(_audio_buffer, _audio_buffer_size ,"rb");
             // FILE* fresult = NULL;
             // fresult = fopen("./result.txt","w");
             // if (fresult == NULL ) {

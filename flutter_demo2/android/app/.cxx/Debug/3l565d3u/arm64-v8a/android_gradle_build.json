@@ -1,6 +1,7 @@
 {
   "buildFiles": [
     "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeLists.txt",
+    "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/CMakeLists.txt",
     "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/CMakeLists.txt",
     "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/CMakeLists.txt"
   ],
@@ -23,12 +24,20 @@
       "toolchain": "toolchain",
       "abi": "arm64-v8a",
       "artifactName": "ps_plus",
-      "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libps_plus.so",
+      "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/bin/ps_plus",
       "runtimeFiles": [
         "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzpocketsphinx.so",
         "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxad.so",
-        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxbase.so"
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxbase.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so"
       ]
+    },
+    "xyzcrossplatform::@d0baed5698406c57c82c": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "xyzcrossplatform",
+      "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so",
+      "runtimeFiles": []
     },
     "xyzpocketsphinx::@cd3ca0d354e9bb24a08e": {
       "toolchain": "toolchain",
@@ -37,7 +46,8 @@
       "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzpocketsphinx.so",
       "runtimeFiles": [
         "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxad.so",
-        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxbase.so"
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxbase.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so"
       ]
     },
     "xyzsphinxad::@522354f7d7865b52d40b": {
@@ -46,7 +56,8 @@
       "artifactName": "xyzsphinxad",
       "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxad.so",
       "runtimeFiles": [
-        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxbase.so"
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxbase.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so"
       ]
     },
     "xyzsphinxbase::@522354f7d7865b52d40b": {
@@ -54,7 +65,9 @@
       "abi": "arm64-v8a",
       "artifactName": "xyzsphinxbase",
       "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxbase.so",
-      "runtimeFiles": []
+      "runtimeFiles": [
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so"
+      ]
     }
   },
   "toolchains": {
