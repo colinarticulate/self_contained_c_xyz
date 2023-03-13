@@ -1,20 +1,19 @@
-/* include/sphinx_config.h.  Generated from sphinx_config.h.in by configure.  */
 /* sphinx_config.h: Externally visible configuration parameters */
 
 /* Use fixed-point computation */
-/* #undef FIXED_POINT */
+#undef FIXED_POINT
 
 /* Default radix point for fixed-point */
-/* #undef DEFAULT_RADIX */
+#undef DEFAULT_RADIX
 
 /* The size of `long', as computed by sizeof. */
-#define SIZEOF_LONG 8
+#undef SIZEOF_LONG
 
 /* Define to 1 if the system has the type `long long'. */
-#define HAVE_LONG_LONG 1
+#undef HAVE_LONG_LONG
 
 /* The size of `long long', as computed by sizeof. */
-#define SIZEOF_LONG_LONG 8
+#undef SIZEOF_LONG_LONG
 
 /* Enable debugging output */
-/* #undef SPHINX_DEBUG */
+#undef SPHINX_DEBUG

@@ -1,0 +1,7 @@
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeFiles/ps_plus.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeFiles/ALL_BUILD.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeFiles/ZERO_CHECK.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir
