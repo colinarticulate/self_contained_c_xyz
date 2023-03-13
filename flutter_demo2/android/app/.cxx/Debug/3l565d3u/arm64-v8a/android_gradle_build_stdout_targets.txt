@@ -1,11 +1,18 @@
 ninja: Entering directory `/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/android/app/.cxx/Debug/3l565d3u/arm64-v8a'
-[1/6] Building C object xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/crossplatform.c.o
-/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/crossplatform.c:119:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
-}
-^
-1 warning generated.
-[2/6] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so
-[3/6] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxbase.so
-[4/6] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzsphinxad.so
-[5/6] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzpocketsphinx.so
-[6/6] Linking CXX executable /home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/bin/ps_plus
+[1/7] Building C object xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/crossplatform.c.o
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/crossplatform.c:8:12: warning: implicit declaration of function 'fmemopen' is invalid in C99 [-Wimplicit-function-declaration]
+    return fmemopen (__s, __len, __modes);
+           ^
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/crossplatform.c:8:12: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'FILE *' (aka 'struct __sFILE *') [-Wint-conversion]
+    return fmemopen (__s, __len, __modes);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[2/7] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so
+FAILED: /home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so 
+: && /home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --gcc-toolchain=/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -shared -Wl,-soname,libxyzcrossplatform.so -o /home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/build/app/intermediates/cxx/Debug/3l565d3u/obj/arm64-v8a/libxyzcrossplatform.so xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/crossplatform.c.o  -latomic -lm && :
+ld: error: undefined symbol: fmemopen
+>>> referenced by crossplatform.c:8 (/home/dbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/crossplatform.c:8)
+>>>               xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/crossplatform.c.o:(crossplatformfmemopen)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+[3/7] Building CXX object CMakeFiles/ps_plus.dir/c_demo.cpp.o
+ninja: build stopped: subcommand failed.

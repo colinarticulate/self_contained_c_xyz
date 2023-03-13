@@ -5,7 +5,7 @@ project(ps_plus)#PROJECT_SOURCE_DIR#CMAKE_SOURCE_DIR
 # target_compile_features(pocketsphinx_compiler_flags INTERFACE c_std_11)
 # target_compile_features(sphinxbase_compiler_flags INTERFACE c_std_11)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of the executable
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of the executable
 
 add_subdirectory(xyzpocketsphinx)
 add_subdirectory(xyzsphinxbase)
@@ -23,8 +23,12 @@ target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
 # target_include_directories(xyzcrossplatform PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/crossplatform)
 
 #add_executable(ps_plus ps_plus.cpp )
-add_executable(ps_plus c_demo.cpp )
-
+#add_executable(ps_plus c_demo.cpp )
+add_library(ps_plus
+  SHARED
+  ./c_demo.cpp
+  exports.def
+)
 #target_link_libraries(ps_plus PUBLIC xyzpocketsphinx)
 target_link_libraries(ps_plus PUBLIC  xyzpocketsphinx xyzcrossplatform)
 

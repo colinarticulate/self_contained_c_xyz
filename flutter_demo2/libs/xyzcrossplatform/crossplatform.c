@@ -1,19 +1,19 @@
-// #ifdef __linux__ //unix // It seems we are not in linux is unix __linux or __linux__
+#ifdef __linux__ //unix // It seems we are not in linux is unix __linux or __linux__
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// //Linux
-// FILE *crossplatformfmemopen (void *__s, size_t __len, const char *__modes){
-//     // FILE *crossplatformfmemopen (void *__s, unsigned long __len, const char *__modes) {
-//     return fmemopen (__s, __len, __modes);
-// }
+//Linux
+FILE *crossplatformfmemopen (void *__s, size_t __len, const char *__modes){
+    // FILE *crossplatformfmemopen (void *__s, unsigned long __len, const char *__modes) {
+    return fmemopen (__s, __len, __modes);
+}
 
 
-// //#elif defined(__ANDROID__) 
+#elif defined(__ANDROID__) 
 // #elif defined(__aarch64__) && defined(__ARM_ARCH_8__)
 //     // Target architecture is arm64-v8a
 
-#ifdef __linux__ //unix // It seems we are not in linux is unix __linux or __linux__
+//#ifdef __linux__ //unix // It seems we are not in linux is unix __linux or __linux__
 
 #define _GNU_SOURCE
 #include <stdio.h>
