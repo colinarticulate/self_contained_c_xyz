@@ -1,4 +1,5 @@
 import 'dart:ffi';
+import 'dart:io';
 import 'package:ffi/ffi.dart';
 
 // This should be in another file
@@ -20,7 +21,7 @@ class FFIBridge {
         device_path + "/ps_plus/"; // this need fixing to make it fault-proof.
     print('demo path from FFIBridge: ${_path}');
 
-    nativeApiLib = (DynamicLibrary.open('libps_plus.so')); // android and linux
+    nativeApiLib = Platform.isMacOS || Platform.isIOS ? DynamicLibrary.process() : (DynamicLibrary.open('libps_plus.so')); // android and linux
 
     final _add = nativeApiLib
         .lookup<NativeFunction<Int32 Function(Int32, Int32)>>('add');
