@@ -1,0 +1,17 @@
+cd example/example-lib
+mkdir build
+cd build
+cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=OS64
+cmake --build . --config Release
+
+
+cd example/example-lib
+mkdir build
+cd build
+cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=MAC_CATALYST_ARM64
+cmake --build . --config Release
+cmake --build . --config Debug
+cmake --build . --config Debug -- CODE_SIGNING_ALLOWED=NO #space matters here
+
+
+cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=MAC_ARM64

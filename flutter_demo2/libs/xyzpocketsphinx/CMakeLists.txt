@@ -33,6 +33,7 @@ src/libpocketsphinx/state_align_search.c
 src/libpocketsphinx/tmat.c
 src/libpocketsphinx/vector.c
 )
+# target_compile_features(xyzpocketsphinx PUBLIC c_std_11)
 
 target_include_directories(
 xyzpocketsphinx PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include

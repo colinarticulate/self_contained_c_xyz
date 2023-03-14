@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+ZERO_CHECK in api, no dependencies
+api in api, depends on:
+ZERO_CHECK in api (explicit)
+ALL_BUILD in api, depends on:
+api in api (explicit)
+ZERO_CHECK in api (explicit)

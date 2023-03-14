@@ -58,6 +58,11 @@
 #include "xyzsphinxbase/strfuncs.h"
 #include "xyzsphinxbase/err.h"
 
+//#include <fixpoint.h>//Only for MacOS and IOS
+#ifndef DEFAULT_RADIX
+#define DEFAULT_RADIX 12
+#endif
+
 #include "fe_noise.h"
 #include "fe_internal.h"
 

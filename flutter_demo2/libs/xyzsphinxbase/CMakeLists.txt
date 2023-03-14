@@ -58,6 +58,8 @@ add_library(xyzsphinxbase SHARED
     src/libsphinxbase/util/slapack_lite.c
     src/libsphinxbase/util/strfuncs.c
 )
+#target_compile_features(xyzsphinxbase PRIVATE c_std_11)
+#target_compile_options(xyzsphinxbase PRIVATE -Wno-shorten-64-to-32)
 
 
 add_library(xyzsphinxad SHARED
@@ -68,6 +70,9 @@ add_library(xyzsphinxad SHARED
     # src/libsphinxad/ad_pulse.c
     # src/libsphinxad/ad_win32.c
 )
+#target_compile_features(xyzsphinxad PUBLIC c_std_11)
+
+
 
 target_include_directories(
     # xyzsphinxbase PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include

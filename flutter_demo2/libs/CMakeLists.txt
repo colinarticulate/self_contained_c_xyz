@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.19.5)
 
 project(ps_plus)#PROJECT_SOURCE_DIR#CMAKE_SOURCE_DIR
 
@@ -6,6 +6,13 @@ project(ps_plus)#PROJECT_SOURCE_DIR#CMAKE_SOURCE_DIR
 # target_compile_features(sphinxbase_compiler_flags INTERFACE c_std_11)
 
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of the executable
+# set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_CXX_EXTENSIONS OFF) #Set this to ON if you want to use GNU++
+# set(CMAKE_CXX_STANDARD 11)
+
+# set(CMAKE_C_STANDARD_REQUIRED ON)
+# set(CMAKE_C_EXTENSIONS OFF) #Set this to ON if you want to use GNU++
+# set(CMAKE_C_STANDARD 11)
 
 add_subdirectory(xyzpocketsphinx)
 add_subdirectory(xyzsphinxbase)
@@ -29,6 +36,8 @@ add_library(ps_plus
   ./c_demo.cpp
   exports.def
 )
+# target_compile_features(ps_plus PUBLIC cxx_std_11)
+
 #target_link_libraries(ps_plus PUBLIC xyzpocketsphinx)
 target_link_libraries(ps_plus PUBLIC  xyzpocketsphinx xyzcrossplatform)
 
