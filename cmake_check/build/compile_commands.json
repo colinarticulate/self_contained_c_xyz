@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_check/build",
+  "command": "/usr/bin/clang   -O3 -DNDEBUG -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/hello.dir/source.c.o -c /Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_check/source.c",
+  "file": "/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_check/source.c",
+  "output": "CMakeFiles/hello.dir/source.c.o"
+}
+]
