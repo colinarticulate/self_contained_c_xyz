@@ -103,8 +103,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/slapack_lite.c.o.d"
   "CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/strfuncs.c.o"
   "CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/strfuncs.c.o.d"
+  "libxyzsphinxbase.dylib"
   "libxyzsphinxbase.pdb"
-  "libxyzsphinxbase.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -7,6 +7,7 @@ project(ps_plus)#PROJECT_SOURCE_DIR#CMAKE_SOURCE_DIR
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of the executable
 
+
 add_subdirectory(xyzpocketsphinx)
 add_subdirectory(xyzsphinxbase)
 add_subdirectory(xyzcrossplatform)
@@ -24,6 +25,7 @@ target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
 
 #add_executable(ps_plus ps_plus.cpp )
 add_executable(ps_plus c_demo.cpp )
+set_property(TARGET ps_plus PROPERTY CXX_STANDARD 11)
 
 #target_link_libraries(ps_plus PUBLIC xyzpocketsphinx)
 target_link_libraries(ps_plus PUBLIC  xyzpocketsphinx xyzcrossplatform)

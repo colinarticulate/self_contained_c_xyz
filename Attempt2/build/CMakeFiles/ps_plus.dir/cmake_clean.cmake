@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../bin/ps_plus"
-  "../bin/ps_plus.pdb"
+  "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus"
+  "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus.pdb"
   "CMakeFiles/ps_plus.dir/c_demo.cpp.o"
   "CMakeFiles/ps_plus.dir/c_demo.cpp.o.d"
 )

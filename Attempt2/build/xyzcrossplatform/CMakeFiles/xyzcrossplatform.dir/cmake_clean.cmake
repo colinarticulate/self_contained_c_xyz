@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xyzcrossplatform.dir/crossplatform.c.o"
   "CMakeFiles/xyzcrossplatform.dir/crossplatform.c.o.d"
+  "libxyzcrossplatform.dylib"
   "libxyzcrossplatform.pdb"
-  "libxyzcrossplatform.so"
 )
 
 # Per-language clean rules from dependency scanning.

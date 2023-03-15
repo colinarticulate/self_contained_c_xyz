@@ -57,8 +57,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/tmat.c.o.d"
   "CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/vector.c.o"
   "CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/vector.c.o.d"
+  "libxyzpocketsphinx.dylib"
   "libxyzpocketsphinx.pdb"
-  "libxyzpocketsphinx.so"
 )
 
 # Per-language clean rules from dependency scanning.

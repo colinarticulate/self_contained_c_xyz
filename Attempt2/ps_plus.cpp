@@ -382,6 +382,7 @@ void parallel_encapsualted_batch_with_pthreads(PS_Batch_Data data[5]){
 int
 main()
 {
+    printf("Hey....\n");
     struct PS_Data data[5];
     load_data(params125, params125_size,
               params72, params72_size, 

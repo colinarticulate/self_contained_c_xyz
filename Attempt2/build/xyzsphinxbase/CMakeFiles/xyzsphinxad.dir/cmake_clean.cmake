@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xyzsphinxad.dir/src/libsphinxad/ad_base.c.o"
   "CMakeFiles/xyzsphinxad.dir/src/libsphinxad/ad_base.c.o.d"
+  "libxyzsphinxad.dylib"
   "libxyzsphinxad.pdb"
-  "libxyzsphinxad.so"
 )
 
 # Per-language clean rules from dependency scanning.
