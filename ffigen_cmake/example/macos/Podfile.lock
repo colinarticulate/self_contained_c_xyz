@@ -1,0 +1,25 @@
+PODS:
+  - ffigen_cmake (0.0.1):
+    - ffigen_cmake/b (= 0.0.1)
+    - FlutterMacOS
+  - ffigen_cmake/b (0.0.1):
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+
+DEPENDENCIES:
+  - ffigen_cmake (from `Flutter/ephemeral/.symlinks/plugins/ffigen_cmake/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+
+EXTERNAL SOURCES:
+  ffigen_cmake:
+    :path: Flutter/ephemeral/.symlinks/plugins/ffigen_cmake/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+
+SPEC CHECKSUMS:
+  ffigen_cmake: ec8c2837fcabd795a83dc449a857439a3082a7a0
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+
+PODFILE CHECKSUM: 353c8bcc5d5b0994e508d035b5431cfe18c1dea7
+
+COCOAPODS: 1.12.0

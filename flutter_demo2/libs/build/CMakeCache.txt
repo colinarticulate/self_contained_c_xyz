@@ -14,12 +14,11 @@
 # EXTERNAL cache entries
 ########################
 
-APPLE:BOOL=ON
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
-CMAKE_AR:FILEPATH=ar
+//Path to a program.
+CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
 //Semicolon separated list of supported configuration types, only
 // supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
@@ -77,6 +76,9 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/CMakeFiles/pkgRedirects
 
+//Path to a program.
+CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
@@ -112,9 +114,16 @@ CMAKE_OBJCOPY:FILEPATH=CMAKE_OBJCOPY-NOTFOUND
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump
 
+//Build architectures for OSX
+CMAKE_OSX_ARCHITECTURES:STRING=
+
 //Minimum OS X version to target for deployment (at runtime); newer
 // APIs weak linked. Set to empty string for default value.
 CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
+
+//The product will be built against the headers and libraries located
+// inside the indicated SDK.
+CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -125,7 +134,8 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=ps_plus
 
-CMAKE_RANLIB:FILEPATH=ranlib
+//Path to a program.
+CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
 
 //Path to a program.
 CMAKE_READELF:FILEPATH=CMAKE_READELF-NOTFOUND
@@ -177,43 +187,14 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-CMAKE_STRIP:FILEPATH=strip
-
-//No help, variable specified on the command line.
-CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=../ios.toolchain.cmake
+//Path to a program.
+CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
-
-//Whether or not to enable ARC
-ENABLE_ARC_INT:BOOL=ON
-
-//Whether or not to enable bitcode
-ENABLE_BITCODE_INT:BOOL=ON
-
-//Whether or not to use strict compiler checks
-ENABLE_STRICT_TRY_COMPILE_INT:BOOL=OFF
-
-//Whether or not to hide symbols from the dynamic linker (-fvisibility=hidden)
-ENABLE_VISIBILITY_INT:BOOL=OFF
-
-IOS:BOOL=ON
-
-MACOS:BOOL=ON
-
-//Whether or not to enable explicit named language support
-NAMED_LANGUAGE_SUPPORT_INT:BOOL=ON
-
-//No help, variable specified on the command line.
-PLATFORM:UNINITIALIZED=MAC_CATALYST_ARM64
-
-UNIX:BOOL=ON
-
-//Path to a program.
-XCODEBUILD_EXECUTABLE:FILEPATH=/usr/bin/xcodebuild
 
 //Value Computed by CMake
 ps_plus_BINARY_DIR:STATIC=/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build
@@ -230,8 +211,7 @@ ps_plus_SOURCE_DIR:STATIC=/Users/davidbarbera/Repositories/self_contained_c_xyz/
 ########################
 
 //Stored Xcode object GUID
-ALL_BUILD_GUID_CMAKE:INTERNAL=70A1F27BD5DF4B2BB88035ED
-APPLE_TARGET_TRIPLE:INTERNAL=arm64-apple-ios13.1-macabi
+ALL_BUILD_GUID_CMAKE:INTERNAL=13B72A7CD02946DEB228A662
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -286,11 +266,6 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
-CMAKE_FIND_ROOT_PATH_MODE_INCLUDE:INTERNAL=BOTH
-CMAKE_FIND_ROOT_PATH_MODE_LIBRARY:INTERNAL=BOTH
-CMAKE_FIND_ROOT_PATH_MODE_PACKAGE:INTERNAL=BOTH
-CMAKE_FIND_ROOT_PATH_MODE_PROGRAM:INTERNAL=BOTH
-CMAKE_FRAMEWORK_PATH:INTERNAL=/Library/PrivateFrameworks;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/iOSSupport/System/Library/Frameworks;/Library/PrivateFrameworks;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks;/Library/PrivateFrameworks;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks;/Library/PrivateFrameworks;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/iOSSupport/System/Library/Frameworks;/Library/PrivateFrameworks;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/iOSSupport/System/Library/Frameworks
 //Name of generator.
 CMAKE_GENERATOR:INTERNAL=Xcode
 //Generator instance identifier.
@@ -302,8 +277,8 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs
-CMAKE_IGNORE_PATH:INTERNAL=/System/Library/Frameworks;/usr/local/lib
-CMAKE_INSTALL_NAME_TOOL:INTERNAL=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool
+//ADVANCED property for variable: CMAKE_INSTALL_NAME_TOOL
+CMAKE_INSTALL_NAME_TOOL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -324,9 +299,6 @@ CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
 CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
-CMAKE_OSX_ARCHITECTURES:INTERNAL=arm64
-CMAKE_OSX_SYSROOT:INTERNAL=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
-CMAKE_OSX_SYSROOT_INT:INTERNAL=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
@@ -361,25 +333,22 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STRIP
 CMAKE_STRIP-ADVANCED:INTERNAL=1
-CMAKE_SYSTEM_VERSION:INTERNAL=12.3
 //uname command
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-DEPLOYMENT_TARGET:INTERNAL=13.1
 //Stored Xcode object GUID
-PROJECT_ps_plus_GUID_CMAKE:INTERNAL=015D3C7083D94A158B46FDD4
-XCODE_VERSION_INT:INTERNAL=13.3
+PROJECT_ps_plus_GUID_CMAKE:INTERNAL=CAD043B5DD124646A0314E79
 //Stored Xcode object GUID
-ZERO_CHECK_GUID_CMAKE:INTERNAL=22126C9FF60C4720BC867B05
+ZERO_CHECK_GUID_CMAKE:INTERNAL=82945FACBBB24A1CA3F6BB72
 //Stored Xcode object GUID
-ps_plus_GUID_CMAKE:INTERNAL=6125C3B20F3E41AD9FD2EC54
+ps_plus_GUID_CMAKE:INTERNAL=814771695DE949B8B4291B33
 //Stored Xcode object GUID
-xyzcrossplatform_GUID_CMAKE:INTERNAL=F98FC495D02B4AC7919017A8
+xyzcrossplatform_GUID_CMAKE:INTERNAL=8B421C145CA84388AC47D30F
 //Stored Xcode object GUID
-xyzpocketsphinx_GUID_CMAKE:INTERNAL=8B2DD92F0EC44BCBAABB5DD1
+xyzpocketsphinx_GUID_CMAKE:INTERNAL=0FF3743CA2E445E3B49B5A44
 //Stored Xcode object GUID
-xyzsphinxad_GUID_CMAKE:INTERNAL=51A9ED11FC4E442A949DED45
+xyzsphinxad_GUID_CMAKE:INTERNAL=ECCFF840C30E476AA27E2E14
 //Stored Xcode object GUID
-xyzsphinxbase_GUID_CMAKE:INTERNAL=FB6BC7B080B64AF7AF97EC9E
+xyzsphinxbase_GUID_CMAKE:INTERNAL=AB412FEB89354F8180D3E6BA
 

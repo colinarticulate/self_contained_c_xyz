@@ -1,0 +1,2625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6DD704D430E046379ED674C6 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 01237B98747A498496D34C51 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				86C9F185CF84359686096D6F /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		C6B7AF01BBE04F8D85CB2C81 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 29F4108BFE1842B48668DEA2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				41D384AAE9762F789CBCFBFA /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				EEB56AE0CC5149329B3005C3 /* PBXTargetDependency */,
+				8F7B2E4FB16D41A0A023FE13 /* PBXTargetDependency */,
+				E16B8A27030B45B6A611CD84 /* PBXTargetDependency */,
+				F53861A007064FDA933DD71E /* PBXTargetDependency */,
+				CF13DB27D87148929AE5DE16 /* PBXTargetDependency */,
+				3EAA264076BD41B2A9A16993 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0053992083DD480F965209EB /* bin_mdef.c in Sources */ = {isa = PBXBuildFile; fileRef = 30F60C5D728D4332916FCA6E /* bin_mdef.c */; };
+		0079AD7000F94E73A2EB56DB /* sbthread.c in Sources */ = {isa = PBXBuildFile; fileRef = 86350C289EE64435A32458C9 /* sbthread.c */; };
+		05E03F6B47594DDD87005636 /* cmn.c in Sources */ = {isa = PBXBuildFile; fileRef = BAC89C7E5A2647EC9B32F97A /* cmn.c */; };
+		0BC76E01968948FD80FFFE4A /* logmath.c in Sources */ = {isa = PBXBuildFile; fileRef = BDA21DC50CBD4E59A408A1D1 /* logmath.c */; };
+		105028D4D40B4A499784044B /* ngrams_raw.c in Sources */ = {isa = PBXBuildFile; fileRef = F94DB3B56FEB406DAC971C70 /* ngrams_raw.c */; };
+		11AA2C668C36439C9DD17651 /* genrand.c in Sources */ = {isa = PBXBuildFile; fileRef = 111F68AC48924C7A82D51378 /* genrand.c */; };
+		12872762D196424983FDAB5A /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C1A39F707C24C14A49AA2DF /* heap.c */; };
+		15D9423885C7422D8C351C16 /* fe_sigproc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2588E23E518D4CC98345C253 /* fe_sigproc.c */; };
+		1830C4701AB24EFD88135995 /* acmod.c in Sources */ = {isa = PBXBuildFile; fileRef = A005B410E0AC4E1999EC9068 /* acmod.c */; };
+		1879F694B7B54DCDABC56007 /* lm_trie_quant.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BECD31B015947F0A4060A0C /* lm_trie_quant.c */; };
+		20E802C52BC84AA4ABA9D2D2 /* dict2pid.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CB137793CE34904878BE45C /* dict2pid.c */; };
+		2203A1FBA3624A439E807F08 /* fsg_history.c in Sources */ = {isa = PBXBuildFile; fileRef = 698E4E9E088E427FB2AB7A59 /* fsg_history.c */; };
+		2D1164E9A5624ECFBB6EBECB /* fe_warp_inverse_linear.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A2FD211E4FC4BBB8EF5442F /* fe_warp_inverse_linear.c */; };
+		2E858EDD0D2E47D5A8BA8419 /* ps_mllr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AF88EE925AC41F68600B509 /* ps_mllr.c */; };
+		2E89E09E9566466B945E30E8 /* fe_noise.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA015717BA45328572F137 /* fe_noise.c */; };
+		32D08544B9334C41B02DF18D /* priority_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 09C7EF3DAEA34E75BBB9F672 /* priority_queue.c */; };
+		351A546902FD45CFB3AFD1C8 /* hash_table.c in Sources */ = {isa = PBXBuildFile; fileRef = EEEE67C54DCE41C7841210DB /* hash_table.c */; };
+		3975348D5E37487FA08B7A56 /* dtoa.c in Sources */ = {isa = PBXBuildFile; fileRef = 97BE3DF8205343AC96CB129E /* dtoa.c */; };
+		43CC726206D54BB7B735814C /* ngram_model.c in Sources */ = {isa = PBXBuildFile; fileRef = 698BABE0223F450C8FB94CFA /* ngram_model.c */; };
+		485F60A94AD24F6996245DBE /* bitarr.c in Sources */ = {isa = PBXBuildFile; fileRef = C634C5164355458290E8B160 /* bitarr.c */; };
+		4DA5DB8DB8A1430998BCE81B /* fe_warp_piecewise_linear.c in Sources */ = {isa = PBXBuildFile; fileRef = 03BC37EC572E42B98B23D369 /* fe_warp_piecewise_linear.c */; };
+		4FE166ED261A487C98410BC3 /* mdef.c in Sources */ = {isa = PBXBuildFile; fileRef = 575D3585E6FB4EB0978787FF /* mdef.c */; };
+		514116F816C24198AFC60BF4 /* glist.c in Sources */ = {isa = PBXBuildFile; fileRef = 61C8061F49554255A9791FA0 /* glist.c */; };
+		53DF8ADB1B5941D2B1D53B71 /* crossplatform.c in Sources */ = {isa = PBXBuildFile; fileRef = 520AAC0BFE444E8FA3E8AF47 /* crossplatform.c */; };
+		5506797F20634FD7B0300B6F /* blas_lite.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5434C5D99545648496BD99 /* blas_lite.c */; };
+		572DBA0F720D425EAD26F380 /* ps_alignment.c in Sources */ = {isa = PBXBuildFile; fileRef = C5C424A9FD03445CBF9362FC /* ps_alignment.c */; };
+		5A14521B25E4403BAA3FACD2 /* fsg_model.c in Sources */ = {isa = PBXBuildFile; fileRef = 86A430EF552F4386AE030E6F /* fsg_model.c */; };
+		6840933588414DC7B04CF922 /* fe_warp_affine.c in Sources */ = {isa = PBXBuildFile; fileRef = BF6CD86F40644FC591361CF4 /* fe_warp_affine.c */; };
+		6A04DB2DEC4149959E4E8472 /* profile.c in Sources */ = {isa = PBXBuildFile; fileRef = 87FA2221CF0A4583BC6CD9CF /* profile.c */; };
+		6D886492519A4CD5A63BF3EB /* phone_loop_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 781B5F8B358C4295A59A9AA8 /* phone_loop_search.c */; };
+		75D886E76A3846148C0E7637 /* err.c in Sources */ = {isa = PBXBuildFile; fileRef = 504A9B22B5F24DBEA7548967 /* err.c */; };
+		762370C726364AFD894E3300 /* fe_warp.c in Sources */ = {isa = PBXBuildFile; fileRef = 11D8C8CA0FCB45BEA278D21C /* fe_warp.c */; };
+		794C1B6EA1D04D6B980D4E73 /* bio.c in Sources */ = {isa = PBXBuildFile; fileRef = 58C76A376DE347618FFB5C98 /* bio.c */; };
+		79B0B5320F25463CBC411160 /* feat.c in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F5CAAFEA4F029B2EEA82 /* feat.c */; };
+		7AF7EB273F8D4B39B7C27528 /* allphone_search.c in Sources */ = {isa = PBXBuildFile; fileRef = FD88EBF6615440A7BD46FD37 /* allphone_search.c */; };
+		7C097D6F7C7D4F1EBCEAC1DC /* bitvec.c in Sources */ = {isa = PBXBuildFile; fileRef = FB17D68AA5754AC9849213FE /* bitvec.c */; };
+		7D00AD7B7423450FAF084E2B /* slapack_lite.c in Sources */ = {isa = PBXBuildFile; fileRef = 4A2C0C27F2604A7BBA7E6319 /* slapack_lite.c */; };
+		7EDB6A7A11F04230B5AFDA1E /* jsgf_scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 164A272D5C6C491DBD567AEF /* jsgf_scanner.c */; };
+		8163B58BC7F1412E9395668F /* filename.c in Sources */ = {isa = PBXBuildFile; fileRef = 7E0090E488144D0A8C62A57A /* filename.c */; };
+		84793563CFE54A48AAAEB990 /* pocketsphinx.c in Sources */ = {isa = PBXBuildFile; fileRef = E920057ECA6F46418B4706B1 /* pocketsphinx.c */; };
+		847A300B72F24443A30F840F /* agc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5983672FEB3C473DA5E84502 /* agc.c */; };
+		874C45BB696444629838F5C3 /* ckd_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = A91E6B08DBB84047A3E07DA8 /* ckd_alloc.c */; };
+		8A8FF6152F1C48118E3CC3C8 /* dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C931729EB4280AF1B1FCE /* dict.c */; };
+		8AAF6AE60A134BD4B313B85D /* s2_semi_mgau.c in Sources */ = {isa = PBXBuildFile; fileRef = 018670D4BB134C88995DAACE /* s2_semi_mgau.c */; };
+		8E238E6A0E7547AE9BA1FC71 /* pio.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D968F23F85B4C3CBD70F659 /* pio.c */; };
+		926C5BECC408494DAA7597C8 /* jsgf_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 62107D087F1C44EA8321613A /* jsgf_parser.c */; };
+		94CB01CD5EE1410AB66DFB5F /* ngram_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 672248BB865E479483FAAF9D /* ngram_search.c */; };
+		9713965BF42E4B3A824CBE1A /* ngram_model_trie.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F482CD70D4A4171A51EA757 /* ngram_model_trie.c */; };
+		981079F29F1F4DAFA2FC0877 /* hmm.c in Sources */ = {isa = PBXBuildFile; fileRef = 825DD5B7A30843C1AF15EEAD /* hmm.c */; };
+		9AB14AC1CBA7420F98BB0BE2 /* jsgf.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B66CB94AC4015B96B1B85 /* jsgf.c */; };
+		9CFAAE48353A4CC38C826F3D /* yin.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8BA2631B14067A5D4E275 /* yin.c */; };
+		A4F1A2D73B4B41FCAE4EB202 /* fe_prespch_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 555019EF9C7142A9975544FC /* fe_prespch_buf.c */; };
+		AB27BE0139884ED79826464E /* lm_trie.c in Sources */ = {isa = PBXBuildFile; fileRef = 623314979ADB4F2AB33E2224 /* lm_trie.c */; };
+		AB8F198925AD49B1B53AD345 /* ms_gauden.c in Sources */ = {isa = PBXBuildFile; fileRef = F7348E4E1AF34C94948BE826 /* ms_gauden.c */; };
+		ACC3ED84D7D74B34A57D7083 /* c_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65B57A66F6E14C878E446C10 /* c_demo.cpp */; };
+		B3B329BB93D449BF9BB8D6E7 /* tmat.c in Sources */ = {isa = PBXBuildFile; fileRef = C2513BEE7FA34B9B904599D0 /* tmat.c */; };
+		B9A75258C57E4D568DD2571E /* fe_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = 299555E8040D4FE5BD51E93D /* fe_interface.c */; };
+		BA52E4717299413C88929E4A /* ps_lattice.c in Sources */ = {isa = PBXBuildFile; fileRef = FCE7DDE4514A43D3AECD056A /* ps_lattice.c */; };
+		BB3822042038490C89D4A16D /* ms_senone.c in Sources */ = {isa = PBXBuildFile; fileRef = AA784F97B37A42A8AF7A5B3A /* ms_senone.c */; };
+		BCC16E673C2B4518B2DF5B05 /* listelem_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9095481C1268470DB7BF1D75 /* listelem_alloc.c */; };
+		BD5A50DD290948D5A79B3063 /* ms_mgau.c in Sources */ = {isa = PBXBuildFile; fileRef = 11C431C5FC064D06B8B218BE /* ms_mgau.c */; };
+		BD9C7A54F58A432BAEFAB8D1 /* kws_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 906499DC959C4BBD9DC09AEE /* kws_search.c */; };
+		C2CEC1C07F734AC0B71E5DC0 /* kws_detections.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C4C9B4A6A43CC921ED19F /* kws_detections.c */; };
+		C5AF06290B9C44C88A6A49B0 /* ngram_search_fwdflat.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B743F9E0E4DA98B880F5E /* ngram_search_fwdflat.c */; };
+		C7E7868836474E6696539469 /* ngram_model_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 6456945CBB26429BBE5816DE /* ngram_model_set.c */; };
+		CA5E241757FF47B2B31470ED /* fsg_lextree.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F52840302F64C77976597B3 /* fsg_lextree.c */; };
+		CC1E19AAB8FF4B0DB972F5F8 /* errno.c in Sources */ = {isa = PBXBuildFile; fileRef = 19982551F74C496AA53E5623 /* errno.c */; };
+		D261506E200F481B9D3B9032 /* case.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F987982C45B4CEE8FE36AF2 /* case.c */; };
+		D7ECDA98125547C2AA60F618 /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B29DA485BD24384A047FDB9 /* vector.c */; };
+		D8E4F786AD2E4318B0CEBCFA /* ngram_search_fwdtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 87C9E0C6B1A445D899491CF0 /* ngram_search_fwdtree.c */; };
+		DA6F9B6EF3B348D19432A655 /* mmio.c in Sources */ = {isa = PBXBuildFile; fileRef = 40005E7069AA491D92D747B5 /* mmio.c */; };
+		DC43A27EDE214B458AF0328B /* blkarray_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E8DB4E57692478A89B29E09 /* blkarray_list.c */; };
+		E04B673B927641ECA176D431 /* lda.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C99DBEA5E274871958A7C1F /* lda.c */; };
+		E356EC9152A241379FAAD7CE /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7D37B4E4646149DC3FC95 /* matrix.c */; };
+		E39CC57D839D414ABFA9A55E /* fsg_search.c in Sources */ = {isa = PBXBuildFile; fileRef = E58C5EBDE7BF450186E612E9 /* fsg_search.c */; };
+		E445E42FC84C47F3B197B660 /* slamch.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2CF4838804508BC5F6B35 /* slamch.c */; };
+		E6FEC14676B54643A7BBDF7E /* ad_base.c in Sources */ = {isa = PBXBuildFile; fileRef = 309199F3ECF14B87ABE6DE76 /* ad_base.c */; };
+		E89FFD97A5034AD3A1B651AB /* cmd_ln.c in Sources */ = {isa = PBXBuildFile; fileRef = 7680AF7341B44C5DA44B51C5 /* cmd_ln.c */; };
+		EA53EAA7A0654FEF905138B5 /* state_align_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8B3DF9B2147B6BB584A99 /* state_align_search.c */; };
+		EFE638BEE0114B239884EECC /* f2c_lite.c in Sources */ = {isa = PBXBuildFile; fileRef = DEBEA54EAA4D470FA178A663 /* f2c_lite.c */; };
+		F05DD5E045AD4779AB9A0C06 /* strfuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = B88DB29338E84F95B5F6DAA7 /* strfuncs.c */; };
+		F11009B151EC4AEDA0C6BEF5 /* cmn_live.c in Sources */ = {isa = PBXBuildFile; fileRef = A3C012A99DB74815B075D44A /* cmn_live.c */; };
+		F97368D85DE04219880B78B3 /* fixlog.c in Sources */ = {isa = PBXBuildFile; fileRef = B2C42617D4E740D9949EACF0 /* fixlog.c */; };
+		F9833314E6154B648C80A2FA /* ptm_mgau.c in Sources */ = {isa = PBXBuildFile; fileRef = EE56537F62D1482A84D62340 /* ptm_mgau.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		099B55F287A6463B84FB34BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD704D430E046379ED674C6;
+			remoteInfo = ZERO_CHECK;
+		};
+		0FC5D633D3B54749BD1CFE3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C6343655994CA1B87AE7FB;
+			remoteInfo = xyzcrossplatform;
+		};
+		11D85212E3EB46B5950CBC63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409096D68846416C93F9A4D1;
+			remoteInfo = xyzsphinxbase;
+		};
+		1992E1144F0247E88D67B20C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CD9B76C810402D97F58E10;
+			remoteInfo = xyzpocketsphinx;
+		};
+		272A43BEFDBF4B05A9878E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD704D430E046379ED674C6;
+			remoteInfo = ZERO_CHECK;
+		};
+		30F17EE76A0247E9B2839623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C6343655994CA1B87AE7FB;
+			remoteInfo = xyzcrossplatform;
+		};
+		34E568E74F3D4A19BB2D99B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CD9B76C810402D97F58E10;
+			remoteInfo = xyzpocketsphinx;
+		};
+		3E30D29114224D96BCE72CE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9344398F2A5420F8F2FC061;
+			remoteInfo = xyzsphinxad;
+		};
+		3FCDB580DEE147F8868EA7F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9344398F2A5420F8F2FC061;
+			remoteInfo = xyzsphinxad;
+		};
+		414A48704EA94B5F8EC2AEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C6343655994CA1B87AE7FB;
+			remoteInfo = xyzcrossplatform;
+		};
+		5C3FB57978D5485B88CF7AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD704D430E046379ED674C6;
+			remoteInfo = ZERO_CHECK;
+		};
+		607CACB9A9984A958B199A9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3275529453EA4897A5A8C2D2;
+			remoteInfo = ps_plus;
+		};
+		675291423FE244D9B918CD4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409096D68846416C93F9A4D1;
+			remoteInfo = xyzsphinxbase;
+		};
+		7410B8B785944662BCD9641B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409096D68846416C93F9A4D1;
+			remoteInfo = xyzsphinxbase;
+		};
+		7E87E94C9B264AE8A1C08717 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD704D430E046379ED674C6;
+			remoteInfo = ZERO_CHECK;
+		};
+		8D2B25E5C5494A928A9346A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409096D68846416C93F9A4D1;
+			remoteInfo = xyzsphinxbase;
+		};
+		B74C7F0A38A646979277EC4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9344398F2A5420F8F2FC061;
+			remoteInfo = xyzsphinxad;
+		};
+		DA4BFE53DA6E4462A35AB7DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD704D430E046379ED674C6;
+			remoteInfo = ZERO_CHECK;
+		};
+		F62ABE2DDDDA4F4EB2590663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C6343655994CA1B87AE7FB;
+			remoteInfo = xyzcrossplatform;
+		};
+		F90FBBD3C8B0431D97EBC3C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD704D430E046379ED674C6;
+			remoteInfo = ZERO_CHECK;
+		};
+		FE59574332994F2C8FFC2BB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8C6343655994CA1B87AE7FB;
+			remoteInfo = xyzcrossplatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018670D4BB134C88995DAACE /* s2_semi_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = s2_semi_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c; sourceTree = SOURCE_ROOT; };
+		03BC37EC572E42B98B23D369 /* fe_warp_piecewise_linear.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_piecewise_linear.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c; sourceTree = SOURCE_ROOT; };
+		063A79A11FD94238B3A99D95 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = xyzsphinxbase/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		09C7EF3DAEA34E75BBB9F672 /* priority_queue.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = priority_queue.c; path = xyzsphinxbase/src/libsphinxbase/util/priority_queue.c; sourceTree = SOURCE_ROOT; };
+		0F482CD70D4A4171A51EA757 /* ngram_model_trie.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model_trie.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c; sourceTree = SOURCE_ROOT; };
+		111F68AC48924C7A82D51378 /* genrand.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = genrand.c; path = xyzsphinxbase/src/libsphinxbase/util/genrand.c; sourceTree = SOURCE_ROOT; };
+		11C431C5FC064D06B8B218BE /* ms_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c; sourceTree = SOURCE_ROOT; };
+		11D8C8CA0FCB45BEA278D21C /* fe_warp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c; sourceTree = SOURCE_ROOT; };
+		15CC6FF7579644F18B3BA121 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		164A272D5C6C491DBD567AEF /* jsgf_scanner.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf_scanner.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c; sourceTree = SOURCE_ROOT; };
+		19982551F74C496AA53E5623 /* errno.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = errno.c; path = xyzsphinxbase/src/libsphinxbase/util/errno.c; sourceTree = SOURCE_ROOT; };
+		1B530CF1B2AD4A4983693784 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = xyzpocketsphinx/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1C1A39F707C24C14A49AA2DF /* heap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = heap.c; path = xyzsphinxbase/src/libsphinxbase/util/heap.c; sourceTree = SOURCE_ROOT; };
+		1E8DB4E57692478A89B29E09 /* blkarray_list.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = blkarray_list.c; path = xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c; sourceTree = SOURCE_ROOT; };
+		1F52840302F64C77976597B3 /* fsg_lextree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_lextree.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c; sourceTree = SOURCE_ROOT; };
+		2588E23E518D4CC98345C253 /* fe_sigproc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_sigproc.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c; sourceTree = SOURCE_ROOT; };
+		299555E8040D4FE5BD51E93D /* fe_interface.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_interface.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c; sourceTree = SOURCE_ROOT; };
+		2A35E49D06754864802B2DF2 /* _jsgf_scanner.l */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = _jsgf_scanner.l; path = xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l; sourceTree = SOURCE_ROOT; };
+		309199F3ECF14B87ABE6DE76 /* ad_base.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ad_base.c; path = xyzsphinxbase/src/libsphinxad/ad_base.c; sourceTree = SOURCE_ROOT; };
+		30F60C5D728D4332916FCA6E /* bin_mdef.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bin_mdef.c; path = xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c; sourceTree = SOURCE_ROOT; };
+		3BA7D37B4E4646149DC3FC95 /* matrix.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = matrix.c; path = xyzsphinxbase/src/libsphinxbase/util/matrix.c; sourceTree = SOURCE_ROOT; };
+		3C7B66CB94AC4015B96B1B85 /* jsgf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf.c; sourceTree = SOURCE_ROOT; };
+		40005E7069AA491D92D747B5 /* mmio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mmio.c; path = xyzsphinxbase/src/libsphinxbase/util/mmio.c; sourceTree = SOURCE_ROOT; };
+		4A2C0C27F2604A7BBA7E6319 /* slapack_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = slapack_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c; sourceTree = SOURCE_ROOT; };
+		4CBC17CDA1934A14938F55CF /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4D968F23F85B4C3CBD70F659 /* pio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pio.c; path = xyzsphinxbase/src/libsphinxbase/util/pio.c; sourceTree = SOURCE_ROOT; };
+		504A9B22B5F24DBEA7548967 /* err.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = err.c; path = xyzsphinxbase/src/libsphinxbase/util/err.c; sourceTree = SOURCE_ROOT; };
+		520AAC0BFE444E8FA3E8AF47 /* crossplatform.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = crossplatform.c; path = xyzcrossplatform/crossplatform.c; sourceTree = SOURCE_ROOT; };
+		555019EF9C7142A9975544FC /* fe_prespch_buf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_prespch_buf.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c; sourceTree = SOURCE_ROOT; };
+		56CFBEAB17564E2E850AE94C /* libxyzsphinxbase.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzsphinxbase.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		575D3585E6FB4EB0978787FF /* mdef.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mdef.c; path = xyzpocketsphinx/src/libpocketsphinx/mdef.c; sourceTree = SOURCE_ROOT; };
+		58C76A376DE347618FFB5C98 /* bio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bio.c; path = xyzsphinxbase/src/libsphinxbase/util/bio.c; sourceTree = SOURCE_ROOT; };
+		5983672FEB3C473DA5E84502 /* agc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = agc.c; path = xyzsphinxbase/src/libsphinxbase/feat/agc.c; sourceTree = SOURCE_ROOT; };
+		5A514C1FB33D4FECB3F3A8D5 /* exports.def */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = exports.def; sourceTree = SOURCE_ROOT; };
+		5ABCDA943CCF46669C35D4EF /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = xyzcrossplatform/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5B29DA485BD24384A047FDB9 /* vector.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vector.c; path = xyzpocketsphinx/src/libpocketsphinx/vector.c; sourceTree = SOURCE_ROOT; };
+		5B9C4C9B4A6A43CC921ED19F /* kws_detections.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kws_detections.c; path = xyzpocketsphinx/src/libpocketsphinx/kws_detections.c; sourceTree = SOURCE_ROOT; };
+		5BE8BA2631B14067A5D4E275 /* yin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = yin.c; path = xyzsphinxbase/src/libsphinxbase/fe/yin.c; sourceTree = SOURCE_ROOT; };
+		61C8061F49554255A9791FA0 /* glist.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glist.c; path = xyzsphinxbase/src/libsphinxbase/util/glist.c; sourceTree = SOURCE_ROOT; };
+		62107D087F1C44EA8321613A /* jsgf_parser.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf_parser.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c; sourceTree = SOURCE_ROOT; };
+		623314979ADB4F2AB33E2224 /* lm_trie.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lm_trie.c; path = xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c; sourceTree = SOURCE_ROOT; };
+		6456945CBB26429BBE5816DE /* ngram_model_set.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model_set.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c; sourceTree = SOURCE_ROOT; };
+		65B57A66F6E14C878E446C10 /* c_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = c_demo.cpp; sourceTree = SOURCE_ROOT; };
+		672248BB865E479483FAAF9D /* ngram_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search.c; sourceTree = SOURCE_ROOT; };
+		698BABE0223F450C8FB94CFA /* ngram_model.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c; sourceTree = SOURCE_ROOT; };
+		698E4E9E088E427FB2AB7A59 /* fsg_history.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_history.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_history.c; sourceTree = SOURCE_ROOT; };
+		6BC2CF4838804508BC5F6B35 /* slamch.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = slamch.c; path = xyzsphinxbase/src/libsphinxbase/util/slamch.c; sourceTree = SOURCE_ROOT; };
+		7680AF7341B44C5DA44B51C5 /* cmd_ln.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmd_ln.c; path = xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c; sourceTree = SOURCE_ROOT; };
+		781B5F8B358C4295A59A9AA8 /* phone_loop_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = phone_loop_search.c; path = xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c; sourceTree = SOURCE_ROOT; };
+		78F2836833DF4AE2B6B744CA /* jsgf_parser.y */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = jsgf_parser.y; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y; sourceTree = SOURCE_ROOT; };
+		7E0090E488144D0A8C62A57A /* filename.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = filename.c; path = xyzsphinxbase/src/libsphinxbase/util/filename.c; sourceTree = SOURCE_ROOT; };
+		7EE8B3DF9B2147B6BB584A99 /* state_align_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = state_align_search.c; path = xyzpocketsphinx/src/libpocketsphinx/state_align_search.c; sourceTree = SOURCE_ROOT; };
+		7F987982C45B4CEE8FE36AF2 /* case.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = case.c; path = xyzsphinxbase/src/libsphinxbase/util/case.c; sourceTree = SOURCE_ROOT; };
+		825DD5B7A30843C1AF15EEAD /* hmm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hmm.c; path = xyzpocketsphinx/src/libpocketsphinx/hmm.c; sourceTree = SOURCE_ROOT; };
+		82836D01057449D9B6EE12CA /* libxyzsphinxad.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzsphinxad.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		86350C289EE64435A32458C9 /* sbthread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sbthread.c; path = xyzsphinxbase/src/libsphinxbase/util/sbthread.c; sourceTree = SOURCE_ROOT; };
+		86A430EF552F4386AE030E6F /* fsg_model.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_model.c; path = xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c; sourceTree = SOURCE_ROOT; };
+		87C9E0C6B1A445D899491CF0 /* ngram_search_fwdtree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search_fwdtree.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c; sourceTree = SOURCE_ROOT; };
+		87FA2221CF0A4583BC6CD9CF /* profile.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = profile.c; path = xyzsphinxbase/src/libsphinxbase/util/profile.c; sourceTree = SOURCE_ROOT; };
+		8A2FD211E4FC4BBB8EF5442F /* fe_warp_inverse_linear.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_inverse_linear.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c; sourceTree = SOURCE_ROOT; };
+		8AF88EE925AC41F68600B509 /* ps_mllr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_mllr.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c; sourceTree = SOURCE_ROOT; };
+		8AFA015717BA45328572F137 /* fe_noise.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_noise.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c; sourceTree = SOURCE_ROOT; };
+		8BECD31B015947F0A4060A0C /* lm_trie_quant.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lm_trie_quant.c; path = xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c; sourceTree = SOURCE_ROOT; };
+		8C7B743F9E0E4DA98B880F5E /* ngram_search_fwdflat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search_fwdflat.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c; sourceTree = SOURCE_ROOT; };
+		8CB137793CE34904878BE45C /* dict2pid.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dict2pid.c; path = xyzpocketsphinx/src/libpocketsphinx/dict2pid.c; sourceTree = SOURCE_ROOT; };
+		906499DC959C4BBD9DC09AEE /* kws_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kws_search.c; path = xyzpocketsphinx/src/libpocketsphinx/kws_search.c; sourceTree = SOURCE_ROOT; };
+		9095481C1268470DB7BF1D75 /* listelem_alloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = listelem_alloc.c; path = xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c; sourceTree = SOURCE_ROOT; };
+		97BE3DF8205343AC96CB129E /* dtoa.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dtoa.c; path = xyzsphinxbase/src/libsphinxbase/util/dtoa.c; sourceTree = SOURCE_ROOT; };
+		9B4C931729EB4280AF1B1FCE /* dict.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dict.c; path = xyzpocketsphinx/src/libpocketsphinx/dict.c; sourceTree = SOURCE_ROOT; };
+		9C99DBEA5E274871958A7C1F /* lda.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lda.c; path = xyzsphinxbase/src/libsphinxbase/feat/lda.c; sourceTree = SOURCE_ROOT; };
+		A005B410E0AC4E1999EC9068 /* acmod.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = acmod.c; path = xyzpocketsphinx/src/libpocketsphinx/acmod.c; sourceTree = SOURCE_ROOT; };
+		A3C012A99DB74815B075D44A /* cmn_live.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmn_live.c; path = xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c; sourceTree = SOURCE_ROOT; };
+		A91E6B08DBB84047A3E07DA8 /* ckd_alloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ckd_alloc.c; path = xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c; sourceTree = SOURCE_ROOT; };
+		AA784F97B37A42A8AF7A5B3A /* ms_senone.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_senone.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_senone.c; sourceTree = SOURCE_ROOT; };
+		ABA20FEFC9464A99AA7430B8 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = xyzsphinxbase/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B2C42617D4E740D9949EACF0 /* fixlog.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fixlog.c; path = xyzsphinxbase/src/libsphinxbase/fe/fixlog.c; sourceTree = SOURCE_ROOT; };
+		B88DB29338E84F95B5F6DAA7 /* strfuncs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strfuncs.c; path = xyzsphinxbase/src/libsphinxbase/util/strfuncs.c; sourceTree = SOURCE_ROOT; };
+		B891FD754B5040F9A1BD1088 /* libxyzpocketsphinx.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzpocketsphinx.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC89C7E5A2647EC9B32F97A /* cmn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmn.c; path = xyzsphinxbase/src/libsphinxbase/feat/cmn.c; sourceTree = SOURCE_ROOT; };
+		BB875B01735C449DAE734EB0 /* libps_plus.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libps_plus.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA21DC50CBD4E59A408A1D1 /* logmath.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = logmath.c; path = xyzsphinxbase/src/libsphinxbase/util/logmath.c; sourceTree = SOURCE_ROOT; };
+		BE735098A79941519C62DACE /* libxyzcrossplatform.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzcrossplatform.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6CD86F40644FC591361CF4 /* fe_warp_affine.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_affine.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c; sourceTree = SOURCE_ROOT; };
+		C2513BEE7FA34B9B904599D0 /* tmat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tmat.c; path = xyzpocketsphinx/src/libpocketsphinx/tmat.c; sourceTree = SOURCE_ROOT; };
+		C5C424A9FD03445CBF9362FC /* ps_alignment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_alignment.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c; sourceTree = SOURCE_ROOT; };
+		C634C5164355458290E8B160 /* bitarr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bitarr.c; path = xyzsphinxbase/src/libsphinxbase/util/bitarr.c; sourceTree = SOURCE_ROOT; };
+		C7F1F5CAAFEA4F029B2EEA82 /* feat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = feat.c; path = xyzsphinxbase/src/libsphinxbase/feat/feat.c; sourceTree = SOURCE_ROOT; };
+		DEBEA54EAA4D470FA178A663 /* f2c_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = f2c_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c; sourceTree = SOURCE_ROOT; };
+		DF5434C5D99545648496BD99 /* blas_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = blas_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/blas_lite.c; sourceTree = SOURCE_ROOT; };
+		E58C5EBDE7BF450186E612E9 /* fsg_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_search.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_search.c; sourceTree = SOURCE_ROOT; };
+		E920057ECA6F46418B4706B1 /* pocketsphinx.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pocketsphinx.c; path = xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c; sourceTree = SOURCE_ROOT; };
+		EE56537F62D1482A84D62340 /* ptm_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ptm_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c; sourceTree = SOURCE_ROOT; };
+		EEEE67C54DCE41C7841210DB /* hash_table.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hash_table.c; path = xyzsphinxbase/src/libsphinxbase/util/hash_table.c; sourceTree = SOURCE_ROOT; };
+		F7348E4E1AF34C94948BE826 /* ms_gauden.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_gauden.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c; sourceTree = SOURCE_ROOT; };
+		F94DB3B56FEB406DAC971C70 /* ngrams_raw.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngrams_raw.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c; sourceTree = SOURCE_ROOT; };
+		FB17D68AA5754AC9849213FE /* bitvec.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bitvec.c; path = xyzsphinxbase/src/libsphinxbase/util/bitvec.c; sourceTree = SOURCE_ROOT; };
+		FCE7DDE4514A43D3AECD056A /* ps_lattice.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_lattice.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c; sourceTree = SOURCE_ROOT; };
+		FD88EBF6615440A7BD46FD37 /* allphone_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = allphone_search.c; path = xyzpocketsphinx/src/libpocketsphinx/allphone_search.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		016FE9DD3D8543FA960C3B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506E100263254E2D90AF8ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E3874CB5224C55854A4531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E30D8507751E446EAFD2477E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA240EBB80CE4B4897EEADFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1987D2857B9841E2A8038FAA /* xyzcrossplatform */ = {
+			isa = PBXGroup;
+			children = (
+				A53F6EBB2F99416EAE87205E /* Source Files */,
+				5ABCDA943CCF46669C35D4EF /* CMakeLists.txt */,
+			);
+			name = xyzcrossplatform;
+			sourceTree = "<group>";
+		};
+		1BCF3D779AC549F595A91A01 /* xyzsphinxbase */ = {
+			isa = PBXGroup;
+			children = (
+				3AF8128271144050A73E8F8C /* Source Files */,
+				ABA20FEFC9464A99AA7430B8 /* CMakeLists.txt */,
+				2A35E49D06754864802B2DF2 /* _jsgf_scanner.l */,
+				78F2836833DF4AE2B6B744CA /* jsgf_parser.y */,
+			);
+			name = xyzsphinxbase;
+			sourceTree = "<group>";
+		};
+		22DEBCC4C24D4F76B4DD2318 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				65B57A66F6E14C878E446C10 /* c_demo.cpp */,
+				5A514C1FB33D4FECB3F3A8D5 /* exports.def */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2B06A7A4317D43F2A975A955 /* xyzsphinxad */ = {
+			isa = PBXGroup;
+			children = (
+				33C09A7B86DB40318FEE6C69 /* Source Files */,
+				063A79A11FD94238B3A99D95 /* CMakeLists.txt */,
+			);
+			name = xyzsphinxad;
+			sourceTree = "<group>";
+		};
+		33C09A7B86DB40318FEE6C69 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				309199F3ECF14B87ABE6DE76 /* ad_base.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		354E0A1248684B268D83728E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A005B410E0AC4E1999EC9068 /* acmod.c */,
+				FD88EBF6615440A7BD46FD37 /* allphone_search.c */,
+				30F60C5D728D4332916FCA6E /* bin_mdef.c */,
+				1E8DB4E57692478A89B29E09 /* blkarray_list.c */,
+				9B4C931729EB4280AF1B1FCE /* dict.c */,
+				8CB137793CE34904878BE45C /* dict2pid.c */,
+				698E4E9E088E427FB2AB7A59 /* fsg_history.c */,
+				1F52840302F64C77976597B3 /* fsg_lextree.c */,
+				E58C5EBDE7BF450186E612E9 /* fsg_search.c */,
+				825DD5B7A30843C1AF15EEAD /* hmm.c */,
+				5B9C4C9B4A6A43CC921ED19F /* kws_detections.c */,
+				906499DC959C4BBD9DC09AEE /* kws_search.c */,
+				575D3585E6FB4EB0978787FF /* mdef.c */,
+				F7348E4E1AF34C94948BE826 /* ms_gauden.c */,
+				11C431C5FC064D06B8B218BE /* ms_mgau.c */,
+				AA784F97B37A42A8AF7A5B3A /* ms_senone.c */,
+				672248BB865E479483FAAF9D /* ngram_search.c */,
+				8C7B743F9E0E4DA98B880F5E /* ngram_search_fwdflat.c */,
+				87C9E0C6B1A445D899491CF0 /* ngram_search_fwdtree.c */,
+				781B5F8B358C4295A59A9AA8 /* phone_loop_search.c */,
+				E920057ECA6F46418B4706B1 /* pocketsphinx.c */,
+				C5C424A9FD03445CBF9362FC /* ps_alignment.c */,
+				FCE7DDE4514A43D3AECD056A /* ps_lattice.c */,
+				8AF88EE925AC41F68600B509 /* ps_mllr.c */,
+				EE56537F62D1482A84D62340 /* ptm_mgau.c */,
+				018670D4BB134C88995DAACE /* s2_semi_mgau.c */,
+				7EE8B3DF9B2147B6BB584A99 /* state_align_search.c */,
+				C2513BEE7FA34B9B904599D0 /* tmat.c */,
+				5B29DA485BD24384A047FDB9 /* vector.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3AF8128271144050A73E8F8C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				299555E8040D4FE5BD51E93D /* fe_interface.c */,
+				8AFA015717BA45328572F137 /* fe_noise.c */,
+				555019EF9C7142A9975544FC /* fe_prespch_buf.c */,
+				2588E23E518D4CC98345C253 /* fe_sigproc.c */,
+				11D8C8CA0FCB45BEA278D21C /* fe_warp.c */,
+				BF6CD86F40644FC591361CF4 /* fe_warp_affine.c */,
+				8A2FD211E4FC4BBB8EF5442F /* fe_warp_inverse_linear.c */,
+				03BC37EC572E42B98B23D369 /* fe_warp_piecewise_linear.c */,
+				B2C42617D4E740D9949EACF0 /* fixlog.c */,
+				5BE8BA2631B14067A5D4E275 /* yin.c */,
+				5983672FEB3C473DA5E84502 /* agc.c */,
+				BAC89C7E5A2647EC9B32F97A /* cmn.c */,
+				A3C012A99DB74815B075D44A /* cmn_live.c */,
+				C7F1F5CAAFEA4F029B2EEA82 /* feat.c */,
+				9C99DBEA5E274871958A7C1F /* lda.c */,
+				86A430EF552F4386AE030E6F /* fsg_model.c */,
+				3C7B66CB94AC4015B96B1B85 /* jsgf.c */,
+				62107D087F1C44EA8321613A /* jsgf_parser.c */,
+				164A272D5C6C491DBD567AEF /* jsgf_scanner.c */,
+				623314979ADB4F2AB33E2224 /* lm_trie.c */,
+				8BECD31B015947F0A4060A0C /* lm_trie_quant.c */,
+				698BABE0223F450C8FB94CFA /* ngram_model.c */,
+				6456945CBB26429BBE5816DE /* ngram_model_set.c */,
+				0F482CD70D4A4171A51EA757 /* ngram_model_trie.c */,
+				F94DB3B56FEB406DAC971C70 /* ngrams_raw.c */,
+				58C76A376DE347618FFB5C98 /* bio.c */,
+				C634C5164355458290E8B160 /* bitarr.c */,
+				FB17D68AA5754AC9849213FE /* bitvec.c */,
+				DF5434C5D99545648496BD99 /* blas_lite.c */,
+				7F987982C45B4CEE8FE36AF2 /* case.c */,
+				A91E6B08DBB84047A3E07DA8 /* ckd_alloc.c */,
+				7680AF7341B44C5DA44B51C5 /* cmd_ln.c */,
+				97BE3DF8205343AC96CB129E /* dtoa.c */,
+				504A9B22B5F24DBEA7548967 /* err.c */,
+				19982551F74C496AA53E5623 /* errno.c */,
+				DEBEA54EAA4D470FA178A663 /* f2c_lite.c */,
+				7E0090E488144D0A8C62A57A /* filename.c */,
+				111F68AC48924C7A82D51378 /* genrand.c */,
+				61C8061F49554255A9791FA0 /* glist.c */,
+				EEEE67C54DCE41C7841210DB /* hash_table.c */,
+				1C1A39F707C24C14A49AA2DF /* heap.c */,
+				9095481C1268470DB7BF1D75 /* listelem_alloc.c */,
+				BDA21DC50CBD4E59A408A1D1 /* logmath.c */,
+				3BA7D37B4E4646149DC3FC95 /* matrix.c */,
+				40005E7069AA491D92D747B5 /* mmio.c */,
+				4D968F23F85B4C3CBD70F659 /* pio.c */,
+				09C7EF3DAEA34E75BBB9F672 /* priority_queue.c */,
+				87FA2221CF0A4583BC6CD9CF /* profile.c */,
+				86350C289EE64435A32458C9 /* sbthread.c */,
+				6BC2CF4838804508BC5F6B35 /* slamch.c */,
+				4A2C0C27F2604A7BBA7E6319 /* slapack_lite.c */,
+				B88DB29338E84F95B5F6DAA7 /* strfuncs.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		71C98521C592404CB3CF6CDF = {
+			isa = PBXGroup;
+			children = (
+				E063E74C587D4693B73CF44B /* ps_plus */,
+				D6838C4B488B4C6BA4AC650C /* ALL_BUILD */,
+				9E4E23DA76BB42649D977D49 /* xyzpocketsphinx */,
+				1BCF3D779AC549F595A91A01 /* xyzsphinxbase */,
+				2B06A7A4317D43F2A975A955 /* xyzsphinxad */,
+				1987D2857B9841E2A8038FAA /* xyzcrossplatform */,
+				CFF7D9B209054B03B76E7D18 /* Products */,
+				E33D87F843DF49E4810DEDA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E4E23DA76BB42649D977D49 /* xyzpocketsphinx */ = {
+			isa = PBXGroup;
+			children = (
+				354E0A1248684B268D83728E /* Source Files */,
+				1B530CF1B2AD4A4983693784 /* CMakeLists.txt */,
+			);
+			name = xyzpocketsphinx;
+			sourceTree = "<group>";
+		};
+		A53F6EBB2F99416EAE87205E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				520AAC0BFE444E8FA3E8AF47 /* crossplatform.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C4A0D1281C3E40EC809DF335 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CFF7D9B209054B03B76E7D18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB875B01735C449DAE734EB0 /* libps_plus.dylib */,
+				BE735098A79941519C62DACE /* libxyzcrossplatform.dylib */,
+				B891FD754B5040F9A1BD1088 /* libxyzpocketsphinx.dylib */,
+				82836D01057449D9B6EE12CA /* libxyzsphinxad.dylib */,
+				56CFBEAB17564E2E850AE94C /* libxyzsphinxbase.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6838C4B488B4C6BA4AC650C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				C4A0D1281C3E40EC809DF335 /* CMake Rules */,
+				4CBC17CDA1934A14938F55CF /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		E063E74C587D4693B73CF44B /* ps_plus */ = {
+			isa = PBXGroup;
+			children = (
+				22DEBCC4C24D4F76B4DD2318 /* Source Files */,
+				15CC6FF7579644F18B3BA121 /* CMakeLists.txt */,
+			);
+			name = ps_plus;
+			sourceTree = "<group>";
+		};
+		E33D87F843DF49E4810DEDA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3275529453EA4897A5A8C2D2 /* ps_plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784DE1AF860448BEAC9962C3 /* Build configuration list for PBXNativeTarget "ps_plus" */;
+			buildPhases = (
+				90E608ECBD754815A2E38084 /* Sources */,
+				E30D8507751E446EAFD2477E /* Frameworks */,
+				A15FA164C746D73A47933F67 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DFCC4951C1846DCA5CD969D /* PBXTargetDependency */,
+				2530C1BF619A48198D163BD7 /* PBXTargetDependency */,
+				8D057E27577C4D1D819EAD8B /* PBXTargetDependency */,
+				6E18436584004ADE898D3A2E /* PBXTargetDependency */,
+				F25391DF9298436AB9C0C3CC /* PBXTargetDependency */,
+			);
+			name = ps_plus;
+			productName = ps_plus;
+			productReference = BB875B01735C449DAE734EB0 /* libps_plus.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		409096D68846416C93F9A4D1 /* xyzsphinxbase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3F87E9279E47D5884AB1DF /* Build configuration list for PBXNativeTarget "xyzsphinxbase" */;
+			buildPhases = (
+				ED4A984BFFDD4548BD3D8793 /* Sources */,
+				016FE9DD3D8543FA960C3B37 /* Frameworks */,
+				9FC1A0675D6C82DD0B162F96 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F921178BC0554E3397CAE16A /* PBXTargetDependency */,
+				AEB3FB6D153A4CE9A9B904E0 /* PBXTargetDependency */,
+			);
+			name = xyzsphinxbase;
+			productName = xyzsphinxbase;
+			productReference = 56CFBEAB17564E2E850AE94C /* libxyzsphinxbase.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		A9CD9B76C810402D97F58E10 /* xyzpocketsphinx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9218AB6CF804B089E2CE75D /* Build configuration list for PBXNativeTarget "xyzpocketsphinx" */;
+			buildPhases = (
+				1F6A92C66AB54A1B997BC0C2 /* Sources */,
+				EA240EBB80CE4B4897EEADFF /* Frameworks */,
+				41773DC0D414D793349017C6 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4300FF74C11402C9E2C79FF /* PBXTargetDependency */,
+				D8941A4D5FC946FBA85FD99D /* PBXTargetDependency */,
+				01B246B127874D10A337ECC7 /* PBXTargetDependency */,
+				A0EA73027D5E4C17953FF5E5 /* PBXTargetDependency */,
+			);
+			name = xyzpocketsphinx;
+			productName = xyzpocketsphinx;
+			productReference = B891FD754B5040F9A1BD1088 /* libxyzpocketsphinx.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		C8C6343655994CA1B87AE7FB /* xyzcrossplatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3CDB1D564584F65BBA15B00 /* Build configuration list for PBXNativeTarget "xyzcrossplatform" */;
+			buildPhases = (
+				74921B07EFD549F5918B74C4 /* Sources */,
+				D1E3874CB5224C55854A4531 /* Frameworks */,
+				6218C33658CD2860A239D5BC /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A084224B81B24904BE4BD873 /* PBXTargetDependency */,
+			);
+			name = xyzcrossplatform;
+			productName = xyzcrossplatform;
+			productReference = BE735098A79941519C62DACE /* libxyzcrossplatform.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		C9344398F2A5420F8F2FC061 /* xyzsphinxad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 053006A64612429EA36A3539 /* Build configuration list for PBXNativeTarget "xyzsphinxad" */;
+			buildPhases = (
+				C82D34945756410BB99F49FB /* Sources */,
+				506E100263254E2D90AF8ED2 /* Frameworks */,
+				6A7369770B9D2E5677CF1E7F /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8915035AE9D84EA98FAD0B47 /* PBXTargetDependency */,
+				CECABF2D4C7C4B99A229F3E4 /* PBXTargetDependency */,
+				030A61FB243A452AB5B845BE /* PBXTargetDependency */,
+			);
+			name = xyzsphinxad;
+			productName = xyzsphinxad;
+			productReference = 82836D01057449D9B6EE12CA /* libxyzsphinxad.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2DB1E8CE10643BA8F0A2E4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1330;
+			};
+			buildConfigurationList = 06FD0D111CAC476A99DC1CE9 /* Build configuration list for PBXProject "ps_plus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71C98521C592404CB3CF6CDF;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6B7AF01BBE04F8D85CB2C81 /* ALL_BUILD */,
+				6DD704D430E046379ED674C6 /* ZERO_CHECK */,
+				3275529453EA4897A5A8C2D2 /* ps_plus */,
+				C8C6343655994CA1B87AE7FB /* xyzcrossplatform */,
+				A9CD9B76C810402D97F58E10 /* xyzpocketsphinx */,
+				C9344398F2A5420F8F2FC061 /* xyzsphinxad */,
+				409096D68846416C93F9A4D1 /* xyzsphinxbase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41773DC0D414D793349017C6 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Debug/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Debug/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Debug/libxyzpocketsphinx.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Release/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Release/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Release/libxyzpocketsphinx.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/MinSizeRel/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/MinSizeRel/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/MinSizeRel/libxyzpocketsphinx.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/RelWithDebInfo/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/RelWithDebInfo/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/RelWithDebInfo/libxyzpocketsphinx.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		41D384AAE9762F789CBCFBFA /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build && cmake --build . --config Debug \n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6218C33658CD2860A239D5BC /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug/libxyzcrossplatform.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release/libxyzcrossplatform.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7369770B9D2E5677CF1E7F /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxad.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxad.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86C9F185CF84359686096D6F /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC1A0675D6C82DD0B162F96 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxbase.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxbase.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A15FA164C746D73A47933F67 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/Debug/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/Debug/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/Debug/libps_plus.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/Release/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/Release/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/Release/libps_plus.dylib\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/MinSizeRel/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/MinSizeRel/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/MinSizeRel/libps_plus.dylib\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs\n  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/RelWithDebInfo/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/RelWithDebInfo/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/RelWithDebInfo/libps_plus.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F6A92C66AB54A1B997BC0C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1830C4701AB24EFD88135995 /* acmod.c in Sources */,
+				7AF7EB273F8D4B39B7C27528 /* allphone_search.c in Sources */,
+				0053992083DD480F965209EB /* bin_mdef.c in Sources */,
+				DC43A27EDE214B458AF0328B /* blkarray_list.c in Sources */,
+				8A8FF6152F1C48118E3CC3C8 /* dict.c in Sources */,
+				20E802C52BC84AA4ABA9D2D2 /* dict2pid.c in Sources */,
+				2203A1FBA3624A439E807F08 /* fsg_history.c in Sources */,
+				CA5E241757FF47B2B31470ED /* fsg_lextree.c in Sources */,
+				E39CC57D839D414ABFA9A55E /* fsg_search.c in Sources */,
+				981079F29F1F4DAFA2FC0877 /* hmm.c in Sources */,
+				C2CEC1C07F734AC0B71E5DC0 /* kws_detections.c in Sources */,
+				BD9C7A54F58A432BAEFAB8D1 /* kws_search.c in Sources */,
+				4FE166ED261A487C98410BC3 /* mdef.c in Sources */,
+				AB8F198925AD49B1B53AD345 /* ms_gauden.c in Sources */,
+				BD5A50DD290948D5A79B3063 /* ms_mgau.c in Sources */,
+				BB3822042038490C89D4A16D /* ms_senone.c in Sources */,
+				94CB01CD5EE1410AB66DFB5F /* ngram_search.c in Sources */,
+				C5AF06290B9C44C88A6A49B0 /* ngram_search_fwdflat.c in Sources */,
+				D8E4F786AD2E4318B0CEBCFA /* ngram_search_fwdtree.c in Sources */,
+				6D886492519A4CD5A63BF3EB /* phone_loop_search.c in Sources */,
+				84793563CFE54A48AAAEB990 /* pocketsphinx.c in Sources */,
+				572DBA0F720D425EAD26F380 /* ps_alignment.c in Sources */,
+				BA52E4717299413C88929E4A /* ps_lattice.c in Sources */,
+				2E858EDD0D2E47D5A8BA8419 /* ps_mllr.c in Sources */,
+				F9833314E6154B648C80A2FA /* ptm_mgau.c in Sources */,
+				8AAF6AE60A134BD4B313B85D /* s2_semi_mgau.c in Sources */,
+				EA53EAA7A0654FEF905138B5 /* state_align_search.c in Sources */,
+				B3B329BB93D449BF9BB8D6E7 /* tmat.c in Sources */,
+				D7ECDA98125547C2AA60F618 /* vector.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74921B07EFD549F5918B74C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53DF8ADB1B5941D2B1D53B71 /* crossplatform.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E608ECBD754815A2E38084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC3ED84D7D74B34A57D7083 /* c_demo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C82D34945756410BB99F49FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FEC14676B54643A7BBDF7E /* ad_base.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4A984BFFDD4548BD3D8793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A75258C57E4D568DD2571E /* fe_interface.c in Sources */,
+				2E89E09E9566466B945E30E8 /* fe_noise.c in Sources */,
+				A4F1A2D73B4B41FCAE4EB202 /* fe_prespch_buf.c in Sources */,
+				15D9423885C7422D8C351C16 /* fe_sigproc.c in Sources */,
+				762370C726364AFD894E3300 /* fe_warp.c in Sources */,
+				6840933588414DC7B04CF922 /* fe_warp_affine.c in Sources */,
+				2D1164E9A5624ECFBB6EBECB /* fe_warp_inverse_linear.c in Sources */,
+				4DA5DB8DB8A1430998BCE81B /* fe_warp_piecewise_linear.c in Sources */,
+				F97368D85DE04219880B78B3 /* fixlog.c in Sources */,
+				9CFAAE48353A4CC38C826F3D /* yin.c in Sources */,
+				847A300B72F24443A30F840F /* agc.c in Sources */,
+				05E03F6B47594DDD87005636 /* cmn.c in Sources */,
+				F11009B151EC4AEDA0C6BEF5 /* cmn_live.c in Sources */,
+				79B0B5320F25463CBC411160 /* feat.c in Sources */,
+				E04B673B927641ECA176D431 /* lda.c in Sources */,
+				5A14521B25E4403BAA3FACD2 /* fsg_model.c in Sources */,
+				9AB14AC1CBA7420F98BB0BE2 /* jsgf.c in Sources */,
+				926C5BECC408494DAA7597C8 /* jsgf_parser.c in Sources */,
+				7EDB6A7A11F04230B5AFDA1E /* jsgf_scanner.c in Sources */,
+				AB27BE0139884ED79826464E /* lm_trie.c in Sources */,
+				1879F694B7B54DCDABC56007 /* lm_trie_quant.c in Sources */,
+				43CC726206D54BB7B735814C /* ngram_model.c in Sources */,
+				C7E7868836474E6696539469 /* ngram_model_set.c in Sources */,
+				9713965BF42E4B3A824CBE1A /* ngram_model_trie.c in Sources */,
+				105028D4D40B4A499784044B /* ngrams_raw.c in Sources */,
+				794C1B6EA1D04D6B980D4E73 /* bio.c in Sources */,
+				485F60A94AD24F6996245DBE /* bitarr.c in Sources */,
+				7C097D6F7C7D4F1EBCEAC1DC /* bitvec.c in Sources */,
+				5506797F20634FD7B0300B6F /* blas_lite.c in Sources */,
+				D261506E200F481B9D3B9032 /* case.c in Sources */,
+				874C45BB696444629838F5C3 /* ckd_alloc.c in Sources */,
+				E89FFD97A5034AD3A1B651AB /* cmd_ln.c in Sources */,
+				3975348D5E37487FA08B7A56 /* dtoa.c in Sources */,
+				75D886E76A3846148C0E7637 /* err.c in Sources */,
+				CC1E19AAB8FF4B0DB972F5F8 /* errno.c in Sources */,
+				EFE638BEE0114B239884EECC /* f2c_lite.c in Sources */,
+				8163B58BC7F1412E9395668F /* filename.c in Sources */,
+				11AA2C668C36439C9DD17651 /* genrand.c in Sources */,
+				514116F816C24198AFC60BF4 /* glist.c in Sources */,
+				351A546902FD45CFB3AFD1C8 /* hash_table.c in Sources */,
+				12872762D196424983FDAB5A /* heap.c in Sources */,
+				BCC16E673C2B4518B2DF5B05 /* listelem_alloc.c in Sources */,
+				0BC76E01968948FD80FFFE4A /* logmath.c in Sources */,
+				E356EC9152A241379FAAD7CE /* matrix.c in Sources */,
+				DA6F9B6EF3B348D19432A655 /* mmio.c in Sources */,
+				8E238E6A0E7547AE9BA1FC71 /* pio.c in Sources */,
+				32D08544B9334C41B02DF18D /* priority_queue.c in Sources */,
+				6A04DB2DEC4149959E4E8472 /* profile.c in Sources */,
+				0079AD7000F94E73A2EB56DB /* sbthread.c in Sources */,
+				E445E42FC84C47F3B197B660 /* slamch.c in Sources */,
+				7D00AD7B7423450FAF084E2B /* slapack_lite.c in Sources */,
+				F05DD5E045AD4779AB9A0C06 /* strfuncs.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01B246B127874D10A337ECC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8C6343655994CA1B87AE7FB /* xyzcrossplatform */;
+			targetProxy = F62ABE2DDDDA4F4EB2590663 /* PBXContainerItemProxy */;
+		};
+		030A61FB243A452AB5B845BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD704D430E046379ED674C6 /* ZERO_CHECK */;
+			targetProxy = 5C3FB57978D5485B88CF7AFE /* PBXContainerItemProxy */;
+		};
+		2530C1BF619A48198D163BD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409096D68846416C93F9A4D1 /* xyzsphinxbase */;
+			targetProxy = 11D85212E3EB46B5950CBC63 /* PBXContainerItemProxy */;
+		};
+		3EAA264076BD41B2A9A16993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD704D430E046379ED674C6 /* ZERO_CHECK */;
+			targetProxy = 099B55F287A6463B84FB34BB /* PBXContainerItemProxy */;
+		};
+		5DFCC4951C1846DCA5CD969D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CD9B76C810402D97F58E10 /* xyzpocketsphinx */;
+			targetProxy = 34E568E74F3D4A19BB2D99B5 /* PBXContainerItemProxy */;
+		};
+		6E18436584004ADE898D3A2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8C6343655994CA1B87AE7FB /* xyzcrossplatform */;
+			targetProxy = FE59574332994F2C8FFC2BB5 /* PBXContainerItemProxy */;
+		};
+		8915035AE9D84EA98FAD0B47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409096D68846416C93F9A4D1 /* xyzsphinxbase */;
+			targetProxy = 8D2B25E5C5494A928A9346A7 /* PBXContainerItemProxy */;
+		};
+		8D057E27577C4D1D819EAD8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9344398F2A5420F8F2FC061 /* xyzsphinxad */;
+			targetProxy = 3E30D29114224D96BCE72CE9 /* PBXContainerItemProxy */;
+		};
+		8F7B2E4FB16D41A0A023FE13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CD9B76C810402D97F58E10 /* xyzpocketsphinx */;
+			targetProxy = 1992E1144F0247E88D67B20C /* PBXContainerItemProxy */;
+		};
+		A084224B81B24904BE4BD873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD704D430E046379ED674C6 /* ZERO_CHECK */;
+			targetProxy = 7E87E94C9B264AE8A1C08717 /* PBXContainerItemProxy */;
+		};
+		A0EA73027D5E4C17953FF5E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD704D430E046379ED674C6 /* ZERO_CHECK */;
+			targetProxy = DA4BFE53DA6E4462A35AB7DF /* PBXContainerItemProxy */;
+		};
+		AEB3FB6D153A4CE9A9B904E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD704D430E046379ED674C6 /* ZERO_CHECK */;
+			targetProxy = F90FBBD3C8B0431D97EBC3C9 /* PBXContainerItemProxy */;
+		};
+		C4300FF74C11402C9E2C79FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409096D68846416C93F9A4D1 /* xyzsphinxbase */;
+			targetProxy = 7410B8B785944662BCD9641B /* PBXContainerItemProxy */;
+		};
+		CECABF2D4C7C4B99A229F3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8C6343655994CA1B87AE7FB /* xyzcrossplatform */;
+			targetProxy = 30F17EE76A0247E9B2839623 /* PBXContainerItemProxy */;
+		};
+		CF13DB27D87148929AE5DE16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8C6343655994CA1B87AE7FB /* xyzcrossplatform */;
+			targetProxy = 414A48704EA94B5F8EC2AEB0 /* PBXContainerItemProxy */;
+		};
+		D8941A4D5FC946FBA85FD99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9344398F2A5420F8F2FC061 /* xyzsphinxad */;
+			targetProxy = 3FCDB580DEE147F8868EA7F1 /* PBXContainerItemProxy */;
+		};
+		E16B8A27030B45B6A611CD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409096D68846416C93F9A4D1 /* xyzsphinxbase */;
+			targetProxy = 675291423FE244D9B918CD4D /* PBXContainerItemProxy */;
+		};
+		EEB56AE0CC5149329B3005C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3275529453EA4897A5A8C2D2 /* ps_plus */;
+			targetProxy = 607CACB9A9984A958B199A9D /* PBXContainerItemProxy */;
+		};
+		F25391DF9298436AB9C0C3CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD704D430E046379ED674C6 /* ZERO_CHECK */;
+			targetProxy = 272A43BEFDBF4B05A9878E3D /* PBXContainerItemProxy */;
+		};
+		F53861A007064FDA933DD71E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9344398F2A5420F8F2FC061 /* xyzsphinxad */;
+			targetProxy = B74C7F0A38A646979277EC4F /* PBXContainerItemProxy */;
+		};
+		F921178BC0554E3397CAE16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8C6343655994CA1B87AE7FB /* xyzcrossplatform */;
+			targetProxy = 0FC5D633D3B54749BD1CFE3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0707B21FA7704480AE3C8E1C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzsphinxad_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		0BA88C6D2AF740E3BC2006CF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build;
+			};
+			name = RelWithDebInfo;
+		};
+		0C4886052F80456E842E2F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzsphinxbase_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/fe,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/feat,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/lm,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/util,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		12344607DBBA4A7798CA7291 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		1DC5427558244B1C9B188020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzsphinxad_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		2340D2DB936D4803AF2D1EF7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		2E39479518904D6B92EB964A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		300CADAA87094379B40EE836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		31083CC6B8CA49F8B44865FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzpocketsphinx_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/xyzpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/src/libpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxad.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		3C5E222A546A4CA0A72EDD13 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		4C4D7C8063174475B5056EC8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzpocketsphinx_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/xyzpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/src/libpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		4ED1BFC6BB4D46A4869CD737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		50D1D86D178448B79E774724 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzpocketsphinx_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/xyzpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/src/libpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		521C2368985043FEA4D8AC1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzcrossplatform_EXPORTS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		5809A55089B34F6F87FB8D9D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		5E31E6C1CC864C569229F077 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzcrossplatform_EXPORTS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		647AF95B0C314E299EB46D22 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzsphinxbase_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/fe,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/feat,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/lm,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/util,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		66E526EF33B24AEB956C897B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzpocketsphinx_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/xyzpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/src/libpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxad.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		6FC1202334F44E0EB9533D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build;
+			};
+			name = Debug;
+		};
+		8508D6A6F9E64AEC8AC0AE8F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzcrossplatform_EXPORTS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		86611332763A4226B85154C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzsphinxad_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		91F30284CDA4433B872E9329 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build;
+			};
+			name = MinSizeRel;
+		};
+		98051BDBCF084B2682B56E75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					ps_plus_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/ps_plus,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/aside_ps_library,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/_xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/_xyzsphinxbase/fe,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/xyzpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Release,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Release/libxyzpocketsphinx.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxad.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Release/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Release/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		AF743F153B8A4E9EBF8EF83A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					ps_plus_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/ps_plus,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/aside_ps_library,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/_xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/_xyzsphinxbase/fe,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/xyzpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/RelWithDebInfo,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/RelWithDebInfo/libxyzpocketsphinx.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		B7F884568D774743962B7599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzcrossplatform_EXPORTS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		BD92451BD8E648C0A6557043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build;
+			};
+			name = Release;
+		};
+		C861DF74DD494A11B614A69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzsphinxbase_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/fe,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/feat,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/lm,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/util,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		CDE2732FF96A48F3AB0ED186 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzsphinxbase_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/fe,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/feat,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/lm,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/src/libsphinxbase/util,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		D78C914269C945E992DF458E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					ps_plus_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/ps_plus,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/aside_ps_library,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/_xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/_xyzsphinxbase/fe,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/xyzpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/MinSizeRel,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/MinSizeRel/libxyzpocketsphinx.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		D8D0CCB1542D452EA45DC088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		DEA013F10EA344EB88293E37 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					xyzsphinxad_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu11'",
+					"-fPIC",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		F894A5EAE19945BB9ED474AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					ps_plus_EXPORTS,
+					HAVE_CONFIG_H,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/ps_plus,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/aside_ps_library,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/_xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/_xyzsphinxbase/fe,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/xyzpocketsphinx,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/include/xyzsphinxbase,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/xyzsphinxad,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Debug,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug,
+					"$(inherited)",
+				);
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/Debug/libxyzpocketsphinx.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxad.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzsphinxbase/Debug/libxyzsphinxbase.dylib,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/Debug/libxyzcrossplatform.dylib,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01237B98747A498496D34C51 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED1BFC6BB4D46A4869CD737 /* Debug */,
+				2E39479518904D6B92EB964A /* Release */,
+				3C5E222A546A4CA0A72EDD13 /* MinSizeRel */,
+				12344607DBBA4A7798CA7291 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		053006A64612429EA36A3539 /* Build configuration list for PBXNativeTarget "xyzsphinxad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86611332763A4226B85154C0 /* Debug */,
+				1DC5427558244B1C9B188020 /* Release */,
+				DEA013F10EA344EB88293E37 /* MinSizeRel */,
+				0707B21FA7704480AE3C8E1C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		06FD0D111CAC476A99DC1CE9 /* Build configuration list for PBXProject "ps_plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC1202334F44E0EB9533D2D /* Debug */,
+				BD92451BD8E648C0A6557043 /* Release */,
+				91F30284CDA4433B872E9329 /* MinSizeRel */,
+				0BA88C6D2AF740E3BC2006CF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1E3F87E9279E47D5884AB1DF /* Build configuration list for PBXNativeTarget "xyzsphinxbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C861DF74DD494A11B614A69F /* Debug */,
+				0C4886052F80456E842E2F5D /* Release */,
+				CDE2732FF96A48F3AB0ED186 /* MinSizeRel */,
+				647AF95B0C314E299EB46D22 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		29F4108BFE1842B48668DEA2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300CADAA87094379B40EE836 /* Debug */,
+				D8D0CCB1542D452EA45DC088 /* Release */,
+				5809A55089B34F6F87FB8D9D /* MinSizeRel */,
+				2340D2DB936D4803AF2D1EF7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		784DE1AF860448BEAC9962C3 /* Build configuration list for PBXNativeTarget "ps_plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F894A5EAE19945BB9ED474AB /* Debug */,
+				98051BDBCF084B2682B56E75 /* Release */,
+				D78C914269C945E992DF458E /* MinSizeRel */,
+				AF743F153B8A4E9EBF8EF83A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3CDB1D564584F65BBA15B00 /* Build configuration list for PBXNativeTarget "xyzcrossplatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F884568D774743962B7599 /* Debug */,
+				521C2368985043FEA4D8AC1F /* Release */,
+				8508D6A6F9E64AEC8AC0AE8F /* MinSizeRel */,
+				5E31E6C1CC864C569229F077 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9218AB6CF804B089E2CE75D /* Build configuration list for PBXNativeTarget "xyzpocketsphinx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31083CC6B8CA49F8B44865FC /* Debug */,
+				66E526EF33B24AEB956C897B /* Release */,
+				4C4D7C8063174475B5056EC8 /* MinSizeRel */,
+				50D1D86D178448B79E774724 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2DB1E8CE10643BA8F0A2E4F /* Project object */;
+}

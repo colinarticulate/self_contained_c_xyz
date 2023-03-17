@@ -30,7 +30,6 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/davidbarbera/Reposito
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/CMakeFiles/3.26.0-rc6/CMakeCCompiler.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/CMakeFiles/3.26.0-rc6/CMakeCXXCompiler.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/build/CMakeFiles/3.26.0-rc6/CMakeSystem.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/ios.toolchain.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzcrossplatform/CMakeLists.txt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/CMakeLists.txt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_demo2/libs/xyzpocketsphinx/include/config.h.in))

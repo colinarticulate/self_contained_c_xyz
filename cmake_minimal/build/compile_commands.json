@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal/build",
+  "command": "/usr/bin/clang -Da_EXPORTS -I/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal -I/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal/b -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -o CMakeFiles/a.dir/a.c.o -c /Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal/a.c",
+  "file": "/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal/a.c",
+  "output": "CMakeFiles/a.dir/a.c.o"
+},
+{
+  "directory": "/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal/build/b",
+  "command": "/usr/bin/clang -Db_EXPORTS -I/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal/b -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -o CMakeFiles/b.dir/b.c.o -c /Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal/b/b.c",
+  "file": "/Users/davidbarbera/Repositories/self_contained_c_xyz/cmake_minimal/b/b.c",
+  "output": "b/CMakeFiles/b.dir/b.c.o"
+}
+]

@@ -6,7 +6,7 @@ C_DEFINES = -DHAVE_CONFIG_H -Dxyzpocketsphinx_EXPORTS
 
 C_INCLUDES = -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform
 
-C_FLAGSarm64 = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC
+C_FLAGSarm64 = -O3 -DNDEBUG -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC
 
-C_FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC
+C_FLAGS = -O3 -DNDEBUG -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC
 

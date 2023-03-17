@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+ZERO_CHECK in ps_plus, no dependencies
+xyzcrossplatform in ps_plus, depends on:
+ZERO_CHECK in ps_plus (explicit)
+xyzsphinxbase in ps_plus, depends on:
+xyzcrossplatform in ps_plus (explicit)
+ZERO_CHECK in ps_plus (explicit)

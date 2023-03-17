@@ -1,0 +1,2237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		13C497365B584E68AC6DBF9A /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BCE42D5EF0F3470ABCC7E037 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				63C6395E65CB329FBC25F54B /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		E73DD9EB2B3E4B24905AAD5B /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CA804287DF5645638AF9C157 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8271C2648C1FEA3B03B04368 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				ED2FCD97CDCE43969BB1A108 /* PBXTargetDependency */,
+				BC1EC8A5437842CAB0C9C41D /* PBXTargetDependency */,
+				36CAB25DC2A94C69A7781EC7 /* PBXTargetDependency */,
+				EB502D423FE84EB8B42486E3 /* PBXTargetDependency */,
+				08B28227EDFC4878BABE8EDD /* PBXTargetDependency */,
+				2650EB854213423EB369EF87 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		04196938600F4CA0978064FC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */ = {isa = PBXBuildFile; fileRef = DAD2494639D34CE79C5435D8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */; };
+		04D0C776C466437DADF9DFFD /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */ = {isa = PBXBuildFile; fileRef = FC20E0FF30A44F8C9A2C5F69 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */; };
+		0B9914AF5EA541ED8EDF139B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/glist.c */ = {isa = PBXBuildFile; fileRef = F429027CB51C4C46B72AC8FF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/glist.c */; };
+		0C622D1E19E44DE0A27A60C5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */ = {isa = PBXBuildFile; fileRef = CE0107EE94DF4A3DB62EB4AB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */; };
+		1190E25EB70541A89F7A7E4A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */ = {isa = PBXBuildFile; fileRef = 72D9C1BB92FF48F9975CA7DF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */; };
+		179C74F5E8FA4073BE73B1DA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */ = {isa = PBXBuildFile; fileRef = E5F163D1702E4D46B2C3303B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */; };
+		1A57E1622475447BB47D915B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */ = {isa = PBXBuildFile; fileRef = 259BC51B46D747D28FD09B6F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */; };
+		1BFEBCC4899A4D979F916122 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 1B8EC812C1054450B4D0443C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt */; };
+		1C0EB663E6E14EB1B5568D19 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/filename.c */ = {isa = PBXBuildFile; fileRef = 19814884C30A47AC8BA2A6E7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/filename.c */; };
+		1FD79EDCB5684832B1AA38B4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */ = {isa = PBXBuildFile; fileRef = 28DD2A0AA86E459487344F1A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */; };
+		2318340D285B4CF390D56C48 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y */ = {isa = PBXBuildFile; fileRef = 24FFDBA9B85D4C41B29B4BD0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y */; };
+		27410927718B4A7E90F942B4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */ = {isa = PBXBuildFile; fileRef = 0D6C3901A10E43118FAF1394 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */; };
+		2D54F17A295F4B3F8DD9E627 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */ = {isa = PBXBuildFile; fileRef = CF620239FE96447E85557721 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */; };
+		33143445554E45B69EE65686 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/acmod.c */ = {isa = PBXBuildFile; fileRef = 02B60048CDCB4DF28B2BCD1C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/acmod.c */; };
+		3670D35DBEE142B2A054DE8A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */ = {isa = PBXBuildFile; fileRef = 0EEB0CE3E18543E8BBE3DCB6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */; };
+		36B0CFBC23704C28BA378A20 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bio.c */ = {isa = PBXBuildFile; fileRef = 15EABB991BD8414B8860A887 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bio.c */; };
+		37D41CEB1FE34C68A82B85A9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */ = {isa = PBXBuildFile; fileRef = 70D5A4F112904840BA09CF95 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */; };
+		3B7CDFDE9B2E4F9892DB8355 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */ = {isa = PBXBuildFile; fileRef = A6CC049E78B44016BDD1F5E6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */; };
+		3B7DC5F3932140038E88DE82 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 34AD7C485FE14FF88DDE6C83 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt */; };
+		3CC77909D27D48F6BB45C0FB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 47EC25AB09B44B7FA09D7885 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/CMakeLists.txt */; };
+		3DBE319873324A8AA493E212 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/logmath.c */ = {isa = PBXBuildFile; fileRef = C2F3061E9F8F4DF986FBCA5A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/logmath.c */; };
+		4329C6A66699416ABA8DA170 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */ = {isa = PBXBuildFile; fileRef = 8266CE5339834A28B98427A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */; };
+		439339CA4A6346A68CFD2AE8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */ = {isa = PBXBuildFile; fileRef = E089DBFA4ADF4752A6F4D8E4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */; };
+		47841D1291B24A1F9E16764E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */ = {isa = PBXBuildFile; fileRef = D7681BE3147D44B58F3B4CD7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */; };
+		498EE175BF584020B96BE578 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */ = {isa = PBXBuildFile; fileRef = 2FF849169D2D4D02A2738D9A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */; };
+		4AE72973E45946B794A5D1EC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */ = {isa = PBXBuildFile; fileRef = B5438A12A51C4CD49CE62553 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */; };
+		4E38EABC9EE543818515A394 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/tmat.c */ = {isa = PBXBuildFile; fileRef = 8D6CA15613F14867B550BE90 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/tmat.c */; };
+		4FA02B828A4D4E5CB203C57A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */ = {isa = PBXBuildFile; fileRef = CBCBD5DF61DC4C8C87E00559 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */; };
+		535A9D11AB7A4487846762B0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */ = {isa = PBXBuildFile; fileRef = 5295816878664C4CB7DC0E34 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */; };
+		59BEF18D5F7A49A6905908BB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/lda.c */ = {isa = PBXBuildFile; fileRef = 68894CD9223444FE85284768 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/lda.c */; };
+		5C9108A3996A4F6CBD0C41D4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/case.c */ = {isa = PBXBuildFile; fileRef = 16151D5531A34F56AA725712 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/case.c */; };
+		5FADB42C960A4F4E8624DF0C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */ = {isa = PBXBuildFile; fileRef = 215548D9071E43B4A50EEADC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */; };
+		63D8FCA394994FABA79FA603 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */ = {isa = PBXBuildFile; fileRef = 5F17A58A675A426A8309AC97 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */; };
+		68B05F749E274F40BFD96C6C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */ = {isa = PBXBuildFile; fileRef = DA151AB5B46048A599722741 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */; };
+		6AFD2843AEFD430DAE22C00A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */ = {isa = PBXBuildFile; fileRef = 1E750A23BC9242A2AE24143D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */; };
+		6D20DC28776C4F448A59188E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict.c */ = {isa = PBXBuildFile; fileRef = A09783C6E2644A34A4D4E89D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict.c */; };
+		6F78C296AE2A45F498139586 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */ = {isa = PBXBuildFile; fileRef = EC003714127546208DEE84FA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */; };
+		6FB7693F598B4FB8AC8B3006 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */ = {isa = PBXBuildFile; fileRef = C0B0390302314AA996A7A8C3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */; };
+		6FB99AC860FB45AFA76E70F7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */ = {isa = PBXBuildFile; fileRef = 08C847344AB84B2780E97A6B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */; };
+		7188AA9FC2324392B7F0D46B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/feat.c */ = {isa = PBXBuildFile; fileRef = 1CDBF40571FE40849990D1F7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/feat.c */; };
+		7959C074A271478BBD298493 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/hmm.c */ = {isa = PBXBuildFile; fileRef = 2003ADDCF3984A96A750AEE7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/hmm.c */; };
+		7AAB9FA8A98C4B6E8701FD80 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/profile.c */ = {isa = PBXBuildFile; fileRef = 73CF0AE3AD4D45A1A1D5C410 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/profile.c */; };
+		7BBDCA763CF940F3974DBC96 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/genrand.c */ = {isa = PBXBuildFile; fileRef = EA21A9EF256349E5815AFBB0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/genrand.c */; };
+		7C038F01049E45E4807501B9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/c_demo.cpp */ = {isa = PBXBuildFile; fileRef = B15FC5D9A16342E3AA52D193 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/c_demo.cpp */; };
+		814E4CF3FEE843F794487D36 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */ = {isa = PBXBuildFile; fileRef = 5C7B308D700A4B52A78E7F71 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */; };
+		816F35D4301547D182F6D5B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */ = {isa = PBXBuildFile; fileRef = 5F365D2C80A943CBA62BA493 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */; };
+		82904DE446F64D2196F40C04 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */ = {isa = PBXBuildFile; fileRef = 84AF06D1AF9E4D17801D3E4D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */; };
+		82DA5E8C11C34B6CB88E8B5B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */ = {isa = PBXBuildFile; fileRef = 6193E86F11244F03B404B91D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */; };
+		839B976AC9624564A0175067 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slamch.c */ = {isa = PBXBuildFile; fileRef = 7FF30376B0B64EC7A210BEB3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slamch.c */; };
+		84E159401691445B84965CE4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */ = {isa = PBXBuildFile; fileRef = 9381A0F583A3463D91B40476 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */; };
+		86B0E65B9C1D441CB9FF46AD /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/mmio.c */ = {isa = PBXBuildFile; fileRef = 4C0DC3BC4AE24F97B05DCB83 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/mmio.c */; };
+		884BBAA461A04D608758EF99 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/yin.c */ = {isa = PBXBuildFile; fileRef = 801A41E3BC3F4C999207C0DF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/yin.c */; };
+		8939414CE3394C00A62C01DB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */ = {isa = PBXBuildFile; fileRef = 81249EB3637543D8997C1934 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */; };
+		8952D223AED14D2DA64C113F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/errno.c */ = {isa = PBXBuildFile; fileRef = 7CED61D5F8B2400694DCB150 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/errno.c */; };
+		8CD9F29415BB4F76908B5FB0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */ = {isa = PBXBuildFile; fileRef = 4C78114DD7FF4E4CA0AA4E88 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */; };
+		951E22FA30B04FCF822E21C9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */ = {isa = PBXBuildFile; fileRef = AB051B506DC64960B601C81B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */; };
+		963CCAFEEB5F4987849A32C8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */ = {isa = PBXBuildFile; fileRef = 8C951B578C3148BF9004FF94 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */; };
+		985F985EA08445A9B5728AA5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */ = {isa = PBXBuildFile; fileRef = CDBF65CEFE884BA797332C2B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */; };
+		9CAD9E593CDD42E19AE1165C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */ = {isa = PBXBuildFile; fileRef = 50DFC3FA289D43FBAE416D0E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */; };
+		9F67A4CA5D144B6ABD1CA4C2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */ = {isa = PBXBuildFile; fileRef = 20AE795CC73F40239567E6B0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */; };
+		A0E1EF9D7FE341A3A2B829A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l */ = {isa = PBXBuildFile; fileRef = 3B414DD9FB5A4B8296893C2B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l */; };
+		A57C13EC2BE14D2E83F3F652 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/vector.c */ = {isa = PBXBuildFile; fileRef = 98A047D437674A12962D979E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/vector.c */; };
+		AB4A885E4A3048D9A6546E88 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */ = {isa = PBXBuildFile; fileRef = F8C530FB9CDE405190F01FAB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */; };
+		ABCBE8E3257349BCAA285B99 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */ = {isa = PBXBuildFile; fileRef = 0A077467B6834D1293C829D9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */; };
+		AFEFE8C9125D4F2E92EB72F3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */ = {isa = PBXBuildFile; fileRef = 964D407C29F54BFB8D927461 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */; };
+		AFFD0C05542C453DBA688F7A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */ = {isa = PBXBuildFile; fileRef = 1492B5BA8E974CA0A5549829 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */; };
+		B2FFB21FBFCB4DCFB6E02C16 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/agc.c */ = {isa = PBXBuildFile; fileRef = D4C7C286F88D42FABB4B2F7E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/agc.c */; };
+		BBB8B1D487B0497C884814EC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxad/ad_base.c */ = {isa = PBXBuildFile; fileRef = 2FF11409AF5E457B8C6F5E4B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxad/ad_base.c */; };
+		BC9E92A7F8004730B26D721F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */ = {isa = PBXBuildFile; fileRef = AE4A3E0D10504F2396CCEA60 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */; };
+		BED824E042214C9E892F20ED /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3D91F9573BD44DDB963C14C3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/CMakeLists.txt */; };
+		C0438539971F4D16AABFE847 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */ = {isa = PBXBuildFile; fileRef = A7AE3A01F2464D4B98E719B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */; };
+		C0BC18B997CB4374B9BD4E9F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */ = {isa = PBXBuildFile; fileRef = C4C7C8C5541C40E7A197475C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */; };
+		C47D37AC2C9F45AE8188EE4E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */ = {isa = PBXBuildFile; fileRef = BA915093A3974B939DC5F597 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */; };
+		C5D194C19D414D22859ADD96 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/err.c */ = {isa = PBXBuildFile; fileRef = DB87BD8B67184737B2913E5B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/err.c */; };
+		C989F6B75CF04DB7AD9438B1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */ = {isa = PBXBuildFile; fileRef = 96920BE5A57C4FDF85F5848A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */; };
+		CE6895077C43400D9D6715B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */ = {isa = PBXBuildFile; fileRef = 676A4AAA2B154D93A6075B4D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */; };
+		D634CC48EA1C4AA1BC088321 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */ = {isa = PBXBuildFile; fileRef = 2CD6BFB905E24E1F8598A5F1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */; };
+		DA31C9FE5E004629A3249290 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/matrix.c */ = {isa = PBXBuildFile; fileRef = 8E7A2070DF03443CBC84B119 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/matrix.c */; };
+		DCC854420DB84E719ADC5FEA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/mdef.c */ = {isa = PBXBuildFile; fileRef = E7FD3546BE8E46FDB02AE607 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/mdef.c */; };
+		DF2A132B8E7244F8AB676071 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */ = {isa = PBXBuildFile; fileRef = 6A372ED8D98F43579194C44E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */; };
+		DF62E658EADA448BA8B8F165 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */ = {isa = PBXBuildFile; fileRef = BA9956BF1DC14E21BF94DE6F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */; };
+		E3F70582115749688DC5F3E7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */ = {isa = PBXBuildFile; fileRef = 3BCFBA04F61949329D95EBF0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */; };
+		E4D6DC0333E0459086E1AD8A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */ = {isa = PBXBuildFile; fileRef = 6D018F95445B40558E24D2A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */; };
+		E51656602CED439BB3E2BE21 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */ = {isa = PBXBuildFile; fileRef = 4AF305EBC352417688B4FC1E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */; };
+		E8483AB1CE594C84A3A52224 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */ = {isa = PBXBuildFile; fileRef = C2BC8B5E51B043C290834E05 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */; };
+		E9AD4BE9CCBE4872958F6050 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */ = {isa = PBXBuildFile; fileRef = CD1EEED8593340459D48E190 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */; };
+		F084CACD403840F9ABA3C1F8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/pio.c */ = {isa = PBXBuildFile; fileRef = EE058EDDAFAC4145919769D5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/pio.c */; };
+		F122E2AF49F441A8BD8D0F51 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E177D1CA62E945DDB182240F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/CMakeLists.txt */; };
+		F8755D8876C849E28F6DD8E5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/crossplatform.c */ = {isa = PBXBuildFile; fileRef = 3A553C8B57C0447E80B16017 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/crossplatform.c */; };
+		F948619D3B5F4B0FB7FC6E47 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */ = {isa = PBXBuildFile; fileRef = FE9EE07315194ACF99042B97 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */; };
+		FA7EE958593F45A8AD3E3249 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/heap.c */ = {isa = PBXBuildFile; fileRef = C5E8FF3478C3488B91B12195 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/heap.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		5D3277766C2E4262934B9D71 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		B668569F0533457CBC242BE1 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		F0A91F519C6D42268033A8C6 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		FE983EB8AD85407CB23E8BC8 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		04B1CA576EA14F58822E84E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF7717BE0C64B4F85B22EF9;
+			remoteInfo = xyzsphinxbase;
+		};
+		0FE62E176C844FA283E953B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A511C302B5B24A649C3D38FF;
+			remoteInfo = xyzcrossplatform;
+		};
+		1D818790580D45338273FA73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A511C302B5B24A649C3D38FF;
+			remoteInfo = xyzcrossplatform;
+		};
+		21B108F63F52413C8768E6D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF7717BE0C64B4F85B22EF9;
+			remoteInfo = xyzsphinxbase;
+		};
+		24EA31A309B94F01ACDAA605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA90900B6A54577985D78E9;
+			remoteInfo = xyzsphinxad;
+		};
+		3CB2CA5FFFEA47469139064A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C497365B584E68AC6DBF9A;
+			remoteInfo = ZERO_CHECK;
+		};
+		3F2FAD5FF1B24F5F867F32A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A511C302B5B24A649C3D38FF;
+			remoteInfo = xyzcrossplatform;
+		};
+		435126540DA446C1997F8DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A511C302B5B24A649C3D38FF;
+			remoteInfo = xyzcrossplatform;
+		};
+		47316C8F352F48118012F046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 781D48E9C459477DB0AA49D2;
+			remoteInfo = ps_plus;
+		};
+		4A53EFCCE4E9489D93EFE0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C497365B584E68AC6DBF9A;
+			remoteInfo = ZERO_CHECK;
+		};
+		4E5B3073D8344A08AF2B6FC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED01A8CE7314F4D852712F1;
+			remoteInfo = xyzpocketsphinx;
+		};
+		5B61725792704189BADDF472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA90900B6A54577985D78E9;
+			remoteInfo = xyzsphinxad;
+		};
+		77FD31B8C70D416F82C662B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA90900B6A54577985D78E9;
+			remoteInfo = xyzsphinxad;
+		};
+		7A74B019270C4CC1A26BB877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF7717BE0C64B4F85B22EF9;
+			remoteInfo = xyzsphinxbase;
+		};
+		8FC8C5DE2EA74E22B8012BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C497365B584E68AC6DBF9A;
+			remoteInfo = ZERO_CHECK;
+		};
+		9AC3962AF58D48FBBAF37058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED01A8CE7314F4D852712F1;
+			remoteInfo = xyzpocketsphinx;
+		};
+		9F1CF0B5FABE44598F039268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A511C302B5B24A649C3D38FF;
+			remoteInfo = xyzcrossplatform;
+		};
+		B163218E4BC0430AB39DA3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF7717BE0C64B4F85B22EF9;
+			remoteInfo = xyzsphinxbase;
+		};
+		C0A687B8EEBA419C9574FBF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C497365B584E68AC6DBF9A;
+			remoteInfo = ZERO_CHECK;
+		};
+		FB457B9AADFC4BD98C702D23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C497365B584E68AC6DBF9A;
+			remoteInfo = ZERO_CHECK;
+		};
+		FF7B55A36CA847C2B2B21035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72037FDCA3D246D58C5F456F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C497365B584E68AC6DBF9A;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B60048CDCB4DF28B2BCD1C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/acmod.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = acmod.c; path = xyzpocketsphinx/src/libpocketsphinx/acmod.c; sourceTree = SOURCE_ROOT; };
+		08C847344AB84B2780E97A6B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = state_align_search.c; path = xyzpocketsphinx/src/libpocketsphinx/state_align_search.c; sourceTree = SOURCE_ROOT; };
+		0A077467B6834D1293C829D9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = blas_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/blas_lite.c; sourceTree = SOURCE_ROOT; };
+		0D6C3901A10E43118FAF1394 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_mllr.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c; sourceTree = SOURCE_ROOT; };
+		0EEB0CE3E18543E8BBE3DCB6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = s2_semi_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c; sourceTree = SOURCE_ROOT; };
+		1492B5BA8E974CA0A5549829 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = slapack_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c; sourceTree = SOURCE_ROOT; };
+		15EABB991BD8414B8860A887 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bio.c; path = xyzsphinxbase/src/libsphinxbase/util/bio.c; sourceTree = SOURCE_ROOT; };
+		16151D5531A34F56AA725712 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/case.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = case.c; path = xyzsphinxbase/src/libsphinxbase/util/case.c; sourceTree = SOURCE_ROOT; };
+		19814884C30A47AC8BA2A6E7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/filename.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = filename.c; path = xyzsphinxbase/src/libsphinxbase/util/filename.c; sourceTree = SOURCE_ROOT; };
+		1B8EC812C1054450B4D0443C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = xyzsphinxbase/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1CDBF40571FE40849990D1F7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/feat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = feat.c; path = xyzsphinxbase/src/libsphinxbase/feat/feat.c; sourceTree = SOURCE_ROOT; };
+		1E750A23BC9242A2AE24143D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strfuncs.c; path = xyzsphinxbase/src/libsphinxbase/util/strfuncs.c; sourceTree = SOURCE_ROOT; };
+		2003ADDCF3984A96A750AEE7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/hmm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hmm.c; path = xyzpocketsphinx/src/libpocketsphinx/hmm.c; sourceTree = SOURCE_ROOT; };
+		20AE795CC73F40239567E6B0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kws_detections.c; path = xyzpocketsphinx/src/libpocketsphinx/kws_detections.c; sourceTree = SOURCE_ROOT; };
+		215548D9071E43B4A50EEADC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = blkarray_list.c; path = xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c; sourceTree = SOURCE_ROOT; };
+		24FFDBA9B85D4C41B29B4BD0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = jsgf_parser.y; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y; sourceTree = SOURCE_ROOT; };
+		259BC51B46D747D28FD09B6F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_inverse_linear.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c; sourceTree = SOURCE_ROOT; };
+		28DD2A0AA86E459487344F1A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bitarr.c; path = xyzsphinxbase/src/libsphinxbase/util/bitarr.c; sourceTree = SOURCE_ROOT; };
+		2CD6BFB905E24E1F8598A5F1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model_trie.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c; sourceTree = SOURCE_ROOT; };
+		2FF11409AF5E457B8C6F5E4B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxad/ad_base.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ad_base.c; path = xyzsphinxbase/src/libsphinxad/ad_base.c; sourceTree = SOURCE_ROOT; };
+		2FF849169D2D4D02A2738D9A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_alignment.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c; sourceTree = SOURCE_ROOT; };
+		34AD7C485FE14FF88DDE6C83 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = xyzsphinxbase/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3A553C8B57C0447E80B16017 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/crossplatform.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = crossplatform.c; path = xyzcrossplatform/crossplatform.c; sourceTree = SOURCE_ROOT; };
+		3B414DD9FB5A4B8296893C2B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = _jsgf_scanner.l; path = xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l; sourceTree = SOURCE_ROOT; };
+		3BCFBA04F61949329D95EBF0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c; sourceTree = SOURCE_ROOT; };
+		3D91F9573BD44DDB963C14C3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = xyzcrossplatform/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		47EC25AB09B44B7FA09D7885 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = xyzpocketsphinx/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4AF305EBC352417688B4FC1E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ckd_alloc.c; path = xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c; sourceTree = SOURCE_ROOT; };
+		4C0DC3BC4AE24F97B05DCB83 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/mmio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mmio.c; path = xyzsphinxbase/src/libsphinxbase/util/mmio.c; sourceTree = SOURCE_ROOT; };
+		4C78114DD7FF4E4CA0AA4E88 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf_parser.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c; sourceTree = SOURCE_ROOT; };
+		50DFC3FA289D43FBAE416D0E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search.c; sourceTree = SOURCE_ROOT; };
+		5295816878664C4CB7DC0E34 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bin_mdef.c; path = xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c; sourceTree = SOURCE_ROOT; };
+		5C7B308D700A4B52A78E7F71 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fixlog.c; path = xyzsphinxbase/src/libsphinxbase/fe/fixlog.c; sourceTree = SOURCE_ROOT; };
+		5F17A58A675A426A8309AC97 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_piecewise_linear.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c; sourceTree = SOURCE_ROOT; };
+		5F365D2C80A943CBA62BA493 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kws_search.c; path = xyzpocketsphinx/src/libpocketsphinx/kws_search.c; sourceTree = SOURCE_ROOT; };
+		6193E86F11244F03B404B91D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_noise.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c; sourceTree = SOURCE_ROOT; };
+		676A4AAA2B154D93A6075B4D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c; sourceTree = SOURCE_ROOT; };
+		68894CD9223444FE85284768 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/lda.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lda.c; path = xyzsphinxbase/src/libsphinxbase/feat/lda.c; sourceTree = SOURCE_ROOT; };
+		6A372ED8D98F43579194C44E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_gauden.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c; sourceTree = SOURCE_ROOT; };
+		6D018F95445B40558E24D2A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lm_trie.c; path = xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c; sourceTree = SOURCE_ROOT; };
+		70D5A4F112904840BA09CF95 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dtoa.c; path = xyzsphinxbase/src/libsphinxbase/util/dtoa.c; sourceTree = SOURCE_ROOT; };
+		72D9C1BB92FF48F9975CA7DF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = listelem_alloc.c; path = xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c; sourceTree = SOURCE_ROOT; };
+		73CF0AE3AD4D45A1A1D5C410 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/profile.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = profile.c; path = xyzsphinxbase/src/libsphinxbase/util/profile.c; sourceTree = SOURCE_ROOT; };
+		7CED61D5F8B2400694DCB150 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/errno.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = errno.c; path = xyzsphinxbase/src/libsphinxbase/util/errno.c; sourceTree = SOURCE_ROOT; };
+		7FF30376B0B64EC7A210BEB3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slamch.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = slamch.c; path = xyzsphinxbase/src/libsphinxbase/util/slamch.c; sourceTree = SOURCE_ROOT; };
+		801A41E3BC3F4C999207C0DF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/yin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = yin.c; path = xyzsphinxbase/src/libsphinxbase/fe/yin.c; sourceTree = SOURCE_ROOT; };
+		81249EB3637543D8997C1934 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_history.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_history.c; sourceTree = SOURCE_ROOT; };
+		8266CE5339834A28B98427A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_lattice.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c; sourceTree = SOURCE_ROOT; };
+		84AF06D1AF9E4D17801D3E4D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c; sourceTree = SOURCE_ROOT; };
+		8C951B578C3148BF9004FF94 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ptm_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c; sourceTree = SOURCE_ROOT; };
+		8D6CA15613F14867B550BE90 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/tmat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tmat.c; path = xyzpocketsphinx/src/libpocketsphinx/tmat.c; sourceTree = SOURCE_ROOT; };
+		8E7A2070DF03443CBC84B119 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/matrix.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = matrix.c; path = xyzsphinxbase/src/libsphinxbase/util/matrix.c; sourceTree = SOURCE_ROOT; };
+		9381A0F583A3463D91B40476 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_interface.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c; sourceTree = SOURCE_ROOT; };
+		940E45999B4F4C66A9CFC61B /* ps_plus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libps_plus.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		964D407C29F54BFB8D927461 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = f2c_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c; sourceTree = SOURCE_ROOT; };
+		96920BE5A57C4FDF85F5848A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_sigproc.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c; sourceTree = SOURCE_ROOT; };
+		98A047D437674A12962D979E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/vector.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vector.c; path = xyzpocketsphinx/src/libpocketsphinx/vector.c; sourceTree = SOURCE_ROOT; };
+		9914DD089CD5402184966A48 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A09783C6E2644A34A4D4E89D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dict.c; path = xyzpocketsphinx/src/libpocketsphinx/dict.c; sourceTree = SOURCE_ROOT; };
+		A6CC049E78B44016BDD1F5E6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmn_live.c; path = xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c; sourceTree = SOURCE_ROOT; };
+		A78544DDDF344F75A383E105 /* xyzcrossplatform */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzcrossplatform.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AE3A01F2464D4B98E719B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmd_ln.c; path = xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c; sourceTree = SOURCE_ROOT; };
+		AB051B506DC64960B601C81B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_affine.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c; sourceTree = SOURCE_ROOT; };
+		AE4A3E0D10504F2396CCEA60 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search_fwdflat.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c; sourceTree = SOURCE_ROOT; };
+		B15FC5D9A16342E3AA52D193 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/c_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = c_demo.cpp; path = c_demo.cpp; sourceTree = SOURCE_ROOT; };
+		B5438A12A51C4CD49CE62553 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_senone.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_senone.c; sourceTree = SOURCE_ROOT; };
+		BA915093A3974B939DC5F597 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = priority_queue.c; path = xyzsphinxbase/src/libsphinxbase/util/priority_queue.c; sourceTree = SOURCE_ROOT; };
+		BA9956BF1DC14E21BF94DE6F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_lextree.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c; sourceTree = SOURCE_ROOT; };
+		C0B0390302314AA996A7A8C3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmn.c; path = xyzsphinxbase/src/libsphinxbase/feat/cmn.c; sourceTree = SOURCE_ROOT; };
+		C2BC8B5E51B043C290834E05 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bitvec.c; path = xyzsphinxbase/src/libsphinxbase/util/bitvec.c; sourceTree = SOURCE_ROOT; };
+		C2F3061E9F8F4DF986FBCA5A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/logmath.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = logmath.c; path = xyzsphinxbase/src/libsphinxbase/util/logmath.c; sourceTree = SOURCE_ROOT; };
+		C4C7C8C5541C40E7A197475C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf_scanner.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c; sourceTree = SOURCE_ROOT; };
+		C5E8FF3478C3488B91B12195 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/heap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = heap.c; path = xyzsphinxbase/src/libsphinxbase/util/heap.c; sourceTree = SOURCE_ROOT; };
+		CBCBD5DF61DC4C8C87E00559 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = allphone_search.c; path = xyzpocketsphinx/src/libpocketsphinx/allphone_search.c; sourceTree = SOURCE_ROOT; };
+		CD1EEED8593340459D48E190 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search_fwdtree.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c; sourceTree = SOURCE_ROOT; };
+		CDBF65CEFE884BA797332C2B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dict2pid.c; path = xyzpocketsphinx/src/libpocketsphinx/dict2pid.c; sourceTree = SOURCE_ROOT; };
+		CE0107EE94DF4A3DB62EB4AB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngrams_raw.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c; sourceTree = SOURCE_ROOT; };
+		CF620239FE96447E85557721 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_search.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_search.c; sourceTree = SOURCE_ROOT; };
+		D4C7C286F88D42FABB4B2F7E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/agc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = agc.c; path = xyzsphinxbase/src/libsphinxbase/feat/agc.c; sourceTree = SOURCE_ROOT; };
+		D7681BE3147D44B58F3B4CD7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lm_trie_quant.c; path = xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c; sourceTree = SOURCE_ROOT; };
+		D87F6711A9864CA9AA910824 /* xyzpocketsphinx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzpocketsphinx.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA151AB5B46048A599722741 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pocketsphinx.c; path = xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c; sourceTree = SOURCE_ROOT; };
+		DAD2494639D34CE79C5435D8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_model.c; path = xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c; sourceTree = SOURCE_ROOT; };
+		DB87BD8B67184737B2913E5B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/err.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = err.c; path = xyzsphinxbase/src/libsphinxbase/util/err.c; sourceTree = SOURCE_ROOT; };
+		DD751296DCA14AF18FEE75F0 /* xyzsphinxad */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzsphinxad.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E089DBFA4ADF4752A6F4D8E4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sbthread.c; path = xyzsphinxbase/src/libsphinxbase/util/sbthread.c; sourceTree = SOURCE_ROOT; };
+		E177D1CA62E945DDB182240F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E5F163D1702E4D46B2C3303B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = phone_loop_search.c; path = xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c; sourceTree = SOURCE_ROOT; };
+		E7FD3546BE8E46FDB02AE607 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/mdef.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mdef.c; path = xyzpocketsphinx/src/libpocketsphinx/mdef.c; sourceTree = SOURCE_ROOT; };
+		EA21A9EF256349E5815AFBB0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/genrand.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = genrand.c; path = xyzsphinxbase/src/libsphinxbase/util/genrand.c; sourceTree = SOURCE_ROOT; };
+		EC003714127546208DEE84FA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_prespch_buf.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c; sourceTree = SOURCE_ROOT; };
+		EC792CF057C4471DACD20675 /* xyzsphinxbase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzsphinxbase.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE058EDDAFAC4145919769D5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/pio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pio.c; path = xyzsphinxbase/src/libsphinxbase/util/pio.c; sourceTree = SOURCE_ROOT; };
+		F429027CB51C4C46B72AC8FF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/glist.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glist.c; path = xyzsphinxbase/src/libsphinxbase/util/glist.c; sourceTree = SOURCE_ROOT; };
+		F8C530FB9CDE405190F01FAB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hash_table.c; path = xyzsphinxbase/src/libsphinxbase/util/hash_table.c; sourceTree = SOURCE_ROOT; };
+		FC20E0FF30A44F8C9A2C5F69 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf.c; sourceTree = SOURCE_ROOT; };
+		FE9EE07315194ACF99042B97 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model_set.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096FEAB0D73C4A5EA85DCCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130F95D17EDC4E19BC93354C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283B4D6B37EC45DB8B3390FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E639E2D54A4AA686D8D1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6AE27ED4DA648889F6845F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AE8418DBF064811852AF68E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FF11409AF5E457B8C6F5E4B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxad/ad_base.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2DF2A84CD3B146D9952367C8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				02B60048CDCB4DF28B2BCD1C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/acmod.c */,
+				CBCBD5DF61DC4C8C87E00559 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */,
+				5295816878664C4CB7DC0E34 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */,
+				215548D9071E43B4A50EEADC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */,
+				A09783C6E2644A34A4D4E89D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict.c */,
+				CDBF65CEFE884BA797332C2B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */,
+				81249EB3637543D8997C1934 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */,
+				BA9956BF1DC14E21BF94DE6F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */,
+				CF620239FE96447E85557721 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */,
+				2003ADDCF3984A96A750AEE7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/hmm.c */,
+				20AE795CC73F40239567E6B0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */,
+				5F365D2C80A943CBA62BA493 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */,
+				E7FD3546BE8E46FDB02AE607 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/mdef.c */,
+				6A372ED8D98F43579194C44E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */,
+				676A4AAA2B154D93A6075B4D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */,
+				B5438A12A51C4CD49CE62553 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */,
+				50DFC3FA289D43FBAE416D0E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */,
+				AE4A3E0D10504F2396CCEA60 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */,
+				CD1EEED8593340459D48E190 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */,
+				E5F163D1702E4D46B2C3303B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */,
+				DA151AB5B46048A599722741 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */,
+				2FF849169D2D4D02A2738D9A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */,
+				8266CE5339834A28B98427A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */,
+				0D6C3901A10E43118FAF1394 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */,
+				8C951B578C3148BF9004FF94 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */,
+				0EEB0CE3E18543E8BBE3DCB6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */,
+				08C847344AB84B2780E97A6B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */,
+				8D6CA15613F14867B550BE90 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/tmat.c */,
+				98A047D437674A12962D979E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/vector.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		59111D688C1E4ED4A1E0E801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68831423F0BF457A81E20082 /* xyzpocketsphinx */ = {
+			isa = PBXGroup;
+			children = (
+				2DF2A84CD3B146D9952367C8 /* Source Files */,
+				47EC25AB09B44B7FA09D7885 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/CMakeLists.txt */,
+			);
+			name = xyzpocketsphinx;
+			sourceTree = "<group>";
+		};
+		7C8D27CB7325437DA8504EE2 /* xyzsphinxad */ = {
+			isa = PBXGroup;
+			children = (
+				2AE8418DBF064811852AF68E /* Source Files */,
+				1B8EC812C1054450B4D0443C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt */,
+			);
+			name = xyzsphinxad;
+			sourceTree = "<group>";
+		};
+		856456B14B2742A595169E7F /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6FC46B8394FB7AD0E6AD2 /* CMake Rules */,
+				9914DD089CD5402184966A48 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		8CC7386E01AA4028AD211D86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				940E45999B4F4C66A9CFC61B /* ps_plus */,
+				A78544DDDF344F75A383E105 /* xyzcrossplatform */,
+				D87F6711A9864CA9AA910824 /* xyzpocketsphinx */,
+				DD751296DCA14AF18FEE75F0 /* xyzsphinxad */,
+				EC792CF057C4471DACD20675 /* xyzsphinxbase */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9478800B4A5A49B6A28AF395 = {
+			isa = PBXGroup;
+			children = (
+				A52F85A433FA46A8A6281A75 /* ps_plus */,
+				856456B14B2742A595169E7F /* ALL_BUILD */,
+				68831423F0BF457A81E20082 /* xyzpocketsphinx */,
+				CDB21ED5A2B74E39B349F063 /* xyzsphinxbase */,
+				7C8D27CB7325437DA8504EE2 /* xyzsphinxad */,
+				F6F33B9F187C4F72B5FBE7CC /* xyzcrossplatform */,
+				8CC7386E01AA4028AD211D86 /* Products */,
+				59111D688C1E4ED4A1E0E801 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A45A66AF5698406FB994E878 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9381A0F583A3463D91B40476 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */,
+				6193E86F11244F03B404B91D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */,
+				EC003714127546208DEE84FA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */,
+				96920BE5A57C4FDF85F5848A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */,
+				3BCFBA04F61949329D95EBF0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */,
+				AB051B506DC64960B601C81B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */,
+				259BC51B46D747D28FD09B6F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */,
+				5F17A58A675A426A8309AC97 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */,
+				5C7B308D700A4B52A78E7F71 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */,
+				801A41E3BC3F4C999207C0DF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/yin.c */,
+				D4C7C286F88D42FABB4B2F7E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/agc.c */,
+				C0B0390302314AA996A7A8C3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */,
+				A6CC049E78B44016BDD1F5E6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */,
+				1CDBF40571FE40849990D1F7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/feat.c */,
+				68894CD9223444FE85284768 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/lda.c */,
+				DAD2494639D34CE79C5435D8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */,
+				FC20E0FF30A44F8C9A2C5F69 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */,
+				4C78114DD7FF4E4CA0AA4E88 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */,
+				C4C7C8C5541C40E7A197475C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */,
+				6D018F95445B40558E24D2A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */,
+				D7681BE3147D44B58F3B4CD7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */,
+				84AF06D1AF9E4D17801D3E4D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */,
+				FE9EE07315194ACF99042B97 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */,
+				2CD6BFB905E24E1F8598A5F1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */,
+				CE0107EE94DF4A3DB62EB4AB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */,
+				15EABB991BD8414B8860A887 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bio.c */,
+				28DD2A0AA86E459487344F1A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */,
+				C2BC8B5E51B043C290834E05 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */,
+				0A077467B6834D1293C829D9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */,
+				16151D5531A34F56AA725712 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/case.c */,
+				4AF305EBC352417688B4FC1E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */,
+				A7AE3A01F2464D4B98E719B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */,
+				70D5A4F112904840BA09CF95 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */,
+				DB87BD8B67184737B2913E5B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/err.c */,
+				7CED61D5F8B2400694DCB150 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/errno.c */,
+				964D407C29F54BFB8D927461 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */,
+				19814884C30A47AC8BA2A6E7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/filename.c */,
+				EA21A9EF256349E5815AFBB0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/genrand.c */,
+				F429027CB51C4C46B72AC8FF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/glist.c */,
+				F8C530FB9CDE405190F01FAB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */,
+				C5E8FF3478C3488B91B12195 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/heap.c */,
+				72D9C1BB92FF48F9975CA7DF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */,
+				C2F3061E9F8F4DF986FBCA5A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/logmath.c */,
+				8E7A2070DF03443CBC84B119 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/matrix.c */,
+				4C0DC3BC4AE24F97B05DCB83 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/mmio.c */,
+				EE058EDDAFAC4145919769D5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/pio.c */,
+				BA915093A3974B939DC5F597 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */,
+				73CF0AE3AD4D45A1A1D5C410 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/profile.c */,
+				E089DBFA4ADF4752A6F4D8E4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */,
+				7FF30376B0B64EC7A210BEB3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slamch.c */,
+				1492B5BA8E974CA0A5549829 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */,
+				1E750A23BC9242A2AE24143D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A52F85A433FA46A8A6281A75 /* ps_plus */ = {
+			isa = PBXGroup;
+			children = (
+				CE1FB3745A3F4208B3DC4F60 /* Source Files */,
+				E177D1CA62E945DDB182240F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/CMakeLists.txt */,
+			);
+			name = ps_plus;
+			sourceTree = "<group>";
+		};
+		A97CB1FC7B7F4867A5F17864 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A553C8B57C0447E80B16017 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/crossplatform.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		BEF6FC46B8394FB7AD0E6AD2 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CDB21ED5A2B74E39B349F063 /* xyzsphinxbase */ = {
+			isa = PBXGroup;
+			children = (
+				A45A66AF5698406FB994E878 /* Source Files */,
+				34AD7C485FE14FF88DDE6C83 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt */,
+				3B414DD9FB5A4B8296893C2B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l */,
+				24FFDBA9B85D4C41B29B4BD0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y */,
+			);
+			name = xyzsphinxbase;
+			sourceTree = "<group>";
+		};
+		CE1FB3745A3F4208B3DC4F60 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B15FC5D9A16342E3AA52D193 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/c_demo.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F6F33B9F187C4F72B5FBE7CC /* xyzcrossplatform */ = {
+			isa = PBXGroup;
+			children = (
+				A97CB1FC7B7F4867A5F17864 /* Source Files */,
+				3D91F9573BD44DDB963C14C3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/CMakeLists.txt */,
+			);
+			name = xyzcrossplatform;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ED01A8CE7314F4D852712F1 /* xyzpocketsphinx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56938FF3B5542FB8ACD1867 /* Build configuration list for PBXNativeTarget "xyzpocketsphinx" */;
+			buildPhases = (
+				A57D558A15D7473AB88342CB /* Sources */,
+				A6AE27ED4DA648889F6845F2 /* Frameworks */,
+				41773DC0D414D793349017C6 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				720290D79C834B33828A047E /* PBXTargetDependency */,
+				7AD8D2329CA9496FB8034CD5 /* PBXTargetDependency */,
+				1635DCC5AC844F40B785BE0E /* PBXTargetDependency */,
+				9698A884D9A44A88AA02ACA2 /* PBXTargetDependency */,
+			);
+			name = xyzpocketsphinx;
+			productName = xyzpocketsphinx;
+			productReference = D87F6711A9864CA9AA910824 /* xyzpocketsphinx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		5BA90900B6A54577985D78E9 /* xyzsphinxad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A5EF2EDC0F4D51A105CBC9 /* Build configuration list for PBXNativeTarget "xyzsphinxad" */;
+			buildPhases = (
+				62B4B750AC93411A856BFD9F /* Sources */,
+				77E639E2D54A4AA686D8D1C5 /* Frameworks */,
+				6A7369770B9D2E5677CF1E7F /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9164DF5277F8497CAD2F71B4 /* PBXTargetDependency */,
+				154D8E3556814BFA9636B1A3 /* PBXTargetDependency */,
+				365A695B73024A8B9531D8A8 /* PBXTargetDependency */,
+			);
+			name = xyzsphinxad;
+			productName = xyzsphinxad;
+			productReference = DD751296DCA14AF18FEE75F0 /* xyzsphinxad */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		781D48E9C459477DB0AA49D2 /* ps_plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6076CC2AB841689E03C8AC /* Build configuration list for PBXNativeTarget "ps_plus" */;
+			buildPhases = (
+				BC6077EAFB4D44FA89E59A46 /* Sources */,
+				130F95D17EDC4E19BC93354C /* Frameworks */,
+				A15FA164C746D73A47933F67 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A47B7583745489FA1261359 /* PBXTargetDependency */,
+				F89BFBB191C047939AE5B633 /* PBXTargetDependency */,
+				4E5AF93366C146A89CC9D9CE /* PBXTargetDependency */,
+				B44C69190A1E4BFC8F770768 /* PBXTargetDependency */,
+				B2A8306974614378990C31D2 /* PBXTargetDependency */,
+			);
+			name = ps_plus;
+			productName = ps_plus;
+			productReference = 940E45999B4F4C66A9CFC61B /* ps_plus */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		A511C302B5B24A649C3D38FF /* xyzcrossplatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365132226F1D42B2AFDD15CF /* Build configuration list for PBXNativeTarget "xyzcrossplatform" */;
+			buildPhases = (
+				4F5B124A749C4F498EFC2F29 /* Sources */,
+				283B4D6B37EC45DB8B3390FA /* Frameworks */,
+				6218C33658CD2860A239D5BC /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA1C96C424D64A33A241D850 /* PBXTargetDependency */,
+			);
+			name = xyzcrossplatform;
+			productName = xyzcrossplatform;
+			productReference = A78544DDDF344F75A383E105 /* xyzcrossplatform */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		AAF7717BE0C64B4F85B22EF9 /* xyzsphinxbase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76FB2FE55964357B5EA1924 /* Build configuration list for PBXNativeTarget "xyzsphinxbase" */;
+			buildPhases = (
+				61CA0F9D10C242D1B028FE03 /* Sources */,
+				096FEAB0D73C4A5EA85DCCB1 /* Frameworks */,
+				9FC1A0675D6C82DD0B162F96 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD1B532C714D4AE8BC0B64C6 /* PBXTargetDependency */,
+				2F130F5D49714F33A04CB4A5 /* PBXTargetDependency */,
+			);
+			name = xyzsphinxbase;
+			productName = xyzsphinxbase;
+			productReference = EC792CF057C4471DACD20675 /* xyzsphinxbase */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72037FDCA3D246D58C5F456F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1330;
+			};
+			buildConfigurationList = 27716DF360E347349DE2521D /* Build configuration list for PBXProject "ps_plus" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				FE983EB8AD85407CB23E8BC8 /* Debug */,
+				F0A91F519C6D42268033A8C6 /* Release */,
+				B668569F0533457CBC242BE1 /* MinSizeRel */,
+				5D3277766C2E4262934B9D71 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 9478800B4A5A49B6A28AF395;
+			projectDirPath = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs;
+			projectRoot = "";
+			targets = (
+				E73DD9EB2B3E4B24905AAD5B /* ALL_BUILD */,
+				13C497365B584E68AC6DBF9A /* ZERO_CHECK */,
+				781D48E9C459477DB0AA49D2 /* ps_plus */,
+				A511C302B5B24A649C3D38FF /* xyzcrossplatform */,
+				1ED01A8CE7314F4D852712F1 /* xyzpocketsphinx */,
+				5BA90900B6A54577985D78E9 /* xyzsphinxad */,
+				AAF7717BE0C64B4F85B22EF9 /* xyzsphinxbase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		41773DC0D414D793349017C6 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Debug/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Debug/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Debug/libxyzpocketsphinx.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Release/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Release/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Release/libxyzpocketsphinx.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/MinSizeRel/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/MinSizeRel/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/MinSizeRel/libxyzpocketsphinx.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/RelWithDebInfo/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/RelWithDebInfo/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/RelWithDebInfo/libxyzpocketsphinx.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6218C33658CD2860A239D5BC /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug/libxyzcrossplatform.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release/libxyzcrossplatform.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		63C6395E65CB329FBC25F54B /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6A7369770B9D2E5677CF1E7F /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxad.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxad.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		8271C2648C1FEA3B03B04368 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9FC1A0675D6C82DD0B162F96 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxbase.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxbase.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		A15FA164C746D73A47933F67 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/Debug/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/Debug/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/Debug/libps_plus.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/Release/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/Release/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/Release/libps_plus.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/MinSizeRel/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/MinSizeRel/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/MinSizeRel/libps_plus.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/RelWithDebInfo/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/RelWithDebInfo/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/RelWithDebInfo/libps_plus.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F5B124A749C4F498EFC2F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8755D8876C849E28F6DD8E5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/crossplatform.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61CA0F9D10C242D1B028FE03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E159401691445B84965CE4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */,
+				82DA5E8C11C34B6CB88E8B5B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */,
+				6F78C296AE2A45F498139586 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */,
+				C989F6B75CF04DB7AD9438B1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */,
+				E3F70582115749688DC5F3E7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */,
+				951E22FA30B04FCF822E21C9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */,
+				1A57E1622475447BB47D915B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */,
+				63D8FCA394994FABA79FA603 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */,
+				814E4CF3FEE843F794487D36 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */,
+				884BBAA461A04D608758EF99 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe/yin.c */,
+				B2FFB21FBFCB4DCFB6E02C16 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/agc.c */,
+				6FB7693F598B4FB8AC8B3006 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */,
+				3B7CDFDE9B2E4F9892DB8355 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */,
+				7188AA9FC2324392B7F0D46B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/feat.c */,
+				59BEF18D5F7A49A6905908BB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat/lda.c */,
+				04196938600F4CA0978064FC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */,
+				04D0C776C466437DADF9DFFD /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */,
+				8CD9F29415BB4F76908B5FB0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */,
+				C0BC18B997CB4374B9BD4E9F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */,
+				E4D6DC0333E0459086E1AD8A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */,
+				47841D1291B24A1F9E16764E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */,
+				82904DE446F64D2196F40C04 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */,
+				F948619D3B5F4B0FB7FC6E47 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */,
+				D634CC48EA1C4AA1BC088321 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */,
+				0C622D1E19E44DE0A27A60C5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */,
+				36B0CFBC23704C28BA378A20 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bio.c */,
+				1FD79EDCB5684832B1AA38B4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */,
+				E8483AB1CE594C84A3A52224 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */,
+				ABCBE8E3257349BCAA285B99 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */,
+				5C9108A3996A4F6CBD0C41D4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/case.c */,
+				E51656602CED439BB3E2BE21 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */,
+				C0438539971F4D16AABFE847 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */,
+				37D41CEB1FE34C68A82B85A9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */,
+				C5D194C19D414D22859ADD96 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/err.c */,
+				8952D223AED14D2DA64C113F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/errno.c */,
+				AFEFE8C9125D4F2E92EB72F3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */,
+				1C0EB663E6E14EB1B5568D19 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/filename.c */,
+				7BBDCA763CF940F3974DBC96 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/genrand.c */,
+				0B9914AF5EA541ED8EDF139B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/glist.c */,
+				AB4A885E4A3048D9A6546E88 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */,
+				FA7EE958593F45A8AD3E3249 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/heap.c */,
+				1190E25EB70541A89F7A7E4A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */,
+				3DBE319873324A8AA493E212 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/logmath.c */,
+				DA31C9FE5E004629A3249290 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/matrix.c */,
+				86B0E65B9C1D441CB9FF46AD /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/mmio.c */,
+				F084CACD403840F9ABA3C1F8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/pio.c */,
+				C47D37AC2C9F45AE8188EE4E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */,
+				7AAB9FA8A98C4B6E8701FD80 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/profile.c */,
+				439339CA4A6346A68CFD2AE8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */,
+				839B976AC9624564A0175067 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slamch.c */,
+				AFFD0C05542C453DBA688F7A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */,
+				6AFD2843AEFD430DAE22C00A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B4B750AC93411A856BFD9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB8B1D487B0497C884814EC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxad/ad_base.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57D558A15D7473AB88342CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33143445554E45B69EE65686 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/acmod.c */,
+				4FA02B828A4D4E5CB203C57A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */,
+				535A9D11AB7A4487846762B0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */,
+				5FADB42C960A4F4E8624DF0C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */,
+				6D20DC28776C4F448A59188E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict.c */,
+				985F985EA08445A9B5728AA5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */,
+				8939414CE3394C00A62C01DB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */,
+				DF62E658EADA448BA8B8F165 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */,
+				2D54F17A295F4B3F8DD9E627 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */,
+				7959C074A271478BBD298493 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/hmm.c */,
+				9F67A4CA5D144B6ABD1CA4C2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */,
+				816F35D4301547D182F6D5B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */,
+				DCC854420DB84E719ADC5FEA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/mdef.c */,
+				DF2A132B8E7244F8AB676071 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */,
+				CE6895077C43400D9D6715B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */,
+				4AE72973E45946B794A5D1EC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */,
+				9CAD9E593CDD42E19AE1165C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */,
+				BC9E92A7F8004730B26D721F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */,
+				E9AD4BE9CCBE4872958F6050 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */,
+				179C74F5E8FA4073BE73B1DA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */,
+				68B05F749E274F40BFD96C6C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */,
+				498EE175BF584020B96BE578 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */,
+				4329C6A66699416ABA8DA170 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */,
+				27410927718B4A7E90F942B4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */,
+				963CCAFEEB5F4987849A32C8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */,
+				3670D35DBEE142B2A054DE8A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */,
+				6FB99AC860FB45AFA76E70F7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */,
+				4E38EABC9EE543818515A394 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/tmat.c */,
+				A57C13EC2BE14D2E83F3F652 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx/vector.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6077EAFB4D44FA89E59A46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C038F01049E45E4807501B9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/c_demo.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08B28227EDFC4878BABE8EDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A511C302B5B24A649C3D38FF /* xyzcrossplatform */;
+			targetProxy = 1D818790580D45338273FA73 /* PBXContainerItemProxy */;
+		};
+		154D8E3556814BFA9636B1A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A511C302B5B24A649C3D38FF /* xyzcrossplatform */;
+			targetProxy = 0FE62E176C844FA283E953B7 /* PBXContainerItemProxy */;
+		};
+		1635DCC5AC844F40B785BE0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A511C302B5B24A649C3D38FF /* xyzcrossplatform */;
+			targetProxy = 435126540DA446C1997F8DBE /* PBXContainerItemProxy */;
+		};
+		2650EB854213423EB369EF87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C497365B584E68AC6DBF9A /* ZERO_CHECK */;
+			targetProxy = 4A53EFCCE4E9489D93EFE0F3 /* PBXContainerItemProxy */;
+		};
+		2F130F5D49714F33A04CB4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C497365B584E68AC6DBF9A /* ZERO_CHECK */;
+			targetProxy = 8FC8C5DE2EA74E22B8012BA1 /* PBXContainerItemProxy */;
+		};
+		365A695B73024A8B9531D8A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C497365B584E68AC6DBF9A /* ZERO_CHECK */;
+			targetProxy = FF7B55A36CA847C2B2B21035 /* PBXContainerItemProxy */;
+		};
+		36CAB25DC2A94C69A7781EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF7717BE0C64B4F85B22EF9 /* xyzsphinxbase */;
+			targetProxy = 7A74B019270C4CC1A26BB877 /* PBXContainerItemProxy */;
+		};
+		3A47B7583745489FA1261359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ED01A8CE7314F4D852712F1 /* xyzpocketsphinx */;
+			targetProxy = 9AC3962AF58D48FBBAF37058 /* PBXContainerItemProxy */;
+		};
+		4E5AF93366C146A89CC9D9CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BA90900B6A54577985D78E9 /* xyzsphinxad */;
+			targetProxy = 24EA31A309B94F01ACDAA605 /* PBXContainerItemProxy */;
+		};
+		720290D79C834B33828A047E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF7717BE0C64B4F85B22EF9 /* xyzsphinxbase */;
+			targetProxy = 21B108F63F52413C8768E6D1 /* PBXContainerItemProxy */;
+		};
+		7AD8D2329CA9496FB8034CD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BA90900B6A54577985D78E9 /* xyzsphinxad */;
+			targetProxy = 5B61725792704189BADDF472 /* PBXContainerItemProxy */;
+		};
+		9164DF5277F8497CAD2F71B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF7717BE0C64B4F85B22EF9 /* xyzsphinxbase */;
+			targetProxy = B163218E4BC0430AB39DA3BB /* PBXContainerItemProxy */;
+		};
+		9698A884D9A44A88AA02ACA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C497365B584E68AC6DBF9A /* ZERO_CHECK */;
+			targetProxy = C0A687B8EEBA419C9574FBF2 /* PBXContainerItemProxy */;
+		};
+		B2A8306974614378990C31D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C497365B584E68AC6DBF9A /* ZERO_CHECK */;
+			targetProxy = 3CB2CA5FFFEA47469139064A /* PBXContainerItemProxy */;
+		};
+		B44C69190A1E4BFC8F770768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A511C302B5B24A649C3D38FF /* xyzcrossplatform */;
+			targetProxy = 9F1CF0B5FABE44598F039268 /* PBXContainerItemProxy */;
+		};
+		BC1EC8A5437842CAB0C9C41D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ED01A8CE7314F4D852712F1 /* xyzpocketsphinx */;
+			targetProxy = 4E5B3073D8344A08AF2B6FC7 /* PBXContainerItemProxy */;
+		};
+		DA1C96C424D64A33A241D850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C497365B584E68AC6DBF9A /* ZERO_CHECK */;
+			targetProxy = FB457B9AADFC4BD98C702D23 /* PBXContainerItemProxy */;
+		};
+		EB502D423FE84EB8B42486E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BA90900B6A54577985D78E9 /* xyzsphinxad */;
+			targetProxy = 77FD31B8C70D416F82C662B2 /* PBXContainerItemProxy */;
+		};
+		ED2FCD97CDCE43969BB1A108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 781D48E9C459477DB0AA49D2 /* ps_plus */;
+			targetProxy = 47316C8F352F48118012F046 /* PBXContainerItemProxy */;
+		};
+		F89BFBB191C047939AE5B633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF7717BE0C64B4F85B22EF9 /* xyzsphinxbase */;
+			targetProxy = 04B1CA576EA14F58822E84E3 /* PBXContainerItemProxy */;
+		};
+		FD1B532C714D4AE8BC0B64C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A511C302B5B24A649C3D38FF /* xyzcrossplatform */;
+			targetProxy = 3F2FAD5FF1B24F5F867F32A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09C53543CA8E4200812CA792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxad_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		0A0A3084DC004218A6C90E76 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ps_plus_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/ps_plus,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/aside_ps_library,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/_xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/_xyzsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/RelWithDebInfo /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' -fPIC     ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/RelWithDebInfo/libxyzpocketsphinx.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0DA39C3588C3419E8C9975E8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzpocketsphinx_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0E021645425B4CF791B19AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		0E3EF99334EE4D6DB785A333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzcrossplatform_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2E304EA60B4C4D3F80301CE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxbase_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2F75B02567B54FD08D8013A1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxbase_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		32BD6A6FA930405EADE67543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build;
+			};
+			name = Debug;
+		};
+		34E5C65FF01249C4A7AF840F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ps_plus_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/ps_plus,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/aside_ps_library,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/_xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/_xyzsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Release /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' -fPIC     ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Release/libxyzpocketsphinx.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxad.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		39F5BF19D83C483DAED7300A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		4771B8062C234FA0B356C2F3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxad_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4EE7A6F6B7E9423EB9C08BD8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzpocketsphinx_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxad.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		55878C830F48436CB3D6AD44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build;
+			};
+			name = Release;
+		};
+		57E470FBE0BB41E7A8639DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5CE195BDD7CE4A13BC1A4738 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		600630E6051D4FF083843544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzpocketsphinx_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxad.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		629F6D69A30C4366B4215395 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build;
+			};
+			name = MinSizeRel;
+		};
+		6C0F489B9FD648CE9072C6DB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzcrossplatform_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8B5FC795F0254F74991E9A37 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		95D80098EE1540359FFB1F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A619560AFD444EAF94E0D61B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxbase_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AA457EE0DFA249CA9B156C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B60921C67857408A9F775F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxad_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B7BCD0BC25084ED4A3704881 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BE346745B2B643728635948E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzcrossplatform_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C200D8900BF54BC28E3D8F00 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C6B67742584B405A8834D348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ps_plus_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/ps_plus,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/aside_ps_library,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/_xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/_xyzsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Debug /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' -fPIC     ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Debug/libxyzpocketsphinx.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxad.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C94AA22CE9FF4E0FBE37E1F6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ps_plus_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/ps_plus,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/aside_ps_library,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/_xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/_xyzsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/MinSizeRel /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' -fPIC     ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/MinSizeRel/libxyzpocketsphinx.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxad.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/MinSizeRel/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/MinSizeRel/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D76B3980A3FF4264A5364729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzcrossplatform_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F7BE3962AA0D4434BA979949 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxad_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/RelWithDebInfo/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/RelWithDebInfo/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FC1B48C701B648BD971002F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxbase_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/feat,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/lm,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Debug/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		FCB03AEC83A24256B254A35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzpocketsphinx/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzpocketsphinx_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/src/libpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release /Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names",/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxad.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzsphinxbase/Release/libxyzsphinxbase.dylib,/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/xyzcrossplatform/Release/libxyzcrossplatform.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27716DF360E347349DE2521D /* Build configuration list for PBXProject "ps_plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BD6A6FA930405EADE67543 /* Debug */,
+				55878C830F48436CB3D6AD44 /* Release */,
+				629F6D69A30C4366B4215395 /* MinSizeRel */,
+				39F5BF19D83C483DAED7300A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		365132226F1D42B2AFDD15CF /* Build configuration list for PBXNativeTarget "xyzcrossplatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76B3980A3FF4264A5364729 /* Debug */,
+				0E3EF99334EE4D6DB785A333 /* Release */,
+				6C0F489B9FD648CE9072C6DB /* MinSizeRel */,
+				BE346745B2B643728635948E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		56A5EF2EDC0F4D51A105CBC9 /* Build configuration list for PBXNativeTarget "xyzsphinxad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C53543CA8E4200812CA792 /* Debug */,
+				B60921C67857408A9F775F95 /* Release */,
+				4771B8062C234FA0B356C2F3 /* MinSizeRel */,
+				F7BE3962AA0D4434BA979949 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8B6076CC2AB841689E03C8AC /* Build configuration list for PBXNativeTarget "ps_plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B67742584B405A8834D348 /* Debug */,
+				34E5C65FF01249C4A7AF840F /* Release */,
+				C94AA22CE9FF4E0FBE37E1F6 /* MinSizeRel */,
+				0A0A3084DC004218A6C90E76 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCE42D5EF0F3470ABCC7E037 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA457EE0DFA249CA9B156C1E /* Debug */,
+				0E021645425B4CF791B19AD7 /* Release */,
+				C200D8900BF54BC28E3D8F00 /* MinSizeRel */,
+				B7BCD0BC25084ED4A3704881 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C56938FF3B5542FB8ACD1867 /* Build configuration list for PBXNativeTarget "xyzpocketsphinx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600630E6051D4FF083843544 /* Debug */,
+				FCB03AEC83A24256B254A35E /* Release */,
+				0DA39C3588C3419E8C9975E8 /* MinSizeRel */,
+				4EE7A6F6B7E9423EB9C08BD8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA804287DF5645638AF9C157 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D80098EE1540359FFB1F60 /* Debug */,
+				57E470FBE0BB41E7A8639DFF /* Release */,
+				5CE195BDD7CE4A13BC1A4738 /* MinSizeRel */,
+				8B5FC795F0254F74991E9A37 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F76FB2FE55964357B5EA1924 /* Build configuration list for PBXNativeTarget "xyzsphinxbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC1B48C701B648BD971002F1 /* Debug */,
+				2E304EA60B4C4D3F80301CE9 /* Release */,
+				A619560AFD444EAF94E0D61B /* MinSizeRel */,
+				2F75B02567B54FD08D8013A1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72037FDCA3D246D58C5F456F /* Project object */;
+}

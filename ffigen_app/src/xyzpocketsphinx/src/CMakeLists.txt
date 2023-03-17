@@ -1,0 +1,2 @@
+add_subdirectory(libpocketsphinx)
+add_subdirectory(programs)

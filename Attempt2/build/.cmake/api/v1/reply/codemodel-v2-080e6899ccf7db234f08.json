@@ -1,0 +1,147 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "xyzpocketsphinx",
+					"jsonFile" : "directory-xyzpocketsphinx-Release-dd2123b9ce8e045e5b91.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "xyzpocketsphinx",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "xyzsphinxbase",
+					"jsonFile" : "directory-xyzsphinxbase-Release-22a36f042e83b5d0ad11.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "xyzsphinxbase",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"build" : "xyzcrossplatform",
+					"jsonFile" : "directory-xyzcrossplatform-Release-798e2048d0911e51ac0e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "xyzcrossplatform",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "ps_plus",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ps_plus::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ps_plus-Release-0b2b0e70f7c29caad864.json",
+					"name" : "ps_plus",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "xyzcrossplatform::@d0baed5698406c57c82c",
+					"jsonFile" : "target-xyzcrossplatform-Release-13f7a81f62783aa8ef9c.json",
+					"name" : "xyzcrossplatform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "xyzpocketsphinx::@cd3ca0d354e9bb24a08e",
+					"jsonFile" : "target-xyzpocketsphinx-Release-b02084608bb8f3fcadb4.json",
+					"name" : "xyzpocketsphinx",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "xyzsphinxad::@522354f7d7865b52d40b",
+					"jsonFile" : "target-xyzsphinxad-Release-bb53a3482c5fcdc9ea1c.json",
+					"name" : "xyzsphinxad",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "xyzsphinxbase::@522354f7d7865b52d40b",
+					"jsonFile" : "target-xyzsphinxbase-Release-5319895c5dd2d9cd9879.json",
+					"name" : "xyzsphinxbase",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build",
+		"source" : "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

@@ -1,3 +1,0 @@
-/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin2/libs/CMakeFiles/api.dir
-/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin2/libs/CMakeFiles/ALL_BUILD.dir
-/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin2/libs/CMakeFiles/ZERO_CHECK.dir

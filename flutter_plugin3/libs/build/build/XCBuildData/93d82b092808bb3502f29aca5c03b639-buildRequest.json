@@ -1,0 +1,77 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "998df2a20bcedcff47ade67a69c66ab03e599405d8770990db94f0e784b622a5"
+    },
+    {
+      "guid" : "998df2a20bcedcff47ade67a69c66ab01f85961696abe2142586d7ebb3971c46"
+    },
+    {
+      "guid" : "998df2a20bcedcff47ade67a69c66ab03328904bf38e733e4315962e4ad297e0"
+    },
+    {
+      "guid" : "998df2a20bcedcff47ade67a69c66ab0a4429d1909a00a8fa50f52a21105bf08"
+    },
+    {
+      "guid" : "998df2a20bcedcff47ade67a69c66ab0941f37025636d9adb43ba829f7d48d0c"
+    },
+    {
+      "guid" : "998df2a20bcedcff47ade67a69c66ab0957b1304bf6c6f45a7d8de1eb879862b"
+    },
+    {
+      "guid" : "998df2a20bcedcff47ade67a69c66ab0dd18b135998840f0d3703516f0ab741a"
+    }
+  ],
+  "containerPath" : "/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/build/ps_plus.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/davidbarbera/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/davidbarbera/Library/Developer/Xcode/DerivedData/ps_plus-fnotyuarejafoqdwxusjfvtjfsnu/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/davidbarbera/Library/Developer/Xcode/DerivedData/ps_plus-fnotyuarejafoqdwxusjfvtjfsnu/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

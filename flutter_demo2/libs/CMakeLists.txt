@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.19.5)
+cmake_minimum_required(VERSION 3.20)
 
 project(ps_plus)#PROJECT_SOURCE_DIR#CMAKE_SOURCE_DIR
 
@@ -34,8 +34,9 @@ target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
 add_library(ps_plus
   SHARED
   ./c_demo.cpp
-  exports.def
+  #exports.def
 )
+set_property(TARGET ps_plus PROPERTY CXX_STANDARD 11)
 # target_compile_features(ps_plus PUBLIC cxx_std_11)
 
 #target_link_libraries(ps_plus PUBLIC xyzpocketsphinx)

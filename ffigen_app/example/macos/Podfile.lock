@@ -1,0 +1,22 @@
+PODS:
+  - ffigen_app (0.0.1):
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+
+DEPENDENCIES:
+  - ffigen_app (from `Flutter/ephemeral/.symlinks/plugins/ffigen_app/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+
+EXTERNAL SOURCES:
+  ffigen_app:
+    :path: Flutter/ephemeral/.symlinks/plugins/ffigen_app/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+
+SPEC CHECKSUMS:
+  ffigen_app: a15e3e0106aff53016889bdef5b5c4616e9d8970
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+
+PODFILE CHECKSUM: 353c8bcc5d5b0994e508d035b5431cfe18c1dea7
+
+COCOAPODS: 1.12.0

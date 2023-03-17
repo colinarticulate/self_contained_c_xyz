@@ -85,12 +85,12 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				GENERATE_INFOPLIST_FILE = YES;
 				SYMROOT = .;
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				ONLY_ACTIVE_ARCH = YES;
+				ARCHS = "arm64";
+				ONLY_ACTIVE_ARCH = NO;
 				
 				
 				
-				MACOSX_DEPLOYMENT_TARGET = "13.1";
+				
 				SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk";
 			};
 			name = Debug;

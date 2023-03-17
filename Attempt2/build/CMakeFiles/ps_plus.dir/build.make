@@ -69,39 +69,39 @@ include CMakeFiles/ps_plus.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ps_plus.dir/flags.make
 
-CMakeFiles/ps_plus.dir/ps_plus.cpp.o: CMakeFiles/ps_plus.dir/flags.make
-CMakeFiles/ps_plus.dir/ps_plus.cpp.o: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus.cpp
-CMakeFiles/ps_plus.dir/ps_plus.cpp.o: CMakeFiles/ps_plus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ps_plus.dir/ps_plus.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps_plus.dir/ps_plus.cpp.o -MF CMakeFiles/ps_plus.dir/ps_plus.cpp.o.d -o CMakeFiles/ps_plus.dir/ps_plus.cpp.o -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus.cpp
+CMakeFiles/ps_plus.dir/c_demo.cpp.o: CMakeFiles/ps_plus.dir/flags.make
+CMakeFiles/ps_plus.dir/c_demo.cpp.o: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp
+CMakeFiles/ps_plus.dir/c_demo.cpp.o: CMakeFiles/ps_plus.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ps_plus.dir/c_demo.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ps_plus.dir/c_demo.cpp.o -MF CMakeFiles/ps_plus.dir/c_demo.cpp.o.d -o CMakeFiles/ps_plus.dir/c_demo.cpp.o -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp
 
-CMakeFiles/ps_plus.dir/ps_plus.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ps_plus.dir/ps_plus.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus.cpp > CMakeFiles/ps_plus.dir/ps_plus.cpp.i
+CMakeFiles/ps_plus.dir/c_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ps_plus.dir/c_demo.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp > CMakeFiles/ps_plus.dir/c_demo.cpp.i
 
-CMakeFiles/ps_plus.dir/ps_plus.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ps_plus.dir/ps_plus.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus.cpp -o CMakeFiles/ps_plus.dir/ps_plus.cpp.s
+CMakeFiles/ps_plus.dir/c_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ps_plus.dir/c_demo.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp -o CMakeFiles/ps_plus.dir/c_demo.cpp.s
 
 # Object files for target ps_plus
 ps_plus_OBJECTS = \
-"CMakeFiles/ps_plus.dir/ps_plus.cpp.o"
+"CMakeFiles/ps_plus.dir/c_demo.cpp.o"
 
 # External object files for target ps_plus
 ps_plus_EXTERNAL_OBJECTS =
 
-/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus: CMakeFiles/ps_plus.dir/ps_plus.cpp.o
-/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus: CMakeFiles/ps_plus.dir/build.make
-/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus: xyzpocketsphinx/libxyzpocketsphinx.dylib
-/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus: xyzsphinxbase/libxyzsphinxad.dylib
-/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus: xyzsphinxbase/libxyzsphinxbase.dylib
-/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus: xyzcrossplatform/libxyzcrossplatform.dylib
-/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus: CMakeFiles/ps_plus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus"
+libps_plus.dylib: CMakeFiles/ps_plus.dir/c_demo.cpp.o
+libps_plus.dylib: CMakeFiles/ps_plus.dir/build.make
+libps_plus.dylib: xyzpocketsphinx/libxyzpocketsphinx.dylib
+libps_plus.dylib: xyzsphinxbase/libxyzsphinxad.dylib
+libps_plus.dylib: xyzsphinxbase/libxyzsphinxbase.dylib
+libps_plus.dylib: xyzcrossplatform/libxyzcrossplatform.dylib
+libps_plus.dylib: CMakeFiles/ps_plus.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libps_plus.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ps_plus.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/ps_plus.dir/build: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/bin/ps_plus
+CMakeFiles/ps_plus.dir/build: libps_plus.dylib
 .PHONY : CMakeFiles/ps_plus.dir/build
 
 CMakeFiles/ps_plus.dir/clean:

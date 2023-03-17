@@ -181,29 +181,29 @@ xyzcrossplatform/fast:
 	$(MAKE) $(MAKESILENT) -f xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/build.make xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/build
 .PHONY : xyzcrossplatform/fast
 
-ps_plus.o: ps_plus.cpp.o
-.PHONY : ps_plus.o
+c_demo.o: c_demo.cpp.o
+.PHONY : c_demo.o
 
 # target to build an object file
-ps_plus.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps_plus.dir/build.make CMakeFiles/ps_plus.dir/ps_plus.cpp.o
-.PHONY : ps_plus.cpp.o
+c_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps_plus.dir/build.make CMakeFiles/ps_plus.dir/c_demo.cpp.o
+.PHONY : c_demo.cpp.o
 
-ps_plus.i: ps_plus.cpp.i
-.PHONY : ps_plus.i
+c_demo.i: c_demo.cpp.i
+.PHONY : c_demo.i
 
 # target to preprocess a source file
-ps_plus.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps_plus.dir/build.make CMakeFiles/ps_plus.dir/ps_plus.cpp.i
-.PHONY : ps_plus.cpp.i
+c_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps_plus.dir/build.make CMakeFiles/ps_plus.dir/c_demo.cpp.i
+.PHONY : c_demo.cpp.i
 
-ps_plus.s: ps_plus.cpp.s
-.PHONY : ps_plus.s
+c_demo.s: c_demo.cpp.s
+.PHONY : c_demo.s
 
 # target to generate assembly for a file
-ps_plus.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps_plus.dir/build.make CMakeFiles/ps_plus.dir/ps_plus.cpp.s
-.PHONY : ps_plus.cpp.s
+c_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ps_plus.dir/build.make CMakeFiles/ps_plus.dir/c_demo.cpp.s
+.PHONY : c_demo.cpp.s
 
 # Help Target
 help:
@@ -218,9 +218,9 @@ help:
 	@echo "... xyzpocketsphinx"
 	@echo "... xyzsphinxad"
 	@echo "... xyzsphinxbase"
-	@echo "... ps_plus.o"
-	@echo "... ps_plus.i"
-	@echo "... ps_plus.s"
+	@echo "... c_demo.o"
+	@echo "... c_demo.i"
+	@echo "... c_demo.s"
 .PHONY : help
 
 
