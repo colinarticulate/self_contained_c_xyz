@@ -21,27 +21,27 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2C0CF07B29C4C71900C85BD8 /* libps_plus.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CF07629C4C71900C85BD8 /* libps_plus.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		2C0CF07C29C4C71900C85BD8 /* libxyzsphinxad.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CF07729C4C71900C85BD8 /* libxyzsphinxad.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		2C0CF07D29C4C71900C85BD8 /* libxyzcrossplatform.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CF07829C4C71900C85BD8 /* libxyzcrossplatform.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		2C0CF07E29C4C71900C85BD8 /* libxyzsphinxbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CF07929C4C71900C85BD8 /* libxyzsphinxbase.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		2C0CF07F29C4C71900C85BD8 /* libxyzpocketsphinx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0CF07A29C4C71900C85BD8 /* libxyzpocketsphinx.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		2C0CF08029C4C74000C85BD8 /* libps_plus.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CF07629C4C71900C85BD8 /* libps_plus.dylib */; };
-		2C0CF08129C4C74300C85BD8 /* libxyzcrossplatform.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CF07829C4C71900C85BD8 /* libxyzcrossplatform.dylib */; };
-		2C0CF08229C4C74700C85BD8 /* libxyzpocketsphinx.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CF07A29C4C71900C85BD8 /* libxyzpocketsphinx.dylib */; };
-		2C0CF08329C4C74A00C85BD8 /* libxyzsphinxad.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CF07729C4C71900C85BD8 /* libxyzsphinxad.dylib */; };
-		2C0CF08429C4C74E00C85BD8 /* libxyzsphinxbase.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CF07929C4C71900C85BD8 /* libxyzsphinxbase.dylib */; };
-		2C0CF08529C4C7BB00C85BD8 /* libps_plus.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2C0CF07629C4C71900C85BD8 /* libps_plus.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2C0CF08629C4C7BD00C85BD8 /* libxyzcrossplatform.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2C0CF07829C4C71900C85BD8 /* libxyzcrossplatform.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2C0CF08729C4C7C000C85BD8 /* libxyzpocketsphinx.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2C0CF07A29C4C71900C85BD8 /* libxyzpocketsphinx.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2C0CF08829C4C7C300C85BD8 /* libxyzsphinxad.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2C0CF07729C4C71900C85BD8 /* libxyzsphinxad.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2C0CF08929C4C7C600C85BD8 /* libxyzsphinxbase.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2C0CF07929C4C71900C85BD8 /* libxyzsphinxbase.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CCBAB6429CB135C0018EF29 /* libxyzsphinxad.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBAB5F29CB135C0018EF29 /* libxyzsphinxad.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2CCBAB6529CB135C0018EF29 /* libxyzsphinxbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBAB6029CB135C0018EF29 /* libxyzsphinxbase.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2CCBAB6629CB135C0018EF29 /* libxyzpocketsphinx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBAB6129CB135C0018EF29 /* libxyzpocketsphinx.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2CCBAB6729CB135C0018EF29 /* libxyzcrossplatform.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBAB6229CB135C0018EF29 /* libxyzcrossplatform.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2CCBAB6829CB135C0018EF29 /* libps_plus.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBAB6329CB135C0018EF29 /* libps_plus.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2CCBAB6929CB136E0018EF29 /* libps_plus.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCBAB6329CB135C0018EF29 /* libps_plus.dylib */; };
+		2CCBAB6A29CB13700018EF29 /* libxyzcrossplatform.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCBAB6229CB135C0018EF29 /* libxyzcrossplatform.dylib */; };
+		2CCBAB6B29CB13740018EF29 /* libxyzpocketsphinx.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCBAB6129CB135C0018EF29 /* libxyzpocketsphinx.dylib */; };
+		2CCBAB6C29CB13770018EF29 /* libxyzsphinxad.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCBAB5F29CB135C0018EF29 /* libxyzsphinxad.dylib */; };
+		2CCBAB6D29CB13780018EF29 /* libxyzsphinxbase.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCBAB6029CB135C0018EF29 /* libxyzsphinxbase.dylib */; };
+		2CCBAB6E29CB13850018EF29 /* libps_plus.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2CCBAB6329CB135C0018EF29 /* libps_plus.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CCBAB6F29CB13880018EF29 /* libxyzcrossplatform.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2CCBAB6229CB135C0018EF29 /* libxyzcrossplatform.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CCBAB7029CB138A0018EF29 /* libxyzpocketsphinx.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2CCBAB6129CB135C0018EF29 /* libxyzpocketsphinx.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CCBAB7129CB13900018EF29 /* libxyzsphinxad.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2CCBAB5F29CB135C0018EF29 /* libxyzsphinxad.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CCBAB7229CB13940018EF29 /* libxyzsphinxbase.dylib in Bundle Framework */ = {isa = PBXBuildFile; fileRef = 2CCBAB6029CB135C0018EF29 /* libxyzsphinxbase.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2F3EE670FD05F1DE71A30DFE /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F2FB38DD0E30BB9AC5192 /* Pods_Runner.framework */; };
 		335BBD1B22A9A15E00E9071D /* GeneratedPluginRegistrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */; };
 		33CC10F12044A3C60003C045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC10F02044A3C60003C045 /* AppDelegate.swift */; };
 		33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F22044A3C60003C045 /* Assets.xcassets */; };
 		33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F42044A3C60003C045 /* MainMenu.xib */; };
 		33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC11122044BFA00003C045 /* MainFlutterWindow.swift */; };
-		3CDABC5D38CB2228FA6E5352 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31631EBA27C9323242DE11E4 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +61,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2C0CF08529C4C7BB00C85BD8 /* libps_plus.dylib in Bundle Framework */,
-				2C0CF08629C4C7BD00C85BD8 /* libxyzcrossplatform.dylib in Bundle Framework */,
-				2C0CF08729C4C7C000C85BD8 /* libxyzpocketsphinx.dylib in Bundle Framework */,
-				2C0CF08829C4C7C300C85BD8 /* libxyzsphinxad.dylib in Bundle Framework */,
-				2C0CF08929C4C7C600C85BD8 /* libxyzsphinxbase.dylib in Bundle Framework */,
+				2CCBAB7029CB138A0018EF29 /* libxyzpocketsphinx.dylib in Bundle Framework */,
+				2CCBAB6E29CB13850018EF29 /* libps_plus.dylib in Bundle Framework */,
+				2CCBAB6F29CB13880018EF29 /* libxyzcrossplatform.dylib in Bundle Framework */,
+				2CCBAB7229CB13940018EF29 /* libxyzsphinxbase.dylib in Bundle Framework */,
+				2CCBAB7129CB13900018EF29 /* libxyzsphinxad.dylib in Bundle Framework */,
 			);
 			name = "Bundle Framework";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,12 +73,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C0CF07629C4C71900C85BD8 /* libps_plus.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libps_plus.dylib; path = ../libs/macos/libps_plus.dylib; sourceTree = "<group>"; };
-		2C0CF07729C4C71900C85BD8 /* libxyzsphinxad.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzsphinxad.dylib; path = ../libs/macos/libxyzsphinxad.dylib; sourceTree = "<group>"; };
-		2C0CF07829C4C71900C85BD8 /* libxyzcrossplatform.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzcrossplatform.dylib; path = ../libs/macos/libxyzcrossplatform.dylib; sourceTree = "<group>"; };
-		2C0CF07929C4C71900C85BD8 /* libxyzsphinxbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzsphinxbase.dylib; path = ../libs/macos/libxyzsphinxbase.dylib; sourceTree = "<group>"; };
-		2C0CF07A29C4C71900C85BD8 /* libxyzpocketsphinx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzpocketsphinx.dylib; path = ../libs/macos/libxyzpocketsphinx.dylib; sourceTree = "<group>"; };
-		31631EBA27C9323242DE11E4 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCBAB5F29CB135C0018EF29 /* libxyzsphinxad.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzsphinxad.dylib; path = ../libs/macos/Release/libxyzsphinxad.dylib; sourceTree = "<group>"; };
+		2CCBAB6029CB135C0018EF29 /* libxyzsphinxbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzsphinxbase.dylib; path = ../libs/macos/Release/libxyzsphinxbase.dylib; sourceTree = "<group>"; };
+		2CCBAB6129CB135C0018EF29 /* libxyzpocketsphinx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzpocketsphinx.dylib; path = ../libs/macos/Release/libxyzpocketsphinx.dylib; sourceTree = "<group>"; };
+		2CCBAB6229CB135C0018EF29 /* libxyzcrossplatform.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzcrossplatform.dylib; path = ../libs/macos/Release/libxyzcrossplatform.dylib; sourceTree = "<group>"; };
+		2CCBAB6329CB135C0018EF29 /* libps_plus.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libps_plus.dylib; path = ../libs/macos/Release/libps_plus.dylib; sourceTree = "<group>"; };
 		333000ED22D3DE5D00554162 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedPluginRegistrant.swift; sourceTree = "<group>"; };
 		33CC10ED2044A3C60003C045 /* flutter_plugin3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flutter_plugin3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,11 +92,12 @@
 		33E51913231747F40026EE4D /* DebugProfile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DebugProfile.entitlements; sourceTree = "<group>"; };
 		33E51914231749380026EE4D /* Release.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Release.entitlements; sourceTree = "<group>"; };
 		33E5194F232828860026EE4D /* AppInfo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppInfo.xcconfig; sourceTree = "<group>"; };
-		4C1FDFFBF78779E044C420C3 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		5D9FD442D06B3D767E84D948 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		9E10A86F160DF18A8437D165 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
-		B307EA266063A7D551B8D294 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		A71F2FB38DD0E30BB9AC5192 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C0696B7E1C07F9A537E5AC /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		C975EFCA1AB6335233E53EAC /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,18 +105,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0CF07B29C4C71900C85BD8 /* libps_plus.dylib in Frameworks */,
-				2C0CF07C29C4C71900C85BD8 /* libxyzsphinxad.dylib in Frameworks */,
-				2C0CF07D29C4C71900C85BD8 /* libxyzcrossplatform.dylib in Frameworks */,
-				2C0CF07F29C4C71900C85BD8 /* libxyzpocketsphinx.dylib in Frameworks */,
-				2C0CF07E29C4C71900C85BD8 /* libxyzsphinxbase.dylib in Frameworks */,
-				3CDABC5D38CB2228FA6E5352 /* Pods_Runner.framework in Frameworks */,
+				2CCBAB6729CB135C0018EF29 /* libxyzcrossplatform.dylib in Frameworks */,
+				2CCBAB6429CB135C0018EF29 /* libxyzsphinxad.dylib in Frameworks */,
+				2CCBAB6829CB135C0018EF29 /* libps_plus.dylib in Frameworks */,
+				2CCBAB6529CB135C0018EF29 /* libxyzsphinxbase.dylib in Frameworks */,
+				2CCBAB6629CB135C0018EF29 /* libxyzpocketsphinx.dylib in Frameworks */,
+				2F3EE670FD05F1DE71A30DFE /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ECD8DC1AC6920EC4A27B72D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4C0696B7E1C07F9A537E5AC /* Pods-Runner.debug.xcconfig */,
+				C975EFCA1AB6335233E53EAC /* Pods-Runner.release.xcconfig */,
+				5D9FD442D06B3D767E84D948 /* Pods-Runner.profile.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		33BA886A226E78AF003329D5 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +145,7 @@
 				33CEB47122A05771004F2AC0 /* Flutter */,
 				33CC10EE2044A3C60003C045 /* Products */,
 				D73912EC22F37F3D000D13A0 /* Frameworks */,
-				F74CA442DA30D42E69FE0A69 /* Pods */,
+				2ECD8DC1AC6920EC4A27B72D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,24 +195,14 @@
 		D73912EC22F37F3D000D13A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C0CF07629C4C71900C85BD8 /* libps_plus.dylib */,
-				2C0CF07829C4C71900C85BD8 /* libxyzcrossplatform.dylib */,
-				2C0CF07A29C4C71900C85BD8 /* libxyzpocketsphinx.dylib */,
-				2C0CF07729C4C71900C85BD8 /* libxyzsphinxad.dylib */,
-				2C0CF07929C4C71900C85BD8 /* libxyzsphinxbase.dylib */,
-				31631EBA27C9323242DE11E4 /* Pods_Runner.framework */,
+				2CCBAB6329CB135C0018EF29 /* libps_plus.dylib */,
+				2CCBAB6229CB135C0018EF29 /* libxyzcrossplatform.dylib */,
+				2CCBAB6129CB135C0018EF29 /* libxyzpocketsphinx.dylib */,
+				2CCBAB5F29CB135C0018EF29 /* libxyzsphinxad.dylib */,
+				2CCBAB6029CB135C0018EF29 /* libxyzsphinxbase.dylib */,
+				A71F2FB38DD0E30BB9AC5192 /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F74CA442DA30D42E69FE0A69 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9E10A86F160DF18A8437D165 /* Pods-Runner.debug.xcconfig */,
-				B307EA266063A7D551B8D294 /* Pods-Runner.release.xcconfig */,
-				4C1FDFFBF78779E044C420C3 /* Pods-Runner.profile.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,13 +212,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33CC10FB2044A3C60003C045 /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
-				05BB3D98FDEC3747ECCA9D22 /* [CP] Check Pods Manifest.lock */,
+				69F57C9DB2999A4C0C4D4D75 /* [CP] Check Pods Manifest.lock */,
 				33CC10E92044A3C60003C045 /* Sources */,
 				33CC10EA2044A3C60003C045 /* Frameworks */,
 				33CC10EB2044A3C60003C045 /* Resources */,
 				33CC110E2044A8840003C045 /* Bundle Framework */,
 				3399D490228B24CF009A79C7 /* ShellScript */,
-				2783B922A2CF6406CE98A2C9 /* [CP] Embed Pods Frameworks */,
+				500196597C0F701E3F32A755 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,58 +280,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCBAB6D29CB13780018EF29 /* libxyzsphinxbase.dylib in Resources */,
+				2CCBAB6C29CB13770018EF29 /* libxyzsphinxad.dylib in Resources */,
+				2CCBAB6B29CB13740018EF29 /* libxyzpocketsphinx.dylib in Resources */,
+				2CCBAB6A29CB13700018EF29 /* libxyzcrossplatform.dylib in Resources */,
+				2CCBAB6929CB136E0018EF29 /* libps_plus.dylib in Resources */,
 				33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */,
 				33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */,
-				2C0CF08029C4C74000C85BD8 /* libps_plus.dylib in Resources */,
-				2C0CF08129C4C74300C85BD8 /* libxyzcrossplatform.dylib in Resources */,
-				2C0CF08229C4C74700C85BD8 /* libxyzpocketsphinx.dylib in Resources */,
-				2C0CF08329C4C74A00C85BD8 /* libxyzsphinxad.dylib in Resources */,
-				2C0CF08429C4C74E00C85BD8 /* libxyzsphinxbase.dylib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05BB3D98FDEC3747ECCA9D22 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2783B922A2CF6406CE98A2C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3399D490228B24CF009A79C7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -369,6 +330,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/macos_assemble.sh && touch Flutter/ephemeral/tripwire";
+		};
+		500196597C0F701E3F32A755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69F57C9DB2999A4C0C4D4D75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -444,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -459,13 +459,33 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/DebugProfile.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N9QHQ425S8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/path_provider_foundation\"",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"path_provider_foundation\"",
 				);
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -524,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -571,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -583,16 +603,37 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33E5194F232828860026EE4D /* AppInfo.xcconfig */;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/DebugProfile.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N9QHQ425S8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/path_provider_foundation\"",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"path_provider_foundation\"",
 				);
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -604,16 +645,37 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33E5194F232828860026EE4D /* AppInfo.xcconfig */;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Release.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N9QHQ425S8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/path_provider_foundation\"",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/macos/Release,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"path_provider_foundation\"",
 				);
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

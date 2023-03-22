@@ -36,6 +36,7 @@ class Storage {
 
     //final persistent_path = directory.path;
     //String asset_path = imagePaths[0];
+    //new Directory(p.join(directory!.path,"ps_plus")).create();
 
     for (var i = 0; i < imagePaths.length; i++) {
       final pathfile =
