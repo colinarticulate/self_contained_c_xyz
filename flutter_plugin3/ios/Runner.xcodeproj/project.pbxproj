@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
-		2C59BC8029CB356000299A56 /* libxyzcrossplatform.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C59BC7B29CB356000299A56 /* libxyzcrossplatform.dylib */; };
-		2C59BC8129CB356000299A56 /* libps_plus.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C59BC7C29CB356000299A56 /* libps_plus.dylib */; };
-		2C59BC8229CB356000299A56 /* libxyzpocketsphinx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C59BC7D29CB356000299A56 /* libxyzpocketsphinx.dylib */; };
-		2C59BC8329CB356000299A56 /* libxyzsphinxad.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C59BC7E29CB356000299A56 /* libxyzsphinxad.dylib */; };
-		2C59BC8429CB356000299A56 /* libxyzsphinxbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C59BC7F29CB356000299A56 /* libxyzsphinxbase.dylib */; };
+		2CB3B86729CB588D001921F1 /* libps_plus.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB3B86529CB585C001921F1 /* libps_plus.dylib */; };
+		2CB3B86829CB588D001921F1 /* libps_plus.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 2CB3B86529CB585C001921F1 /* libps_plus.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CB3B86A29CB5890001921F1 /* libxyzcrossplatform.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB3B86429CB585C001921F1 /* libxyzcrossplatform.dylib */; };
+		2CB3B86B29CB5890001921F1 /* libxyzcrossplatform.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 2CB3B86429CB585C001921F1 /* libxyzcrossplatform.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CB3B86C29CB5894001921F1 /* libxyzpocketsphinx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB3B86629CB585C001921F1 /* libxyzpocketsphinx.dylib */; };
+		2CB3B86D29CB5894001921F1 /* libxyzpocketsphinx.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 2CB3B86629CB585C001921F1 /* libxyzpocketsphinx.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CB3B86E29CB5898001921F1 /* libxyzsphinxad.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB3B86229CB585C001921F1 /* libxyzsphinxad.dylib */; };
+		2CB3B86F29CB5898001921F1 /* libxyzsphinxad.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 2CB3B86229CB585C001921F1 /* libxyzsphinxad.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2CB3B87029CB589B001921F1 /* libxyzsphinxbase.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB3B86329CB585C001921F1 /* libxyzsphinxbase.dylib */; };
+		2CB3B87129CB589B001921F1 /* libxyzsphinxbase.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 2CB3B86329CB585C001921F1 /* libxyzsphinxbase.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		7C494DD0613F3CFEAFD51B15 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19484020E19E115AB78B07D /* Pods_Runner.framework */; };
@@ -21,16 +26,34 @@
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2CB3B86929CB588D001921F1 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2CB3B86B29CB5890001921F1 /* libxyzcrossplatform.dylib in Embed Libraries */,
+				2CB3B86829CB588D001921F1 /* libps_plus.dylib in Embed Libraries */,
+				2CB3B87129CB589B001921F1 /* libxyzsphinxbase.dylib in Embed Libraries */,
+				2CB3B86D29CB5894001921F1 /* libxyzpocketsphinx.dylib in Embed Libraries */,
+				2CB3B86F29CB5898001921F1 /* libxyzsphinxad.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		19E0BA8C9CB5443D078DFE5B /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		226915A5C872B9B9B6C4A4B1 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
-		2C59BC7B29CB356000299A56 /* libxyzcrossplatform.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzcrossplatform.dylib; path = ../libs/ios/libxyzcrossplatform.dylib; sourceTree = "<group>"; };
-		2C59BC7C29CB356000299A56 /* libps_plus.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libps_plus.dylib; path = ../libs/ios/libps_plus.dylib; sourceTree = "<group>"; };
-		2C59BC7D29CB356000299A56 /* libxyzpocketsphinx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzpocketsphinx.dylib; path = ../libs/ios/libxyzpocketsphinx.dylib; sourceTree = "<group>"; };
-		2C59BC7E29CB356000299A56 /* libxyzsphinxad.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzsphinxad.dylib; path = ../libs/ios/libxyzsphinxad.dylib; sourceTree = "<group>"; };
-		2C59BC7F29CB356000299A56 /* libxyzsphinxbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxyzsphinxbase.dylib; path = ../libs/ios/libxyzsphinxbase.dylib; sourceTree = "<group>"; };
+		2CB3B86229CB585C001921F1 /* libxyzsphinxad.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libxyzsphinxad.dylib; sourceTree = "<group>"; };
+		2CB3B86329CB585C001921F1 /* libxyzsphinxbase.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libxyzsphinxbase.dylib; sourceTree = "<group>"; };
+		2CB3B86429CB585C001921F1 /* libxyzcrossplatform.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libxyzcrossplatform.dylib; sourceTree = "<group>"; };
+		2CB3B86529CB585C001921F1 /* libps_plus.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libps_plus.dylib; sourceTree = "<group>"; };
+		2CB3B86629CB585C001921F1 /* libxyzpocketsphinx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libxyzpocketsphinx.dylib; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,12 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C59BC8029CB356000299A56 /* libxyzcrossplatform.dylib in Frameworks */,
-				2C59BC8129CB356000299A56 /* libps_plus.dylib in Frameworks */,
-				2C59BC8429CB356000299A56 /* libxyzsphinxbase.dylib in Frameworks */,
-				2C59BC8229CB356000299A56 /* libxyzpocketsphinx.dylib in Frameworks */,
-				2C59BC8329CB356000299A56 /* libxyzsphinxad.dylib in Frameworks */,
+				2CB3B86E29CB5898001921F1 /* libxyzsphinxad.dylib in Frameworks */,
+				2CB3B86C29CB5894001921F1 /* libxyzpocketsphinx.dylib in Frameworks */,
 				7C494DD0613F3CFEAFD51B15 /* Pods_Runner.framework in Frameworks */,
+				2CB3B87029CB589B001921F1 /* libxyzsphinxbase.dylib in Frameworks */,
+				2CB3B86729CB588D001921F1 /* libps_plus.dylib in Frameworks */,
+				2CB3B86A29CB5890001921F1 /* libxyzcrossplatform.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,11 +110,6 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
-				2C59BC7C29CB356000299A56 /* libps_plus.dylib */,
-				2C59BC7B29CB356000299A56 /* libxyzcrossplatform.dylib */,
-				2C59BC7D29CB356000299A56 /* libxyzpocketsphinx.dylib */,
-				2C59BC7E29CB356000299A56 /* libxyzsphinxad.dylib */,
-				2C59BC7F29CB356000299A56 /* libxyzsphinxbase.dylib */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
@@ -126,6 +144,11 @@
 		FE7D6883C01F20C9311FB6C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CB3B86529CB585C001921F1 /* libps_plus.dylib */,
+				2CB3B86429CB585C001921F1 /* libxyzcrossplatform.dylib */,
+				2CB3B86629CB585C001921F1 /* libxyzpocketsphinx.dylib */,
+				2CB3B86229CB585C001921F1 /* libxyzsphinxad.dylib */,
+				2CB3B86329CB585C001921F1 /* libxyzsphinxbase.dylib */,
 				B19484020E19E115AB78B07D /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
@@ -145,6 +168,7 @@
 				97C146EC1CF9000F007C117D /* Resources */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				D826D59E7687CADBEAE8D062 /* [CP] Embed Pods Frameworks */,
+				2CB3B86929CB588D001921F1 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -216,7 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin\n";
 		};
 		9740EEB61CF901F6004384FC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -329,6 +353,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -347,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -383,6 +408,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/",
 					"$(SDKROOT)/usr/lib/swift",
 					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/ios,
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterPlugin3;
@@ -416,6 +442,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -440,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -471,6 +498,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -489,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -527,6 +555,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/",
 					"$(SDKROOT)/usr/lib/swift",
 					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/ios,
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterPlugin3;
@@ -565,6 +594,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)/",
 					"$(SDKROOT)/usr/lib/swift",
 					/Users/davidbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/ios,
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterPlugin3;

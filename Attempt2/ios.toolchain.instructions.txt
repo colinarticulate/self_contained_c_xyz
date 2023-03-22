@@ -25,3 +25,11 @@ $ cmake --build . --config Release
 
 Issues:
 Space between -DPLATFORM= SIMULATORARM64, make sure there is none: -DPLATFORM=SIMULATORARM64
+
+4. Using cmake's Xcode generator for both iOS and simulator.
+$ cd iOS
+$ rm -r *
+$ cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=OS64COMBINED
+$ cmake --build . --config Release -- CODE_SIGNING_ALLOWED=NO
+$ cmake --install . --config Release
+

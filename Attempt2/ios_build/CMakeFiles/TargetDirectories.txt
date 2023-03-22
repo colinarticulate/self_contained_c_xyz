@@ -1,0 +1,7 @@
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ps_plus.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ALL_BUILD.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ZERO_CHECK.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir
