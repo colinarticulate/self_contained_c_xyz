@@ -1,0 +1,988 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: iOS - 15.4 - aarch64
+      The host system is: Darwin - 21.4.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang 
+      Build flags: 
+      Id flags: -c;--target=aarch64-apple-ios11.0-simulator 
+      
+      The output was:
+      0
+      objc[54997]: Class AppleTypeCRetimerRestoreInfoHelper is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60deb0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x10852c4f8). One of the two will be used. Which one is undefined.
+      objc[54997]: Class AppleTypeCRetimerFirmwareAggregateRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df00) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x10852c548). One of the two will be used. Which one is undefined.
+      objc[54997]: Class AppleTypeCRetimerFirmwareRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df50) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x10852c598). One of the two will be used. Which one is undefined.
+      objc[54997]: Class ATCRTRestoreInfoFTABFile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dfa0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x10852c5e8). One of the two will be used. Which one is undefined.
+      objc[54997]: Class AppleTypeCRetimerFirmwareCopier is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dff0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x10852c638). One of the two will be used. Which one is undefined.
+      objc[54997]: Class ATCRTRestoreInfoFTABSubfile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60e040) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x10852c688). One of the two will be used. Which one is undefined.
+      2023-03-22 13:32:14.395 xcodebuild[54997:1626855] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+      2023-03-22 13:32:14.395 xcodebuild[54997:1626855] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+      Command line invocation:
+          /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+      
+      User defaults from command line:
+          IDEPackageSupportUseBuiltinSCM = YES
+      
+      note: Using new build system
+      note: Planning
+      Analyze workspace
+      
+      Create build description
+      Build description signature: f75a8142bbae7cb9aaf3d98d3e88e604
+      Build description path: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/./XCBuildData/f75a8142bbae7cb9aaf3d98d3e88e604-desc.xcbuild
+      
+      note: Build preparation complete
+      warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+      CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xcodeproj
+          builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+      
+      warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'CompilerIdC' from project 'CompilerIdC')
+      warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdC' from project 'CompilerIdC')
+      MkDir /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          /bin/mkdir -p /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-all-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-generated-files.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-generated-files.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-project-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-project-headers.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/all-product-headers.yaml (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/all-product-headers.yaml
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-own-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/empty-CompilerIdC.plist (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/empty-CompilerIdC.plist
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList
+      
+      CompileC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CMakeCCompilerId.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          export LANG\\=en_US.US-ASCII
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target x86_64-apple-ios15.4-simulator -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/DerivedSources-normal/x86_64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/DerivedSources/x86_64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Developer/Library/Frameworks -MMD -MT dependencies -MF /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.d --serialize-diagnostics /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.dia -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CMakeCCompilerId.c -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CMakeCCompilerId.o
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList
+      
+      CompileC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CMakeCCompilerId.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          export LANG\\=en_US.US-ASCII
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-ios15.4-simulator -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/DerivedSources-normal/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/DerivedSources/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Developer/Library/Frameworks -MMD -MT dependencies -MF /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.d --serialize-diagnostics /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.dia -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CMakeCCompilerId.c -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o
+      
+      ProcessInfoPlistFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest/Info.plist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/empty-CompilerIdC.plist (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          builtin-infoPlistUtility /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/empty-CompilerIdC.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -format binary -platform iphonesimulator -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest/Info.plist
+      
+      Ld /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC normal x86_64 (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target x86_64-apple-ios15.4-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -L/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Developer/Library/Frameworks -filelist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_lto.o -Xlinker -objc_abi_version -Xlinker 2 -framework XCTest -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/CompilerIdC_dependency_info.dat -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC
+      
+      Ld /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC normal arm64 (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-ios15.4-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -L/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Developer/Library/Frameworks -filelist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_lto.o -Xlinker -objc_abi_version -Xlinker 2 -framework XCTest -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_dependency_info.dat -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC
+      
+      CreateUniversalBinary /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest/CompilerIdC normal arm64\\ x86_64 (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/arm64/Binary/CompilerIdC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Objects-normal/x86_64/Binary/CompilerIdC -output /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest/CompilerIdC
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+      
+      GenerateDSYMFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest.dSYM /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest/CompilerIdC -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest.dSYM
+      
+      PhaseScriptExecution Run\\ Script /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          /bin/sh -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.build/Debug-iphonesimulator/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+      2023-03-22 13:32:15.050 xcodebuild[54997:1626899]  iPhoneConnect: 📱<DVTiOSDevice (0x15ae43290), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> unable to mount developer disk image, (Error Domain=com.apple.dtdevicekit Code=601 "Could not locate device support files" UserInfo={NSLocalizedDescription=Could not locate device support files, NSLocalizedRecoverySuggestion=David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com., DVTRadarComponentKey=487927, DeviceType=iPhone12,8, NSUnderlyingError=0x6000038d5da0 {Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 "Unable to locate ideal DDI for platform: <DVTPlatform:0x600001a1a680:'com.apple.platform.iphoneos':<DVTFilePath:0x600001a1a600:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x600001a1a680:'com.apple.platform.iphoneos':<DVTFilePath:0x600001a1a600:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67, DVTRadarComponentKey=487927}}}) {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+          NSLocalizedDescription = "Could not locate device support files";
+          NSLocalizedRecoverySuggestion = "David\\U2019s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.";
+          NSUnderlyingError = "Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 \\"Unable to locate ideal DDI for platform: <DVTPlatform:0x600001a1a680:'com.apple.platform.iphoneos':<DVTFilePath:0x600001a1a600:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67\\" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x600001a1a680:'com.apple.platform.iphoneos':<DVTFilePath:0x600001a1a600:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67, DVTRadarComponentKey=487927}";
+      }
+      2023-03-22 13:32:15.050 xcodebuild[54997:1626855] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x15ae43290), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> -- An error occurred whilst preparing device for development -- Could not locate device support files
+      Domain: com.apple.dtdevicekit
+      Code: 601
+      Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.
+      User Info: {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+      }
+      --
+      Unable to locate ideal DDI for platform: <DVTPlatform:0x600001a1a680:'com.apple.platform.iphoneos':<DVTFilePath:0x600001a1a600:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67
+      Domain: com.apple.dt.DVTDeviceSupportFilesError
+      Code: 2
+      User Info: {
+          DVTRadarComponentKey = 487927;
+      }
+      --
+      2023-03-22 13:32:15.050 xcodebuild[54997:1626855] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x15ae43290), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> == Underlying device preparation errors ==
+      2023-03-22 13:32:15.050 xcodebuild[54997:1626855] [MT] iPhoneConnect: Could not locate device support files
+      Domain: com.apple.dtdevicekit
+      Code: 601
+      Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.
+      User Info: {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+      }
+      --
+      Unable to locate ideal DDI for platform: <DVTPlatform:0x600001a1a680:'com.apple.platform.iphoneos':<DVTFilePath:0x600001a1a600:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67
+      Domain: com.apple.dt.DVTDeviceSupportFilesError
+      Code: 2
+      User Info: {
+          DVTRadarComponentKey = 487927;
+      }
+      --
+      2023-03-22 13:32:15.050 xcodebuild[54997:1626855] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x15ae43290), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> == END: Underlying device preparation errors ==
+      GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+      ARCHS=arm64 x86_64
+      
+      CodeSign /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          export CODESIGN_ALLOCATE\\=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+          
+          Signing Identity:     "-"
+          
+          /usr/bin/codesign --force --sign - --timestamp\\=none --generate-entitlement-der /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest
+      
+      RegisterExecutionPolicyException /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          builtin-RegisterExecutionPolicyException /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest
+      
+      Touch /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC
+          /usr/bin/touch -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest
+      
+      ** BUILD SUCCEEDED **
+      
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.xctest/CompilerIdC"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.xctest/Info.plist"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdC/CompilerIdC.xctest/CompilerIdC
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ 
+      Build flags: 
+      Id flags: -c;--target=aarch64-apple-ios11.0-simulator 
+      
+      The output was:
+      0
+      objc[55169]: Class AppleTypeCRetimerRestoreInfoHelper is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60deb0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1086004f8). One of the two will be used. Which one is undefined.
+      objc[55169]: Class AppleTypeCRetimerFirmwareAggregateRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df00) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x108600548). One of the two will be used. Which one is undefined.
+      objc[55169]: Class AppleTypeCRetimerFirmwareRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df50) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x108600598). One of the two will be used. Which one is undefined.
+      objc[55169]: Class ATCRTRestoreInfoFTABFile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dfa0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1086005e8). One of the two will be used. Which one is undefined.
+      objc[55169]: Class AppleTypeCRetimerFirmwareCopier is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dff0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x108600638). One of the two will be used. Which one is undefined.
+      objc[55169]: Class ATCRTRestoreInfoFTABSubfile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60e040) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x108600688). One of the two will be used. Which one is undefined.
+      2023-03-22 13:32:16.435 xcodebuild[55169:1627611] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+      2023-03-22 13:32:16.435 xcodebuild[55169:1627611] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+      Command line invocation:
+          /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+      
+      User defaults from command line:
+          IDEPackageSupportUseBuiltinSCM = YES
+      
+      note: Using new build system
+      note: Planning
+      Analyze workspace
+      
+      Create build description
+      Build description signature: 75448821c92eef6ec2141c486fd8b888
+      Build description path: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/./XCBuildData/75448821c92eef6ec2141c486fd8b888-desc.xcbuild
+      
+      note: Build preparation complete
+      warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
+      CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xcodeproj
+          builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+      
+      warning: ONLY_ACTIVE_ARCH=YES requested with multiple ARCHS and no active architecture could be computed; building for all applicable architectures (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+      warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+      MkDir /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          /bin/mkdir -p /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/all-product-headers.yaml (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/all-product-headers.yaml
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/empty-CompilerIdCXX.plist (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/empty-CompilerIdCXX.plist
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList
+      
+      CompileC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CMakeCXXCompilerId.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          export LANG\\=en_US.US-ASCII
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target x86_64-apple-ios15.4-simulator -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/DerivedSources-normal/x86_64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/DerivedSources/x86_64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Developer/Library/Frameworks -MMD -MT dependencies -MF /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.dia -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CMakeCXXCompilerId.o
+      2023-03-22 13:32:16.908 xcodebuild[55169:1627662]  iPhoneConnect: 📱<DVTiOSDevice (0x12a70d9e0), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> unable to mount developer disk image, (Error Domain=com.apple.dtdevicekit Code=601 "Could not locate device support files" UserInfo={NSLocalizedDescription=Could not locate device support files, NSLocalizedRecoverySuggestion=David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com., DVTRadarComponentKey=487927, DeviceType=iPhone12,8, NSUnderlyingError=0x6000032093b0 {Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 "Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67, DVTRadarComponentKey=487927}}}) {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+          NSLocalizedDescription = "Could not locate device support files";
+          NSLocalizedRecoverySuggestion = "David\\U2019s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.";
+          NSUnderlyingError = "Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 \\"Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67\\" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67, DVTRadarComponentKey=487927}";
+      }
+      2023-03-22 13:32:16.908 xcodebuild[55169:1627611] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x12a70d9e0), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> -- An error occurred whilst preparing device for development -- Could not locate device support files
+      Domain: com.apple.dtdevicekit
+      Code: 601
+      Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.
+      User Info: {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+      }
+      --
+      Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67
+      Domain: com.apple.dt.DVTDeviceSupportFilesError
+      Code: 2
+      User Info: {
+          DVTRadarComponentKey = 487927;
+      }
+      --
+      2023-03-22 13:32:16.908 xcodebuild[55169:1627611] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x12a70d9e0), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> == Underlying device preparation errors ==
+      2023-03-22 13:32:16.908 xcodebuild[55169:1627611] [MT] iPhoneConnect: Could not locate device support files
+      Domain: com.apple.dtdevicekit
+      Code: 601
+      Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.
+      User Info: {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+      }
+      --
+      Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67
+      Domain: com.apple.dt.DVTDeviceSupportFilesError
+      Code: 2
+      User Info: {
+          DVTRadarComponentKey = 487927;
+      }
+      --
+      2023-03-22 13:32:16.908 xcodebuild[55169:1627611] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x12a70d9e0), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> == END: Underlying device preparation errors ==
+      
+      CompileC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CMakeCXXCompilerId.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          export LANG\\=en_US.US-ASCII
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-ios15.4-simulator -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/DerivedSources-normal/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/DerivedSources/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Developer/Library/Frameworks -MMD -MT dependencies -MF /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.dia -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o
+      
+      ProcessInfoPlistFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest/Info.plist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/empty-CompilerIdCXX.plist (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          builtin-infoPlistUtility /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/empty-CompilerIdCXX.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -format binary -platform iphonesimulator -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest/Info.plist
+      
+      Ld /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX normal x86_64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target x86_64-apple-ios15.4-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -L/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Developer/Library/Frameworks -filelist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_lto.o -Xlinker -objc_abi_version -Xlinker 2 -framework XCTest -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/CompilerIdCXX_dependency_info.dat -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX
+      
+      Ld /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX normal arm64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target arm64-apple-ios15.4-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -L/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Developer/Library/Frameworks -filelist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_lto.o -Xlinker -objc_abi_version -Xlinker 2 -framework XCTest -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_dependency_info.dat -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX
+      
+      CreateUniversalBinary /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest/CompilerIdCXX normal arm64\\ x86_64 (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/arm64/Binary/CompilerIdCXX /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Objects-normal/x86_64/Binary/CompilerIdCXX -output /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest/CompilerIdCXX
+      
+      WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+      
+      GenerateDSYMFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest.dSYM /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest/CompilerIdCXX -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest.dSYM
+      
+      PhaseScriptExecution Run\\ Script /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          /bin/sh -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.build/Debug-iphonesimulator/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+      GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+      ARCHS=arm64 x86_64
+      2023-03-22 13:32:17.109 xcodebuild[55169:1627662]  iPhoneConnect: 📱<DVTiOSDevice (0x12a70d9e0), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> unable to mount developer disk image, (Error Domain=com.apple.dtdevicekit Code=601 "Could not locate device support files" UserInfo={NSLocalizedDescription=Could not locate device support files, NSLocalizedRecoverySuggestion=David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com., DVTRadarComponentKey=487927, DeviceType=iPhone12,8, NSUnderlyingError=0x6000030d4c30 {Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 "Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67, DVTRadarComponentKey=487927}}}) {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+          NSLocalizedDescription = "Could not locate device support files";
+          NSLocalizedRecoverySuggestion = "David\\U2019s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.";
+          NSUnderlyingError = "Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 \\"Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67\\" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67, DVTRadarComponentKey=487927}";
+      }
+      2023-03-22 13:32:17.109 xcodebuild[55169:1627611] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x12a70d9e0), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> -- An error occurred whilst preparing device for development -- Could not locate device support files
+      Domain: com.apple.dtdevicekit
+      Code: 601
+      Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.
+      User Info: {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+      }
+      --
+      Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67
+      Domain: com.apple.dt.DVTDeviceSupportFilesError
+      Code: 2
+      User Info: {
+          DVTRadarComponentKey = 487927;
+      }
+      --
+      2023-03-22 13:32:17.109 xcodebuild[55169:1627611] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x12a70d9e0), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> == Underlying device preparation errors ==
+      2023-03-22 13:32:17.109 xcodebuild[55169:1627611] [MT] iPhoneConnect: Could not locate device support files
+      Domain: com.apple.dtdevicekit
+      Code: 601
+      Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.
+      User Info: {
+          DVTRadarComponentKey = 487927;
+          DeviceType = "iPhone12,8";
+      }
+      --
+      Unable to locate ideal DDI for platform: <DVTPlatform:0x600001065280:'com.apple.platform.iphoneos':<DVTFilePath:0x600001065200:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67
+      Domain: com.apple.dt.DVTDeviceSupportFilesError
+      Code: 2
+      User Info: {
+          DVTRadarComponentKey = 487927;
+      }
+      --
+      2023-03-22 13:32:17.110 xcodebuild[55169:1627611] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x12a70d9e0), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> == END: Underlying device preparation errors ==
+      
+      CodeSign /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          export CODESIGN_ALLOCATE\\=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+          
+          Signing Identity:     "-"
+          
+          /usr/bin/codesign --force --sign - --timestamp\\=none --generate-entitlement-der /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest
+      
+      RegisterExecutionPolicyException /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          builtin-RegisterExecutionPolicyException /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest
+      
+      Touch /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX
+          /usr/bin/touch -c /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest
+      
+      ** BUILD SUCCEEDED **
+      
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.xctest/CompilerIdCXX"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.xctest/Info.plist"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/3.26.0-rc6/CompilerIdCXX/CompilerIdCXX.xctest/CompilerIdCXX
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW"
+      binary: "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW"
+    cmakeVariables:
+      BUILD_LIBTOOL: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool"
+      CMAKE_ASM_COMPILER: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+      CMAKE_CXX_COMPILER: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-apple-ios11.0-simulator"
+      CMAKE_CXX_LINK_FLAGS: "-Wl,-search_paths_first -Wl,-headerpad_max_install_names"
+      CMAKE_C_COMPILER: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+      CMAKE_C_COMPILER_TARGET: "aarch64-apple-ios11.0-simulator"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_C_LINK_FLAGS: "-Wl,-search_paths_first -Wl,-headerpad_max_install_names"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_INSTALL_NAME_TOOL: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool"
+      CMAKE_OBJCXX_LINK_FLAGS: "-Wl,-search_paths_first -Wl,-headerpad_max_install_names"
+      CMAKE_OBJC_LINK_FLAGS: "-Wl,-search_paths_first -Wl,-headerpad_max_install_names"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk"
+      CMAKE_OSX_SYSROOT_INT: "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk"
+      DEPLOYMENT_TARGET: "11.0"
+      ENABLE_ARC: "ON"
+      ENABLE_BITCODE: "ON"
+      NAMED_LANGUAGE_SUPPORT: "ON"
+      PLATFORM: "SIMULATORARM64"
+      SDK_VERSION: "15.4"
+      XCODE_VERSION_INT: "13.3"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW
+        
+        Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_2cffa -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && objc[55328]: Class AppleTypeCRetimerRestoreInfoHelper is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60deb0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1060984f8). One of the two will be used. Which one is undefined.
+        objc[55328]: Class AppleTypeCRetimerFirmwareAggregateRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df00) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106098548). One of the two will be used. Which one is undefined.
+        objc[55328]: Class AppleTypeCRetimerFirmwareRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df50) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106098598). One of the two will be used. Which one is undefined.
+        objc[55328]: Class ATCRTRestoreInfoFTABFile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dfa0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1060985e8). One of the two will be used. Which one is undefined.
+        objc[55328]: Class AppleTypeCRetimerFirmwareCopier is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dff0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106098638). One of the two will be used. Which one is undefined.
+        objc[55328]: Class ATCRTRestoreInfoFTABSubfile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60e040) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106098688). One of the two will be used. Which one is undefined.
+        2023-03-22 13:32:18.357 xcodebuild[55328:1628264] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+        2023-03-22 13:32:18.358 xcodebuild[55328:1628264] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+        Command line invocation:
+            /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_2cffa -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+        
+        User defaults from command line:
+            HideShellScriptEnvironment = YES
+            IDEPackageSupportUseBuiltinSCM = YES
+        
+        note: Using new build system
+        note: Planning
+        Analyze workspace
+        
+        Create build description
+        Build description signature: 9f9f10ce1853d365f6b2357eb72ff9a8
+        Build description path: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/XCBuildData/9f9f10ce1853d365f6b2357eb72ff9a8-desc.xcbuild
+        
+        note: Build preparation complete
+        note: Building targets in dependency order
+        CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build
+        
+        CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug
+        
+        CompileC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_2cffa' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-ios11.0-simulator -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\\=\\"Debug-iphonesimulator\\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug -v -Wl,-v -MMD -MT dependencies -MF /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCCompilerABI.c -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.o
+        Apple clang version 13.1.6 (clang-1316.0.21.2)
+        Target: arm64-apple-ios11.0-simulator
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-ios11.0.0-simulator -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6 -dependency-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -D "CMAKE_INTDIR=\\"Debug-iphonesimulator\\"" -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/include -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources/arm64 -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdebug-compilation-dir=/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.o -x c /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 13.1.6 (clang-1316.0.21.2) default target arm64-apple-darwin21.4.0
+        ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/include"
+        ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources-normal/arm64"
+        ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources/arm64"
+        ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug (framework directory)
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        
+        WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_2cffa.LinkFileList (in target 'cmTC_2cffa' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW
+            write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_2cffa.LinkFileList
+        
+        Libtool /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/libcmTC_2cffa.a normal (in target 'cmTC_2cffa' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -L/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug -filelist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_2cffa.LinkFileList -dependency_info /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_2cffa_libtool_dependency_info.dat -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/libcmTC_2cffa.a
+        
+        ** BUILD SUCCEEDED **
+        
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_2cffa -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && objc[55328]: Class AppleTypeCRetimerRestoreInfoHelper is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60deb0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1060984f8). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55328]: Class AppleTypeCRetimerFirmwareAggregateRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df00) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106098548). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55328]: Class AppleTypeCRetimerFirmwareRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df50) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106098598). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55328]: Class ATCRTRestoreInfoFTABFile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dfa0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1060985e8). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55328]: Class AppleTypeCRetimerFirmwareCopier is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dff0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106098638). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55328]: Class ATCRTRestoreInfoFTABSubfile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60e040) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106098688). One of the two will be used. Which one is undefined.]
+        ignore line: [2023-03-22 13:32:18.357 xcodebuild[55328:1628264] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore]
+        ignore line: [2023-03-22 13:32:18.358 xcodebuild[55328:1628264] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore]
+        ignore line: [Command line invocation:]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_2cffa -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
+        ignore line: []
+        ignore line: [User defaults from command line:]
+        ignore line: [    HideShellScriptEnvironment = YES]
+        ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
+        ignore line: []
+        ignore line: [note: Using new build system]
+        ignore line: [note: Planning]
+        ignore line: [Analyze workspace]
+        ignore line: []
+        ignore line: [Create build description]
+        ignore line: [Build description signature: 9f9f10ce1853d365f6b2357eb72ff9a8]
+        ignore line: [Build description path: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/XCBuildData/9f9f10ce1853d365f6b2357eb72ff9a8-desc.xcbuild]
+        ignore line: []
+        ignore line: [note: Build preparation complete]
+        ignore line: [note: Building targets in dependency order]
+        ignore line: [CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build]
+        ignore line: []
+        ignore line: [CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug]
+        ignore line: []
+        ignore line: [CompileC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_2cffa' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-ios11.0-simulator -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\\=\\"Debug-iphonesimulator\\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug -v -Wl -v -MMD -MT dependencies -MF /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCCompilerABI.c -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.o]
+        ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2)]
+        ignore line: [Target: arm64-apple-ios11.0-simulator]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-ios11.0.0-simulator -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6 -dependency-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -D "CMAKE_INTDIR=\\"Debug-iphonesimulator\\"" -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/include -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources/arm64 -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdebug-compilation-dir=/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCCompilerABI.o -x c /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 13.1.6 (clang-1316.0.21.2) default target arm64-apple-darwin21.4.0]
+        ignore line: [ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/include"]
+        ignore line: [ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources-normal/arm64"]
+        ignore line: [ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources/arm64"]
+        ignore line: [ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/DerivedSources"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug (framework directory)]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: []
+        ignore line: [WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_2cffa.LinkFileList (in target 'cmTC_2cffa' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW]
+        ignore line: [    write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_2cffa.LinkFileList]
+        ignore line: []
+        ignore line: [Libtool /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/libcmTC_2cffa.a normal (in target 'cmTC_2cffa' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -L/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug -filelist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_2cffa.LinkFileList -dependency_info /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/build/cmTC_2cffa.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_2cffa_libtool_dependency_info.dat -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-8nc6mW/Debug/libcmTC_2cffa.a]
+        ignore line: []
+        ignore line: [** BUILD SUCCEEDED **]
+        ignore line: []
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj"
+      binary: "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj"
+    cmakeVariables:
+      BUILD_LIBTOOL: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool"
+      CMAKE_ASM_COMPILER: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+      CMAKE_CXX_COMPILER: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-apple-ios11.0-simulator"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_FLAGS_MINSIZEREL: "-Os -DNDEBUG"
+      CMAKE_CXX_FLAGS_RELEASE: "-O3 -DNDEBUG"
+      CMAKE_CXX_FLAGS_RELWITHDEBINFO: "-O2 -g -DNDEBUG"
+      CMAKE_CXX_LINK_FLAGS: "-Wl,-search_paths_first -Wl,-headerpad_max_install_names"
+      CMAKE_C_COMPILER: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+      CMAKE_C_COMPILER_TARGET: "aarch64-apple-ios11.0-simulator"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_LINK_FLAGS: "-Wl,-search_paths_first -Wl,-headerpad_max_install_names"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_INSTALL_NAME_TOOL: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/install_name_tool"
+      CMAKE_OBJCXX_LINK_FLAGS: "-Wl,-search_paths_first -Wl,-headerpad_max_install_names"
+      CMAKE_OBJC_LINK_FLAGS: "-Wl,-search_paths_first -Wl,-headerpad_max_install_names"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: "11.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk"
+      CMAKE_OSX_SYSROOT_INT: "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk"
+      DEPLOYMENT_TARGET: "11.0"
+      ENABLE_ARC: "ON"
+      ENABLE_BITCODE: "ON"
+      NAMED_LANGUAGE_SUPPORT: "ON"
+      PLATFORM: "SIMULATORARM64"
+      SDK_VERSION: "15.4"
+      XCODE_VERSION_INT: "13.3"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj
+        
+        Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_40837 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && objc[55359]: Class AppleTypeCRetimerRestoreInfoHelper is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60deb0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1064244f8). One of the two will be used. Which one is undefined.
+        objc[55359]: Class AppleTypeCRetimerFirmwareAggregateRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df00) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106424548). One of the two will be used. Which one is undefined.
+        objc[55359]: Class AppleTypeCRetimerFirmwareRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df50) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106424598). One of the two will be used. Which one is undefined.
+        objc[55359]: Class ATCRTRestoreInfoFTABFile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dfa0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1064245e8). One of the two will be used. Which one is undefined.
+        objc[55359]: Class AppleTypeCRetimerFirmwareCopier is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dff0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106424638). One of the two will be used. Which one is undefined.
+        objc[55359]: Class ATCRTRestoreInfoFTABSubfile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60e040) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106424688). One of the two will be used. Which one is undefined.
+        2023-03-22 13:32:19.232 xcodebuild[55359:1628428] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+        2023-03-22 13:32:19.232 xcodebuild[55359:1628428] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
+        Command line invocation:
+            /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_40837 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+        
+        User defaults from command line:
+            HideShellScriptEnvironment = YES
+            IDEPackageSupportUseBuiltinSCM = YES
+        
+        note: Using new build system
+        note: Planning
+        Analyze workspace
+        
+        Create build description
+        Build description signature: 77a9085556893c227add67fcde29cee9
+        Build description path: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/XCBuildData/77a9085556893c227add67fcde29cee9-desc.xcbuild
+        
+        note: Build preparation complete
+        note: Building targets in dependency order
+        CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build
+        
+        CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug
+        
+        WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_40837.LinkFileList (in target 'cmTC_40837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj
+            write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_40837.LinkFileList
+        
+        CompileC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_40837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-ios11.0-simulator -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR\\=\\"Debug-iphonesimulator\\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug -v -Wl,-v -MMD -MT dependencies -MF /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.o
+        2023-03-22 13:32:19.720 xcodebuild[55359:1628429]  iPhoneConnect: 📱<DVTiOSDevice (0x129ea8190), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> unable to mount developer disk image, (Error Domain=com.apple.dtdevicekit Code=601 "Could not locate device support files" UserInfo={NSLocalizedDescription=Could not locate device support files, NSLocalizedRecoverySuggestion=David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com., DVTRadarComponentKey=487927, DeviceType=iPhone12,8, NSUnderlyingError=0x60000320df20 {Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 "Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67, DVTRadarComponentKey=487927}}}) {
+            DVTRadarComponentKey = 487927;
+            DeviceType = "iPhone12,8";
+            NSLocalizedDescription = "Could not locate device support files";
+            NSLocalizedRecoverySuggestion = "David\\U2019s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.";
+            NSUnderlyingError = "Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 \\"Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67\\" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67, DVTRadarComponentKey=487927}";
+        }
+        2023-03-22 13:32:19.720 xcodebuild[55359:1628428] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x129ea8190), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> -- An error occurred whilst preparing device for development -- Could not locate device support files
+        Domain: com.apple.dtdevicekit
+        Code: 601
+        Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.
+        User Info: {
+            DVTRadarComponentKey = 487927;
+            DeviceType = "iPhone12,8";
+        }
+        --
+        Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67
+        Domain: com.apple.dt.DVTDeviceSupportFilesError
+        Code: 2
+        User Info: {
+            DVTRadarComponentKey = 487927;
+        }
+        --
+        2023-03-22 13:32:19.720 xcodebuild[55359:1628428] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x129ea8190), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> == Underlying device preparation errors ==
+        2023-03-22 13:32:19.720 xcodebuild[55359:1628428] [MT] iPhoneConnect: Could not locate device support files
+        Domain: com.apple.dtdevicekit
+        Code: 601
+        Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.
+        User Info: {
+            DVTRadarComponentKey = 487927;
+            DeviceType = "iPhone12,8";
+        }
+        --
+        Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, version: 16.3.1, build: 20D67
+        Domain: com.apple.dt.DVTDeviceSupportFilesError
+        Code: 2
+        User Info: {
+            DVTRadarComponentKey = 487927;
+        }
+        --
+        2023-03-22 13:32:19.720 xcodebuild[55359:1628428] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x129ea8190), David’s iPhone, iPhone, 16.3.1 (20D67), 00008030-00054C243685402E> == END: Underlying device preparation errors ==
+        Apple clang version 13.1.6 (clang-1316.0.21.2)
+        Target: arm64-apple-ios11.0-simulator
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-ios11.0.0-simulator -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6 -dependency-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -D "CMAKE_INTDIR=\\"Debug-iphonesimulator\\"" -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/include -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources/arm64 -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.dia -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 13.1.6 (clang-1316.0.21.2) default target arm64-apple-darwin21.4.0
+        ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/include"
+        ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources-normal/arm64"
+        ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources/arm64"
+        ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug (framework directory)
+         /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        
+        Libtool /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/libcmTC_40837.a normal (in target 'cmTC_40837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -L/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug -filelist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_40837.LinkFileList -dependency_info /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_40837_libtool_dependency_info.dat -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/libcmTC_40837.a
+        
+        ** BUILD SUCCEEDED **
+        
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include/c++/v1]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include/c++/v1]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_40837 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && objc[55359]: Class AppleTypeCRetimerRestoreInfoHelper is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60deb0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1064244f8). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55359]: Class AppleTypeCRetimerFirmwareAggregateRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df00) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106424548). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55359]: Class AppleTypeCRetimerFirmwareRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60df50) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106424598). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55359]: Class ATCRTRestoreInfoFTABFile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dfa0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x1064245e8). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55359]: Class AppleTypeCRetimerFirmwareCopier is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60dff0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106424638). One of the two will be used. Which one is undefined.]
+        ignore line: [objc[55359]: Class ATCRTRestoreInfoFTABSubfile is implemented in both /usr/lib/libauthinstall.dylib (0x1ec60e040) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x106424688). One of the two will be used. Which one is undefined.]
+        ignore line: [2023-03-22 13:32:19.232 xcodebuild[55359:1628428] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore]
+        ignore line: [2023-03-22 13:32:19.232 xcodebuild[55359:1628428] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore]
+        ignore line: [Command line invocation:]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_40837 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
+        ignore line: []
+        ignore line: [User defaults from command line:]
+        ignore line: [    HideShellScriptEnvironment = YES]
+        ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
+        ignore line: []
+        ignore line: [note: Using new build system]
+        ignore line: [note: Planning]
+        ignore line: [Analyze workspace]
+        ignore line: []
+        ignore line: [Create build description]
+        ignore line: [Build description signature: 77a9085556893c227add67fcde29cee9]
+        ignore line: [Build description path: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/XCBuildData/77a9085556893c227add67fcde29cee9-desc.xcbuild]
+        ignore line: []
+        ignore line: [note: Build preparation complete]
+        ignore line: [note: Building targets in dependency order]
+        ignore line: [CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build]
+        ignore line: []
+        ignore line: [CreateBuildDirectory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug]
+        ignore line: []
+        ignore line: [WriteAuxiliaryFile /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_40837.LinkFileList (in target 'cmTC_40837' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj]
+        ignore line: [    write-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_40837.LinkFileList]
+        ignore line: []
+        ignore line: [CompileC /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.o /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_40837' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-ios11.0-simulator -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR\\=\\"Debug-iphonesimulator\\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/include -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources/arm64 -I/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug -v -Wl -v -MMD -MT dependencies -MF /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.dia -c /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.o]
+        ignore line: [2023-03-22 13:32:19.720 xcodebuild[55359:1628429]  iPhoneConnect: 📱<DVTiOSDevice (0x129ea8190)  David’s iPhone  iPhone  16.3.1 (20D67)  00008030-00054C243685402E> unable to mount developer disk image  (Error Domain=com.apple.dtdevicekit Code=601 "Could not locate device support files" UserInfo={NSLocalizedDescription=Could not locate device support files  NSLocalizedRecoverySuggestion=David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.  DVTRadarComponentKey=487927  DeviceType=iPhone12 8  NSUnderlyingError=0x60000320df20 {Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 "Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>  version: 16.3.1  build: 20D67" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>  version: 16.3.1  build: 20D67  DVTRadarComponentKey=487927}}}) {]
+        ignore line: [    DVTRadarComponentKey = 487927]
+        ignore line: []
+        ignore line: [    DeviceType = "iPhone12 8"]
+        ignore line: []
+        ignore line: [    NSLocalizedDescription = "Could not locate device support files"]
+        ignore line: []
+        ignore line: [    NSLocalizedRecoverySuggestion = "David\\U2019s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com."]
+        ignore line: []
+        ignore line: [    NSUnderlyingError = "Error Domain=com.apple.dt.DVTDeviceSupportFilesError Code=2 \\"Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>  version: 16.3.1  build: 20D67\\" UserInfo={NSLocalizedDescription=Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>  version: 16.3.1  build: 20D67  DVTRadarComponentKey=487927}"]
+        ignore line: []
+        ignore line: [}]
+        ignore line: [2023-03-22 13:32:19.720 xcodebuild[55359:1628428] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x129ea8190)  David’s iPhone  iPhone  16.3.1 (20D67)  00008030-00054C243685402E> -- An error occurred whilst preparing device for development -- Could not locate device support files]
+        ignore line: [Domain: com.apple.dtdevicekit]
+        ignore line: [Code: 601]
+        ignore line: [Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.]
+        ignore line: [User Info: {]
+        ignore line: [    DVTRadarComponentKey = 487927]
+        ignore line: []
+        ignore line: [    DeviceType = "iPhone12 8"]
+        ignore line: []
+        ignore line: [}]
+        ignore line: [--]
+        ignore line: [Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>  version: 16.3.1  build: 20D67]
+        ignore line: [Domain: com.apple.dt.DVTDeviceSupportFilesError]
+        ignore line: [Code: 2]
+        ignore line: [User Info: {]
+        ignore line: [    DVTRadarComponentKey = 487927]
+        ignore line: []
+        ignore line: [}]
+        ignore line: [--]
+        ignore line: [2023-03-22 13:32:19.720 xcodebuild[55359:1628428] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x129ea8190)  David’s iPhone  iPhone  16.3.1 (20D67)  00008030-00054C243685402E> == Underlying device preparation errors ==]
+        ignore line: [2023-03-22 13:32:19.720 xcodebuild[55359:1628428] [MT] iPhoneConnect: Could not locate device support files]
+        ignore line: [Domain: com.apple.dtdevicekit]
+        ignore line: [Code: 601]
+        ignore line: [Recovery Suggestion: David’s iPhone may be running a version of iOS that is not supported by this version of Xcode. You can download the latest version of Xcode from the Mac App Store or developer.apple.com.]
+        ignore line: [User Info: {]
+        ignore line: [    DVTRadarComponentKey = 487927]
+        ignore line: []
+        ignore line: [    DeviceType = "iPhone12 8"]
+        ignore line: []
+        ignore line: [}]
+        ignore line: [--]
+        ignore line: [Unable to locate ideal DDI for platform: <DVTPlatform:0x6000010ddb80:'com.apple.platform.iphoneos':<DVTFilePath:0x6000010ddb00:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>  version: 16.3.1  build: 20D67]
+        ignore line: [Domain: com.apple.dt.DVTDeviceSupportFilesError]
+        ignore line: [Code: 2]
+        ignore line: [User Info: {]
+        ignore line: [    DVTRadarComponentKey = 487927]
+        ignore line: []
+        ignore line: [}]
+        ignore line: [--]
+        ignore line: [2023-03-22 13:32:19.720 xcodebuild[55359:1628428] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x129ea8190)  David’s iPhone  iPhone  16.3.1 (20D67)  00008030-00054C243685402E> == END: Underlying device preparation errors ==]
+        ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2)]
+        ignore line: [Target: arm64-apple-ios11.0-simulator]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-ios11.0.0-simulator -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=15.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6 -dependency-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -D "CMAKE_INTDIR=\\"Debug-iphonesimulator\\"" -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/include -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources/arm64 -I /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources -F/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.dia -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/CMakeCXXCompilerABI.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 13.1.6 (clang-1316.0.21.2) default target arm64-apple-darwin21.4.0]
+        ignore line: [ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/include"]
+        ignore line: [ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources-normal/arm64"]
+        ignore line: [ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources/arm64"]
+        ignore line: [ignoring nonexistent directory "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/DerivedSources"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug (framework directory)]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: []
+        ignore line: [Libtool /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/libcmTC_40837.a normal (in target 'cmTC_40837' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk -L/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug -filelist /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_40837.LinkFileList -dependency_info /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/build/cmTC_40837.build/Debug-iphonesimulator/Objects-normal/arm64/cmTC_40837_libtool_dependency_info.dat -o /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios/CMakeFiles/CMakeScratch/TryCompile-0YZqfj/Debug/libcmTC_40837.a]
+        ignore line: []
+        ignore line: [** BUILD SUCCEEDED **]
+        ignore line: []
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...

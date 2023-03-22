@@ -115,7 +115,7 @@ FILE* crossplatformfmemopen(void* buf, size_t size, const char* mode) {
     }
 }
 
-#elif defined(__APPLE__)//MacOS iOS
+#elif defined(__APPLE__) || defined (__ARM_ARCH) //|| defined (TARGET_OS_IPHONE)//MacOS iOS
 //
 // Copyright 2012 Jeff Verkoeyen
 // Originally ported from https://github.com/ingenuitas/python-tesseract/blob/master/fmemopen.c

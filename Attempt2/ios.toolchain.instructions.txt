@@ -1,0 +1,27 @@
+1. Using cmake's Xcode generator
+$ cd iOS
+$ rm -r *
+$ cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=OS64
+$ cmake --build . --config Release
+
+Issues:
+Code signing:
+https://github.com/leetal/ios-cmake/issues/141
+$ cmake --build . -- CODE_SIGNING_ALLOWED=NO
+therefore:
+$ cmake --build . --config Release -- CODE_SIGNING_ALLOWED=NO
+
+2. Cmake pure and simple
+$ cd iOS
+$ rm -r *
+$ cmake .. -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=OS64
+$ cmake --build . --config Release
+
+3. Using cmake's Xcode generator only for simulator.
+$ cd iOS
+$ rm -r *
+$ cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=SIMULATORARM64
+$ cmake --build . --config Release
+
+Issues:
+Space between -DPLATFORM= SIMULATORARM64, make sure there is none: -DPLATFORM=SIMULATORARM64

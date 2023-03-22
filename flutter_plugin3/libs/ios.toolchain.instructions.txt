@@ -1,0 +1,9 @@
+$ cd iOS
+$ rm -r *
+& cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=OS64
+cmake --build . --config Release
+
+
+
+cmake .. -G Xcode -DCMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM="David Barbera" -DCMAKE_TOOLCHAIN_FILE=../ios.toolchain.cmake -DPLATFORM=OS64
+
