@@ -1,0 +1,2 @@
+ninja: Entering directory `/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/android/app/.cxx/Debug/4y522z6i/armeabi-v7a'
+ninja: no work to do.

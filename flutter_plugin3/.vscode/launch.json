@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Native Android (lldb)",
+            "program": "${workspaceFolder}//build/app/outputs/apk/debug/app-debug.apk",
+            "args": [],
+            "cwd": "${workspaceFolder}/build/app/outputs/apk/debug",
+            // "linux":{
+            //     "miDebuggerPath": "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/lldb",
+            //     "MIMode": "lldb"
+            // }
+        },
+        {
             "name": "flutter_plugin3",
             "request": "launch",
             "type": "dart"
@@ -20,6 +32,49 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
+        },
+        {
+            "name": "Debug Native Linux",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/linux/x64/debug/bundle/flutter_plugin3",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/linux/x64/debug/bundle",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]//,            "preLaunchTask": 
+        },
+        {
+            "name": "Debug Native Android",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libps_plus.so",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a",
+            "environment": [],
+            "externalConsole": false,
+            
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],//,            "preLaunchTask": 
+            "linux":{
+                "miDebuggerPath": "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/lldb",
+                "MIMode": "gdb"
+            }
         }
+
     ]
 }

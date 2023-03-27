@@ -1,4 +1,12 @@
-add_library(xyzcrossplatform SHARED crossplatform.c)
+if(ANDROID)
+    add_library(xyzcrossplatform SHARED android/fmemopen.c android/getline.c)
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
+    add_library(xyzcrossplatform SHARED macos/fmemopen.c)
+elseif(CMAKE_SYSTEM_NAME STREQUAL "iOS")
+    add_library(xyzcrossplatform SHARED ios/fmemopen.c)
+else()
+    add_library(xyzcrossplatform SHARED linux/fmemopen.c linux/getline.c)
+endif()
 set_property(TARGET xyzcrossplatform PROPERTY C_STANDARD 11)
 
 target_include_directories(

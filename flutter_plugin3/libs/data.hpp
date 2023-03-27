@@ -3,6 +3,7 @@
 
 #include <string>
 #include <string.h>
+#include <crossplatform.h>
 
 #include <xyzsphinxbase/err.h>
 
@@ -789,7 +790,7 @@ char* get_audiofile(const char *ctl_file, const char *audio_dir, const char *ext
         return NULL;
     }
 
-    if ((read = getline(&line, &len, file))==-1){
+    if ((read = crossplatformgetline(&line, &len, file))==-1){
         E_ERROR_SYSTEM("Ctl file (%s) is empty.", ctl_file);
         return NULL;
     };

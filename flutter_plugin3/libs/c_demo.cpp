@@ -240,7 +240,9 @@ void delete_results_sender_batch(ArrayOfStrings* results) {
 
 EXPORT
 ArrayOfStrings* ps_demo(const char* path) {
+    printf("%s\n",path);
     std::string data_path(path);
+    printf("%s\n", data_path.data());
     PS_DYNAMIC_DATA ps_data(params125, params125_size,
                         params72, params72_size, 
                         params80, params80_size,
