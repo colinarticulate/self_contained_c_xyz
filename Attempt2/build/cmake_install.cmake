@@ -1,4 +1,4 @@
-# Install script for directory: /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2
+# Install script for directory: /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,17 +44,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzpocketsphinx/cmake_install.cmake")
+  include("/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzpocketsphinx/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzsphinxbase/cmake_install.cmake")
+  include("/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzsphinxbase/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzcrossplatform/cmake_install.cmake")
+  include("/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzcrossplatform/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

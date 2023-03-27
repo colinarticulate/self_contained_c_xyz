@@ -15,6 +15,7 @@ cmake_policy(SET CMP0063 NEW)
 
 # Load bundled libraries from the lib/ directory relative to the binary.
 set(CMAKE_INSTALL_RPATH "$ORIGIN/lib")
+add_subdirectory("./libs")#I added this line
 
 # Root filesystem for cross-building.
 if(FLUTTER_TARGET_PLATFORM_SYSROOT)
@@ -136,3 +137,7 @@ if(NOT CMAKE_BUILD_TYPE MATCHES "Debug")
   install(FILES "${AOT_LIBRARY}" DESTINATION "${INSTALL_BUNDLE_LIB_DIR}"
     COMPONENT Runtime)
 endif()
+
+
+# I add this second line so, libps_plus.so can be found
+install(FILES ${PROJECT_BINARY_DIR}/libs/libps_plus.so DESTINATION "${INSTALL_BUNDLE_LIB_DIR}" COMPONENT Runtime)

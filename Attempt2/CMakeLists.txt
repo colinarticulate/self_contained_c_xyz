@@ -24,13 +24,13 @@ target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
 # target_include_directories(xyzcrossplatform PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/crossplatform)
 
 #add_executable(ps_plus ps_plus.cpp )
-# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of the executable
-# add_executable(ps_plus c_demo_exec.cpp )
-add_library(ps_plus
-  SHARED
-  ./c_demo.cpp
-  #exports.def
-)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin) #Final output of the executable
+add_executable(ps_plus c_demo_exec.cpp )
+# add_library(ps_plus
+#   SHARED
+#   ./c_demo.cpp
+#   #exports.def
+# )
 set_property(TARGET ps_plus PROPERTY CXX_STANDARD 11)
 
 #target_link_libraries(ps_plus PUBLIC xyzpocketsphinx)

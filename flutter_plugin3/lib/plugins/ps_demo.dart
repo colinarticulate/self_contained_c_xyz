@@ -23,7 +23,10 @@ class FFIBridge {
 
     //nativeApiLib = Platform.isMacOS || Platform.isIOS ? DynamicLibrary.process() : (DynamicLibrary.open('libapi.so')); // android and linux
     //nativeApiLib = DynamicLibrary.open('libapi.dylib');
-    nativeApiLib = DynamicLibrary.open('libps_plus.dylib');
+    //nativeApiLib = DynamicLibrary.open('libps_plus.dylib');
+    nativeApiLib = Platform.isMacOS || Platform.isIOS
+        ? nativeApiLib = DynamicLibrary.open('libps_plus.dylib') //MacOS ios
+        : (DynamicLibrary.open('libps_plus.so')); // android and linux
 
     final _add = nativeApiLib
         .lookup<NativeFunction<Int32 Function(Int32, Int32)>>('add');
