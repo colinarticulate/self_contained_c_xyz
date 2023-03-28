@@ -12,10 +12,10 @@
 						2,
 						3
 					],
-					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.15"
+						"string" : "3.6.0"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -26,10 +26,10 @@
 				},
 				{
 					"build" : "xyzpocketsphinx",
-					"jsonFile" : "directory-xyzpocketsphinx-Release-dd2123b9ce8e045e5b91.json",
+					"jsonFile" : "directory-xyzpocketsphinx-Debug-dd2123b9ce8e045e5b91.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.15"
+						"string" : "3.6.0"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -41,10 +41,10 @@
 				},
 				{
 					"build" : "xyzsphinxbase",
-					"jsonFile" : "directory-xyzsphinxbase-Release-22a36f042e83b5d0ad11.json",
+					"jsonFile" : "directory-xyzsphinxbase-Debug-22a36f042e83b5d0ad11.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.15"
+						"string" : "3.6.0"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -57,10 +57,10 @@
 				},
 				{
 					"build" : "xyzcrossplatform",
-					"jsonFile" : "directory-xyzcrossplatform-Release-798e2048d0911e51ac0e.json",
+					"jsonFile" : "directory-xyzcrossplatform-Debug-798e2048d0911e51ac0e.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.15"
+						"string" : "3.6.0"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -71,7 +71,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -98,35 +98,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ps_plus::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ps_plus-Release-0d7ca421f2cc0ae72c54.json",
+					"jsonFile" : "target-ps_plus-Debug-53e3a63a64f5cd6f794a.json",
 					"name" : "ps_plus",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "xyzcrossplatform::@d0baed5698406c57c82c",
-					"jsonFile" : "target-xyzcrossplatform-Release-4b420754b4d004b848f0.json",
+					"jsonFile" : "target-xyzcrossplatform-Debug-60020f744407279cb3f8.json",
 					"name" : "xyzcrossplatform",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "xyzpocketsphinx::@cd3ca0d354e9bb24a08e",
-					"jsonFile" : "target-xyzpocketsphinx-Release-2247322603cb1d40c0b5.json",
+					"jsonFile" : "target-xyzpocketsphinx-Debug-53e89aa3de6218921672.json",
 					"name" : "xyzpocketsphinx",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "xyzsphinxad::@522354f7d7865b52d40b",
-					"jsonFile" : "target-xyzsphinxad-Release-8edb2f39ede16261f2f0.json",
+					"jsonFile" : "target-xyzsphinxad-Debug-6ac820a7292ba653e4b3.json",
 					"name" : "xyzsphinxad",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "xyzsphinxbase::@522354f7d7865b52d40b",
-					"jsonFile" : "target-xyzsphinxbase-Release-0cb4e30920341c6d8e48.json",
+					"jsonFile" : "target-xyzsphinxbase-Debug-90d531d4a3748b3950c3.json",
 					"name" : "xyzsphinxbase",
 					"projectIndex" : 0
 				}

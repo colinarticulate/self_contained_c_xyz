@@ -70,7 +70,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-O3 -DNDEBUG"
+					"fragment" : "-DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -g  -fno-limit-debug-info -fPIE"
 				},
 				{
 					"backtrace" : 3,
@@ -154,7 +154,11 @@
 			"sourceIndexes" : 
 			[
 				0
-			]
+			],
+			"sysroot" : 
+			{
+				"path" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+			}
 		}
 	],
 	"dependencies" : 
@@ -182,16 +186,12 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O3 -DNDEBUG",
+				"fragment" : "-DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -g  -fno-limit-debug-info",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Qunused-arguments -Wl,--no-undefined  -Wl,--gc-sections",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzpocketsphinx:/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzsphinxbase:/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build/xyzcrossplatform",
-				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
@@ -210,9 +210,17 @@
 				"backtrace" : 2,
 				"fragment" : "xyzcrossplatform/libxyzcrossplatform.so",
 				"role" : "libraries"
+			},
+			{
+				"fragment" : "-latomic -lm",
+				"role" : "libraries"
 			}
 		],
-		"language" : "CXX"
+		"language" : "CXX",
+		"sysroot" : 
+		{
+			"path" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+		}
 	},
 	"name" : "ps_plus",
 	"nameOnDisk" : "ps_plus",
