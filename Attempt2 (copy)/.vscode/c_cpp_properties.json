@@ -1,0 +1,58 @@
+{
+    // "env": {
+    //     "myDefaultIncludePath": [
+    //         "${myDefaultIncludePath}",
+    //         "/home/dbarbera/Repositories/mySphinx/sphinxbase/include",
+    //         "/home/dbarbera/Repositories/mySphinx/sphinxbase/include/sphinxbase",
+    //         "/home/dbarbera/Repositories/mySphinx/pocketsphinx/include"
+    //     ],
+    //     "myCompilerPath": "/usr/bin/gcc"
+    // },
+    "configurations": [
+        {
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "includePath": [
+                "${workspaceFolder}"
+                // "/usr/include",
+                // "/usr/include/c++/9",
+                // "/usr/include/clang/10/include",
+                // "/usr/include/boost",
+                // "/usr/include/x86_64-linux-gnu/c++/9",
+                // "/home/dbarbera/Repositories/mySphinx/sphinxbase/include",
+                // "/home/dbarbera/Repositories/mySphinx/sphinxbase/include/sphinxbase",
+                // "/home/dbarbera/Repositories/mySphinx/pocketsphinx/include"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "configurationProvider": "ms-vscode.cmake-tools"
+        },
+        {
+            "name": "Android",
+            "intelliSenseMode": "clang-x64",//"clang-arm64",
+            "includePath": [
+                "${workspaceFolder}"
+            ],
+            "compilerPath": "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

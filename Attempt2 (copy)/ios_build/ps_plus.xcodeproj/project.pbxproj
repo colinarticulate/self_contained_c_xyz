@@ -1,0 +1,2324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		34AB5A2DF8BA4015A73744DA /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5CD358136E58479F9C1696E4 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				ECE2DD287E9B32B9888234C4 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		539F4152CA424128A5C3D1CC /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 908BA37243BF4AF2835EA685 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				47A8487F6DBCBA49454205A8 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				417FD2D42F6B4B5DA750C210 /* PBXTargetDependency */,
+				F980B3E9DE8749FA9B063E82 /* PBXTargetDependency */,
+				EE8B390AD8B64D7B93EC1A41 /* PBXTargetDependency */,
+				0F792545A66649C4BF596DF1 /* PBXTargetDependency */,
+				56B9B656066646D7B9616C50 /* PBXTargetDependency */,
+				CD0EA018CF7A456E9A6F3D44 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		012B03B3BAFA4E78821F11F4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */ = {isa = PBXBuildFile; fileRef = A321E06A209649CE9381F47B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */; };
+		061C1A09275F4FA3A2488E62 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l */ = {isa = PBXBuildFile; fileRef = 28B455553E704ED5B61500C1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l */; };
+		0801BD6429CD416FA807BA87 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */ = {isa = PBXBuildFile; fileRef = 7E7E9D6220B74DBBB894F48C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */; };
+		09D4BD8E6A3E46818AC84DEE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */ = {isa = PBXBuildFile; fileRef = 4A0960A8B74C465EA6A7A106 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */; };
+		0FB0717D56B44057BC0AAC20 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */ = {isa = PBXBuildFile; fileRef = 70B1E3F071B24CC6B6CBFB25 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */; };
+		13EC2107949848C69FDFBE78 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */ = {isa = PBXBuildFile; fileRef = 135D73EAD2244B4DA3687ECA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */; };
+		14EAD88E99074D75AC0893C4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slamch.c */ = {isa = PBXBuildFile; fileRef = 975950F265344D9BA30E725E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slamch.c */; };
+		15AEE20CBE11451C817FED2D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */ = {isa = PBXBuildFile; fileRef = F8743E781C15401682554637 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */; };
+		16FE69C1760F461CBED736DA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */ = {isa = PBXBuildFile; fileRef = 1235F7CADBD7430B8F8CB4AA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */; };
+		175C4713267C430D8D09F590 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/vector.c */ = {isa = PBXBuildFile; fileRef = E5F8AEFCA6784642ADB12F9B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/vector.c */; };
+		1761B7C2D9244F64A7271F0F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/mdef.c */ = {isa = PBXBuildFile; fileRef = 12AAE88CCE0849F9A60AE0E2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/mdef.c */; };
+		1E644834F8D949B396C5A285 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */ = {isa = PBXBuildFile; fileRef = F6ED643690E045AAAA97DA2E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */; };
+		23B153B93E8F4CB0AB8549D4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */ = {isa = PBXBuildFile; fileRef = 4D4A62A9899B4218B31A5F7D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */; };
+		254AA35673BA4E20AD6C1357 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/agc.c */ = {isa = PBXBuildFile; fileRef = 7B9E437C40AA44EBB7694BF7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/agc.c */; };
+		26B4D19B1FC1483B83C15D77 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */ = {isa = PBXBuildFile; fileRef = 6E7AF6603BD9480791C12C1A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */; };
+		26B68B03FF8D404195F32774 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */ = {isa = PBXBuildFile; fileRef = 077218C6E64A4408B68B0DD7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */; };
+		26BF49EE030B476EBBA8EA4F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */ = {isa = PBXBuildFile; fileRef = 4E6E3CC2F05640B0BC929138 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */; };
+		2AE395C45F174D0A989FED51 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */ = {isa = PBXBuildFile; fileRef = 7E6D2847246E4E1EA1671FAE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */; };
+		2FEB47FC9FF442668DEDB6B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */ = {isa = PBXBuildFile; fileRef = 68DF221F5F4B4484B1BC2CB8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */; };
+		38A0322C17BC4BE085D46F78 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/errno.c */ = {isa = PBXBuildFile; fileRef = F28EDC48FB7C4EEBA70E9623 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/errno.c */; };
+		38DFA3CEC6594EE1A329CFFF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = C1A878FD60014AD8B306C73F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/CMakeLists.txt */; };
+		395800A310B84E219AC82D8C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */ = {isa = PBXBuildFile; fileRef = FCBBD1DD50C143A5B2385BCB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */; };
+		41304B5B830645158D5830AC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */ = {isa = PBXBuildFile; fileRef = E2B237EDE8F644F49DDA6238 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */; };
+		4342947E801548F6B5E0DF28 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/pio.c */ = {isa = PBXBuildFile; fileRef = 1BFA25005A0147D59F795FC8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/pio.c */; };
+		45C436255EDF40AA9A7BFFD1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ps_plus.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 8D486A470B8A43F189CFCBBB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ps_plus.dir/Info.plist */; };
+		4EC6749AAD594476957F9DFB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */ = {isa = PBXBuildFile; fileRef = FFDE721902B1411DB4EAA289 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */; };
+		5276DCE55E604190AA493037 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */ = {isa = PBXBuildFile; fileRef = C8F4C029E82141EB9F8C0618 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */; };
+		544BD5AD19AA4906BB8EBD93 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */ = {isa = PBXBuildFile; fileRef = C4EF29B3DC9140B6A4FAA113 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */; };
+		58B1FA96CB7F4DAAB2FEDAE8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/logmath.c */ = {isa = PBXBuildFile; fileRef = B9ADB0AA75864F6DB8643B0C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/logmath.c */; };
+		5976FACFBF394EBCA12FC213 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */ = {isa = PBXBuildFile; fileRef = 9F0A987EE9DB4091AB5B6C5A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */; };
+		5A6A892480F04611B9B9D411 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */ = {isa = PBXBuildFile; fileRef = D41695DDA5EE411895DA7E8B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */; };
+		5C9EE40157E446E99A2E80B8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */ = {isa = PBXBuildFile; fileRef = 6A25B48EA3D949DEA4D13F6C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */; };
+		6023D4466DA14DB09EC2DC89 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */ = {isa = PBXBuildFile; fileRef = 9E0B9068DB8643DF985D55A3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */; };
+		60B48B83A95244ECB5AA9FB6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */ = {isa = PBXBuildFile; fileRef = EC524D2B82E445A08731151B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */; };
+		613CED519751454BB354BEDF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */ = {isa = PBXBuildFile; fileRef = EBC75531E3814B48A4C5DBB3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */; };
+		653CADAE9C774D2B869FED87 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/err.c */ = {isa = PBXBuildFile; fileRef = 70402544F8F84929949AA78C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/err.c */; };
+		6C59EA25D0CA41948C2285A1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */ = {isa = PBXBuildFile; fileRef = 5D111779864F412596139859 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */; };
+		72095619E30640628A9F8868 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = ACAA6731734D46C6A1E71059 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/CMakeLists.txt */; };
+		77ECAEA297C44CE78E946BC9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */ = {isa = PBXBuildFile; fileRef = EA3AFB808E94400783E30722 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */; };
+		7CD685F7A4C247A78BE04E85 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 9A7B3DE5C0B44F60AF2B96E9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/Info.plist */; };
+		7E97A20D29854DE5B5AF0C99 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/yin.c */ = {isa = PBXBuildFile; fileRef = F7277780C34C48C8918E0D4B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/yin.c */; };
+		7ECF213897C14699BE4E7BE5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0843B31DCE5F4ADA90B39897 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/CMakeLists.txt */; };
+		8125B5D9060347AE85DDA8AB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/profile.c */ = {isa = PBXBuildFile; fileRef = AC7FAA1D4BB44815926E6B86 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/profile.c */; };
+		85C6882277534E3F82501333 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/tmat.c */ = {isa = PBXBuildFile; fileRef = E50AEE823B06484D9059B243 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/tmat.c */; };
+		883F6155EC0A4C89B55FAE8E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */ = {isa = PBXBuildFile; fileRef = 18432ED549FE43B79B2B8CDC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */; };
+		8851A6E957564CD992F8ADC2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */ = {isa = PBXBuildFile; fileRef = C6D65D66006044FBBBBDC0AA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */; };
+		8AD5C710D9F549FFAEE1C5EE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */ = {isa = PBXBuildFile; fileRef = E84461DB8A50427AA82EA34F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */; };
+		8BFEA2CD7D8F486A8D9F72AD /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/glist.c */ = {isa = PBXBuildFile; fileRef = 672D2C477C6C4A85B55EEBD0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/glist.c */; };
+		9070E9D4490F432BB788207A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/crossplatform.c */ = {isa = PBXBuildFile; fileRef = 3D9CC860ED354345991B16B9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/crossplatform.c */; };
+		93458945D75E478284E72326 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/lda.c */ = {isa = PBXBuildFile; fileRef = A63A7668EB57461EAF581553 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/lda.c */; };
+		997A283941304EA5BB2AE0ED /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/matrix.c */ = {isa = PBXBuildFile; fileRef = 5537004A04FD4CAF8FBFCB82 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/matrix.c */; };
+		99D52C54C2B8464BA9617806 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 76A3C48744284CD197CA80D9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/CMakeLists.txt */; };
+		9A9747E325FD430399C1F860 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 5E9F885ED8414189A237B872 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/Info.plist */; };
+		9FD075E23EFE412C94317709 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/acmod.c */ = {isa = PBXBuildFile; fileRef = E334B4EBBC97477C9C7B13E3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/acmod.c */; };
+		9FD4A7C67565404A97DBD4A1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp */ = {isa = PBXBuildFile; fileRef = 6AE421C9D64745BCA3338A4F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp */; };
+		A4328BE24B87408A84631C0F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */ = {isa = PBXBuildFile; fileRef = 470FB1FBD0AA4737BF4DC89F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */; };
+		A609CCA9B4D740B194EC920F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */ = {isa = PBXBuildFile; fileRef = FFEC45F62A0A465B832F6A26 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */; };
+		A9D48CBD9F35430CAFCC64A2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */ = {isa = PBXBuildFile; fileRef = D8562F9B4B264952A2B70C8D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */; };
+		A9ED6EDC8E8441EFBF024829 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */ = {isa = PBXBuildFile; fileRef = 199B70D90CB04B3EA0D76704 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */; };
+		AA01C551DAE3486EB3F07B56 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */ = {isa = PBXBuildFile; fileRef = 7B3DE267717D41C1AACA1784 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */; };
+		AB966D042C554358A58FBF3C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */ = {isa = PBXBuildFile; fileRef = 4B1BE43AD9F2421A8E066217 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */; };
+		ABC211B0633B4E759B9EDB54 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */ = {isa = PBXBuildFile; fileRef = 4687482A003444EBBE0D8F08 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */; };
+		AE06058039124410921C9B92 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict.c */ = {isa = PBXBuildFile; fileRef = 17F5F34930504150988710B7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict.c */; };
+		AE66DD958DC542809B5C54C7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bio.c */ = {isa = PBXBuildFile; fileRef = 3A0540258C8C4B2EA33AEB56 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bio.c */; };
+		AEA48003A3E048318F8A1EF5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */ = {isa = PBXBuildFile; fileRef = 519B3B44CF8046D99AB0F7F7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */; };
+		B246B2B35AE047C4BA467082 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/heap.c */ = {isa = PBXBuildFile; fileRef = 2E9F0190620443CABBC59EDC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/heap.c */; };
+		B28BA8455F9045098AE61918 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */ = {isa = PBXBuildFile; fileRef = 5DB636BCC19E423592C52D05 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */; };
+		B51A6F426A0A4F1D9E16BD7F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */ = {isa = PBXBuildFile; fileRef = DFE4B77C46DE49FF804FDE10 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */; };
+		B73685AF074C44A8A4CE45A4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */ = {isa = PBXBuildFile; fileRef = 915339D5D78E4669AFB90AA1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */; };
+		C08F7BBC9FE5434388DD9585 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */ = {isa = PBXBuildFile; fileRef = F78F402AFB974F50BF945E3F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */; };
+		C0B6A62CB20247A8993E1EC6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */ = {isa = PBXBuildFile; fileRef = D3E89961534848D28E4A1BB0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */; };
+		C3733B6FB76245A6A01EB1BF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */ = {isa = PBXBuildFile; fileRef = 34637DD6C19C48DD8282E719 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */; };
+		C43C1A483C1D4EBCA6FB15C0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */ = {isa = PBXBuildFile; fileRef = 196BDF2422D34C2E8F8D114A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */; };
+		C48B0584168E42679C73B829 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxad/ad_base.c */ = {isa = PBXBuildFile; fileRef = 3470BB5AEF5541ADB7FF8E65 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxad/ad_base.c */; };
+		C81611FEC8934BD1B75B8812 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */ = {isa = PBXBuildFile; fileRef = 80067E2955584229917F649C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */; };
+		C817B4AD911E474BB23D7995 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */ = {isa = PBXBuildFile; fileRef = C60447F7EDE64EE5851716A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */; };
+		C8B4C7C61D2B4917AC2053C6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y */ = {isa = PBXBuildFile; fileRef = 61A9CD4D760647B7B11B5651 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y */; };
+		CA2238D77E4446FE9B342E00 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 2EDC59EABE2C4DF0B9F79C3E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/Info.plist */; };
+		CC90E41EFC7E4FF9A79F0F58 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */ = {isa = PBXBuildFile; fileRef = 5EC5A3FBC26D4C29AE567EB6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */; };
+		CC944BCC377B4F2DB3C4A1E5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/hmm.c */ = {isa = PBXBuildFile; fileRef = 7411C7EA510A448EAEFBCFFC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/hmm.c */; };
+		CCC3BD59DB5B43F09EB8B49E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */ = {isa = PBXBuildFile; fileRef = 3ADD5CF874EC4E2BBB9817BA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */; };
+		D37DC00B661847D996EAA317 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */ = {isa = PBXBuildFile; fileRef = 6652C4D078E34B8494AC66AE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */; };
+		D3F037E8A22B4570B4CA9418 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */ = {isa = PBXBuildFile; fileRef = 3CDE28F2873B4B0D8528D5F4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */; };
+		D5E08D9B0D8B428E9D178995 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/mmio.c */ = {isa = PBXBuildFile; fileRef = 1439EFCCD73A4FD497C7D871 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/mmio.c */; };
+		D60DCE6BA6944F8A8E163A46 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */ = {isa = PBXBuildFile; fileRef = B601E714290843FFAAD45338 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */; };
+		DA959C923E504872876E75B0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/genrand.c */ = {isa = PBXBuildFile; fileRef = C4FAB5B3A97B46E0A98261A2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/genrand.c */; };
+		DE4242DE85DF4A728C50BD2A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */ = {isa = PBXBuildFile; fileRef = AA13EC5328854DF58E387068 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */; };
+		DF36F2E4B7A24FE3AD43BFD3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/case.c */ = {isa = PBXBuildFile; fileRef = 2C4DAF6890D44A979C078F8D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/case.c */; };
+		E7BD39AF39BC49CE8F2A4804 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */ = {isa = PBXBuildFile; fileRef = 106E0C4B25A9435883E70D40 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */; };
+		EAF1C5C976464C7FA5907EEC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/filename.c */ = {isa = PBXBuildFile; fileRef = 0BD48E10B89E41B69A2B9145 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/filename.c */; };
+		EB385F0FC4B1450AB423A3EA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */ = {isa = PBXBuildFile; fileRef = 0B911B889A0443BD8E89E5BC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */; };
+		ED51DB766F0C4CC79D446BF4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */ = {isa = PBXBuildFile; fileRef = 94B046E0A4A8424EA263AE60 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */; };
+		EED6BA86105848F4A9878773 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */ = {isa = PBXBuildFile; fileRef = BEF038C35E9F4063BB7800DE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */; };
+		EF360D8B9D86481E95C71B2E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 574DEF4AD4A44BC4BF997E08 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/Info.plist */; };
+		F0FA51BD7E2D44F79F3F1487 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/feat.c */ = {isa = PBXBuildFile; fileRef = 0B003B389E5047CCB25BAC9C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/feat.c */; };
+		F3546DC163604ECFBBBE2DE4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 22736776A3954D9B9E92E07A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2391644DBCF547A3B3D4FBB1 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		A5A30F8E4D7B45479E9CE0B4 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		CB07FC67E80A4580A3A22E3D /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		FEDFD79AC71740D98E08EA3D /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1789B5A6B3734C349B95D40C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34AB5A2DF8BA4015A73744DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		21398C07BEAE44118D2BB4C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 584351494CEC4C76AE3F7592;
+			remoteInfo = xyzsphinxbase;
+		};
+		26F22575A59C4F68B53AE644 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 584351494CEC4C76AE3F7592;
+			remoteInfo = xyzsphinxbase;
+		};
+		280A408B137A42E59432D0EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34AB5A2DF8BA4015A73744DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		2FB651F21A7A4A73B0892E67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8783605C56964520BDA3CBAC;
+			remoteInfo = xyzcrossplatform;
+		};
+		3197976B62354DA9B16674A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C986BEFF6FE48CBA0DA2BE4;
+			remoteInfo = xyzsphinxad;
+		};
+		31B70B0CB72A4C9E9A5D205E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C986BEFF6FE48CBA0DA2BE4;
+			remoteInfo = xyzsphinxad;
+		};
+		35661A02C7A3451FB3BA1278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8783605C56964520BDA3CBAC;
+			remoteInfo = xyzcrossplatform;
+		};
+		3D29447975D342A38157B44B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83AAE5CC1E1442D6A962C43A;
+			remoteInfo = xyzpocketsphinx;
+		};
+		6CA4055138FE450EBBD95660 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8783605C56964520BDA3CBAC;
+			remoteInfo = xyzcrossplatform;
+		};
+		6CFD033927434FECAA61E078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 584351494CEC4C76AE3F7592;
+			remoteInfo = xyzsphinxbase;
+		};
+		71B2B09A708447B3B35E1B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8783605C56964520BDA3CBAC;
+			remoteInfo = xyzcrossplatform;
+		};
+		80D9FFFB0EAC4B33B1744F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83AAE5CC1E1442D6A962C43A;
+			remoteInfo = xyzpocketsphinx;
+		};
+		9D64D2B9FC8742B0A7E8DC31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C986BEFF6FE48CBA0DA2BE4;
+			remoteInfo = xyzsphinxad;
+		};
+		A124DC7C57094925B18AB7A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34AB5A2DF8BA4015A73744DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		A99A89DC730F40B8B3393DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34AB5A2DF8BA4015A73744DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		AC57D779DF534F238C487B02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8783605C56964520BDA3CBAC;
+			remoteInfo = xyzcrossplatform;
+		};
+		CEDADC5656B14757B6D1501C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34AB5A2DF8BA4015A73744DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		DB2EC20A4B06436194E7C588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 584351494CEC4C76AE3F7592;
+			remoteInfo = xyzsphinxbase;
+		};
+		DD1CFCC2C5CC469087D82C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 730150589701464383811947;
+			remoteInfo = ps_plus;
+		};
+		FFC4B333C9CA4B9A95FD6339 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E169BEC7F71F47D682C86153 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34AB5A2DF8BA4015A73744DA;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		077218C6E64A4408B68B0DD7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sbthread.c; path = xyzsphinxbase/src/libsphinxbase/util/sbthread.c; sourceTree = SOURCE_ROOT; };
+		0843B31DCE5F4ADA90B39897 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = xyzpocketsphinx/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0B003B389E5047CCB25BAC9C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/feat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = feat.c; path = xyzsphinxbase/src/libsphinxbase/feat/feat.c; sourceTree = SOURCE_ROOT; };
+		0B911B889A0443BD8E89E5BC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_model.c; path = xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c; sourceTree = SOURCE_ROOT; };
+		0BD48E10B89E41B69A2B9145 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/filename.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = filename.c; path = xyzsphinxbase/src/libsphinxbase/util/filename.c; sourceTree = SOURCE_ROOT; };
+		106E0C4B25A9435883E70D40 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_gauden.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c; sourceTree = SOURCE_ROOT; };
+		1235F7CADBD7430B8F8CB4AA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmn_live.c; path = xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c; sourceTree = SOURCE_ROOT; };
+		12AAE88CCE0849F9A60AE0E2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/mdef.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mdef.c; path = xyzpocketsphinx/src/libpocketsphinx/mdef.c; sourceTree = SOURCE_ROOT; };
+		135D73EAD2244B4DA3687ECA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = f2c_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c; sourceTree = SOURCE_ROOT; };
+		1439EFCCD73A4FD497C7D871 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/mmio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mmio.c; path = xyzsphinxbase/src/libsphinxbase/util/mmio.c; sourceTree = SOURCE_ROOT; };
+		17F5F34930504150988710B7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dict.c; path = xyzpocketsphinx/src/libpocketsphinx/dict.c; sourceTree = SOURCE_ROOT; };
+		18432ED549FE43B79B2B8CDC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dict2pid.c; path = xyzpocketsphinx/src/libpocketsphinx/dict2pid.c; sourceTree = SOURCE_ROOT; };
+		196BDF2422D34C2E8F8D114A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lm_trie.c; path = xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c; sourceTree = SOURCE_ROOT; };
+		199B70D90CB04B3EA0D76704 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search_fwdflat.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c; sourceTree = SOURCE_ROOT; };
+		1BFA25005A0147D59F795FC8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/pio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pio.c; path = xyzsphinxbase/src/libsphinxbase/util/pio.c; sourceTree = SOURCE_ROOT; };
+		22736776A3954D9B9E92E07A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		28B455553E704ED5B61500C1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = _jsgf_scanner.l; path = xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l; sourceTree = SOURCE_ROOT; };
+		2C4DAF6890D44A979C078F8D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/case.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = case.c; path = xyzsphinxbase/src/libsphinxbase/util/case.c; sourceTree = SOURCE_ROOT; };
+		2E9F0190620443CABBC59EDC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/heap.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = heap.c; path = xyzsphinxbase/src/libsphinxbase/util/heap.c; sourceTree = SOURCE_ROOT; };
+		2EDC59EABE2C4DF0B9F79C3E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ios_build/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		2FC456176B544D7F8E5CF54C /* xyzpocketsphinx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzpocketsphinx.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		34637DD6C19C48DD8282E719 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf_parser.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c; sourceTree = SOURCE_ROOT; };
+		3470BB5AEF5541ADB7FF8E65 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxad/ad_base.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ad_base.c; path = xyzsphinxbase/src/libsphinxad/ad_base.c; sourceTree = SOURCE_ROOT; };
+		3A0540258C8C4B2EA33AEB56 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bio.c; path = xyzsphinxbase/src/libsphinxbase/util/bio.c; sourceTree = SOURCE_ROOT; };
+		3ADD5CF874EC4E2BBB9817BA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = priority_queue.c; path = xyzsphinxbase/src/libsphinxbase/util/priority_queue.c; sourceTree = SOURCE_ROOT; };
+		3CDE28F2873B4B0D8528D5F4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search_fwdtree.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c; sourceTree = SOURCE_ROOT; };
+		3D9CC860ED354345991B16B9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/crossplatform.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = crossplatform.c; path = xyzcrossplatform/crossplatform.c; sourceTree = SOURCE_ROOT; };
+		41DFDAAA8BE941F0A9898EA3 /* xyzsphinxad */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzsphinxad.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		42CAE4B351D443A5B4000D08 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4687482A003444EBBE0D8F08 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_noise.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c; sourceTree = SOURCE_ROOT; };
+		470FB1FBD0AA4737BF4DC89F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_lextree.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c; sourceTree = SOURCE_ROOT; };
+		4A0960A8B74C465EA6A7A106 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_piecewise_linear.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c; sourceTree = SOURCE_ROOT; };
+		4B1BE43AD9F2421A8E066217 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngrams_raw.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c; sourceTree = SOURCE_ROOT; };
+		4D4A62A9899B4218B31A5F7D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_lattice.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c; sourceTree = SOURCE_ROOT; };
+		4E6E3CC2F05640B0BC929138 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_search.c; path = xyzpocketsphinx/src/libpocketsphinx/ngram_search.c; sourceTree = SOURCE_ROOT; };
+		519B3B44CF8046D99AB0F7F7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kws_detections.c; path = xyzpocketsphinx/src/libpocketsphinx/kws_detections.c; sourceTree = SOURCE_ROOT; };
+		5537004A04FD4CAF8FBFCB82 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/matrix.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = matrix.c; path = xyzsphinxbase/src/libsphinxbase/util/matrix.c; sourceTree = SOURCE_ROOT; };
+		574DEF4AD4A44BC4BF997E08 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		5D111779864F412596139859 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = listelem_alloc.c; path = xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c; sourceTree = SOURCE_ROOT; };
+		5DB636BCC19E423592C52D05 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = blkarray_list.c; path = xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c; sourceTree = SOURCE_ROOT; };
+		5E9F885ED8414189A237B872 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ios_build/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		5EC5A3FBC26D4C29AE567EB6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmn.c; path = xyzsphinxbase/src/libsphinxbase/feat/cmn.c; sourceTree = SOURCE_ROOT; };
+		61A9CD4D760647B7B11B5651 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = jsgf_parser.y; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y; sourceTree = SOURCE_ROOT; };
+		6652C4D078E34B8494AC66AE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lm_trie_quant.c; path = xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c; sourceTree = SOURCE_ROOT; };
+		672D2C477C6C4A85B55EEBD0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/glist.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glist.c; path = xyzsphinxbase/src/libsphinxbase/util/glist.c; sourceTree = SOURCE_ROOT; };
+		68DF221F5F4B4484B1BC2CB8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dtoa.c; path = xyzsphinxbase/src/libsphinxbase/util/dtoa.c; sourceTree = SOURCE_ROOT; };
+		6A25B48EA3D949DEA4D13F6C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fixlog.c; path = xyzsphinxbase/src/libsphinxbase/fe/fixlog.c; sourceTree = SOURCE_ROOT; };
+		6AE421C9D64745BCA3338A4F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = c_demo.cpp; path = c_demo.cpp; sourceTree = SOURCE_ROOT; };
+		6E7AF6603BD9480791C12C1A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_senone.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_senone.c; sourceTree = SOURCE_ROOT; };
+		70402544F8F84929949AA78C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/err.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = err.c; path = xyzsphinxbase/src/libsphinxbase/util/err.c; sourceTree = SOURCE_ROOT; };
+		70B1E3F071B24CC6B6CBFB25 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = kws_search.c; path = xyzpocketsphinx/src/libpocketsphinx/kws_search.c; sourceTree = SOURCE_ROOT; };
+		7411C7EA510A448EAEFBCFFC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/hmm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hmm.c; path = xyzpocketsphinx/src/libpocketsphinx/hmm.c; sourceTree = SOURCE_ROOT; };
+		76A3C48744284CD197CA80D9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = xyzsphinxbase/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7B3DE267717D41C1AACA1784 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_mllr.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c; sourceTree = SOURCE_ROOT; };
+		7B9E437C40AA44EBB7694BF7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/agc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = agc.c; path = xyzsphinxbase/src/libsphinxbase/feat/agc.c; sourceTree = SOURCE_ROOT; };
+		7E6D2847246E4E1EA1671FAE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strfuncs.c; path = xyzsphinxbase/src/libsphinxbase/util/strfuncs.c; sourceTree = SOURCE_ROOT; };
+		7E70204A1D3E4C6380BBC630 /* xyzcrossplatform */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzcrossplatform.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7E9D6220B74DBBB894F48C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c; sourceTree = SOURCE_ROOT; };
+		80067E2955584229917F649C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf_scanner.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c; sourceTree = SOURCE_ROOT; };
+		8D486A470B8A43F189CFCBBB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ps_plus.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ios_build/CMakeFiles/ps_plus.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		915339D5D78E4669AFB90AA1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_sigproc.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c; sourceTree = SOURCE_ROOT; };
+		94B046E0A4A8424EA263AE60 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bitarr.c; path = xyzsphinxbase/src/libsphinxbase/util/bitarr.c; sourceTree = SOURCE_ROOT; };
+		975950F265344D9BA30E725E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slamch.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = slamch.c; path = xyzsphinxbase/src/libsphinxbase/util/slamch.c; sourceTree = SOURCE_ROOT; };
+		9A7B3DE5C0B44F60AF2B96E9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		9E0B9068DB8643DF985D55A3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bitvec.c; path = xyzsphinxbase/src/libsphinxbase/util/bitvec.c; sourceTree = SOURCE_ROOT; };
+		9F0A987EE9DB4091AB5B6C5A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bin_mdef.c; path = xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c; sourceTree = SOURCE_ROOT; };
+		A321E06A209649CE9381F47B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hash_table.c; path = xyzsphinxbase/src/libsphinxbase/util/hash_table.c; sourceTree = SOURCE_ROOT; };
+		A63A7668EB57461EAF581553 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/lda.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lda.c; path = xyzsphinxbase/src/libsphinxbase/feat/lda.c; sourceTree = SOURCE_ROOT; };
+		AA13EC5328854DF58E387068 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = s2_semi_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c; sourceTree = SOURCE_ROOT; };
+		AC7FAA1D4BB44815926E6B86 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/profile.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = profile.c; path = xyzsphinxbase/src/libsphinxbase/util/profile.c; sourceTree = SOURCE_ROOT; };
+		ACAA6731734D46C6A1E71059 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = xyzcrossplatform/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B0CD71DF7E0448E8A38A9325 /* xyzsphinxbase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libxyzsphinxbase.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B601E714290843FFAAD45338 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model_set.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c; sourceTree = SOURCE_ROOT; };
+		B9ADB0AA75864F6DB8643B0C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/logmath.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = logmath.c; path = xyzsphinxbase/src/libsphinxbase/util/logmath.c; sourceTree = SOURCE_ROOT; };
+		BEF038C35E9F4063BB7800DE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = phone_loop_search.c; path = xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c; sourceTree = SOURCE_ROOT; };
+		C1A878FD60014AD8B306C73F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = xyzsphinxbase/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C4EF29B3DC9140B6A4FAA113 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pocketsphinx.c; path = xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c; sourceTree = SOURCE_ROOT; };
+		C4FAB5B3A97B46E0A98261A2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/genrand.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = genrand.c; path = xyzsphinxbase/src/libsphinxbase/util/genrand.c; sourceTree = SOURCE_ROOT; };
+		C60447F7EDE64EE5851716A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ps_alignment.c; path = xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c; sourceTree = SOURCE_ROOT; };
+		C6D65D66006044FBBBBDC0AA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_search.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_search.c; sourceTree = SOURCE_ROOT; };
+		C8F4C029E82141EB9F8C0618 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = allphone_search.c; path = xyzpocketsphinx/src/libpocketsphinx/allphone_search.c; sourceTree = SOURCE_ROOT; };
+		D3E89961534848D28E4A1BB0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ckd_alloc.c; path = xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c; sourceTree = SOURCE_ROOT; };
+		D41695DDA5EE411895DA7E8B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model_trie.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c; sourceTree = SOURCE_ROOT; };
+		D8562F9B4B264952A2B70C8D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ngram_model.c; path = xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c; sourceTree = SOURCE_ROOT; };
+		DFE4B77C46DE49FF804FDE10 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fsg_history.c; path = xyzpocketsphinx/src/libpocketsphinx/fsg_history.c; sourceTree = SOURCE_ROOT; };
+		E2B237EDE8F644F49DDA6238 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_interface.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c; sourceTree = SOURCE_ROOT; };
+		E334B4EBBC97477C9C7B13E3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/acmod.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = acmod.c; path = xyzpocketsphinx/src/libpocketsphinx/acmod.c; sourceTree = SOURCE_ROOT; };
+		E50AEE823B06484D9059B243 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/tmat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tmat.c; path = xyzpocketsphinx/src/libpocketsphinx/tmat.c; sourceTree = SOURCE_ROOT; };
+		E5F8AEFCA6784642ADB12F9B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/vector.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vector.c; path = xyzpocketsphinx/src/libpocketsphinx/vector.c; sourceTree = SOURCE_ROOT; };
+		E84461DB8A50427AA82EA34F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_prespch_buf.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c; sourceTree = SOURCE_ROOT; };
+		EA3AFB808E94400783E30722 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ms_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c; sourceTree = SOURCE_ROOT; };
+		EBC75531E3814B48A4C5DBB3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = state_align_search.c; path = xyzpocketsphinx/src/libpocketsphinx/state_align_search.c; sourceTree = SOURCE_ROOT; };
+		EC524D2B82E445A08731151B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = slapack_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c; sourceTree = SOURCE_ROOT; };
+		F28EDC48FB7C4EEBA70E9623 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/errno.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = errno.c; path = xyzsphinxbase/src/libsphinxbase/util/errno.c; sourceTree = SOURCE_ROOT; };
+		F6ED643690E045AAAA97DA2E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsgf.c; path = xyzsphinxbase/src/libsphinxbase/lm/jsgf.c; sourceTree = SOURCE_ROOT; };
+		F7277780C34C48C8918E0D4B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/yin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = yin.c; path = xyzsphinxbase/src/libsphinxbase/fe/yin.c; sourceTree = SOURCE_ROOT; };
+		F78F402AFB974F50BF945E3F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = blas_lite.c; path = xyzsphinxbase/src/libsphinxbase/util/blas_lite.c; sourceTree = SOURCE_ROOT; };
+		F8743E781C15401682554637 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cmd_ln.c; path = xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c; sourceTree = SOURCE_ROOT; };
+		F89301A0599B4111A4A21171 /* ps_plus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libps_plus.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBBD1DD50C143A5B2385BCB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_affine.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c; sourceTree = SOURCE_ROOT; };
+		FFDE721902B1411DB4EAA289 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fe_warp_inverse_linear.c; path = xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c; sourceTree = SOURCE_ROOT; };
+		FFEC45F62A0A465B832F6A26 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ptm_mgau.c; path = xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14A619820D88440A8679C026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3708DD99E70E489EAF8CF4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7230F7E35EE94C9D939C6765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		974A6961AA614A6D83716486 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4118B4A67DA430C8B7A1C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10656F1153714BAD89907603 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				184D2A251FED40CE9477343C /* CMake Rules */,
+				42CAE4B351D443A5B4000D08 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		1676C856ABB24BB0A5A8EB86 /* xyzsphinxbase */ = {
+			isa = PBXGroup;
+			children = (
+				6DF48F99C73F45D292F06F9A /* Source Files */,
+				74B18372FBB2402399C21843 /* Resources */,
+				76A3C48744284CD197CA80D9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/CMakeLists.txt */,
+				28B455553E704ED5B61500C1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/_jsgf_scanner.l */,
+				61A9CD4D760647B7B11B5651 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.y */,
+			);
+			name = xyzsphinxbase;
+			sourceTree = "<group>";
+		};
+		16C14DCB486F44F3932BB869 /* xyzsphinxad */ = {
+			isa = PBXGroup;
+			children = (
+				C82FF9312CFB49229534E113 /* Source Files */,
+				D9908D075017452FBD872B2B /* Resources */,
+				C1A878FD60014AD8B306C73F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/CMakeLists.txt */,
+			);
+			name = xyzsphinxad;
+			sourceTree = "<group>";
+		};
+		184D2A251FED40CE9477343C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1F5D97FCDCE4409DB5815B5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E9F885ED8414189A237B872 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		28834A56EF0F4E21A7957E26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D486A470B8A43F189CFCBBB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ps_plus.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		320B74B46D3444F79E1D6604 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EDC59EABE2C4DF0B9F79C3E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		37E7AB59ADC649E59BEBC311 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E334B4EBBC97477C9C7B13E3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/acmod.c */,
+				C8F4C029E82141EB9F8C0618 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */,
+				9F0A987EE9DB4091AB5B6C5A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */,
+				5DB636BCC19E423592C52D05 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */,
+				17F5F34930504150988710B7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict.c */,
+				18432ED549FE43B79B2B8CDC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */,
+				DFE4B77C46DE49FF804FDE10 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */,
+				470FB1FBD0AA4737BF4DC89F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */,
+				C6D65D66006044FBBBBDC0AA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */,
+				7411C7EA510A448EAEFBCFFC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/hmm.c */,
+				519B3B44CF8046D99AB0F7F7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */,
+				70B1E3F071B24CC6B6CBFB25 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */,
+				12AAE88CCE0849F9A60AE0E2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/mdef.c */,
+				106E0C4B25A9435883E70D40 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */,
+				EA3AFB808E94400783E30722 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */,
+				6E7AF6603BD9480791C12C1A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */,
+				4E6E3CC2F05640B0BC929138 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */,
+				199B70D90CB04B3EA0D76704 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */,
+				3CDE28F2873B4B0D8528D5F4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */,
+				BEF038C35E9F4063BB7800DE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */,
+				C4EF29B3DC9140B6A4FAA113 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */,
+				C60447F7EDE64EE5851716A8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */,
+				4D4A62A9899B4218B31A5F7D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */,
+				7B3DE267717D41C1AACA1784 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */,
+				FFEC45F62A0A465B832F6A26 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */,
+				AA13EC5328854DF58E387068 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */,
+				EBC75531E3814B48A4C5DBB3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */,
+				E50AEE823B06484D9059B243 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/tmat.c */,
+				E5F8AEFCA6784642ADB12F9B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/vector.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3D43AC345F144BB0AF2ED61B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CC860ED354345991B16B9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/crossplatform.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		590365B60ABC44C6B266A94A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DF48F99C73F45D292F06F9A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2B237EDE8F644F49DDA6238 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */,
+				4687482A003444EBBE0D8F08 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */,
+				E84461DB8A50427AA82EA34F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */,
+				915339D5D78E4669AFB90AA1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */,
+				7E7E9D6220B74DBBB894F48C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */,
+				FCBBD1DD50C143A5B2385BCB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */,
+				FFDE721902B1411DB4EAA289 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */,
+				4A0960A8B74C465EA6A7A106 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */,
+				6A25B48EA3D949DEA4D13F6C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */,
+				F7277780C34C48C8918E0D4B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/yin.c */,
+				7B9E437C40AA44EBB7694BF7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/agc.c */,
+				5EC5A3FBC26D4C29AE567EB6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */,
+				1235F7CADBD7430B8F8CB4AA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */,
+				0B003B389E5047CCB25BAC9C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/feat.c */,
+				A63A7668EB57461EAF581553 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/lda.c */,
+				0B911B889A0443BD8E89E5BC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */,
+				F6ED643690E045AAAA97DA2E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */,
+				34637DD6C19C48DD8282E719 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */,
+				80067E2955584229917F649C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */,
+				196BDF2422D34C2E8F8D114A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */,
+				6652C4D078E34B8494AC66AE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */,
+				D8562F9B4B264952A2B70C8D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */,
+				B601E714290843FFAAD45338 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */,
+				D41695DDA5EE411895DA7E8B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */,
+				4B1BE43AD9F2421A8E066217 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */,
+				3A0540258C8C4B2EA33AEB56 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bio.c */,
+				94B046E0A4A8424EA263AE60 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */,
+				9E0B9068DB8643DF985D55A3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */,
+				F78F402AFB974F50BF945E3F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */,
+				2C4DAF6890D44A979C078F8D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/case.c */,
+				D3E89961534848D28E4A1BB0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */,
+				F8743E781C15401682554637 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */,
+				68DF221F5F4B4484B1BC2CB8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */,
+				70402544F8F84929949AA78C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/err.c */,
+				F28EDC48FB7C4EEBA70E9623 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/errno.c */,
+				135D73EAD2244B4DA3687ECA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */,
+				0BD48E10B89E41B69A2B9145 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/filename.c */,
+				C4FAB5B3A97B46E0A98261A2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/genrand.c */,
+				672D2C477C6C4A85B55EEBD0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/glist.c */,
+				A321E06A209649CE9381F47B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */,
+				2E9F0190620443CABBC59EDC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/heap.c */,
+				5D111779864F412596139859 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */,
+				B9ADB0AA75864F6DB8643B0C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/logmath.c */,
+				5537004A04FD4CAF8FBFCB82 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/matrix.c */,
+				1439EFCCD73A4FD497C7D871 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/mmio.c */,
+				1BFA25005A0147D59F795FC8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/pio.c */,
+				3ADD5CF874EC4E2BBB9817BA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */,
+				AC7FAA1D4BB44815926E6B86 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/profile.c */,
+				077218C6E64A4408B68B0DD7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */,
+				975950F265344D9BA30E725E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slamch.c */,
+				EC524D2B82E445A08731151B /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */,
+				7E6D2847246E4E1EA1671FAE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		74B18372FBB2402399C21843 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A7B3DE5C0B44F60AF2B96E9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		764AD1E5FB3440379D3EC940 /* xyzcrossplatform */ = {
+			isa = PBXGroup;
+			children = (
+				3D43AC345F144BB0AF2ED61B /* Source Files */,
+				320B74B46D3444F79E1D6604 /* Resources */,
+				ACAA6731734D46C6A1E71059 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/CMakeLists.txt */,
+			);
+			name = xyzcrossplatform;
+			sourceTree = "<group>";
+		};
+		87165752E22840E39E33E19B = {
+			isa = PBXGroup;
+			children = (
+				C1AE6D2C12C04C9295BBF2E7 /* ps_plus */,
+				10656F1153714BAD89907603 /* ALL_BUILD */,
+				ED9FD70767B94F0D8FBEEF14 /* xyzpocketsphinx */,
+				1676C856ABB24BB0A5A8EB86 /* xyzsphinxbase */,
+				16C14DCB486F44F3932BB869 /* xyzsphinxad */,
+				764AD1E5FB3440379D3EC940 /* xyzcrossplatform */,
+				C5FB3EFDD1464C3AA1BE60F8 /* Products */,
+				590365B60ABC44C6B266A94A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1AE6D2C12C04C9295BBF2E7 /* ps_plus */ = {
+			isa = PBXGroup;
+			children = (
+				E56B8C978A1D4781AE443443 /* Source Files */,
+				28834A56EF0F4E21A7957E26 /* Resources */,
+				22736776A3954D9B9E92E07A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/CMakeLists.txt */,
+			);
+			name = ps_plus;
+			sourceTree = "<group>";
+		};
+		C5FB3EFDD1464C3AA1BE60F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F89301A0599B4111A4A21171 /* ps_plus */,
+				7E70204A1D3E4C6380BBC630 /* xyzcrossplatform */,
+				2FC456176B544D7F8E5CF54C /* xyzpocketsphinx */,
+				41DFDAAA8BE941F0A9898EA3 /* xyzsphinxad */,
+				B0CD71DF7E0448E8A38A9325 /* xyzsphinxbase */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C82FF9312CFB49229534E113 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3470BB5AEF5541ADB7FF8E65 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxad/ad_base.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D9908D075017452FBD872B2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				574DEF4AD4A44BC4BF997E08 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E56B8C978A1D4781AE443443 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AE421C9D64745BCA3338A4F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		ED9FD70767B94F0D8FBEEF14 /* xyzpocketsphinx */ = {
+			isa = PBXGroup;
+			children = (
+				37E7AB59ADC649E59BEBC311 /* Source Files */,
+				1F5D97FCDCE4409DB5815B5E /* Resources */,
+				0843B31DCE5F4ADA90B39897 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/CMakeLists.txt */,
+			);
+			name = xyzpocketsphinx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		584351494CEC4C76AE3F7592 /* xyzsphinxbase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDEFB78EE59342CBA5473370 /* Build configuration list for PBXNativeTarget "xyzsphinxbase" */;
+			buildPhases = (
+				EE3512D2AE244EBA8A06E9F6 /* Sources */,
+				974A6961AA614A6D83716486 /* Frameworks */,
+				9FC1A0675D6C82DD0B162F96 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ED936B73AEA4C5FA60F8BFF /* PBXTargetDependency */,
+				314318EAECF441ACBE79DFC0 /* PBXTargetDependency */,
+			);
+			name = xyzsphinxbase;
+			productName = xyzsphinxbase;
+			productReference = B0CD71DF7E0448E8A38A9325 /* xyzsphinxbase */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		730150589701464383811947 /* ps_plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C591A92914A06862852EE /* Build configuration list for PBXNativeTarget "ps_plus" */;
+			buildPhases = (
+				A11C880BB1D7468685F14DB8 /* Sources */,
+				14A619820D88440A8679C026 /* Frameworks */,
+				A15FA164C746D73A47933F67 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2270B6636F70400D85D422B8 /* PBXTargetDependency */,
+				019D2EF0944242D78C636835 /* PBXTargetDependency */,
+				E71F8B5E221E47E69CA97648 /* PBXTargetDependency */,
+				FB86B737F3A44E0B94A0F3ED /* PBXTargetDependency */,
+				8CD1D5BA48C24FF38B72725F /* PBXTargetDependency */,
+			);
+			name = ps_plus;
+			productName = ps_plus;
+			productReference = F89301A0599B4111A4A21171 /* ps_plus */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		83AAE5CC1E1442D6A962C43A /* xyzpocketsphinx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8ECD7B8011A4805A474F698 /* Build configuration list for PBXNativeTarget "xyzpocketsphinx" */;
+			buildPhases = (
+				C53CFF5EFD8E494AA60EE660 /* Sources */,
+				3708DD99E70E489EAF8CF4D5 /* Frameworks */,
+				41773DC0D414D793349017C6 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E75A72BD46745F19F2F11D1 /* PBXTargetDependency */,
+				474B17346C1B4ECA94BBE22C /* PBXTargetDependency */,
+				124AF63AFA544106A9B2726E /* PBXTargetDependency */,
+				80B3E853CA464CDFAA781FC3 /* PBXTargetDependency */,
+			);
+			name = xyzpocketsphinx;
+			productName = xyzpocketsphinx;
+			productReference = 2FC456176B544D7F8E5CF54C /* xyzpocketsphinx */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		8783605C56964520BDA3CBAC /* xyzcrossplatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD007227909498B8DC5F3DA /* Build configuration list for PBXNativeTarget "xyzcrossplatform" */;
+			buildPhases = (
+				AEEAEB7CC5E6475C88164E9A /* Sources */,
+				C4118B4A67DA430C8B7A1C94 /* Frameworks */,
+				6218C33658CD2860A239D5BC /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42F0516B5C0344A98BC52203 /* PBXTargetDependency */,
+			);
+			name = xyzcrossplatform;
+			productName = xyzcrossplatform;
+			productReference = 7E70204A1D3E4C6380BBC630 /* xyzcrossplatform */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		9C986BEFF6FE48CBA0DA2BE4 /* xyzsphinxad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30ED7D18775D4B06B0BBF908 /* Build configuration list for PBXNativeTarget "xyzsphinxad" */;
+			buildPhases = (
+				E2478084CEB746E4802B24DE /* Sources */,
+				7230F7E35EE94C9D939C6765 /* Frameworks */,
+				6A7369770B9D2E5677CF1E7F /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9961FEDCF7A4146AB11168A /* PBXTargetDependency */,
+				6A0D1864918E404E9A442AF8 /* PBXTargetDependency */,
+				C7DDE3FFA10443ADB7E410B4 /* PBXTargetDependency */,
+			);
+			name = xyzsphinxad;
+			productName = xyzsphinxad;
+			productReference = 41DFDAAA8BE941F0A9898EA3 /* xyzsphinxad */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E169BEC7F71F47D682C86153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = D73421CA496F4CECA22283BF /* Build configuration list for PBXProject "ps_plus" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2391644DBCF547A3B3D4FBB1 /* Debug */,
+				FEDFD79AC71740D98E08EA3D /* Release */,
+				CB07FC67E80A4580A3A22E3D /* MinSizeRel */,
+				A5A30F8E4D7B45479E9CE0B4 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 87165752E22840E39E33E19B;
+			projectDirPath = /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2;
+			projectRoot = "";
+			targets = (
+				539F4152CA424128A5C3D1CC /* ALL_BUILD */,
+				34AB5A2DF8BA4015A73744DA /* ZERO_CHECK */,
+				730150589701464383811947 /* ps_plus */,
+				8783605C56964520BDA3CBAC /* xyzcrossplatform */,
+				83AAE5CC1E1442D6A962C43A /* xyzpocketsphinx */,
+				9C986BEFF6FE48CBA0DA2BE4 /* xyzsphinxad */,
+				584351494CEC4C76AE3F7592 /* xyzsphinxbase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		41773DC0D414D793349017C6 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Release${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Release${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Release${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		47A8487F6DBCBA49454205A8 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6218C33658CD2860A239D5BC /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6A7369770B9D2E5677CF1E7F /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9FC1A0675D6C82DD0B162F96 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		A15FA164C746D73A47933F67 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/Debug${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/Debug${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/Debug${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/Release${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/Release${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/Release${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libps_plus.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		ECE2DD287E9B32B9888234C4 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build
+  make -f /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A11C880BB1D7468685F14DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD4A7C67565404A97DBD4A1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/c_demo.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEAEB7CC5E6475C88164E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9070E9D4490F432BB788207A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/crossplatform.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C53CFF5EFD8E494AA60EE660 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD075E23EFE412C94317709 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/acmod.c */,
+				5276DCE55E604190AA493037 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c */,
+				5976FACFBF394EBCA12FC213 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c */,
+				B28BA8455F9045098AE61918 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c */,
+				AE06058039124410921C9B92 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict.c */,
+				883F6155EC0A4C89B55FAE8E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c */,
+				B51A6F426A0A4F1D9E16BD7F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c */,
+				A4328BE24B87408A84631C0F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c */,
+				8851A6E957564CD992F8ADC2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c */,
+				CC944BCC377B4F2DB3C4A1E5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/hmm.c */,
+				AEA48003A3E048318F8A1EF5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c */,
+				0FB0717D56B44057BC0AAC20 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/kws_search.c */,
+				1761B7C2D9244F64A7271F0F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/mdef.c */,
+				E7BD39AF39BC49CE8F2A4804 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c */,
+				77ECAEA297C44CE78E946BC9 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c */,
+				26B4D19B1FC1483B83C15D77 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c */,
+				26BF49EE030B476EBBA8EA4F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c */,
+				A9ED6EDC8E8441EFBF024829 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c */,
+				D3F037E8A22B4570B4CA9418 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c */,
+				EED6BA86105848F4A9878773 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c */,
+				544BD5AD19AA4906BB8EBD93 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c */,
+				C817B4AD911E474BB23D7995 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c */,
+				23B153B93E8F4CB0AB8549D4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c */,
+				AA01C551DAE3486EB3F07B56 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c */,
+				A609CCA9B4D740B194EC920F /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c */,
+				DE4242DE85DF4A728C50BD2A /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c */,
+				613CED519751454BB354BEDF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c */,
+				85C6882277534E3F82501333 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/tmat.c */,
+				175C4713267C430D8D09F590 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx/vector.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2478084CEB746E4802B24DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48B0584168E42679C73B829 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxad/ad_base.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3512D2AE244EBA8A06E9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41304B5B830645158D5830AC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_interface.c */,
+				ABC211B0633B4E759B9EDB54 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_noise.c */,
+				8AD5C710D9F549FFAEE1C5EE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_prespch_buf.c */,
+				B73685AF074C44A8A4CE45A4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_sigproc.c */,
+				0801BD6429CD416FA807BA87 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp.c */,
+				395800A310B84E219AC82D8C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_affine.c */,
+				4EC6749AAD594476957F9DFB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_inverse_linear.c */,
+				09D4BD8E6A3E46818AC84DEE /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fe_warp_piecewise_linear.c */,
+				5C9EE40157E446E99A2E80B8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/fixlog.c */,
+				7E97A20D29854DE5B5AF0C99 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe/yin.c */,
+				254AA35673BA4E20AD6C1357 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/agc.c */,
+				CC90E41EFC7E4FF9A79F0F58 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn.c */,
+				16FE69C1760F461CBED736DA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/cmn_live.c */,
+				F0FA51BD7E2D44F79F3F1487 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/feat.c */,
+				93458945D75E478284E72326 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat/lda.c */,
+				EB385F0FC4B1450AB423A3EA /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/fsg_model.c */,
+				1E644834F8D949B396C5A285 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf.c */,
+				C3733B6FB76245A6A01EB1BF /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_parser.c */,
+				C81611FEC8934BD1B75B8812 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/jsgf_scanner.c */,
+				C43C1A483C1D4EBCA6FB15C0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie.c */,
+				D37DC00B661847D996EAA317 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/lm_trie_quant.c */,
+				A9D48CBD9F35430CAFCC64A2 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model.c */,
+				D60DCE6BA6944F8A8E163A46 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_set.c */,
+				5A6A892480F04611B9B9D411 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngram_model_trie.c */,
+				AB966D042C554358A58FBF3C /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm/ngrams_raw.c */,
+				AE66DD958DC542809B5C54C7 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bio.c */,
+				ED51DB766F0C4CC79D446BF4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitarr.c */,
+				6023D4466DA14DB09EC2DC89 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/bitvec.c */,
+				C08F7BBC9FE5434388DD9585 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/blas_lite.c */,
+				DF36F2E4B7A24FE3AD43BFD3 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/case.c */,
+				C0B6A62CB20247A8993E1EC6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/ckd_alloc.c */,
+				15AEE20CBE11451C817FED2D /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/cmd_ln.c */,
+				2FEB47FC9FF442668DEDB6B5 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/dtoa.c */,
+				653CADAE9C774D2B869FED87 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/err.c */,
+				38A0322C17BC4BE085D46F78 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/errno.c */,
+				13EC2107949848C69FDFBE78 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/f2c_lite.c */,
+				EAF1C5C976464C7FA5907EEC /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/filename.c */,
+				DA959C923E504872876E75B0 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/genrand.c */,
+				8BFEA2CD7D8F486A8D9F72AD /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/glist.c */,
+				012B03B3BAFA4E78821F11F4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/hash_table.c */,
+				B246B2B35AE047C4BA467082 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/heap.c */,
+				6C59EA25D0CA41948C2285A1 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/listelem_alloc.c */,
+				58B1FA96CB7F4DAAB2FEDAE8 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/logmath.c */,
+				997A283941304EA5BB2AE0ED /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/matrix.c */,
+				D5E08D9B0D8B428E9D178995 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/mmio.c */,
+				4342947E801548F6B5E0DF28 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/pio.c */,
+				CCC3BD59DB5B43F09EB8B49E /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/priority_queue.c */,
+				8125B5D9060347AE85DDA8AB /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/profile.c */,
+				26B68B03FF8D404195F32774 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/sbthread.c */,
+				14EAD88E99074D75AC0893C4 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slamch.c */,
+				60B48B83A95244ECB5AA9FB6 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/slapack_lite.c */,
+				2AE395C45F174D0A989FED51 /* /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util/strfuncs.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		019D2EF0944242D78C636835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C986BEFF6FE48CBA0DA2BE4 /* xyzsphinxad */;
+			targetProxy = 31B70B0CB72A4C9E9A5D205E /* PBXContainerItemProxy */;
+		};
+		0F792545A66649C4BF596DF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 730150589701464383811947 /* ps_plus */;
+			targetProxy = DD1CFCC2C5CC469087D82C60 /* PBXContainerItemProxy */;
+		};
+		124AF63AFA544106A9B2726E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8783605C56964520BDA3CBAC /* xyzcrossplatform */;
+			targetProxy = 2FB651F21A7A4A73B0892E67 /* PBXContainerItemProxy */;
+		};
+		2270B6636F70400D85D422B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 584351494CEC4C76AE3F7592 /* xyzsphinxbase */;
+			targetProxy = DB2EC20A4B06436194E7C588 /* PBXContainerItemProxy */;
+		};
+		314318EAECF441ACBE79DFC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34AB5A2DF8BA4015A73744DA /* ZERO_CHECK */;
+			targetProxy = FFC4B333C9CA4B9A95FD6339 /* PBXContainerItemProxy */;
+		};
+		417FD2D42F6B4B5DA750C210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 584351494CEC4C76AE3F7592 /* xyzsphinxbase */;
+			targetProxy = 26F22575A59C4F68B53AE644 /* PBXContainerItemProxy */;
+		};
+		42F0516B5C0344A98BC52203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34AB5A2DF8BA4015A73744DA /* ZERO_CHECK */;
+			targetProxy = A124DC7C57094925B18AB7A5 /* PBXContainerItemProxy */;
+		};
+		474B17346C1B4ECA94BBE22C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C986BEFF6FE48CBA0DA2BE4 /* xyzsphinxad */;
+			targetProxy = 9D64D2B9FC8742B0A7E8DC31 /* PBXContainerItemProxy */;
+		};
+		56B9B656066646D7B9616C50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83AAE5CC1E1442D6A962C43A /* xyzpocketsphinx */;
+			targetProxy = 80D9FFFB0EAC4B33B1744F13 /* PBXContainerItemProxy */;
+		};
+		5ED936B73AEA4C5FA60F8BFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8783605C56964520BDA3CBAC /* xyzcrossplatform */;
+			targetProxy = AC57D779DF534F238C487B02 /* PBXContainerItemProxy */;
+		};
+		6A0D1864918E404E9A442AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8783605C56964520BDA3CBAC /* xyzcrossplatform */;
+			targetProxy = 35661A02C7A3451FB3BA1278 /* PBXContainerItemProxy */;
+		};
+		6E75A72BD46745F19F2F11D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 584351494CEC4C76AE3F7592 /* xyzsphinxbase */;
+			targetProxy = 21398C07BEAE44118D2BB4C2 /* PBXContainerItemProxy */;
+		};
+		80B3E853CA464CDFAA781FC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34AB5A2DF8BA4015A73744DA /* ZERO_CHECK */;
+			targetProxy = A99A89DC730F40B8B3393DED /* PBXContainerItemProxy */;
+		};
+		8CD1D5BA48C24FF38B72725F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34AB5A2DF8BA4015A73744DA /* ZERO_CHECK */;
+			targetProxy = CEDADC5656B14757B6D1501C /* PBXContainerItemProxy */;
+		};
+		A9961FEDCF7A4146AB11168A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 584351494CEC4C76AE3F7592 /* xyzsphinxbase */;
+			targetProxy = 6CFD033927434FECAA61E078 /* PBXContainerItemProxy */;
+		};
+		C7DDE3FFA10443ADB7E410B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34AB5A2DF8BA4015A73744DA /* ZERO_CHECK */;
+			targetProxy = 280A408B137A42E59432D0EF /* PBXContainerItemProxy */;
+		};
+		CD0EA018CF7A456E9A6F3D44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34AB5A2DF8BA4015A73744DA /* ZERO_CHECK */;
+			targetProxy = 1789B5A6B3734C349B95D40C /* PBXContainerItemProxy */;
+		};
+		E71F8B5E221E47E69CA97648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8783605C56964520BDA3CBAC /* xyzcrossplatform */;
+			targetProxy = 71B2B09A708447B3B35E1B87 /* PBXContainerItemProxy */;
+		};
+		EE8B390AD8B64D7B93EC1A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8783605C56964520BDA3CBAC /* xyzcrossplatform */;
+			targetProxy = 6CA4055138FE450EBBD95660 /* PBXContainerItemProxy */;
+		};
+		F980B3E9DE8749FA9B063E82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C986BEFF6FE48CBA0DA2BE4 /* xyzsphinxad */;
+			targetProxy = 3197976B62354DA9B16674A1 /* PBXContainerItemProxy */;
+		};
+		FB86B737F3A44E0B94A0F3ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83AAE5CC1E1442D6A962C43A /* xyzpocketsphinx */;
+			targetProxy = 3D29447975D342A38157B44B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06503C8F9BF94279B22033B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/Release${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ps_plus_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/aside_ps_library,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Release${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' -fPIC     ";
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Release${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		0D8B4D1822244BC6B010C80A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = Debug;
+		};
+		0FC143853F654ADEB6F64507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Debug${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzpocketsphinx_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		13DD667F56094E8FBE3046FF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2DB321D905DD4F279DCE0888 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzcrossplatform_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2FEBA802A9814A8FA0F6A31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		32B9A09633644517BB1C10A1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ps_plus_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/aside_ps_library,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' -fPIC     ";
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		43EC8AB07D48459ABACA79A5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzpocketsphinx_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		44FB5BCD6C484945BFD326BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxbase_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		45E75C5A5A694A05A6C8E987 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxbase_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4ABB34088D5447838B32D9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxbase_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		56A3356DD48944A1B23F700E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5C4E7C81C9344D93897EA5C0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5FB87FEC6C1D4D14BD5C0732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6F285D81E78A44898EFF2699 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ps_plus_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/aside_ps_library,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/MinSizeRel${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' -fPIC     ";
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		70206F719B2948BFA41EDDDA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxad_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		798B5333EE94441AA33B1609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/Debug${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",ps_plus_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ps_plus,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/aside_ps_library,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Debug${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' -fPIC     ";
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzpocketsphinx.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ps_plus;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/ps_plus.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7B9688201B344F50ADF28233 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = MinSizeRel;
+		};
+		824ECD8D58AE48AEBDCB2DB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = Release;
+		};
+		8DA5938663ED4793AFC9DCB9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzpocketsphinx_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8F6E0438DDF84C35A17F6319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzcrossplatform_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		91C0D0037D7C49ECAE53965E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzcrossplatform_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		95F3CAF7895B46E8BD20455B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxbase_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/fe,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/feat,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/lm,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/src/libsphinxbase/util,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxbase;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzsphinxbase.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		96659E389EB54845827A79E1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		988BA36A913545EAAA44B74C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "arm64 x86_64";
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = RelWithDebInfo;
+		};
+		9DC659F836F24429A0314831 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxad_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C075687132094CB79391FB9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DEEA89A753BA438DBE285983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E56CCBEEFB74470E9AAB14A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzpocketsphinx/Release${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzpocketsphinx_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/src/libpocketsphinx,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxad.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzpocketsphinx;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzpocketsphinx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F56A86FF86F647688C90D9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzcrossplatform_EXPORTS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzcrossplatform;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzcrossplatform.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F89FDC6DAF834B89AF35033C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxad_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Debug${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		FF8E37C18EEC443991EBB886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (arm64,x86_64);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",xyzsphinxad_EXPORTS,HAVE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad,/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform,"$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME} /Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG '-std=gnu11' -fPIC ","$(inherited)");
+				OTHER_LDFLAGS = ("-rpath @executable_path/Frameworks -rpath @loader_path/Frameworks -dynamiclib -Wl,-headerpad_max_install_names","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzsphinxbase/Release${EFFECTIVE_PLATFORM_NAME}/libxyzsphinxbase.dylib","/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/xyzcrossplatform/Release${EFFECTIVE_PLATFORM_NAME}/libxyzcrossplatform.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = xyzsphinxad;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/ios_build/build/xyzsphinxad.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30ED7D18775D4B06B0BBF908 /* Build configuration list for PBXNativeTarget "xyzsphinxad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89FDC6DAF834B89AF35033C /* Debug */,
+				FF8E37C18EEC443991EBB886 /* Release */,
+				70206F719B2948BFA41EDDDA /* MinSizeRel */,
+				9DC659F836F24429A0314831 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5CD358136E58479F9C1696E4 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C075687132094CB79391FB9D /* Debug */,
+				5FB87FEC6C1D4D14BD5C0732 /* Release */,
+				5C4E7C81C9344D93897EA5C0 /* MinSizeRel */,
+				13DD667F56094E8FBE3046FF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		908BA37243BF4AF2835EA685 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBA802A9814A8FA0F6A31F /* Debug */,
+				DEEA89A753BA438DBE285983 /* Release */,
+				96659E389EB54845827A79E1 /* MinSizeRel */,
+				56A3356DD48944A1B23F700E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C8ECD7B8011A4805A474F698 /* Build configuration list for PBXNativeTarget "xyzpocketsphinx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FC143853F654ADEB6F64507 /* Debug */,
+				E56CCBEEFB74470E9AAB14A4 /* Release */,
+				43EC8AB07D48459ABACA79A5 /* MinSizeRel */,
+				8DA5938663ED4793AFC9DCB9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D65C591A92914A06862852EE /* Build configuration list for PBXNativeTarget "ps_plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798B5333EE94441AA33B1609 /* Debug */,
+				06503C8F9BF94279B22033B2 /* Release */,
+				6F285D81E78A44898EFF2699 /* MinSizeRel */,
+				32B9A09633644517BB1C10A1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D73421CA496F4CECA22283BF /* Build configuration list for PBXProject "ps_plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D8B4D1822244BC6B010C80A /* Debug */,
+				824ECD8D58AE48AEBDCB2DB9 /* Release */,
+				7B9688201B344F50ADF28233 /* MinSizeRel */,
+				988BA36A913545EAAA44B74C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DDEFB78EE59342CBA5473370 /* Build configuration list for PBXNativeTarget "xyzsphinxbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ABB34088D5447838B32D9D1 /* Debug */,
+				44FB5BCD6C484945BFD326BB /* Release */,
+				45E75C5A5A694A05A6C8E987 /* MinSizeRel */,
+				95F3CAF7895B46E8BD20455B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EDD007227909498B8DC5F3DA /* Build configuration list for PBXNativeTarget "xyzcrossplatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56A86FF86F647688C90D9AF /* Debug */,
+				8F6E0438DDF84C35A17F6319 /* Release */,
+				91C0D0037D7C49ECAE53965E /* MinSizeRel */,
+				2DB321D905DD4F279DCE0888 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E169BEC7F71F47D682C86153 /* Project object */;
+}

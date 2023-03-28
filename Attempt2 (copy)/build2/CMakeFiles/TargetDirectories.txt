@@ -1,0 +1,13 @@
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/CMakeFiles/ps_plus.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/CMakeFiles/edit_cache.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/CMakeFiles/rebuild_cache.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzpocketsphinx/CMakeFiles/edit_cache.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzpocketsphinx/CMakeFiles/rebuild_cache.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzsphinxbase/CMakeFiles/edit_cache.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzsphinxbase/CMakeFiles/rebuild_cache.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzcrossplatform/CMakeFiles/edit_cache.dir
+/Users/davidbarbera/Repositories/self_contained_c_xyz/Attempt2/build2/xyzcrossplatform/CMakeFiles/rebuild_cache.dir
