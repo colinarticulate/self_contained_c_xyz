@@ -1,2 +1,21 @@
 ninja: Entering directory `/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/android/app/.cxx/Debug/4y522z6i/arm64-v8a'
-ninja: no work to do.
+[1/7] Building C object xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/fmemopen.c:86:20: warning: implicit declaration of function 'funopen' is invalid in C99 [-Wimplicit-function-declaration]
+            return funopen(mf, mem_read, mem_flush, NULL, mem_close);
+                   ^
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/fmemopen.c:86:20: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'FILE *' (aka 'struct __sFILE *') [-Wint-conversion]
+            return funopen(mf, mem_read, mem_flush, NULL, mem_close);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/fmemopen.c:88:20: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'FILE *' (aka 'struct __sFILE *') [-Wint-conversion]
+            return funopen(mf, NULL, mem_write, mem_flush, mem_close);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/fmemopen.c:91:20: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'FILE *' (aka 'struct __sFILE *') [-Wint-conversion]
+            return funopen(mf, NULL, mem_write, mem_flush, mem_close);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+[2/7] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzcrossplatform.so
+[3/7] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzsphinxbase.so
+[4/7] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzsphinxad.so
+[5/7] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzpocketsphinx.so
+[6/7] Building CXX object CMakeFiles/ps_plus.dir/c_demo.cpp.o
+[7/7] Linking CXX shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libps_plus.so

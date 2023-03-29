@@ -355,12 +355,15 @@ class XYZ_PocketSphinx {
 
 
             fname = cmd_ln_str_r(_config, "-infile");
-            // if ((rawfd = fopen(fname, "rb")) == NULL) {
-            //     E_FATAL_SYSTEM("Failed to open file '%s' for reading",
-            //                    fname);
-            // }
             FILE* file = NULL;
-            file = crossplatformfmemopen(_audio_buffer, _audio_buffer_size ,"rb");
+            if ((file = fopen(fname, "rb")) == NULL) {
+                E_FATAL_SYSTEM("Failed to open file '%s' for reading",   
+                               fname);
+                               
+            }
+            // FILE* file = NULL;
+            // file = crossplatformfmemopen(_audio_buffer, _audio_buffer_size ,"rb");
+            //file = fmemopen(_audio_buffer, _audio_buffer_size ,"rb");
             // FILE* fresult = NULL;
             // fresult = fopen("./result.txt","w");
             // if (fresult == NULL ) {
@@ -370,6 +373,7 @@ class XYZ_PocketSphinx {
             //------------------- Needs better checking for wav format -----------------------------------------
             if (strlen(fname) > 4 && strcmp(fname + strlen(fname) - 4, ".wav") == 0) {
                 char waveheader[44];
+                printf("DEBUG: about to call fread()");
                 k=fread(waveheader, 1, 44, file); //warning:  ignoring return value of ‘fread’
             
             if (!check_wav_header(waveheader, (int)cmd_ln_float32_r(_config, "-samprate")))

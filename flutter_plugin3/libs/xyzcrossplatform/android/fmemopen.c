@@ -69,8 +69,9 @@ static int mem_write(const void* ptr, size_t size, size_t count, FILE* fp) {
 }
 
 FILE* crossplatformfmemopen(void* buf, size_t size, const char* mode) {
+    printf("DEBUG: inside fmemopen");
     MemFile* mf = (MemFile*) malloc(sizeof(MemFile));
-
+    printf("DEBUG: after MemFile");
     if (mf == NULL) {
         return NULL;
     }

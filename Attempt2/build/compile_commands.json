@@ -416,7 +416,12 @@
 },
 {
   "directory": "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build",
-  "command": "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dxyzcrossplatform_EXPORTS -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -std=gnu11 -o xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/crossplatform.c.o -c /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/crossplatform.c",
-  "file": "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/crossplatform.c"
+  "command": "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dxyzcrossplatform_EXPORTS -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -std=gnu11 -o xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o -c /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/android/fmemopen.c",
+  "file": "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/android/fmemopen.c"
+},
+{
+  "directory": "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/build",
+  "command": "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dxyzcrossplatform_EXPORTS -I/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -std=gnu11 -o xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/getline.c.o -c /home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/android/getline.c",
+  "file": "/home/dbarbera/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/android/getline.c"
 }
 ]

@@ -37,7 +37,7 @@ const char *params125[] = {
 "-fwdflat", "no",
 "-hmm", DATA_PATH "Models/art-en-us/en-us",
 "-infile", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/allowed1_philip_fixed_trimmed.wav",
-"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_a3ecf04d-a77a-4269-9eb5-395f8dfbdd8a_allowed1_philip_fixed_trimmed.wav.jsgf",
+"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_a3ecf04d-a77a-4269-9eb5-395f8dfbdd8a_allowed1_philip_fixed_trimmed.jsgf",
 "-logfn", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/log/e1e0d844-812b-496c-83fb-712de847f8a7_a3ecf04d_frate_125_debug_from_c_.log",
 //"-logfn","/dev/null",
 "-lpbeam", "1e-10000",
@@ -83,7 +83,7 @@ const char *params72[] = {
 "-fwdflat", "no",
 "-hmm",DATA_PATH "Models/art-en-us/en-us",
 "-infile", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/allowed1_philip_fixed_trimmed.wav",
-"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_2668db47-d3ce-4760-ab4b-60b9b8a6c46e_allowed1_philip_fixed_trimmed.wav.jsgf",
+"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_2668db47-d3ce-4760-ab4b-60b9b8a6c46e_allowed1_philip_fixed_trimmed.jsgf",
 "-logfn", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/log/d0c65f23-d9cc-4047-8f3c-3a91db3623ff_2668db47_frate_72_debug_from_c_.log",
 //"-logfn","/dev/null",
 "-lpbeam", "1e-10000",
@@ -129,7 +129,7 @@ const char *params80[] = {
 "-fwdflat", "no",
 "-hmm",DATA_PATH "Models/art-en-us/en-us",
 "-infile", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/allowed1_philip_fixed_trimmed.wav",
-"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_4311b957-22a7-446c-85d9-d154d4156d02_allowed1_philip_fixed_trimmed.wav.jsgf",
+"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_4311b957-22a7-446c-85d9-d154d4156d02_allowed1_philip_fixed_trimmed.jsgf",
 "-logfn", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/log/4f0e00fa-9d20-4096-8bb5-8aeedc110e52_4311b957_frate_80_debug_from_c_.log",
 //"-logfn","/dev/null",
 "-lpbeam", "1e-10000",
@@ -174,7 +174,7 @@ const char *params91[] = {
 "-fwdflat", "no",
 "-hmm",DATA_PATH "Models/art-en-us/en-us",
 "-infile", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/allowed1_philip_fixed_trimmed.wav",
-"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_1eed3902-f7e5-444b-a4b8-29b5c47ea52e_allowed1_philip_fixed_trimmed.wav.jsgf",
+"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_1eed3902-f7e5-444b-a4b8-29b5c47ea52e_allowed1_philip_fixed_trimmed.jsgf",
 "-logfn", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/log/f7a95619-d7c5-42a9-b548-561187b350da_1eed3902_frate_91_debug_from_c_.log",
 //"-logfn","/dev/null",
 "-lpbeam", "1e-10000",
@@ -219,7 +219,7 @@ const char *params105[] = {
 "-fwdflat", "no",
 "-hmm",DATA_PATH "Models/art-en-us/en-us",
 "-infile", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/allowed1_philip_fixed_trimmed.wav",
-"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_9ddb7131-fa08-4bc4-b44c-814b2ed9917e_allowed1_philip_fixed_trimmed.wav.jsgf",
+"-jsgf", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/forced_align_9ddb7131-fa08-4bc4-b44c-814b2ed9917e_allowed1_philip_fixed_trimmed.jsgf",
 "-logfn", DATA_PATH "allowed1_philip/Temp_990ba583-5249-41f3-8d42-0617f9eea6cd/log/c061830a-8106-4e06-ae16-18feb072ea45_9ddb7131_frate_105_debug_from_c_.log",
 //"-logfn","/dev/null",
 "-lpbeam", "1e-10000",
@@ -538,7 +538,11 @@ class PS_DYNAMIC_DATA {
         data[4].params.size=_p5_size; //number_parameters((char**)p5);
 
         for( int i =0; i< 5; i++){
-            data[i].jsgf.buffer = create_buffer( &data[i].jsgf.size, get_value(data[i].params.p, "-jsgf"), "rb");
+            char *filename = get_value(data[i].params.p, "-jsgf");
+            const char *mode = "rb";
+            void *jsgf_tmp = create_buffer( &data[i].jsgf.size, filename, mode);
+            data[i].jsgf.buffer = jsgf_tmp;
+//            data[i].jsgf.buffer = create_buffer( &data[i].jsgf.size, get_value(data[i].params.p, "-jsgf"), "rb");
             data[i].wav.buffer  = create_buffer( &data[i].wav.size,  get_value(data[i].params.p, "-infile"), "rb");
             memset(data[i].result.result, 'a', sizeof(char)*512);
             data[i].result.size = 512;
@@ -724,6 +728,8 @@ class BATCH_DYNAMIC_DATA {
 
 
 void* create_buffer(int* bsize, const char* filename, const char* mode){
+
+
     FILE* file = NULL;
     file = fopen(filename, mode);
     if (file == NULL) {

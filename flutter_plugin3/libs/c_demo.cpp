@@ -252,7 +252,9 @@ ArrayOfStrings* ps_demo(const char* path) {
 
     //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 
+    printf("DEBUGGING: replacing parallel_encapsulated with sequential_encapsulated in ps_demo call\n");
     //sequential_encapsulated(ps_data.data);
+    
     parallel_encapsulated(ps_data.data);
     //parallel_encapsualted_with_pthreads(ps_data.data);
     //Array results[5];
