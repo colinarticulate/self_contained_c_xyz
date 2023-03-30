@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzcrossplatform.so"
+			"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/armeabi-v7a/libxyzcrossplatform.so"
 		}
 	],
 	"backtrace" : 1,
@@ -31,7 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 9,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -42,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC"
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC"
 				},
 				{
 					"fragment" : "-std=gnu11"
@@ -73,8 +73,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			],
 			"sysroot" : 
 			{
@@ -116,19 +115,12 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		}
 	],
 	"sources" : 
 	[
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "xyzcrossplatform/android/android.c",
-			"sourceGroupIndex" : 0
-		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,

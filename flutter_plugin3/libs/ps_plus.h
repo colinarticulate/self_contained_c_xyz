@@ -355,14 +355,14 @@ class XYZ_PocketSphinx {
 
 
             fname = cmd_ln_str_r(_config, "-infile");
-            FILE* file = NULL;
-            if ((file = fopen(fname, "rb")) == NULL) {
-                E_FATAL_SYSTEM("Failed to open file '%s' for reading",   
-                               fname);
-                               
-            }
             // FILE* file = NULL;
-            // file = crossplatformfmemopen(_audio_buffer, _audio_buffer_size ,"rb");
+            // if ((file = fopen(fname, "rb")) == NULL) {
+            //     E_FATAL_SYSTEM("Failed to open file '%s' for reading",   
+            //                    fname);
+                               
+            // }
+            FILE* file = NULL;
+            file = crossplatformfmemopen(_audio_buffer, _audio_buffer_size ,"rb");
             //file = fmemopen(_audio_buffer, _audio_buffer_size ,"rb");
             // FILE* fresult = NULL;
             // fresult = fopen("./result.txt","w");

@@ -206,3 +206,9 @@
 372	387	1680114005	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86/libxyzpocketsphinx.so	636795dea8b022b
 2	2675	1680114007	CMakeFiles/ps_plus.dir/c_demo.cpp.o	22fe35c375e9b349
 2675	2703	1680114007	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86/libps_plus.so	5ddc62a549b9722b
+1	10	1680162172	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86/libxyzcrossplatform.so	ed12ebff09029a8
+10	29	1680162172	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86/libxyzsphinxbase.so	f88d3a2e15f70aab
+29	36	1680162172	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86/libxyzsphinxad.so	df179581752422bf
+36	52	1680162172	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86/libxyzpocketsphinx.so	636795dea8b022b
+1	2449	1680162174	CMakeFiles/ps_plus.dir/c_demo.cpp.o	22fe35c375e9b349
+2449	2511	1680162174	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86/libps_plus.so	5ddc62a549b9722b

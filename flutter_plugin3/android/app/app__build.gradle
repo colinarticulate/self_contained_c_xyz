@@ -49,9 +49,6 @@ android {
     }
 
     defaultConfig {
-        //just checking where the crash might be coming from:
-        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
-
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.flutter_plugin3"
         // You can update the following values to match your application needs.

@@ -930,14 +930,6 @@ build xyzcrossplatform/edit_cache: phony xyzcrossplatform/CMakeFiles/edit_cache.
 
 build cmake_object_order_depends_target_xyzcrossplatform: phony || xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir
 
-build xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/android.c.o: C_COMPILER__xyzcrossplatform_Debug /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/android.c || cmake_object_order_depends_target_xyzcrossplatform
-  DEFINES = -Dxyzcrossplatform_EXPORTS
-  DEP_FILE = xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/android.c.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -std=gnu11
-  INCLUDES = -I/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform -I/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/xyzcrossplatform -I/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android
-  OBJECT_DIR = xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir
-  OBJECT_FILE_DIR = xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android
-
 build xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o: C_COMPILER__xyzcrossplatform_Debug /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/fmemopen.c || cmake_object_order_depends_target_xyzcrossplatform
   DEFINES = -Dxyzcrossplatform_EXPORTS
   DEP_FILE = xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o.d
@@ -962,7 +954,7 @@ build xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/getline.c.o: C_CO
 #############################################
 # Link the shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86_64/libxyzcrossplatform.so
 
-build /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86_64/libxyzcrossplatform.so: C_SHARED_LIBRARY_LINKER__xyzcrossplatform_Debug xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/android.c.o xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/getline.c.o
+build /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/x86_64/libxyzcrossplatform.so: C_SHARED_LIBRARY_LINKER__xyzcrossplatform_Debug xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/getline.c.o
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info
   LINK_FLAGS = -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
   LINK_LIBRARIES = -latomic -lm

@@ -910,7 +910,7 @@ jsgf_parse_buffered_file(const char *filename, jsgf_t * parent, void *buffer, si
     }
     else {
         //in = fopen(filename, "r");
-        printf("DEBUG: about to call the culprit -> fmemopen()\n");
+        
         in = crossplatformfmemopen(buffer, size, "r");
         if (in == NULL) {
             E_ERROR_SYSTEM("Failed to open buffered file for parsing jsgf grammar");
@@ -924,7 +924,7 @@ jsgf_parse_buffered_file(const char *filename, jsgf_t * parent, void *buffer, si
     if (!parent)
         jsgf_set_search_path(jsgf, filename);
 
-    printf("DEBUG:yet, is the next call that makes the crash -> yyparse()\n");
+    
     yyrv = yyparse(yyscanner, jsgf);
     if (yyrv != 0) {
         E_ERROR("Failed to parse JSGF grammar from '%s'\n",

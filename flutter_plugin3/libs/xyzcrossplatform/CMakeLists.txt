@@ -1,8 +1,9 @@
 if(ANDROID)
     add_library(xyzcrossplatform SHARED 
-    android/android.c
+    # android/android.c
     android/fmemopen.c 
-    android/getline.c)
+    android/getline.c
+    )
     
     set_property(TARGET xyzcrossplatform PROPERTY C_STANDARD 11)
 

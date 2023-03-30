@@ -210,3 +210,14 @@
 56	82	1680113999	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzpocketsphinx.so	d0b166d07313fdda
 1	2820	1680114002	CMakeFiles/ps_plus.dir/c_demo.cpp.o	b4e8bd7f87c0c511
 2820	2852	1680114002	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libps_plus.so	5763d13aefb2c0aa
+1	58	1680162058	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzcrossplatform.so	9a88799f83b4d691
+58	80	1680162058	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzsphinxbase.so	512f0e1982e15285
+80	87	1680162058	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzsphinxad.so	2b292384063c838d
+87	104	1680162058	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzpocketsphinx.so	d0b166d07313fdda
+1	2413	1680162061	CMakeFiles/ps_plus.dir/c_demo.cpp.o	b4e8bd7f87c0c511
+1	12	1680162167	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzcrossplatform.so	9e6b8bedd4edd8e8
+12	27	1680162167	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzsphinxbase.so	512f0e1982e15285
+27	34	1680162167	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzsphinxad.so	2b292384063c838d
+34	48	1680162167	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libxyzpocketsphinx.so	d0b166d07313fdda
+1	2305	1680162169	CMakeFiles/ps_plus.dir/c_demo.cpp.o	b4e8bd7f87c0c511
+2305	2339	1680162169	/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/arm64-v8a/libps_plus.so	5763d13aefb2c0aa
