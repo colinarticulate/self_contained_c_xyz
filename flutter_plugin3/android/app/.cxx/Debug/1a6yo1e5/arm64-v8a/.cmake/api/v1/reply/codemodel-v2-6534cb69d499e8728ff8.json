@@ -1,0 +1,143 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "xyzpocketsphinx",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "xyzpocketsphinx",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "xyzsphinxbase",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "xyzsphinxbase",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"build" : "xyzcrossplatform",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "xyzcrossplatform",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "ps_plus",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ps_plus::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ps_plus-Debug-dc6ab146e41118b88a50.json",
+					"name" : "ps_plus",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "xyzcrossplatform::@d0baed5698406c57c82c",
+					"jsonFile" : "target-xyzcrossplatform-Debug-fbb31f26e5b529f448d7.json",
+					"name" : "xyzcrossplatform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "xyzpocketsphinx::@cd3ca0d354e9bb24a08e",
+					"jsonFile" : "target-xyzpocketsphinx-Debug-282f879db0b340a5776a.json",
+					"name" : "xyzpocketsphinx",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "xyzsphinxad::@522354f7d7865b52d40b",
+					"jsonFile" : "target-xyzsphinxad-Debug-469e7cca9b8fbfe8e0fb.json",
+					"name" : "xyzsphinxad",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "xyzsphinxbase::@522354f7d7865b52d40b",
+					"jsonFile" : "target-xyzsphinxbase-Debug-deb2fd93168154b24096.json",
+					"name" : "xyzsphinxbase",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/android/app/.cxx/Debug/1a6yo1e5/arm64-v8a",
+		"source" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

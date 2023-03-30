@@ -71,7 +71,7 @@ signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x74845a30
     edi 0000002c  esi f76c299c
     ebp b7ac5ff8  esp b7ac5fb0  eip f5cc13cb
 backtrace:
-      #00 pc 000563cb  /apex/com.android.runtime/lib/bionic/libc.so (memmove_generic+219) (BuildId: 6e3a0180fa6637b68c0d181c343e6806)
+      #00 pc 000563cb  	(BuildId: 6e3a0180fa6637b68c0d181c343e6806)
       #01 pc 00000aa3  /data/app/~~paaonF2UzhbIAMhCXwseEw==/com.example.flutter_plugin3-3qQbZ712SEEvTD9K88yoeA==/lib/x86/libxyzcrossplatform.so (BuildId: 8c730be389687e433954c64b4b8ccfee33d5add8)
       #02 pc 000db82f  /apex/com.android.runtime/lib/bionic/libc.so (__srefill+287) (BuildId: 6e3a0180fa6637b68c0d181c343e6806)
       #03 pc 000e0567  /apex/com.android.runtime/lib/bionic/libc.so (fread_unlocked+231) (BuildId: 6e3a0180fa6637b68c0d181c343e6806)
@@ -119,3 +119,43 @@ backtrace:
       #05 pc 00000000000505d0  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: 3dd99fe7a181e7428f58a10f32f9fd0e)
 Lost connection to device.
 Exited (sigterm)
+
+F/libc    (23042): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0xffffffffafc3d070 in tid 23247 (1.ui), pid 23042 (flutter_plugin3)
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'samsung/gts6lwifieea/gts6lwifi:10/QP1A.190711.020/T860XXU1BTD3:user/release-keys'
+Revision: '8'
+ABI: 'arm64'
+Timestamp: 2022-12-20 07:48:48+0000
+pid: 23042, tid: 23247, name: 1.ui  >>> com.example.flutter_plugin3 <<<
+uid: 10256
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0xffffffffafc3d070
+    x0  0000007a1ae81c2c  x1  0000000000000001  x2  000000000000002c  x3  ffffffffafc3d018
+    x4  000000799c2ac68e  x5  0000007a143a71a3  x6  61203a4755424544  x7  206f742074756f62
+    x8  dcc08425b7df43cf  x9  dcc08425b7df43cf  x10 0000000000004001  x11 0000000000000000
+    x12 6c6c6163206f7420  x13 2928646165726620  x14 000000799ce56150  x15 000000799ce56160
+    x16 000000799c34f868  x17 0000007aae9f8798  x18 0000007995e7c000  x19 000000799d0018c0
+    x20 00000079b6ae47c0  x21 ffffffffafc3d018  x22 0000007a1ae82020  x23 0000000000000268
+    x24 0000007a1ae81d50  x25 0000007a1ae81d50  x26 0000007a1ae82020  x27 00000079b6af3020
+    x28 0000000800000078  x29 0000007a1ae81c10
+    sp  0000007a1ae81bf0  lr  000000799c2cc5b0  pc  0000007aae9f87ac
+backtrace:
+      #00 pc 00000000000e27ac  /apex/com.android.runtime/lib64/bionic/libc.so (fread+20) (BuildId: b0750023d0cf44584c064da02400c159)
+      #01 pc 00000000000845ac  /data/app/com.example.flutter_plugin3-iDWLFX3roL56G8KmRm0T9g==/lib/arm64/libps_plus.so (XYZ_PocketSphinx::recognize_from_buffered_file()+156) (BuildId: 539ae600e959321485fccf6a10768227727862bc)
+      #02 pc 000000000008485c  /data/app/com.example.flutter_plugin3-iDWLFX3roL56G8KmRm0T9g==/lib/arm64/libps_plus.so (process(XYZ_PocketSphinx*, PS_Data*)+192) (BuildId: 539ae600e959321485fccf6a10768227727862bc)
+      #03 pc 0000000000094624  /data/app/com.example.flutter_plugin3-iDWLFX3roL56G8KmRm0T9g==/lib/arm64/libps_plus.so (BuildId: 539ae600e959321485fccf6a10768227727862bc)
+      #04 pc 00000000000e6f10  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+36) (BuildId: b0750023d0cf44584c064da02400c159)
+      #05 pc 00000000000850c8  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: b0750023d0cf44584c064da02400c159)
+Lost connection to device.
+Exited (sigterm)
+
+
+
+
+SUMARY:
+#00 pc 00018f64  /system/lib/libc.so (memcpy+96)
+#00 pc 00000000000ac1dc  /apex/com.android.runtime/lib64/bionic/libc.so (fread+20) (BuildId: 3dd99fe7a181e7428f58a10f32f9fd0e)
+#00 pc 000563cb  /apex/com.android.runtime/lib/bionic/libc.so (memmove_generic+219) (BuildId: 6e3a0180fa6637b68c0d181c343e6806)
+
+
+
+

@@ -10,6 +10,8 @@
 #include <assert.h>
 #include <chrono>
 #include <memory>
+#include <iostream>
+#include <exception>
 
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
@@ -355,12 +357,12 @@ class XYZ_PocketSphinx {
 
 
             fname = cmd_ln_str_r(_config, "-infile");
-            // FILE* file = NULL;
-            // if ((file = fopen(fname, "rb")) == NULL) {
-            //     E_FATAL_SYSTEM("Failed to open file '%s' for reading",   
-            //                    fname);
-                               
-            // }
+//             FILE* file = NULL;
+//             if ((file = fopen(fname, "rb")) == NULL) {
+//                 E_FATAL_SYSTEM("Failed to open file '%s' for reading",
+//                                fname);
+//
+//             }
             FILE* file = NULL;
             file = crossplatformfmemopen(_audio_buffer, _audio_buffer_size ,"rb");
             //file = fmemopen(_audio_buffer, _audio_buffer_size ,"rb");
@@ -374,8 +376,9 @@ class XYZ_PocketSphinx {
             if (strlen(fname) > 4 && strcmp(fname + strlen(fname) - 4, ".wav") == 0) {
                 char waveheader[44];
                 printf("DEBUG: about to call fread()");
-                k=fread(waveheader, 1, 44, file); //warning:  ignoring return value of ‘fread’
-            
+                k = fread(waveheader, 1, 44, file); //warning:  ignoring return value of ‘fread’
+
+
             if (!check_wav_header(waveheader, (int)cmd_ln_float32_r(_config, "-samprate")))
                     E_FATAL("Failed to process file '%s' due to format mismatch.\n", fname);
             }

@@ -1,2 +1,126 @@
 ninja: Entering directory `/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/android/app/.cxx/Debug/4y522z6i/armeabi-v7a'
-ninja: no work to do.
+[1/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/blkarray_list.c.o
+[2/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/kws_detections.c.o
+[3/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_history.c.o
+[4/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/dict.c.o
+[5/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/kws_search.c.o
+[6/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_gauden.c.o
+[7/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/bin_mdef.c.o
+[8/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/dict2pid.c.o
+[9/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_lextree.c.o
+[10/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_mgau.c.o
+[11/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/allphone_search.c.o
+[12/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/hmm.c.o
+[13/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ms_senone.c.o
+[14/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/phone_loop_search.c.o
+[15/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/acmod.c.o
+[16/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/fsg_search.c.o
+[17/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/mdef.c.o
+[18/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_search.c.o
+[19/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_search_fwdflat.c.o
+[20/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_alignment.c.o
+[21/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_mllr.c.o
+[22/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/vector.c.o
+[23/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxad.dir/src/libsphinxad/ad_base.c.o
+[24/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/state_align_search.c.o
+[25/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/tmat.c.o
+[26/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_interface.c.o
+[27/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_prespch_buf.c.o
+[28/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_affine.c.o
+[29/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ngram_search_fwdtree.c.o
+[30/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/pocketsphinx.c.o
+[31/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ptm_mgau.c.o
+[32/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_noise.c.o
+[33/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/s2_semi_mgau.c.o
+[34/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_sigproc.c.o
+[35/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_inverse_linear.c.o
+[36/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp_piecewise_linear.c.o
+[37/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fixlog.c.o
+[38/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/yin.c.o
+[39/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/cmn_live.c.o
+[40/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/fe/fe_warp.c.o
+[41/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/agc.c.o
+[42/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/cmn.c.o
+[43/90] Building C object xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir/src/libpocketsphinx/ps_lattice.c.o
+[44/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf_scanner.c.o
+[45/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/lda.c.o
+[46/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/hash_table.c.o
+[47/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngrams_raw.c.o
+[48/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/fsg_model.c.o
+[49/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf.c.o
+[50/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_model_set.c.o
+[51/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_model_trie.c.o
+[52/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/jsgf_parser.c.o
+[53/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/lm_trie_quant.c.o
+[54/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/lm_trie.c.o
+[55/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bitarr.c.o
+[56/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bitvec.c.o
+[57/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/case.c.o
+[58/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/feat/feat.c.o
+[59/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/errno.c.o
+[60/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/bio.c.o
+[61/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/lm/ngram_model.c.o
+[62/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/ckd_alloc.c.o
+[63/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/err.c.o
+[64/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/genrand.c.o
+[65/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/glist.c.o
+[66/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/listelem_alloc.c.o
+[67/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/priority_queue.c.o
+[68/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/filename.c.o
+[69/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/matrix.c.o
+[70/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/heap.c.o
+[71/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/f2c_lite.c.o
+[72/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/mmio.c.o
+[73/90] Building C object xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/fmemopen.c:6:12: warning: implicit declaration of function 'fmemopen' is invalid in C99 [-Wimplicit-function-declaration]
+    return fmemopen (__s, __len, __modes);
+           ^
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/fmemopen.c:6:12: warning: incompatible integer to pointer conversion returning 'int' from a function with result type 'FILE *' (aka 'struct __sFILE *') [-Wint-conversion]
+    return fmemopen (__s, __len, __modes);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[74/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/logmath.c.o
+[75/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/cmd_ln.c.o
+[76/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/strfuncs.c.o
+[77/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/pio.c.o
+[78/90] Building C object xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/getline.c.o
+[79/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/profile.c.o
+[80/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/sbthread.c.o
+[81/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/blas_lite.c.o
+[82/90] Linking C shared library /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/armeabi-v7a/libxyzcrossplatform.so
+FAILED: /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/armeabi-v7a/libxyzcrossplatform.so 
+: && /home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -fno-limit-debug-info  -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -shared -Wl,-soname,libxyzcrossplatform.so -o /home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/4y522z6i/obj/armeabi-v7a/libxyzcrossplatform.so xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/getline.c.o  -latomic -lm && :
+ld: error: undefined symbol: fmemopen
+>>> referenced by fmemopen.c:6 (/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android/fmemopen.c:6)
+>>>               xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir/android/fmemopen.c.o:(crossplatformfmemopen)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+[83/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/slamch.c.o
+[84/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/dtoa.c.o
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c:147:9: warning: 'DBL_DIG' macro redefined [-Wmacro-redefined]
+#define DBL_DIG 15
+        ^
+/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.8/include/float.h:95:9: note: previous definition is here
+#define DBL_DIG __DBL_DIG__
+        ^
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c:148:9: warning: 'DBL_MAX_10_EXP' macro redefined [-Wmacro-redefined]
+#define DBL_MAX_10_EXP 308
+        ^
+/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.8/include/float.h:111:9: note: previous definition is here
+#define DBL_MAX_10_EXP __DBL_MAX_10_EXP__
+        ^
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c:149:9: warning: 'DBL_MAX_EXP' macro redefined [-Wmacro-redefined]
+#define DBL_MAX_EXP 1024
+        ^
+/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.8/include/float.h:107:9: note: previous definition is here
+#define DBL_MAX_EXP __DBL_MAX_EXP__
+        ^
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/src/libsphinxbase/util/dtoa.c:150:9: warning: 'FLT_RADIX' macro redefined [-Wmacro-redefined]
+#define FLT_RADIX 2
+        ^
+/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.8/include/float.h:84:9: note: previous definition is here
+#define FLT_RADIX __FLT_RADIX__
+        ^
+4 warnings generated.
+[85/90] Building C object xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir/src/libsphinxbase/util/slapack_lite.c.o
+[86/90] Building CXX object CMakeFiles/ps_plus.dir/c_demo.cpp.o
+ninja: build stopped: subcommand failed.
