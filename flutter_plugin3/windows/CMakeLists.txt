@@ -56,6 +56,11 @@ add_subdirectory("runner")
 # them to the application.
 include(flutter/generated_plugins.cmake)
 
+#=============other plugins:
+# target_link_libraries(ps_plus PRIVATE flutter flutter_wrapper_plugin)
+
+add_subdirectory(libs)
+
 
 # === Installation ===
 # Support files are copied into place next to the executable, so that it can

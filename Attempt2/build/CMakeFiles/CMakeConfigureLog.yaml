@@ -1,0 +1,349 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.19044 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine version 14.0.27530.0
+      Copyright (C) Microsoft Corporation. All rights reserved.
+      
+      Build started 31/03/2023 13:45:34.
+      Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\3.26.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\3.26.2\\CompilerIdC\\.\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\3.26.2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.79
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/3.26.2/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine version 14.0.27530.0
+      Copyright (C) Microsoft Corporation. All rights reserved.
+      
+      Build started 31/03/2023 13:45:35.
+      Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\3.26.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\3.26.2\\CompilerIdCXX\\.\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\3.26.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.76
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/3.26.2/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-2lpft3"
+      binary: "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-2lpft3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-2lpft3
+        
+        Run Build Command(s):C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe cmTC_b0043.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=14.0 /v:n && Microsoft (R) Build Engine version 14.0.27530.0
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 31/03/2023 13:45:36.
+        Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lpft3\\cmTC_b0043.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b0043.dir\\Debug\\".
+          Creating directory "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lpft3\\Debug\\".
+          Creating directory "cmTC_b0043.dir\\Debug\\cmTC_b0043.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b0043.dir\\Debug\\cmTC_b0043.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\CL.exe /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b0043.dir\\Debug\\\\" /Fd"cmTC_b0043.dir\\Debug\\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          
+          cl /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b0043.dir\\Debug\\\\" /Fd"cmTC_b0043.dir\\Debug\\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lpft3\\Debug\\cmTC_b0043.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-2lpft3/Debug/cmTC_b0043.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-2lpft3/Debug/cmTC_b0043.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_b0043.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_b0043.vcxproj -> C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lpft3\\Debug\\cmTC_b0043.exe
+          cmTC_b0043.vcxproj -> C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-2lpft3/Debug/cmTC_b0043.pdb (Full PDB)
+        FinalizeBuildStatus:
+          Deleting file "cmTC_b0043.dir\\Debug\\cmTC_b0043.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b0043.dir\\Debug\\cmTC_b0043.tlog\\cmTC_b0043.lastbuildstate".
+        Done Building Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2lpft3\\cmTC_b0043.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.84
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-guj6j8"
+      binary: "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-guj6j8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-guj6j8
+        
+        Run Build Command(s):C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe cmTC_8c979.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=14.0 /v:n && Microsoft (R) Build Engine version 14.0.27530.0
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 31/03/2023 13:45:37.
+        Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-guj6j8\\cmTC_8c979.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_8c979.dir\\Debug\\".
+          Creating directory "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-guj6j8\\Debug\\".
+          Creating directory "cmTC_8c979.dir\\Debug\\cmTC_8c979.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_8c979.dir\\Debug\\cmTC_8c979.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\CL.exe /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8c979.dir\\Debug\\\\" /Fd"cmTC_8c979.dir\\Debug\\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          
+          cl /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8c979.dir\\Debug\\\\" /Fd"cmTC_8c979.dir\\Debug\\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-guj6j8\\Debug\\cmTC_8c979.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-guj6j8/Debug/cmTC_8c979.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-guj6j8/Debug/cmTC_8c979.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_8c979.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_8c979.vcxproj -> C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-guj6j8\\Debug\\cmTC_8c979.exe
+          cmTC_8c979.vcxproj -> C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-guj6j8/Debug/cmTC_8c979.pdb (Full PDB)
+        FinalizeBuildStatus:
+          Deleting file "cmTC_8c979.dir\\Debug\\cmTC_8c979.tlog\\unsuccessfulbuild".
+          Touching "cmTC_8c979.dir\\Debug\\cmTC_8c979.tlog\\cmTC_8c979.lastbuildstate".
+        Done Building Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-guj6j8\\cmTC_8c979.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.84
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake:121 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-5gssur"
+      binary: "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-5gssur"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-5gssur
+        
+        Run Build Command(s):C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe cmTC_33095.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=14.0 /v:n && Microsoft (R) Build Engine version 14.0.27530.0
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 31/03/2023 13:45:38.
+        Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gssur\\cmTC_33095.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_33095.dir\\Debug\\".
+          Creating directory "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gssur\\Debug\\".
+          Creating directory "cmTC_33095.dir\\Debug\\cmTC_33095.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_33095.dir\\Debug\\cmTC_33095.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\CL.exe /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_33095.dir\\Debug\\\\" /Fd"cmTC_33095.dir\\Debug\\vc140.pdb" /Gd /TP /analyze- /errorReport:queue  -std:c++14 "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gssur\\feature_tests.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          
+          cl /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_33095.dir\\Debug\\\\" /Fd"cmTC_33095.dir\\Debug\\vc140.pdb" /Gd /TP /analyze- /errorReport:queue  -std:c++14 "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gssur\\feature_tests.cxx"
+          
+          feature_tests.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gssur\\Debug\\cmTC_33095.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-5gssur/Debug/cmTC_33095.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-5gssur/Debug/cmTC_33095.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_33095.dir\\Debug\\feature_tests.obj
+          cmTC_33095.vcxproj -> C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gssur\\Debug\\cmTC_33095.exe
+          cmTC_33095.vcxproj -> C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-5gssur/Debug/cmTC_33095.pdb (Full PDB)
+        FinalizeBuildStatus:
+          Deleting file "cmTC_33095.dir\\Debug\\cmTC_33095.tlog\\unsuccessfulbuild".
+          Touching "cmTC_33095.dir\\Debug\\cmTC_33095.tlog\\cmTC_33095.lastbuildstate".
+        Done Building Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gssur\\cmTC_33095.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.86
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake:129 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-e2c1w2"
+      binary: "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-e2c1w2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-e2c1w2
+        
+        Run Build Command(s):C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe cmTC_62e56.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=14.0 /v:n && Microsoft (R) Build Engine version 14.0.27530.0
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        Build started 31/03/2023 13:45:39.
+        Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e2c1w2\\cmTC_62e56.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_62e56.dir\\Debug\\".
+          Creating directory "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e2c1w2\\Debug\\".
+          Creating directory "cmTC_62e56.dir\\Debug\\cmTC_62e56.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_62e56.dir\\Debug\\cmTC_62e56.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\CL.exe /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_62e56.dir\\Debug\\\\" /Fd"cmTC_62e56.dir\\Debug\\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e2c1w2\\feature_tests.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          
+          cl /c /Zi /W1 /WX- /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_62e56.dir\\Debug\\\\" /Fd"cmTC_62e56.dir\\Debug\\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e2c1w2\\feature_tests.cxx"
+          
+          feature_tests.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e2c1w2\\Debug\\cmTC_62e56.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-e2c1w2/Debug/cmTC_62e56.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-e2c1w2/Debug/cmTC_62e56.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_62e56.dir\\Debug\\feature_tests.obj
+          cmTC_62e56.vcxproj -> C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e2c1w2\\Debug\\cmTC_62e56.exe
+          cmTC_62e56.vcxproj -> C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build/CMakeFiles/CMakeScratch/TryCompile-e2c1w2/Debug/cmTC_62e56.pdb (Full PDB)
+        FinalizeBuildStatus:
+          Deleting file "cmTC_62e56.dir\\Debug\\cmTC_62e56.tlog\\unsuccessfulbuild".
+          Touching "cmTC_62e56.dir\\Debug\\cmTC_62e56.tlog\\cmTC_62e56.lastbuildstate".
+        Done Building Project "C:\\Users\\dbarbera\\Documents\\Repositories\\self_contained_c_xyz\\Attempt2\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e2c1w2\\cmTC_62e56.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.83
+        
+      exitCode: 0
+...

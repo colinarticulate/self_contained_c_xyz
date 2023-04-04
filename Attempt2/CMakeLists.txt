@@ -14,7 +14,7 @@ add_subdirectory(xyzcrossplatform)
 
 
 add_definitions(-DHAVE_CONFIG_H)
-add_compile_options(-O3)
+# add_compile_options(-O3)
 
 target_link_libraries(xyzsphinxbase PUBLIC xyzcrossplatform)
 target_link_libraries(xyzsphinxad PUBLIC xyzsphinxbase)

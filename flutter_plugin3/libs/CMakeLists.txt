@@ -29,7 +29,7 @@ target_include_directories(xyzpocketsphinx PUBLIC "${PROJECT_BINARY_DIR}")
 add_library(ps_plus
   SHARED
   ./c_demo.cpp
-  #exports.def
+#exports.def
 )
 set_property(TARGET ps_plus PROPERTY CXX_STANDARD 11)
 

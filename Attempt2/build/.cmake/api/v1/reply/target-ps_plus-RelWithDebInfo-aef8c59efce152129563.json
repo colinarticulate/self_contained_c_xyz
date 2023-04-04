@@ -1,0 +1,252 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/bin/RelWithDebInfo/ps_plus.exe"
+		},
+		{
+			"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/bin/RelWithDebInfo/ps_plus.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_definitions",
+			"target_include_directories",
+			"set_property"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /O2 /Ob1 /DNDEBUG -MD"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "HAVE_CONFIG_H"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/ps_plus"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/aside_ps_library"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/_xyzsphinxbase/fe"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzpocketsphinx/xyzpocketsphinx"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/build"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxbase"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/include/xyzsphinxbase"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzsphinxbase/xyzsphinxad"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/dbarbera/Documents/Repositories/self_contained_c_xyz/Attempt2/xyzcrossplatform/windows"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					6
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "xyzpocketsphinx::@cd3ca0d354e9bb24a08e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "xyzsphinxbase::@522354f7d7865b52d40b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "xyzsphinxad::@522354f7d7865b52d40b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "xyzcrossplatform::@d0baed5698406c57c82c"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ps_plus::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /GR /EHsc /Zi /O2 /Ob1 /DNDEBUG -MD",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:X86 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "xyzpocketsphinx\\RelWithDebInfo\\xyzpocketsphinx.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "xyzsphinxbase\\RelWithDebInfo\\xyzsphinxad.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "xyzsphinxbase\\RelWithDebInfo\\xyzsphinxbase.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "xyzcrossplatform\\RelWithDebInfo\\xyzcrossplatform.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "ps_plus",
+	"nameOnDisk" : "ps_plus.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "c_demo_exec.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

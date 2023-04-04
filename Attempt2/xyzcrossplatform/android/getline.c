@@ -14,6 +14,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA. */
 /* Written by Jan Brittenson, bson@gnu.ai.mit.edu.  */
 #include <assert.h>
 #include <stdio.h>
+#include <stdlib.h> 
 /* Always add at least this many bytes when extending the buffer.  */
 #define MIN_CHUNK 64
 /* Read up to (and including) a TERMINATOR from STREAM into *LINEPTR

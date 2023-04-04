@@ -32,9 +32,23 @@ target_compile_definitions(${BINARY_NAME} PRIVATE "NOMINMAX")
 
 # Add dependency libraries and include directories. Add any application-specific
 # dependencies here.
+
 target_link_libraries(${BINARY_NAME} PRIVATE flutter flutter_wrapper_app)
 target_link_libraries(${BINARY_NAME} PRIVATE "dwmapi.lib")
 target_include_directories(${BINARY_NAME} PRIVATE "${CMAKE_SOURCE_DIR}")
 
 # Run the Flutter tool portions of the build. This must not be removed.
 add_dependencies(${BINARY_NAME} flutter_assemble)
+
+
+#Here we add our library:
+# add_library(ps_plus
+#    SHARED
+#    ../../libs/c_demo.cpp
+#    ../../libs/exports.def
+# )
+# # add_subdirectory(../../libs)
+# target_link_libraries(${BINARY_NAME} PRIVATE ps_plus)
+#there was our library
+
+

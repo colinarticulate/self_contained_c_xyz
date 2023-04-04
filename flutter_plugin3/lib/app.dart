@@ -9,7 +9,7 @@ class Demo extends StatelessWidget {
     return DefaultTextStyle(
         style: Theme.of(context).textTheme.displayLarge!,
         textAlign: TextAlign.center,
-        child: Row(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
@@ -22,7 +22,7 @@ class Demo extends StatelessWidget {
               },
               child: const Text('PS parallel'),
             ),
-            SizedBox(width: 50),
+            SizedBox(height: 50),
             ElevatedButton(
               onPressed: () {
                 showModalBottomSheet(
@@ -32,6 +32,17 @@ class Demo extends StatelessWidget {
                     });
               },
               child: const Text('Batch parallel'),
+            ),
+            SizedBox(height: 50),
+            ElevatedButton(
+              onPressed: () {
+                showModalBottomSheet(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return psMockCallBody();
+                    });
+              },
+              child: const Text('Delay Call'),
             ),
           ],
         ));
