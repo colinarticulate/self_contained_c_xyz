@@ -1,0 +1,11 @@
+Executable : /home/dbarbera/Android/Sdk/cmake/3.18.1/bin/ninja
+arguments : 
+-C
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/android/app/.cxx/Debug/5y657u68/armeabi-v7a
+ps_plus
+xyzcrossplatform
+xyzpocketsphinx
+xyzsphinxad
+xyzsphinxbase
+jvmArgs : 
+

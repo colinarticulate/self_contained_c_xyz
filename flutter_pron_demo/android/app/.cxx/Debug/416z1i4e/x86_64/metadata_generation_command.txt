@@ -1,0 +1,23 @@
+                    Executable : /home/dbarbera/Android/Sdk/cmake/3.18.1/bin/cmake
+arguments : 
+-H/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=23
+-DANDROID_PLATFORM=android-23
+-DANDROID_ABI=x86_64
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DANDROID_NDK=/home/dbarbera/Android/Sdk/ndk/23.1.7779620
+-DCMAKE_ANDROID_NDK=/home/dbarbera/Android/Sdk/ndk/23.1.7779620
+-DCMAKE_TOOLCHAIN_FILE=/home/dbarbera/Android/Sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/home/dbarbera/Android/Sdk/cmake/3.18.1/bin/ninja
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/416z1i4e/obj/x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/Debug/416z1i4e/obj/x86_64
+-DCMAKE_BUILD_TYPE=Debug
+-B/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/android/app/.cxx/Debug/416z1i4e/x86_64
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2
