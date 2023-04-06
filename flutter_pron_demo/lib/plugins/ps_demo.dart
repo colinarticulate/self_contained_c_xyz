@@ -1,9 +1,20 @@
 import 'dart:ffi';
 import 'dart:io';
 import 'package:ffi/ffi.dart';
+import 'pron_bindings.dart';
 
-String aResponse =
-    " { \"word\": \"climbed\", \"results\": [{\"letters\": \"cl\",\"phonemes\": \"kl\",\"verdict\": \"good\"}],  \"percent_move\": 100, \"err\": null}";
+final PronGO pronBindings = PronGO(nativeGoPronLib);
+
+DynamicLibrary nativeGoPronLib = Platform.isMacOS || Platform.isIOS
+    ? DynamicLibrary.open('libpron.dylib') //MacOS iOS
+    : (DynamicLibrary.open(Platform.isWindows // Windows
+        ? 'pron.dll'
+        : 'libpron.so')); // Android and Linux
+
+//JSON to string conversion:
+//https://jsontostring.com/
+String mockResult =
+    "{\"word\":\"climbed\",\"results\":[{\"letters\":\"cl\",\"phonemes\":\"kl\",\"verdict\":\"good\"},{\"letters\":\"i\",\"phonemes\":\"ɑɪ\",\"verdict\":\"good\"},{\"letters\":\"mb\",\"phonemes\":\"m\",\"verdict\":\"good\"},{\"letters\":\"ed\",\"phonemes\":\"d\",\"verdict\":\"good\"}],\"percent_move\":100,\"err\":null}";
 
 // This should be in another file
 class ArrayOfStrings extends Struct {
@@ -30,6 +41,8 @@ class FFIBridge {
     // nativeApiLib = Platform.isMacOS || Platform.isIOS
     //     ? nativeApiLib = DynamicLibrary.open('libps_plus.dylib') //MacOS ios
     //     : (DynamicLibrary.open('libps_plus.so')); // android and linux
+
+    //from pron in go:
 
     nativeApiLib = Platform.isMacOS || Platform.isIOS
         ? DynamicLibrary.open('libps_plus.dylib') //MacOS iOS
@@ -148,18 +161,38 @@ class FFIBridge {
     return "${timing}";
   }
 
-  static Future<String> pron() async {
+  static Future<String> pron_demo() async {
     final c_path = _path.toNativeUtf8();
     print(c_path);
     print(c_path.toDartString());
     final stopwatch = Stopwatch()..start();
     // Pointer<ArrayOfStrings> result = FFIBridge.c_ps_demo(c_path);
     await Future.delayed(const Duration(seconds: 1));
-
     final timing = stopwatch.elapsed;
-    print('pron executed in ${timing}');
+    print('pron_demo executed in ${timing}');
 
-    return "${timing}\n${aResponse}";
+    final audiofile = toGoString("audiofile");
+    final word = toGoString("word");
+    final outputfolder = toGoString("outputfolder");
+    final dictfile = toGoString("dictfile");
+    final phdictfile = toGoString("phdictfile");
+    final featparams = toGoString("featparams");
+    final hmm = toGoString("hmm");
+
+    final GoString goResult = pronBindings.Pron(
+        audiofile, word, outputfolder, dictfile, phdictfile, featparams, hmm);
+    String result = fromGoString(goResult);
+
+    malloc.free(c_path);
+    freeGoString(audiofile);
+    freeGoString(word);
+    freeGoString(outputfolder);
+    freeGoString(dictfile);
+    freeGoString(phdictfile);
+    freeGoString(featparams);
+    freeGoString(hmm);
+
+    return result;
   }
 } // FFIBridge
 //------------------------------------------------------------

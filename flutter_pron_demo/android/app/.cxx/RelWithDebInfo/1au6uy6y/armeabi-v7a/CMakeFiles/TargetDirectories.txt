@@ -1,0 +1,13 @@
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/CMakeFiles/ps_plus.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzpocketsphinx/CMakeFiles/rebuild_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzpocketsphinx/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzsphinxbase/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzsphinxbase/CMakeFiles/rebuild_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzcrossplatform/CMakeFiles/rebuild_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzcrossplatform/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/flutter_pron_demo/android/app/.cxx/RelWithDebInfo/1au6uy6y/armeabi-v7a/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir

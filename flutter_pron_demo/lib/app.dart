@@ -22,28 +22,6 @@ class Demo extends StatelessWidget {
               },
               child: const Text('pron'),
             ),
-            // SizedBox(height: 50),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     showModalBottomSheet(
-            //         context: context,
-            //         builder: (BuildContext context) {
-            //           return psBatchCallBody();
-            //         });
-            //   },
-            //   child: const Text('Batch parallel'),
-            // ),
-            // SizedBox(height: 50),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     showModalBottomSheet(
-            //         context: context,
-            //         builder: (BuildContext context) {
-            //           return psMockCallBody();
-            //         });
-            //   },
-            //   child: const Text('Delay Call'),
-            // ),
           ],
         ));
   }

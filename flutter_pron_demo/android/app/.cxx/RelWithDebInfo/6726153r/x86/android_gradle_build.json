@@ -1,0 +1,85 @@
+{
+  "buildFiles": [
+    "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/CMakeLists.txt",
+    "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/CMakeLists.txt",
+    "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzpocketsphinx/CMakeLists.txt",
+    "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/dbarbera/Android/Sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/android/app/.cxx/RelWithDebInfo/6726153r/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/dbarbera/Android/Sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/android/app/.cxx/RelWithDebInfo/6726153r/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "ps_plus::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "ps_plus",
+      "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libps_plus.so",
+      "runtimeFiles": [
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzpocketsphinx.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzsphinxad.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzsphinxbase.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzcrossplatform.so"
+      ]
+    },
+    "xyzcrossplatform::@d0baed5698406c57c82c": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "xyzcrossplatform",
+      "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzcrossplatform.so",
+      "runtimeFiles": []
+    },
+    "xyzpocketsphinx::@cd3ca0d354e9bb24a08e": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "xyzpocketsphinx",
+      "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzpocketsphinx.so",
+      "runtimeFiles": [
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzsphinxad.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzsphinxbase.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzcrossplatform.so"
+      ]
+    },
+    "xyzsphinxad::@522354f7d7865b52d40b": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "xyzsphinxad",
+      "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzsphinxad.so",
+      "runtimeFiles": [
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzsphinxbase.so",
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzcrossplatform.so"
+      ]
+    },
+    "xyzsphinxbase::@522354f7d7865b52d40b": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "xyzsphinxbase",
+      "output": "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzsphinxbase.so",
+      "runtimeFiles": [
+        "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/x86/libxyzcrossplatform.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
