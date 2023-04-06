@@ -1,0 +1,170 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/armeabi-v7a/libxyzsphinxad.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_definitions"
+		],
+		"files" : 
+		[
+			"xyzsphinxbase/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"fragment" : "-std=gnu11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"define" : "xyzsphinxad_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxbase"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/include/xyzsphinxbase"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzsphinxbase/xyzsphinxad"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/libs/xyzcrossplatform/android"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			],
+			"sysroot" : 
+			{
+				"path" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "xyzcrossplatform::@d0baed5698406c57c82c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "xyzsphinxbase::@522354f7d7865b52d40b"
+		}
+	],
+	"id" : "xyzsphinxad::@522354f7d7865b52d40b",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 0,
+				"fragment" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/armeabi-v7a/libxyzsphinxbase.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/dbarbera/Repositories/self_contained_c_xyz/flutter_plugin3/build/app/intermediates/cxx/RelWithDebInfo/6726153r/obj/armeabi-v7a/libxyzcrossplatform.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-latomic -lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C",
+		"sysroot" : 
+		{
+			"path" : "/home/dbarbera/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+		}
+	},
+	"name" : "xyzsphinxad",
+	"nameOnDisk" : "libxyzsphinxad.so",
+	"paths" : 
+	{
+		"build" : "xyzsphinxbase",
+		"source" : "xyzsphinxbase"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "xyzsphinxbase/src/libsphinxad/ad_base.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
