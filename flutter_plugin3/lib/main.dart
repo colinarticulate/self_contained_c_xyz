@@ -7,9 +7,6 @@ import 'app.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  String device_path = await Storage.init();
-  FFIBridge.initialize(device_path);
-
   runApp(
     MaterialApp(
       home: Scaffold(
