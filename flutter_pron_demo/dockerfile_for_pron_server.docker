@@ -1,0 +1,85 @@
+FROM debian:11
+
+ADD ./ssh_keys/gitconfig /root/.gitconfig
+ADD ./ssh_keys/git-credentials /root/.git-credentials
+
+
+ENV PATH="/usr/local/go/bin:${PATH}"
+ENV GOPATH="/usr/local/go/"
+ENV GOPRIVATE="github.com/colinarticulate/*,github.com/davidbarbera/*"
+ENV GODEBUG=cgocheck=0
+
+#ENV LD_LIBRARY_PATH=/usr/local/lib
+#ENV PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+
+
+RUN apt-get update && apt-get install -y wget git
+
+RUN wget -c https://dl.google.com/go/go1.18.1.linux-arm64.tar.gz -O - | tar -xz -C /usr/local/
+#RUN wget -c https://dl.google.com/go/go1.18.1.linux-amd64.tar.gz -O - | tar -xz -C /usr/local/
+
+
+RUN mkdir xyz && cd xyz && chmod 777 -R . && git clone https://github.com/DavidBarbera/articulate-pocketsphinx.git .
+
+
+RUN echo "==> Updating and installing packages" && \
+    apt-get update && \
+    apt-get install -y build-essential gcc automake autoconf libtool && \
+    apt-get install -y swig python3-dev python3-numpy python3-scipy && \
+    apt-get install -y sox bison && \
+    echo "==> Installing Sphinx" && \
+    cd xyz/xyzsphinxbase && \
+    ./autogen.sh && \
+    ./configure --with-swig-python && \
+    make && \
+    make install && \
+    echo "==> Cleaning Up" && \
+    rm -rf /var/lib/{apt,dpkg,cache,log} && \
+    apt-get remove -y --auto-remove build-essential gcc automake autoconf libtool && \
+    apt-get clean
+
+
+
+RUN echo "==> Updating and installing packages" && \
+    apt-get update && \
+    apt-get install -y build-essential gcc g++ automake autoconf libtool && \
+    echo "==> Installing Sphinx" && \    
+    cd xyz/xyzpocketsphinx && \
+    ./autogen.sh && \
+    ./configure --without-python && \
+    make && \
+    make install && \
+    echo "==> Verifying Install" && \
+    make installcheck && \
+    echo "==> Cleaning Up" && \
+    rm -rf /var/lib/{apt,dpkg,cache,log} && \    
+    apt-get clean
+
+
+RUN cd /usr/local/lib/ && ldconfig /etc/ld.so.conf.d  
+
+RUN mkdir /root/go && mkdir /root/go/src
+RUN cd /root/go/src && git clone https://github.com/colinarticulate/web_pron.git
+RUN cd /root/go/src/web_pron && go build
+RUN cd /root/go/src/web_pron && chmod +x web_pron
+
+ADD ./go-server-service/config.json /root/go/src/web_pron/config.json
+
+
+
+RUN mkdir /local_data
+
+RUN mkdir /public_storage
+
+
+
+
+
+
+WORKDIR /root/go/src/web_pron/
+
+
+EXPOSE 8080
+CMD ["/root/go/src/web_pron/web_pron"]
+
+

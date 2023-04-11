@@ -55,32 +55,9 @@ class max_align_t extends ffi.Opaque {}
 
 class _GoString_ extends ffi.Struct {
   external ffi.Pointer<ffi.Char> p;
-  // external ffi.Pointer<Utf8> p;
 
   @ptrdiff_t()
   external int n;
-  //This is from:
-  //https://gist.github.com/sjindel-google/b88c964eb260e09280e588c41c6af3e5
-  // String toString() {
-  //   List<int> units = [];
-  //   for (int i = 0; i < n; ++i) {
-  //     units.add(p.elementAt(i).value);
-  //   }
-  //   return Utf8Decoder().convert(units);
-  // }
-
-  // _GoString_(String string) {
-  //   List<int> units = Utf8Encoder().convert(string);
-  //   p = malloc.allocate<Char>(units.length);
-  //   for (int i = 0; i < units.length; ++i) {
-  //     p.elementAt(i).value = units[i];
-  //   }
-  //   n = units.length;
-  // }
-
-  // void free() {
-  //   malloc.free(p);
-  // }
 }
 
 typedef ptrdiff_t = ffi.Long;
@@ -107,30 +84,24 @@ typedef GoString = _GoString_;
 
 const int NULL = 0;
 
-GoString toGoString(String string) {
-  GoString goString = malloc.allocate<GoString>(1).ref;
-  List<int> units = Utf8Encoder().convert(string);
-  goString.p = malloc.allocate<ffi.Char>(units.length);
-  for (int i = 0; i < units.length; ++i) {
-    goString.p.elementAt(i).value = units[i];
-  }
-  goString.n = units.length;
-  return goString;
-  // return GoString()
-  //   ..p = p
-  //   ..n = units.length;
+//These are the only 3 things that needed to be added:
+Pointer<GoString> toGoString(String dartString) {
+//https://dart.dev/tools/diagnostic-messages?utm_source=dartdev&utm_medium=redir&utm_id=diagcode&utm_content=creation_of_struct_or_union#creation_of_struct_or_union
+  final pointer = calloc.allocate<GoString>(sizeOf<GoString>());
+  pointer.ref.p = dartString.toNativeUtf8().cast<Char>();
+  pointer.ref.n = dartString.length;
+  // return pointer.ref;
+  return pointer;
 }
 
-void freeGoString(GoString goString) {
-  malloc.free(goString.p);
-  // malloc.free(goString as ffi.Struct<ffi.Char>);
+void freeGoString(Pointer<GoString> goString) {
+  malloc.free(goString.ref.p);
+  calloc.free(goString);
 }
 
 String fromGoString(GoString goString) {
-  List<int> units = [];
-  for (int i = 0; i < goString.n; ++i) {
-    units.add(goString.p.elementAt(i).value);
-  }
-  // return units.join("");
-  return Utf8Decoder().convert(units);
+  final string = goString.p.cast<Utf8>().toDartString(length: goString.n);
+  return string;
 }
+
+//We could also add slices, but we currently don't need them

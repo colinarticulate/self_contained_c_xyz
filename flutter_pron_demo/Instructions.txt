@@ -1,0 +1,33 @@
+Once ffigen generates the bindings, please add the following at the end of the generated file:
+
+//These are the only 3 things that needed to be added:
+Pointer<GoString> toGoString(String dartString) {
+//https://dart.dev/tools/diagnostic-messages?utm_source=dartdev&utm_medium=redir&utm_id=diagcode&utm_content=creation_of_struct_or_union#creation_of_struct_or_union
+  final pointer = calloc.allocate<GoString>(sizeOf<GoString>());
+  pointer.ref.p = dartString.toNativeUtf8().cast<Char>();
+  pointer.ref.n = dartString.length;
+  // return pointer.ref;
+  return pointer;
+}
+
+void freeGoString(Pointer<GoString> goString) {
+  malloc.free(goString.ref.p);
+  calloc.free(goString);
+}
+
+String fromGoString(GoString goString) {
+  final string = goString.p.cast<Utf8>().toDartString(length: goString.n);
+  return string;
+}
+
+
+Usage in dart will be the following:
+
+ final audiofile = toGoString(p.join(_path, "audios/allowed1_philip.wav")); //This is a Pointer<GoString>
+
+ and then as GoString by using ref field:
+
+ audiofile.ref // This is an actual GoString
+
+ and then don't forget to free the memory:
+ freeGoString(audiofile);

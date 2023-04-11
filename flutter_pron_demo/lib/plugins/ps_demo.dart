@@ -2,6 +2,7 @@ import 'dart:ffi';
 import 'dart:io';
 import 'package:ffi/ffi.dart';
 import 'pron_bindings.dart';
+import 'package:path/path.dart' as p;
 
 final PronGO pronBindings = PronGO(nativeGoPronLib);
 
@@ -170,17 +171,34 @@ class FFIBridge {
     await Future.delayed(const Duration(seconds: 1));
     final timing = stopwatch.elapsed;
     print('pron_demo executed in ${timing}');
+    String dartString = "path_of_the_audio_file";
 
-    final audiofile = toGoString("audiofile");
-    final word = toGoString("word");
-    final outputfolder = toGoString("outputfolder");
-    final dictfile = toGoString("dictfile");
-    final phdictfile = toGoString("phdictfile");
-    final featparams = toGoString("featparams");
-    final hmm = toGoString("hmm");
+    //This doesn't work: GoString is a struct and, Subclasses of ‘Struct’ and ‘Union’ are backed by native memory, and can’t be instantiated by a generative constructor.
+    // GoString audiopath = GoString()
+    //   ..p = dartString.toNativeUtf8().cast<Char>()
+    //   ..n = dartString.length;
+
+    //This works at the moment
+    // final pointer = calloc.allocate<GoString>(sizeOf<GoString>());
+    // pointer.ref.p = dartString.toNativeUtf8().cast<Char>();
+    // pointer.ref.n = dartString.length;
+
+    final audiofile = toGoString(p.join(_path, "audios/allowed1_philip.wav"));
+    final word = toGoString("allowed");
+    final outputfolder = toGoString(p.join(_path, "outputfolder"));
+    final dictfile = toGoString(p.join(_path, "Models/etc/art_db_v3.dic"));
+    final phdictfile = toGoString(p.join(_path, "Models/etc/art_db_v3.phone"));
+    final featparams = toGoString(p.join(_path, "Models/etc/feat.params"));
+    final hmm = toGoString(p.join(_path, "Models/model"));
 
     final GoString goResult = pronBindings.Pron(
-        audiofile, word, outputfolder, dictfile, phdictfile, featparams, hmm);
+        audiofile.ref,
+        word.ref,
+        outputfolder.ref,
+        dictfile.ref,
+        phdictfile.ref,
+        featparams.ref,
+        hmm.ref);
     String result = fromGoString(goResult);
 
     malloc.free(c_path);
@@ -192,7 +210,7 @@ class FFIBridge {
     freeGoString(featparams);
     freeGoString(hmm);
 
-    return result;
+    return "\n${timing}\n" + result;
   }
 } // FFIBridge
 //------------------------------------------------------------
