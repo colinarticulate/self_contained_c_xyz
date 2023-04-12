@@ -1,0 +1,177 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "ps_plus/xyzsphinxbase/libxyzsphinxad.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_definitions",
+			"set_property"
+		],
+		"files" : 
+		[
+			"ps_plus/xyzsphinxbase/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG -fPIC"
+				},
+				{
+					"fragment" : "-std=gnu11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"define" : "xyzsphinxad_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzsphinxbase/include"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzsphinxbase/xyzsphinxbase"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzsphinxbase/include/xyzsphinxbase"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzsphinxbase/xyzsphinxad"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzcrossplatform/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzcrossplatform/linux"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "xyzsphinxbase::@684c2f821c82f0686f88"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "xyzcrossplatform::@3462a60c9cf22f8a56d1"
+		}
+	],
+	"id" : "xyzsphinxad::@684c2f821c82f0686f88",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/build/ps_plus/xyzsphinxbase:/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/build/ps_plus/xyzcrossplatform",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 0,
+				"fragment" : "ps_plus/xyzsphinxbase/libxyzsphinxbase.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "ps_plus/xyzcrossplatform/libxyzcrossplatform.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "xyzsphinxad",
+	"nameOnDisk" : "libxyzsphinxad.so",
+	"paths" : 
+	{
+		"build" : "ps_plus/xyzsphinxbase",
+		"source" : "ps_plus/xyzsphinxbase"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzsphinxbase/src/libsphinxad/ad_base.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ps_plus/xyzsphinxbase",
+		"source" : "ps_plus/xyzsphinxbase"
+	}
+}

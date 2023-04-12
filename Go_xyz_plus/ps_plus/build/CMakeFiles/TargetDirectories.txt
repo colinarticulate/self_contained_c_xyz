@@ -1,0 +1,13 @@
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/CMakeFiles/ps_plus.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/CMakeFiles/rebuild_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzpocketsphinx/CMakeFiles/xyzpocketsphinx.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzpocketsphinx/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzpocketsphinx/CMakeFiles/rebuild_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzsphinxbase/CMakeFiles/xyzsphinxbase.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzsphinxbase/CMakeFiles/xyzsphinxad.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzsphinxbase/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzsphinxbase/CMakeFiles/rebuild_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzcrossplatform/CMakeFiles/xyzcrossplatform.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzcrossplatform/CMakeFiles/edit_cache.dir
+/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/build/xyzcrossplatform/CMakeFiles/rebuild_cache.dir

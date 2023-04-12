@@ -1,0 +1,141 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "ps_plus/xyzcrossplatform/libxyzcrossplatform.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_include_directories",
+			"set_property"
+		],
+		"files" : 
+		[
+			"ps_plus/xyzcrossplatform/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG -fPIC"
+				},
+				{
+					"fragment" : "-std=gnu11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "xyzcrossplatform_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzcrossplatform/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_xyz_plus/ps_plus/xyzcrossplatform/linux"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"id" : "xyzcrossplatform::@3462a60c9cf22f8a56d1",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "xyzcrossplatform",
+	"nameOnDisk" : "libxyzcrossplatform.so",
+	"paths" : 
+	{
+		"build" : "ps_plus/xyzcrossplatform",
+		"source" : "ps_plus/xyzcrossplatform"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzcrossplatform/linux/fmemopen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzcrossplatform/linux/getline.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

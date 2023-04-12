@@ -1,0 +1,5 @@
+#!/bin/bash
+
+LIB_DIR="$(pwd)/ps_plus"
+LIB_PATH="$LIB_DIR/libps_plus.so"
+CGO_LDFLAGS="-L$LIB_DIR" LD_LIBRARY_PATH="$LIB_DIR" go build -buildmode=plugin -o plugin.so build_plugin.go

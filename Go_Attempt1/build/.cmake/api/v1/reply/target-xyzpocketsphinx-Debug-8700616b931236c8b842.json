@@ -1,0 +1,443 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "ps_plus/xyzpocketsphinx/libxyzpocketsphinx.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_definitions",
+			"target_include_directories",
+			"set_property"
+		],
+		"files" : 
+		[
+			"ps_plus/xyzpocketsphinx/CMakeLists.txt",
+			"ps_plus/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC"
+				},
+				{
+					"fragment" : "-std=gnu11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"define" : "xyzpocketsphinx_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzpocketsphinx/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzpocketsphinx/xyzpocketsphinx"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzpocketsphinx/src/libpocketsphinx"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/build/ps_plus"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzsphinxbase/include"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzsphinxbase/xyzsphinxbase"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzsphinxbase/include/xyzsphinxbase"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzsphinxbase/xyzsphinxad"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzcrossplatform/xyzcrossplatform"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/ps_plus/xyzcrossplatform/linux"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					6
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "xyzsphinxbase::@684c2f821c82f0686f88"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "xyzsphinxad::@684c2f821c82f0686f88"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "xyzcrossplatform::@3462a60c9cf22f8a56d1"
+		}
+	],
+	"id" : "xyzpocketsphinx::@e05f15f3da39573fc009",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/build/ps_plus/xyzsphinxbase:/home/dbarbera/Repositories/self_contained_c_xyz/Go_Attempt1/build/ps_plus/xyzcrossplatform",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 0,
+				"fragment" : "ps_plus/xyzsphinxbase/libxyzsphinxad.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 0,
+				"fragment" : "ps_plus/xyzsphinxbase/libxyzsphinxbase.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "ps_plus/xyzcrossplatform/libxyzcrossplatform.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "xyzpocketsphinx",
+	"nameOnDisk" : "libxyzpocketsphinx.so",
+	"paths" : 
+	{
+		"build" : "ps_plus/xyzpocketsphinx",
+		"source" : "ps_plus/xyzpocketsphinx"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/acmod.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/allphone_search.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/bin_mdef.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/blkarray_list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/dict.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/dict2pid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/fsg_history.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/fsg_lextree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/fsg_search.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/hmm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/kws_detections.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/kws_search.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/mdef.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ms_gauden.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ms_mgau.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ms_senone.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ngram_search.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdflat.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ngram_search_fwdtree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/phone_loop_search.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/pocketsphinx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ps_alignment.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ps_lattice.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ps_mllr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/ptm_mgau.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/s2_semi_mgau.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/state_align_search.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/tmat.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ps_plus/xyzpocketsphinx/src/libpocketsphinx/vector.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
