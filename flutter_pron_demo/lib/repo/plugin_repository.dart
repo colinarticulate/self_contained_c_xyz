@@ -31,8 +31,8 @@ class PluginRepository {
   }
 
   Future<String> _psCallDirect() async {
-    return FFIBridge.ps_demo();
-    // return mockHeavyCall();
+    // return FFIBridge.ps_demo();
+    return mockHeavyCall();
   }
 
   void _psCallIsolateFunction(SendPort sendPort) async {
@@ -64,8 +64,8 @@ class PluginRepository {
   }
 
   Future<String> _psBatchCallDirect() async {
-    return FFIBridge.ps_batch_demo();
-    // return mockHeavyCall();
+    // return FFIBridge.ps_batch_demo();
+    return mockHeavyCall();
   }
 
   Future<String> mockHeavyCall() async {

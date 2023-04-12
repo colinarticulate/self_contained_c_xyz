@@ -1,0 +1,4 @@
+
+linux:
+
+CGO_ENABLED=1 GOOS="linux" GOARCH="amd64" GOARM="" go build -buildmode=c-shared -o libpron.so main.go

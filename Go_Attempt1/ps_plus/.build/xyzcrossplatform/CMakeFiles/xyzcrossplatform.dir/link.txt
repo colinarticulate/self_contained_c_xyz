@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -O3 -DNDEBUG -shared -Wl,-soname,libxyzcrossplatform.so -o libxyzcrossplatform.so CMakeFiles/xyzcrossplatform.dir/crossplatform.c.o 

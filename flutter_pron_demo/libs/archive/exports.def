@@ -1,0 +1,15 @@
+LIBRARY ps_plus
+EXPORTS
+    add
+    capitalize
+    hello_world
+    get_some_parameters
+    delete_params_sender
+    demo_ps
+    demo_ps_batch
+    delete_results_sender
+    delete_results_sender_batch
+    ps_demo
+    ps_demo_sequential
+    ps_batch_demo
+    ps_batch_demo_sequential
