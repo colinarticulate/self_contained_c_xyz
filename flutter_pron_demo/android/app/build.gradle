@@ -53,7 +53,7 @@ android {
 //        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
 
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.flutter_plugin3"
+        applicationId "com.example.flutter_pron_demo"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion 24//min by articulate // my min: 23 //flutter.minSdkVersion

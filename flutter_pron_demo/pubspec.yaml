@@ -100,6 +100,8 @@ flutter:
     - assets/ps_plus/allowed1_philip_allowed/ctl/ctl_allowed1_philip_fixed_trimmed.txt
     - assets/ps_plus/dictionaries/art_db.phone 
     - assets/ps_plus/audios/allowed1_philip.wav
+    - assets/ps_plus/audios/allowed1_philip_fixed_trimmed.wav
     - assets/ps_plus/Models/model/
     - assets/ps_plus/Models/etc/
     - assets/ps_plus/outputfolder/
+    - assets/ps_plus/beep_noise2.prof

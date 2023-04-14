@@ -76,6 +76,11 @@ class PluginRepository {
   }
 
 //Pron
+  Future<String> pronCallDirect() async {
+    return FFIBridge.pron_demo();
+    // return mockHeavyCall();
+  }
+
   Future<String> _pronCallDirect() async {
     return FFIBridge.pron_demo();
     // return mockHeavyCall();
@@ -93,6 +98,32 @@ class PluginRepository {
     Completer<String> completer = Completer<String>();
     Isolate isolate =
         await Isolate.spawn(_pronCallIsolateFunction, receivePort.sendPort);
+    receivePort.listen((data) {
+      completer.complete(data);
+      isolate.kill(priority: Isolate.immediate);
+      receivePort.close();
+    });
+    return completer.future;
+  }
+
+  //MockPron
+  Future<String> _mockpronCallDirect() async {
+    return FFIBridge.mockpron_demo();
+    // return mockHeavyCall();
+  }
+
+  void _mockpronCallIsolateFunction(SendPort sendPort) async {
+    FFIBridge.initialize(devicePath);
+    String result = await _mockpronCallDirect();
+    sendPort.send(result);
+  }
+
+  Future<String> mockpronCall() async {
+    await storageInitCompleted.future;
+    ReceivePort receivePort = ReceivePort();
+    Completer<String> completer = Completer<String>();
+    Isolate isolate =
+        await Isolate.spawn(_mockpronCallIsolateFunction, receivePort.sendPort);
     receivePort.listen((data) {
       completer.complete(data);
       isolate.kill(priority: Isolate.immediate);

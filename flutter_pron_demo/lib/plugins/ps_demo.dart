@@ -1,8 +1,25 @@
 import 'dart:ffi';
+import 'dart:ffi' as ffi;
 import 'dart:io';
 import 'package:ffi/ffi.dart';
 import 'pron_bindings.dart';
 import 'package:path/path.dart' as p;
+// import 'package:flutter_charser_detector/flutter_charser_detector.dart';
+
+String pointerToDartString(ffi.Pointer<ffi.Char> charPointer) {
+  final ptr = charPointer.cast<ffi.Uint8>();
+  final units = <int>[];
+
+  while (true) {
+    final unit = ptr.elementAt(units.length).value;
+    if (unit == 0) {
+      break;
+    }
+    units.add(unit);
+  }
+  // result = CharsetDetector.autoDecode(units);
+  return String.fromCharCodes(units);
+}
 
 final PronGO pronBindings = PronGO(nativeGoPronLib);
 
@@ -168,10 +185,72 @@ class FFIBridge {
     print(c_path.toDartString());
     final stopwatch = Stopwatch()..start();
     // Pointer<ArrayOfStrings> result = FFIBridge.c_ps_demo(c_path);
-    await Future.delayed(const Duration(seconds: 1));
+    // await Future.delayed(const Duration(seconds: 1));
+
+    // String dartString = "path_of_the_audio_file";
+
+    //This doesn't work: GoString is a struct and, Subclasses of ‘Struct’ and ‘Union’ are backed by native memory, and can’t be instantiated by a generative constructor.
+    // GoString audiopath = GoString()
+    //   ..p = dartString.toNativeUtf8().cast<Char>()
+    //   ..n = dartString.length;
+
+    //This works at the moment
+    // final pointer = calloc.allocate<GoString>(sizeOf<GoString>());
+    // pointer.ref.p = dartString.toNativeUtf8().cast<Char>();
+    // pointer.ref.n = dartString.length;
+
+    final audiofile = toGoString(p.join(_path, "audios/allowed1_philip.wav"));
+    final word = toGoString("allowed");
+    final outputfolder = toGoString(p.join(_path, "outputfolder"));
+    final dictfile = toGoString(p.join(_path, "Models/etc/art_db_v3.dic"));
+    final phdictfile =
+        toGoString(p.join(_path, "Models/art-en-us/art_db.phone"));
+    final featparams =
+        toGoString(p.join(_path, "Models/art-en-us/en-us/feat.params"));
+    final hmm = toGoString(p.join(_path, "Models/art-en-us/en-us"));
+    final proffile = toGoString(p.join(_path, "beep_noise2.prof"));
+
+    final goResult = pronBindings.Pron(
+        audiofile.ref,
+        word.ref,
+        outputfolder.ref,
+        dictfile.ref,
+        phdictfile.ref,
+        featparams.ref,
+        hmm.ref,
+        proffile.ref);
+
+    // String result = fromGoString(goResult);
+    final result = pointerToDartString(goResult); //.toDartString();
+    malloc.free(
+        goResult); //CGO has allocated memory for it, so we need to free it
+
+    malloc.free(c_path);
+    freeGoString(audiofile);
+    freeGoString(word);
+    freeGoString(outputfolder);
+    freeGoString(dictfile);
+    freeGoString(phdictfile);
+    freeGoString(featparams);
+    freeGoString(hmm);
+    freeGoString(proffile);
+
     final timing = stopwatch.elapsed;
     print('pron_demo executed in ${timing}');
-    String dartString = "path_of_the_audio_file";
+
+    return "\n${timing}\n" + result;
+  }
+
+  static Future<String> mockpron_demo() async {
+    final c_path = _path.toNativeUtf8();
+    print(c_path);
+    print(c_path.toDartString());
+
+    final stopwatch = Stopwatch()..start();
+    // Pointer<ArrayOfStrings> result = FFIBridge.c_ps_demo(c_path);
+    await Future.delayed(const Duration(seconds: 1));
+
+    // String dartString = "path_of_the_audio_file";
 
     //This doesn't work: GoString is a struct and, Subclasses of ‘Struct’ and ‘Union’ are backed by native memory, and can’t be instantiated by a generative constructor.
     // GoString audiopath = GoString()
@@ -190,15 +269,18 @@ class FFIBridge {
     final phdictfile = toGoString(p.join(_path, "Models/etc/art_db_v3.phone"));
     final featparams = toGoString(p.join(_path, "Models/etc/feat.params"));
     final hmm = toGoString(p.join(_path, "Models/model"));
+    final proffile = toGoString(p.join(_path, "beep_noise2.prof"));
 
-    final GoString goResult = pronBindings.Pron(
+    final GoString goResult = pronBindings.MockPron(
         audiofile.ref,
         word.ref,
         outputfolder.ref,
         dictfile.ref,
         phdictfile.ref,
         featparams.ref,
-        hmm.ref);
+        hmm.ref,
+        proffile.ref);
+
     String result = fromGoString(goResult);
 
     malloc.free(c_path);
@@ -209,6 +291,10 @@ class FFIBridge {
     freeGoString(phdictfile);
     freeGoString(featparams);
     freeGoString(hmm);
+    freeGoString(proffile);
+
+    final timing = stopwatch.elapsed;
+    print('pron_demo executed in ${timing}');
 
     return "\n${timing}\n" + result;
   }

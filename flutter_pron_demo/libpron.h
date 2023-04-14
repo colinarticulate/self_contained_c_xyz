@@ -74,7 +74,8 @@ typedef struct { void *data; GoInt len; GoInt cap; } GoSlice;
 extern "C" {
 #endif
 
-extern GoString Pron(GoString audiofile, GoString word, GoString outputfolder, GoString dictfile, GoString phdictfile, GoString featparams, GoString hmm);
+extern GoString MockPron(GoString audiofile, GoString word, GoString outputfolder, GoString dictfile, GoString phdictfile, GoString featparams, GoString hmm, GoString proffile);
+extern char* Pron(GoString audiofile, GoString word, GoString outputfolder, GoString dictfile, GoString phdictfile, GoString featparams, GoString hmm, GoString proffile);
 
 #ifdef __cplusplus
 }
