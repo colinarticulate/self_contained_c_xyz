@@ -7,11 +7,7 @@ class PluginRepository {
   late final String devicePath;
   Completer storageInitCompleted = Completer();
 
-  PluginRepository() {
-    init();
-  }
-
-  void init() async {
+  Future<void> init() async {
     devicePath = await Storage.init();
     storageInitCompleted.complete();
   }

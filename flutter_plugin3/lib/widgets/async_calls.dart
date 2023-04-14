@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import '../repo/plugin_repository.dart';
 
 class psCallBody extends StatelessWidget {
   psCallBody({super.key});
-  final PluginRepository _psPlugin = PluginRepository();
+  final PluginRepository _psPlugin = GetIt.I<PluginRepository>();
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +38,7 @@ class psCallBody extends StatelessWidget {
 
 class psBatchCallBody extends StatelessWidget {
   psBatchCallBody({super.key});
-  final PluginRepository _psPlugin = PluginRepository();
+  final PluginRepository _psPlugin = GetIt.I<PluginRepository>();
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +72,7 @@ class psBatchCallBody extends StatelessWidget {
 
 class psMockCallBody extends StatelessWidget {
   psMockCallBody({super.key});
-  final PluginRepository _psPlugin = PluginRepository();
+  final PluginRepository _psPlugin = GetIt.I<PluginRepository>();
 
   @override
   Widget build(BuildContext context) {
